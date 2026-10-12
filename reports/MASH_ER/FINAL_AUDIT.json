@@ -1,0 +1,51 @@
+{
+  "EXPERIMENT_VALID": true,
+  "blockers": [],
+  "candidate_test_sha256": "a9b5f4375ae872778c26766ffd502e3f45c67ea27d9fd50f4050e51a36d3accf",
+  "checks": {
+    "candidate_budget_equal": true,
+    "candidate_test_not_loaded": true,
+    "candidate_test_sealed": true,
+    "checksums_verified": true,
+    "cross_document_allowed_unit_tested": true,
+    "deterministic_tie_break_unit_tested": true,
+    "evidence_ids_unchanged": true,
+    "global_score_traces_valid": true,
+    "metrics_recomputable": true,
+    "multi_view_dedup": true,
+    "no_gold_answer_leakage": true,
+    "pytest_pass": true,
+    "soft_page_non_exclusion_unit_tested": true,
+    "source_metadata_not_fabricated": true,
+    "window_to_evidence_mapping": true
+  },
+  "errors": [],
+  "independent_metrics": {
+    "A0": {
+      "all_r@20": 0.6236559139784946,
+      "candidate_coverage@100": 0.7741935483870968,
+      "multi_all_r@20": 0.6
+    },
+    "A1": {
+      "all_r@20": 0.5376344086021505,
+      "candidate_coverage@100": 0.8172043010752689,
+      "multi_all_r@20": 0.6
+    },
+    "A2": {
+      "all_r@20": 0.5053763440860215,
+      "candidate_coverage@100": 0.7849462365591398,
+      "multi_all_r@20": 0.56
+    },
+    "A3": {
+      "all_r@20": 0.4731182795698925,
+      "candidate_coverage@100": 0.8602150537634409,
+      "multi_all_r@20": 0.56
+    }
+  },
+  "pytest": {
+    "passed": true,
+    "returncode": 0,
+    "summary": "93 passed in 8.56s"
+  },
+  "status": "PASS"
+}

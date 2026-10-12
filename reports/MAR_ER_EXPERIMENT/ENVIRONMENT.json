@@ -1,0 +1,8 @@
+{
+  "device": "cuda",
+  "model_id": "intfloat/multilingual-e5-large",
+  "model_revision": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3",
+  "numpy": "2.2.6",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.10.11"
+}

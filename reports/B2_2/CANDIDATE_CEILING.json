@@ -1,0 +1,51 @@
+{
+  "B200_is_diagnostic_only": true,
+  "budgeted_candidate_coverage": {
+    "P0_S0": {
+      "100": 0.6559139784946236,
+      "200": 0.6559139784946236,
+      "50": 0.6451612903225806
+    },
+    "P0_S1": {
+      "100": 0.7741935483870968,
+      "200": 0.7849462365591398,
+      "50": 0.7526881720430108
+    },
+    "P0_S2": {
+      "100": 0.7849462365591398,
+      "200": 0.8279569892473119,
+      "50": 0.7311827956989247
+    },
+    "P2_S0": {
+      "100": 0.6989247311827957,
+      "200": 0.6989247311827957,
+      "50": 0.6881720430107527
+    },
+    "P2_S1": {
+      "100": 0.7849462365591398,
+      "200": 0.7956989247311828,
+      "50": 0.7526881720430108
+    },
+    "P2_S2": {
+      "100": 0.7849462365591398,
+      "200": 0.8387096774193549,
+      "50": 0.7526881720430108
+    }
+  },
+  "definitions": {
+    "budgeted_candidate_coverage": "all gold retrieval units occur in at most B unique selected candidate IDs before final ranking",
+    "final_all_evidence_recall": "all gold retrieval units occur in final Top-K after fixed region RRF ranking",
+    "raw_page_candidate_ceiling": "all gold retrieval units occur on selected Top-P pages before region budgeting/ranking"
+  },
+  "denominator": 93,
+  "raw_page_candidate_ceiling": {
+    "P0": {
+      "10": 0.6559139784946236,
+      "20": 0.7849462365591398
+    },
+    "P2": {
+      "10": 0.6989247311827957,
+      "20": 0.7956989247311828
+    }
+  }
+}

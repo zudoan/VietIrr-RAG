@@ -1,0 +1,77 @@
+{
+  "coverage_unique_evidence_ids": {
+    "document_reporting_time": {
+      "count": 10612,
+      "rate": 0.39238306526160105
+    },
+    "document_title": {
+      "count": 27045,
+      "rate": 1.0
+    },
+    "entity": {
+      "count": 91,
+      "rate": 0.0033647624329820667
+    },
+    "evidence_time": {
+      "count": 24,
+      "rate": 0.0008874098724348308
+    },
+    "metric": {
+      "count": 91,
+      "rate": 0.0033647624329820667
+    },
+    "ocr_uncertainty_signal": {
+      "count": 2633,
+      "rate": 0.09735625808837123
+    },
+    "original_region_text": {
+      "count": 27045,
+      "rate": 1.0
+    },
+    "page": {
+      "count": 27045,
+      "rate": 1.0
+    },
+    "parent_child_relation": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "source_locator": {
+      "count": 27045,
+      "rate": 1.0
+    },
+    "table_caption": {
+      "count": 76,
+      "rate": 0.0028101312627102975
+    },
+    "table_headers": {
+      "count": 91,
+      "rate": 0.0033647624329820667
+    },
+    "table_rows": {
+      "count": 91,
+      "rate": 0.0033647624329820667
+    },
+    "verified_local_parent_context": {
+      "count": 9710,
+      "rate": 0.35903124422259197
+    },
+    "verified_section": {
+      "count": 0,
+      "rate": 0.0
+    }
+  },
+  "schema_sources": {
+    "document": "data/parsed/documents.jsonl",
+    "region": "data/parsed/regions.jsonl",
+    "retrieval_unit": "data/processed/evidence_units.jsonl",
+    "section_hierarchy": "data/parsed/<doc_id>.json sections/pages",
+    "table": "data/parsed/tables.jsonl"
+  },
+  "unit_count": 27045,
+  "unit_types": {
+    "TABLE_REGION": 91,
+    "TEXT_REGION": 26954
+  },
+  "unknown_policy": "Missing metadata is omitted from retrieval text; original content is retained."
+}

@@ -1,0 +1,21 @@
+{
+  "cache_hit": true,
+  "candidate_sha256": "4ee8325ef4df2b9f8971ca76516e6a6765e7ce2f610ba1eeef43a329722549d3",
+  "dev_sha256": "cc460f860de59c00a961dc00dea56f204c66f270c7a48d2ee840cb73c302d30f",
+  "device": "cuda",
+  "dtype": "float16",
+  "effective_batch_size": 16,
+  "inference_seconds": 69.97415940000064,
+  "initial_batch_size": 16,
+  "loading_seconds": 4.735481700001401,
+  "max_length": 512,
+  "max_observed_tokens": 2335,
+  "model_id": "BAAI/bge-reranker-v2-m3",
+  "pair_count": 9300,
+  "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+  "scores_cache": "outputs/B2_3/cache/m2_scores.jsonl",
+  "scores_sha256": "58387bdcfbaa932445a8f65b9ca71b9e1910d28509efc909a1eb02e4618da1e3",
+  "truncated_count": 98,
+  "truncated_rate": 0.010537634408602151,
+  "units_sha256": "123aaac55ba1d0b30c469087b29b5deeccf56e42ab498fc222538a19e8b524ba"
+}

@@ -1,0 +1,145 @@
+{
+  "fallback_queries": 0,
+  "mean_selector_ms": 70.21248602149983,
+  "multi_E3_vs_E0": {
+    "recovered": 0,
+    "recovered_qa_ids": [],
+    "regressed": 0,
+    "regressed_qa_ids": []
+  },
+  "multi_E3_vs_E2": {
+    "recovered": 4,
+    "recovered_qa_ids": [
+      "V3_1_CHAL_00165",
+      "V3_1_CHAL_00173",
+      "V3_1_CHAL_00195",
+      "V3_1_CHAL_00198"
+    ],
+    "regressed": 0,
+    "regressed_qa_ids": []
+  },
+  "queries_with_detected_requirements": 93,
+  "question_requirement_counts": {
+    "ACTION": 2,
+    "FORECAST": 65,
+    "TEMPORAL_COMPARISON": 91,
+    "VALUE": 74
+  },
+  "single_E3_vs_E0": {
+    "recovered": 3,
+    "recovered_qa_ids": [
+      "V3_CORE_00428",
+      "V3_CORE_00429",
+      "V3_CORE_00431"
+    ],
+    "regressed": 3,
+    "regressed_qa_ids": [
+      "V3_CORE_00124",
+      "V3_CORE_00401",
+      "V3_CORE_00404"
+    ]
+  },
+  "single_E3_vs_E2": {
+    "recovered": 1,
+    "recovered_qa_ids": [
+      "V3_CORE_00283"
+    ],
+    "regressed": 7,
+    "regressed_qa_ids": [
+      "V3_CORE_00038",
+      "V3_CORE_00124",
+      "V3_CORE_00401",
+      "V3_CORE_00404",
+      "V3_CORE_00405",
+      "V3_CORE_00430",
+      "V3_CORE_00432"
+    ]
+  },
+  "table_only_gold_set_duplication": {
+    "duplicated_gold_sets": 7,
+    "max_multiplicity": 11,
+    "qa_count": 39,
+    "qa_in_duplicated_sets": 38,
+    "unique_gold_sets": 8
+  },
+  "transitions": {
+    "E1_vs_E0": {
+      "recovered": 2,
+      "recovered_qa_ids": [
+        "V3_1_CHAL_00041",
+        "V3_CORE_00158"
+      ],
+      "regressed": 13,
+      "regressed_qa_ids": [
+        "V3_1_CHAL_00165",
+        "V3_1_CHAL_00171",
+        "V3_1_CHAL_00176",
+        "V3_CORE_00028",
+        "V3_CORE_00124",
+        "V3_CORE_00401",
+        "V3_CORE_00411",
+        "V3_CORE_00413",
+        "V3_CORE_00414",
+        "V3_CORE_00417",
+        "V3_CORE_00419",
+        "V3_CORE_00421",
+        "V3_CORE_00427"
+      ]
+    },
+    "E2_vs_E0": {
+      "recovered": 7,
+      "recovered_qa_ids": [
+        "V3_CORE_00038",
+        "V3_CORE_00405",
+        "V3_CORE_00428",
+        "V3_CORE_00429",
+        "V3_CORE_00430",
+        "V3_CORE_00431",
+        "V3_CORE_00432"
+      ],
+      "regressed": 5,
+      "regressed_qa_ids": [
+        "V3_1_CHAL_00165",
+        "V3_1_CHAL_00173",
+        "V3_1_CHAL_00195",
+        "V3_1_CHAL_00198",
+        "V3_CORE_00283"
+      ]
+    },
+    "E3_vs_E0": {
+      "recovered": 3,
+      "recovered_qa_ids": [
+        "V3_CORE_00428",
+        "V3_CORE_00429",
+        "V3_CORE_00431"
+      ],
+      "regressed": 3,
+      "regressed_qa_ids": [
+        "V3_CORE_00124",
+        "V3_CORE_00401",
+        "V3_CORE_00404"
+      ]
+    },
+    "E3_vs_E2": {
+      "recovered": 5,
+      "recovered_qa_ids": [
+        "V3_1_CHAL_00165",
+        "V3_1_CHAL_00173",
+        "V3_1_CHAL_00195",
+        "V3_1_CHAL_00198",
+        "V3_CORE_00283"
+      ],
+      "regressed": 7,
+      "regressed_qa_ids": [
+        "V3_CORE_00038",
+        "V3_CORE_00124",
+        "V3_CORE_00401",
+        "V3_CORE_00404",
+        "V3_CORE_00405",
+        "V3_CORE_00430",
+        "V3_CORE_00432"
+      ]
+    }
+  },
+  "unmet_requirements_on_E3_failures": {}
+}

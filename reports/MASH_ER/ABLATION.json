@@ -1,0 +1,78 @@
+{
+  "candidate_ceiling_is_not_final_recall": true,
+  "deltas": {
+    "A1_minus_A0_soft_localization": {
+      "all_r@20": -0.08602150537634412,
+      "candidate_coverage@100": 0.043010752688172116,
+      "multi_all_r@20": 0.0
+    },
+    "A2_minus_A0_multi_view": {
+      "all_r@20": -0.11827956989247312,
+      "candidate_coverage@100": 0.010752688172043001,
+      "multi_all_r@20": -0.039999999999999925
+    },
+    "A3_minus_A0_full_method": {
+      "all_r@20": -0.15053763440860213,
+      "candidate_coverage@100": 0.08602150537634412,
+      "multi_all_r@20": -0.039999999999999925
+    },
+    "A3_minus_A1_multi_view_given_soft": {
+      "all_r@20": -0.06451612903225801,
+      "candidate_coverage@100": 0.043010752688172005,
+      "multi_all_r@20": -0.039999999999999925
+    },
+    "A3_minus_A2_soft_given_multi_view": {
+      "all_r@20": -0.032258064516129004,
+      "candidate_coverage@100": 0.07526881720430112,
+      "multi_all_r@20": 0.0
+    }
+  },
+  "primary_metrics": {
+    "A0": {
+      "all_r@20": 0.6236559139784946,
+      "candidate_coverage@100": 0.7741935483870968,
+      "multi_all_r@20": 0.6
+    },
+    "A1": {
+      "all_r@20": 0.5376344086021505,
+      "candidate_coverage@100": 0.8172043010752689,
+      "multi_all_r@20": 0.6
+    },
+    "A2": {
+      "all_r@20": 0.5053763440860215,
+      "candidate_coverage@100": 0.7849462365591398,
+      "multi_all_r@20": 0.56
+    },
+    "A3": {
+      "all_r@20": 0.4731182795698925,
+      "candidate_coverage@100": 0.8602150537634409,
+      "multi_all_r@20": 0.56
+    }
+  },
+  "transitions_vs_A0": {
+    "A1": {
+      "all_r20_recovered": 2,
+      "all_r20_regressed": 10,
+      "candidate_lost": 5,
+      "candidate_recovered": 9,
+      "page_pruning_avoidance": 9,
+      "rank_displacement": 10
+    },
+    "A2": {
+      "all_r20_recovered": 5,
+      "all_r20_regressed": 16,
+      "candidate_lost": 0,
+      "candidate_recovered": 1,
+      "page_pruning_avoidance": 0,
+      "rank_displacement": 16
+    },
+    "A3": {
+      "all_r20_recovered": 4,
+      "all_r20_regressed": 18,
+      "candidate_lost": 1,
+      "candidate_recovered": 9,
+      "page_pruning_avoidance": 9,
+      "rank_displacement": 18
+    }
+  }
+}

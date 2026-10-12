@@ -1,0 +1,85 @@
+{
+  "baseline_checks": {
+    "all_baseline_candidates_unique_100": true,
+    "all_baseline_ids_known": true,
+    "page_rankings_cover_dev": true,
+    "page_region_has_100": true,
+    "page_region_source_covers_dev": true,
+    "qa_ids_match": true
+  },
+  "cache_checks": {
+    "raw_exists": true,
+    "raw_sha256": true,
+    "table_struct_exists": true,
+    "table_struct_sha256": true,
+    "text_context_exists": true,
+    "text_context_sha256": true
+  },
+  "candidate_test": {
+    "parsed": false,
+    "policy": "SEALED_NOT_PARSED; BYTE_HASH_ONLY",
+    "sha256": "a9b5f4375ae872778c26766ffd502e3f45c67ea27d9fd50f4050e51a36d3accf"
+  },
+  "counts": {
+    "dev_qa": 93,
+    "multi_unique_gold_sets": 8,
+    "retrieval_multi_qa": 25,
+    "retrieval_units": 27045,
+    "table_units": 91,
+    "text_units": 26954,
+    "unique_gold_sets": 45
+  },
+  "created_at_utc": "2026-10-12T11:12:15.274515+00:00",
+  "design_checks": {
+    "candidate_anchor_80": true,
+    "candidate_budget_100": true,
+    "final_k_20": true,
+    "intrusion_budget_5": true,
+    "no_post_result_change": true,
+    "one_shot": true,
+    "protected_top15": true,
+    "rescue_quota_20": true,
+    "rrf_k_60": true
+  },
+  "errors": [],
+  "legacy_difference_audit": {
+    "LEGACY_E0": {
+      "exact_top100_queries": 0,
+      "exact_top20_queries": 0,
+      "matched_control": false,
+      "mean_top20_overlap": 0.8763440860215055
+    },
+    "PAGE_REGION_P0_P20": {
+      "exact_top100_queries": 0,
+      "exact_top20_queries": 0,
+      "matched_control": false,
+      "mean_top20_overlap": 0.8763440860215055
+    },
+    "R1_R0": {
+      "exact_top100_queries": 0,
+      "exact_top20_queries": 0,
+      "matched_control": false,
+      "mean_top20_overlap": 0.8752688172043009
+    }
+  },
+  "mapping_checks": {
+    "all_dev_gold_ids_exist": true,
+    "all_parent_pages_exist": true,
+    "dev_gold_page_mapping_valid": true,
+    "unique_evidence_ids": true
+  },
+  "matched_baseline_reproduction_pending_official_query_scoring": true,
+  "matched_baseline_source": "outputs/MASH_ER/rankings/a0_dev.jsonl",
+  "representation_checks": {
+    "alternate_fallback_consistent": true,
+    "view_manifest_count": true,
+    "view_manifest_id_order": true,
+    "view_manifest_no_gold": true
+  },
+  "status": "PASS",
+  "window_checks": {
+    "context_window_count_matches": true,
+    "raw_window_count_matches": true,
+    "table_window_count_matches": true
+  }
+}

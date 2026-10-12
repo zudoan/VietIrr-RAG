@@ -1,0 +1,19 @@
+{
+  "EXPERIMENT_VALID": true,
+  "METHOD_PROMISING": false,
+  "NOVELTY_STATUS": "NOVELTY_UNVERIFIED",
+  "PAPER_READY": false,
+  "blockers": [],
+  "candidate_test_sealed": true,
+  "cluster_ci_support_all_comparisons": false,
+  "limitations": [
+    "Development split only; no independent test inference was run.",
+    "Only 8 unique retrieval-multi gold sets; multi-evidence inference is inconclusive.",
+    "Prior-art search is limited and cannot establish novelty.",
+    "Benchmark still requires independent human validation before paper claims."
+  ],
+  "main_mechanism_supported": "SOFT_LOCALIZATION_RAISES_CANDIDATE_COVERAGE_ONLY",
+  "main_remaining_bottleneck": "RANK_DISPLACEMENT_AFTER_CANDIDATE_RECOVERY",
+  "status": "PASS",
+  "strict_primary_win": false
+}

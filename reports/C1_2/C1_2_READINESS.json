@@ -1,0 +1,18 @@
+{
+  "C1_2_VALID": true,
+  "READY_FOR_C2": false,
+  "baseline_verified": true,
+  "blockers": [],
+  "candidate_test_untouched": true,
+  "main_bottleneck": "HIGH_RECALL_CANDIDATE_PAGE_LOCALIZATION_AND_PRUNING",
+  "missing_multi_qa": 8,
+  "primary_cause_counts": {
+    "PAGE_LOCALIZATION_MISS": 2,
+    "PAGE_PRUNING": 6
+  },
+  "recommended_next_step": "Run one controlled high-recall candidate-generation study at fixed B100 using existing P0/P2/flat signals; do not build provenance-aware selection until structured metadata is validated.",
+  "recoverable_from_existing_rankings": 8,
+  "remaining_candidate_ceiling": "25/25 multi QA (diagnostic union; non-deployable)",
+  "status": "PASS",
+  "unique_affected_gold_sets": 4
+}

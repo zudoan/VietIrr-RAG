@@ -1,0 +1,55 @@
+{
+  "R1_VALID": true,
+  "blockers": [],
+  "candidate_test_sha256": "a9b5f4375ae872778c26766ffd502e3f45c67ea27d9fd50f4050e51a36d3accf",
+  "checks": {
+    "baseline_comparability": true,
+    "candidate_budget_unique": true,
+    "candidate_test_not_loaded": true,
+    "candidate_test_sealed": true,
+    "deterministic_artifacts": true,
+    "evidence_and_window_mapping_valid": true,
+    "input_output_hashes_verified": true,
+    "metrics_independently_recomputed": true,
+    "same_candidates_in_D1": true
+  },
+  "errors": [],
+  "independent_metrics": {
+    "FIXED_POOL:R0": {
+      "all_r@20": 0.6236559139784946,
+      "candidate_coverage@100": 0.7741935483870968,
+      "multi_all_r@20": 0.6
+    },
+    "FIXED_POOL:R1": {
+      "all_r@20": 0.6666666666666666,
+      "candidate_coverage@100": 0.7741935483870968,
+      "multi_all_r@20": 0.64
+    },
+    "FIXED_POOL:R2": {
+      "all_r@20": 0.7096774193548387,
+      "candidate_coverage@100": 0.7741935483870968,
+      "multi_all_r@20": 0.64
+    },
+    "FULL_RETRIEVAL:R0": {
+      "all_r@20": 0.6236559139784946,
+      "candidate_coverage@100": 0.7741935483870968,
+      "multi_all_r@20": 0.6
+    },
+    "FULL_RETRIEVAL:R1": {
+      "all_r@20": 0.6451612903225806,
+      "candidate_coverage@100": 0.7849462365591398,
+      "multi_all_r@20": 0.64
+    },
+    "FULL_RETRIEVAL:R2": {
+      "all_r@20": 0.6559139784946236,
+      "candidate_coverage@100": 0.7849462365591398,
+      "multi_all_r@20": 0.64
+    }
+  },
+  "pytest": {
+    "passed": true,
+    "returncode": 0,
+    "summary": "80 passed in 7.92s"
+  },
+  "status": "PASS"
+}

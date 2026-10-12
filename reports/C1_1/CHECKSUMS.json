@@ -1,0 +1,74 @@
+{
+  "files": [
+    {
+      "bytes": 3253,
+      "path": "reports/C1_1/C1_1_FINAL_AUDIT.json",
+      "sha256": "aa9ec228891291fcb22ee3ec2b1d53f9a07b9636ec9e0559d89ad63118dad40d"
+    },
+    {
+      "bytes": 1628,
+      "path": "reports/C1_1/C1_1_READINESS.json",
+      "sha256": "51c58331c3eb1c7489d3b7bdd41b29b69a60beaaff91d27148e8a0824cf228da"
+    },
+    {
+      "bytes": 2827,
+      "path": "reports/C1_1/C1_1_REPORT.md",
+      "sha256": "ac2c177ed51abcbdb278f8aefa6c03d075d602cfdd8e6a237a72c4c524cade6f"
+    },
+    {
+      "bytes": 851,
+      "path": "reports/C1_1/C1_1_RESULTS.csv",
+      "sha256": "d88b9e3daf10f56cdd241f584ce71de77cd3b127c51d9c181126b7f67af396f4"
+    },
+    {
+      "bytes": 4916,
+      "path": "reports/C1_1/C1_1_STATISTICS.json",
+      "sha256": "ab7e26b1ff3860a16a63722db7d308e161ffe7f65c4e3c31b5e6e73bfd97d099"
+    },
+    {
+      "bytes": 21569,
+      "path": "reports/C1_1/C1_1_SUBGROUPS.json",
+      "sha256": "dabe8c350eb3edb26f54c26f59eb115442367ac876c10db4f6a3189a424050d9"
+    },
+    {
+      "bytes": 1451,
+      "path": "reports/C1_1/CONFIG.json",
+      "sha256": "c95be725ccde1b81b44d187266cfef0aee4a144789fc8d5f72d85b3ec4ae859e"
+    },
+    {
+      "bytes": 1016,
+      "path": "reports/C1_1/EVIDENCE_ROLE_AUDIT.json",
+      "sha256": "da77e4529c2d309de51ac8f90925105fbd8b4e3069a0fc832ea75abf20ac0991"
+    },
+    {
+      "bytes": 241865,
+      "path": "reports/C1_1/RANK_REGRESSION_DIAGNOSIS.jsonl",
+      "sha256": "5a4d609d815e7cea7ec3ad329c90a1307b6b2f0770f89dbba61b6dc4a8051106"
+    },
+    {
+      "bytes": 66385,
+      "path": "reports/C1_1/REQUIREMENT_AUDIT.json",
+      "sha256": "33e00f72422a47b54f3a6727d240510ec30a8cd53787931b9dd7a51e919ecbae"
+    },
+    {
+      "bytes": 847630,
+      "path": "outputs/C1_1/rankings/e4_g0_set_aware_v2_dev.jsonl",
+      "sha256": "2258aa528ad370c66d6687d7e9a7cef213ed58605841f451a5a74d18b38ca439"
+    },
+    {
+      "bytes": 8026641,
+      "path": "outputs/C1_1/representations/e4_candidate_representations_dev.jsonl",
+      "sha256": "34df40a11b89cb48245d13b89d9eb933decaafa90148d878b3162a016bb5abb8"
+    },
+    {
+      "bytes": 832876,
+      "path": "outputs/C1_1/traces/e4_set_aware_v2_traces.jsonl",
+      "sha256": "5acfa2f8e4299e6ea30abb4d26c2fa0a43abcb28345653df13e1315602ee6691"
+    },
+    {
+      "bytes": 1414,
+      "path": "configs/phase_c1_1.json",
+      "sha256": "1a0c3cb770c5ad9f7e3d6e744bdfe282356cec6345433a073292c0d4aaf21fe7"
+    }
+  ]
+}

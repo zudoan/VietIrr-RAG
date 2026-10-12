@@ -1,0 +1,25 @@
+{
+  "device": "cuda",
+  "embedding_storage_bytes": {
+    "raw_reference": 114339968,
+    "table_struct": 1552512,
+    "text_context_reference": 114790528
+  },
+  "indexing_seconds": {
+    "raw_r1_cache_original_build": 160.43964840000262,
+    "table_struct_cache_hit": true,
+    "table_struct_current_or_original_build": 10.05965510000533,
+    "text_context_r1_cache_original_build": 230.22607550000248
+  },
+  "latency_ms_per_query": {
+    "A0": 18.162310753870116,
+    "A1": 21.099775269601274,
+    "A2": 26.657844087020084,
+    "A3": 29.344982798530474
+  },
+  "latency_scope": "Query encoding, BM25 scoring, dense scoring, fusion, and candidate selection; cached indexing excluded.",
+  "model_id": "intfloat/multilingual-e5-large",
+  "peak_vram_mb": 2194.4169921875,
+  "query_encoding_seconds_total": 0.5551207999960752,
+  "revision": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3"
+}

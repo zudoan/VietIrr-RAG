@@ -1,0 +1,70 @@
+{
+  "candidate_test": {
+    "parsed": false,
+    "policy": "SEALED_NOT_PARSED; BYTE_HASH_ONLY",
+    "sha256_after": "a9b5f4375ae872778c26766ffd502e3f45c67ea27d9fd50f4050e51a36d3accf",
+    "sha256_before": "a9b5f4375ae872778c26766ffd502e3f45c67ea27d9fd50f4050e51a36d3accf",
+    "unchanged": true
+  },
+  "counts": {
+    "dev_qa": 93,
+    "multi_unique_gold_sets": 8,
+    "retrieval_multi_qa": 25,
+    "retrieval_units": 27045,
+    "table_units": 91,
+    "text_units": 26954,
+    "unique_gold_sets": 45
+  },
+  "legacy_baseline": {
+    "E0_C1": {
+      "all_r@20": 0.6236559139784946,
+      "candidate_coverage@100": 0.7741935483870968,
+      "multi_all_r@20": 0.6
+    },
+    "R1_FULL_RETRIEVAL_R0": {
+      "all_r@20": 0.6236559139784946,
+      "candidate_coverage@100": 0.7741935483870968,
+      "multi_all_r@20": 0.6
+    },
+    "note": "Legacy artifacts are recomputed for verification only; matching All R@20 does not imply identical preprocessing or ranking."
+  },
+  "mapping": {
+    "all_dev_gold_ids_exist": true,
+    "all_parent_pages_exist": true,
+    "dev_gold_page_mapping_valid": true,
+    "unique_evidence_ids": true
+  },
+  "matched_baseline_A0": {
+    "all_r@20": 0.6236559139784946,
+    "candidate_coverage@100": 0.7741935483870968,
+    "multi_all_r@20": 0.6
+  },
+  "matched_vs_legacy_distinguished": true,
+  "protected_hashes_after": {
+    "data/benchmark/all_qa.jsonl": "56858587453b15a095aa7b8b9390dbb1acfdab58b696bcd1bf65bfc6e4feec0d",
+    "data/benchmark/dev.jsonl": "cc460f860de59c00a961dc00dea56f204c66f270c7a48d2ee840cb73c302d30f",
+    "data/benchmark/train.jsonl": "f78ebfde31be02642cba6efca8f9f43089033cd25eb1ebb138444f55c87660d6",
+    "data/parsed/documents.jsonl": "820fe81784b0cf0ab304892b7bfd567aa51d55b2d9d9039c939396fa49ede894",
+    "data/parsed/pages.jsonl": "4b97a1380f7c5ef85f167b2410595ce0b94078b0f6e0f68c27efb3024662a558",
+    "data/parsed/regions.jsonl": "47a3b35ec6d0aff9d7bc5b3326af803de814a1106fdf313b97828728c947cba0",
+    "data/parsed/tables.jsonl": "a7f89f3d84030da88537f46bf87800b7b1a69f71f4e78760df2905f6f0044c0e",
+    "data/processed/evidence_units.jsonl": "123aaac55ba1d0b30c469087b29b5deeccf56e42ab498fc222538a19e8b524ba",
+    "outputs/B2_1/rankings/p0_pages_dev_top100.jsonl": "6e5524f4305ec1cd7ad870581c5328b4ceb748e4ba46401b461f837e5e35d7d0",
+    "outputs/C1/rankings/e0_g0_global_rrf_dev.jsonl": "1902b7730f4f261a0a16cd30c6d99c38ff055b779894fdf0faec1692a8c202ec",
+    "outputs/R1/rankings/full_retrieval_r0_dev.jsonl": "ccb1edb25671a48157c56bd6be2df7b35123d2339f56d872456d0ef17c50f258"
+  },
+  "protected_hashes_before": {
+    "data/benchmark/all_qa.jsonl": "56858587453b15a095aa7b8b9390dbb1acfdab58b696bcd1bf65bfc6e4feec0d",
+    "data/benchmark/dev.jsonl": "cc460f860de59c00a961dc00dea56f204c66f270c7a48d2ee840cb73c302d30f",
+    "data/benchmark/train.jsonl": "f78ebfde31be02642cba6efca8f9f43089033cd25eb1ebb138444f55c87660d6",
+    "data/parsed/documents.jsonl": "820fe81784b0cf0ab304892b7bfd567aa51d55b2d9d9039c939396fa49ede894",
+    "data/parsed/pages.jsonl": "4b97a1380f7c5ef85f167b2410595ce0b94078b0f6e0f68c27efb3024662a558",
+    "data/parsed/regions.jsonl": "47a3b35ec6d0aff9d7bc5b3326af803de814a1106fdf313b97828728c947cba0",
+    "data/parsed/tables.jsonl": "a7f89f3d84030da88537f46bf87800b7b1a69f71f4e78760df2905f6f0044c0e",
+    "data/processed/evidence_units.jsonl": "123aaac55ba1d0b30c469087b29b5deeccf56e42ab498fc222538a19e8b524ba",
+    "outputs/B2_1/rankings/p0_pages_dev_top100.jsonl": "6e5524f4305ec1cd7ad870581c5328b4ceb748e4ba46401b461f837e5e35d7d0",
+    "outputs/C1/rankings/e0_g0_global_rrf_dev.jsonl": "1902b7730f4f261a0a16cd30c6d99c38ff055b779894fdf0faec1692a8c202ec",
+    "outputs/R1/rankings/full_retrieval_r0_dev.jsonl": "ccb1edb25671a48157c56bd6be2df7b35123d2339f56d872456d0ef17c50f258"
+  },
+  "status": "PASS"
+}

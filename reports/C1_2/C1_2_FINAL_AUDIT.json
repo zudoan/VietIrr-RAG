@@ -1,0 +1,43 @@
+{
+  "candidate_test_sha256": "a9b5f4375ae872778c26766ffd502e3f45c67ea27d9fd50f4050e51a36d3accf",
+  "checks": {
+    "candidate_test_not_loaded": true,
+    "candidate_test_untouched": true,
+    "input_output_hashes_verified": true,
+    "metrics_independently_recomputable": true,
+    "missing_qa_derived_from_actual_g0": true,
+    "no_new_method_or_model_evaluated": true,
+    "review_queue_not_human_validated": true
+  },
+  "errors": [],
+  "independent_recomputation": {
+    "dev_qa": 93,
+    "metrics": {
+      "E0": {
+        "all_r@20": 0.6236559139784946,
+        "candidate_coverage@100": 0.7741935483870968,
+        "multi_all_r@20": 0.6
+      },
+      "E2": {
+        "all_r@20": 0.6451612903225806,
+        "candidate_coverage@100": 0.7741935483870968,
+        "multi_all_r@20": 0.44
+      },
+      "E4": {
+        "all_r@20": 0.6559139784946236,
+        "candidate_coverage@100": 0.7741935483870968,
+        "multi_all_r@20": 0.6
+      }
+    },
+    "missing_multi_qa": 8,
+    "multi_unique_gold_sets": 8,
+    "retrieval_multi_qa": 25,
+    "unique_affected_gold_sets": 4
+  },
+  "pytest": {
+    "passed": true,
+    "returncode": 0,
+    "summary": "69 passed in 7.82s"
+  },
+  "status": "PASS"
+}

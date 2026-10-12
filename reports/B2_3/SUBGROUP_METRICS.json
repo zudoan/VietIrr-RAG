@@ -1,0 +1,3324 @@
+{
+  "B2_2_corrected_from_existing_rankings": {
+    "P0_S0_B100": {
+      "CHALLENGE": {
+        "10": {
+          "all_recall": 0.36,
+          "any_recall": 0.96,
+          "average_gold_coverage": 0.66
+        },
+        "20": {
+          "all_recall": 0.44,
+          "any_recall": 0.96,
+          "average_gold_coverage": 0.7
+        },
+        "candidate_coverage": 0.44,
+        "mrr": 0.46840579710144925,
+        "ndcg@10": 0.4623357188653152,
+        "sample_count": 25
+      },
+      "CORE": {
+        "10": {
+          "all_recall": 0.5294117647058824,
+          "any_recall": 0.5294117647058824,
+          "average_gold_coverage": 0.5294117647058824
+        },
+        "20": {
+          "all_recall": 0.6470588235294118,
+          "any_recall": 0.6470588235294118,
+          "average_gold_coverage": 0.6470588235294118
+        },
+        "candidate_coverage": 0.7352941176470589,
+        "mrr": 0.23764211556268028,
+        "ndcg@10": 0.29668482272968466,
+        "sample_count": 68
+      },
+      "CROSS_DOCUMENT": {
+        "10": {
+          "all_recall": 0.3333333333333333,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.6666666666666666
+        },
+        "20": {
+          "all_recall": 0.3333333333333333,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.6666666666666666
+        },
+        "candidate_coverage": 0.3333333333333333,
+        "mrr": 0.4444444444444444,
+        "ndcg@10": 0.44811577780813444,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "10": {
+          "all_recall": 0.36363636363636365,
+          "any_recall": 0.9545454545454546,
+          "average_gold_coverage": 0.6590909090909091
+        },
+        "20": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 0.9545454545454546,
+          "average_gold_coverage": 0.7045454545454546
+        },
+        "candidate_coverage": 0.45454545454545453,
+        "mrr": 0.47167325428194995,
+        "ndcg@10": 0.46427480173674884,
+        "sample_count": 22
+      },
+      "MULTI": {
+        "10": {
+          "all_recall": 0.36,
+          "any_recall": 0.96,
+          "average_gold_coverage": 0.66
+        },
+        "20": {
+          "all_recall": 0.44,
+          "any_recall": 0.96,
+          "average_gold_coverage": 0.7
+        },
+        "candidate_coverage": 0.44,
+        "mrr": 0.46840579710144925,
+        "ndcg@10": 0.4623357188653152,
+        "sample_count": 25
+      },
+      "OVERALL": {
+        "10": {
+          "all_recall": 0.4838709677419355,
+          "any_recall": 0.6451612903225806,
+          "average_gold_coverage": 0.5645161290322581
+        },
+        "20": {
+          "all_recall": 0.5913978494623656,
+          "any_recall": 0.7311827956989247,
+          "average_gold_coverage": 0.6612903225806451
+        },
+        "candidate_coverage": 0.6559139784946236,
+        "mrr": 0.29967536328815586,
+        "ndcg@10": 0.34121463351883263,
+        "sample_count": 93
+      },
+      "SAME_PAGE": {
+        "10": {
+          "all_recall": 0.5294117647058824,
+          "any_recall": 0.5294117647058824,
+          "average_gold_coverage": 0.5294117647058824
+        },
+        "20": {
+          "all_recall": 0.6470588235294118,
+          "any_recall": 0.6470588235294118,
+          "average_gold_coverage": 0.6470588235294118
+        },
+        "candidate_coverage": 0.7352941176470589,
+        "mrr": 0.23764211556268028,
+        "ndcg@10": 0.29668482272968466,
+        "sample_count": 68
+      },
+      "SINGLE": {
+        "10": {
+          "all_recall": 0.5294117647058824,
+          "any_recall": 0.5294117647058824,
+          "average_gold_coverage": 0.5294117647058824
+        },
+        "20": {
+          "all_recall": 0.6470588235294118,
+          "any_recall": 0.6470588235294118,
+          "average_gold_coverage": 0.6470588235294118
+        },
+        "candidate_coverage": 0.7352941176470589,
+        "mrr": 0.23764211556268028,
+        "ndcg@10": 0.29668482272968466,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "10": {
+          "all_recall": 0.717948717948718,
+          "any_recall": 0.717948717948718,
+          "average_gold_coverage": 0.717948717948718
+        },
+        "20": {
+          "all_recall": 0.8717948717948718,
+          "any_recall": 0.8717948717948718,
+          "average_gold_coverage": 0.8717948717948718
+        },
+        "candidate_coverage": 0.9230769230769231,
+        "mrr": 0.3307888081915541,
+        "ndcg@10": 0.40928458808544704,
+        "sample_count": 39
+      },
+      "TABLE_TABLE": {
+        "10": {
+          "all_recall": 0.3333333333333333,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.6666666666666666
+        },
+        "20": {
+          "all_recall": 0.3333333333333333,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.6666666666666666
+        },
+        "candidate_coverage": 0.3333333333333333,
+        "mrr": 0.4444444444444444,
+        "ndcg@10": 0.44811577780813444,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "10": {
+          "all_recall": 0.27586206896551724,
+          "any_recall": 0.27586206896551724,
+          "average_gold_coverage": 0.27586206896551724
+        },
+        "20": {
+          "all_recall": 0.3448275862068966,
+          "any_recall": 0.3448275862068966,
+          "average_gold_coverage": 0.3448275862068966
+        },
+        "candidate_coverage": 0.4827586206896552,
+        "mrr": 0.11237587375143596,
+        "ndcg@10": 0.14525755207883168,
+        "sample_count": 29
+      },
+      "TEXT_TABLE": {
+        "10": {
+          "all_recall": 0.36363636363636365,
+          "any_recall": 0.9545454545454546,
+          "average_gold_coverage": 0.6590909090909091
+        },
+        "20": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 0.9545454545454546,
+          "average_gold_coverage": 0.7045454545454546
+        },
+        "candidate_coverage": 0.45454545454545453,
+        "mrr": 0.47167325428194995,
+        "ndcg@10": 0.46427480173674884,
+        "sample_count": 22
+      }
+    },
+    "P0_S0_B50": {
+      "CHALLENGE": {
+        "10": {
+          "all_recall": 0.36,
+          "any_recall": 0.96,
+          "average_gold_coverage": 0.66
+        },
+        "20": {
+          "all_recall": 0.44,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.72
+        },
+        "candidate_coverage": 0.44,
+        "mrr": 0.46888888888888886,
+        "ndcg@10": 0.4623357188653152,
+        "sample_count": 25
+      },
+      "CORE": {
+        "10": {
+          "all_recall": 0.5441176470588235,
+          "any_recall": 0.5441176470588235,
+          "average_gold_coverage": 0.5441176470588235
+        },
+        "20": {
+          "all_recall": 0.6617647058823529,
+          "any_recall": 0.6617647058823529,
+          "average_gold_coverage": 0.6617647058823529
+        },
+        "candidate_coverage": 0.7205882352941176,
+        "mrr": 0.24018863660344683,
+        "ndcg@10": 0.302480817593587,
+        "sample_count": 68
+      },
+      "CROSS_DOCUMENT": {
+        "10": {
+          "all_recall": 0.3333333333333333,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.6666666666666666
+        },
+        "20": {
+          "all_recall": 0.3333333333333333,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.6666666666666666
+        },
+        "candidate_coverage": 0.3333333333333333,
+        "mrr": 0.4444444444444444,
+        "ndcg@10": 0.44811577780813444,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "10": {
+          "all_recall": 0.36363636363636365,
+          "any_recall": 0.9545454545454546,
+          "average_gold_coverage": 0.6590909090909091
+        },
+        "20": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7272727272727273
+        },
+        "candidate_coverage": 0.45454545454545453,
+        "mrr": 0.47222222222222227,
+        "ndcg@10": 0.46427480173674884,
+        "sample_count": 22
+      },
+      "MULTI": {
+        "10": {
+          "all_recall": 0.36,
+          "any_recall": 0.96,
+          "average_gold_coverage": 0.66
+        },
+        "20": {
+          "all_recall": 0.44,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.72
+        },
+        "candidate_coverage": 0.44,
+        "mrr": 0.46888888888888886,
+        "ndcg@10": 0.4623357188653152,
+        "sample_count": 25
+      },
+      "OVERALL": {
+        "10": {
+          "all_recall": 0.4946236559139785,
+          "any_recall": 0.6559139784946236,
+          "average_gold_coverage": 0.5752688172043011
+        },
+        "20": {
+          "all_recall": 0.6021505376344086,
+          "any_recall": 0.7526881720430108,
+          "average_gold_coverage": 0.6774193548387096
+        },
+        "candidate_coverage": 0.6451612903225806,
+        "mrr": 0.30166719904577,
+        "ndcg@10": 0.3454525652472774,
+        "sample_count": 93
+      },
+      "SAME_PAGE": {
+        "10": {
+          "all_recall": 0.5441176470588235,
+          "any_recall": 0.5441176470588235,
+          "average_gold_coverage": 0.5441176470588235
+        },
+        "20": {
+          "all_recall": 0.6617647058823529,
+          "any_recall": 0.6617647058823529,
+          "average_gold_coverage": 0.6617647058823529
+        },
+        "candidate_coverage": 0.7205882352941176,
+        "mrr": 0.24018863660344683,
+        "ndcg@10": 0.302480817593587,
+        "sample_count": 68
+      },
+      "SINGLE": {
+        "10": {
+          "all_recall": 0.5441176470588235,
+          "any_recall": 0.5441176470588235,
+          "average_gold_coverage": 0.5441176470588235
+        },
+        "20": {
+          "all_recall": 0.6617647058823529,
+          "any_recall": 0.6617647058823529,
+          "average_gold_coverage": 0.6617647058823529
+        },
+        "candidate_coverage": 0.7205882352941176,
+        "mrr": 0.24018863660344683,
+        "ndcg@10": 0.302480817593587,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "10": {
+          "all_recall": 0.7435897435897436,
+          "any_recall": 0.7435897435897436,
+          "average_gold_coverage": 0.7435897435897436
+        },
+        "20": {
+          "all_recall": 0.9230769230769231,
+          "any_recall": 0.9230769230769231,
+          "average_gold_coverage": 0.9230769230769231
+        },
+        "candidate_coverage": 0.9230769230769231,
+        "mrr": 0.3357769592081333,
+        "ndcg@10": 0.41939042528404613,
+        "sample_count": 39
+      },
+      "TABLE_TABLE": {
+        "10": {
+          "all_recall": 0.3333333333333333,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.6666666666666666
+        },
+        "20": {
+          "all_recall": 0.3333333333333333,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.6666666666666666
+        },
+        "candidate_coverage": 0.3333333333333333,
+        "mrr": 0.4444444444444444,
+        "ndcg@10": 0.44811577780813444,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "10": {
+          "all_recall": 0.27586206896551724,
+          "any_recall": 0.27586206896551724,
+          "average_gold_coverage": 0.27586206896551724
+        },
+        "20": {
+          "all_recall": 0.3103448275862069,
+          "any_recall": 0.3103448275862069,
+          "average_gold_coverage": 0.3103448275862069
+        },
+        "candidate_coverage": 0.4482758620689655,
+        "mrr": 0.11163882344542014,
+        "ndcg@10": 0.14525755207883168,
+        "sample_count": 29
+      },
+      "TEXT_TABLE": {
+        "10": {
+          "all_recall": 0.36363636363636365,
+          "any_recall": 0.9545454545454546,
+          "average_gold_coverage": 0.6590909090909091
+        },
+        "20": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7272727272727273
+        },
+        "candidate_coverage": 0.45454545454545453,
+        "mrr": 0.47222222222222227,
+        "ndcg@10": 0.46427480173674884,
+        "sample_count": 22
+      }
+    },
+    "P0_S1_B100": {
+      "CHALLENGE": {
+        "10": {
+          "all_recall": 0.48,
+          "any_recall": 0.92,
+          "average_gold_coverage": 0.7
+        },
+        "20": {
+          "all_recall": 0.56,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.78
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.4860808080808081,
+        "ndcg@10": 0.48430865210260593,
+        "sample_count": 25
+      },
+      "CORE": {
+        "10": {
+          "all_recall": 0.4411764705882353,
+          "any_recall": 0.4411764705882353,
+          "average_gold_coverage": 0.4411764705882353
+        },
+        "20": {
+          "all_recall": 0.6323529411764706,
+          "any_recall": 0.6323529411764706,
+          "average_gold_coverage": 0.6323529411764706
+        },
+        "candidate_coverage": 0.8088235294117647,
+        "mrr": 0.22993031276991474,
+        "ndcg@10": 0.2656429543530808,
+        "sample_count": 68
+      },
+      "CROSS_DOCUMENT": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "candidate_coverage": 0.6666666666666666,
+        "mrr": 0.3611111111111111,
+        "ndcg@10": 0.48625345384391633,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "10": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 0.9090909090909091,
+          "average_gold_coverage": 0.6818181818181818
+        },
+        "20": {
+          "all_recall": 0.5454545454545454,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7727272727272727
+        },
+        "candidate_coverage": 0.6818181818181818,
+        "mrr": 0.5031221303948576,
+        "ndcg@10": 0.4840434518651545,
+        "sample_count": 22
+      },
+      "MULTI": {
+        "10": {
+          "all_recall": 0.48,
+          "any_recall": 0.92,
+          "average_gold_coverage": 0.7
+        },
+        "20": {
+          "all_recall": 0.56,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.78
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.4860808080808081,
+        "ndcg@10": 0.48430865210260593,
+        "sample_count": 25
+      },
+      "OVERALL": {
+        "10": {
+          "all_recall": 0.45161290322580644,
+          "any_recall": 0.5698924731182796,
+          "average_gold_coverage": 0.510752688172043
+        },
+        "20": {
+          "all_recall": 0.6129032258064516,
+          "any_recall": 0.7311827956989247,
+          "average_gold_coverage": 0.6720430107526881
+        },
+        "candidate_coverage": 0.7741935483870968,
+        "mrr": 0.29878797279972474,
+        "ndcg@10": 0.3244240558986521,
+        "sample_count": 93
+      },
+      "SAME_PAGE": {
+        "10": {
+          "all_recall": 0.4411764705882353,
+          "any_recall": 0.4411764705882353,
+          "average_gold_coverage": 0.4411764705882353
+        },
+        "20": {
+          "all_recall": 0.6323529411764706,
+          "any_recall": 0.6323529411764706,
+          "average_gold_coverage": 0.6323529411764706
+        },
+        "candidate_coverage": 0.8088235294117647,
+        "mrr": 0.22993031276991474,
+        "ndcg@10": 0.2656429543530808,
+        "sample_count": 68
+      },
+      "SINGLE": {
+        "10": {
+          "all_recall": 0.4411764705882353,
+          "any_recall": 0.4411764705882353,
+          "average_gold_coverage": 0.4411764705882353
+        },
+        "20": {
+          "all_recall": 0.6323529411764706,
+          "any_recall": 0.6323529411764706,
+          "average_gold_coverage": 0.6323529411764706
+        },
+        "candidate_coverage": 0.8088235294117647,
+        "mrr": 0.22993031276991474,
+        "ndcg@10": 0.2656429543530808,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "10": {
+          "all_recall": 0.5897435897435898,
+          "any_recall": 0.5897435897435898,
+          "average_gold_coverage": 0.5897435897435898
+        },
+        "20": {
+          "all_recall": 0.8717948717948718,
+          "any_recall": 0.8717948717948718,
+          "average_gold_coverage": 0.8717948717948718
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3127408868051962,
+        "ndcg@10": 0.3585726159886832,
+        "sample_count": 39
+      },
+      "TABLE_TABLE": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "candidate_coverage": 0.6666666666666666,
+        "mrr": 0.3611111111111111,
+        "ndcg@10": 0.48625345384391633,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "10": {
+          "all_recall": 0.2413793103448276,
+          "any_recall": 0.2413793103448276,
+          "average_gold_coverage": 0.2413793103448276
+        },
+        "20": {
+          "all_recall": 0.3103448275862069,
+          "any_recall": 0.3103448275862069,
+          "average_gold_coverage": 0.3103448275862069
+        },
+        "candidate_coverage": 0.5517241379310345,
+        "mrr": 0.11856436837763976,
+        "ndcg@10": 0.14066858180865,
+        "sample_count": 29
+      },
+      "TEXT_TABLE": {
+        "10": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 0.9090909090909091,
+          "average_gold_coverage": 0.6818181818181818
+        },
+        "20": {
+          "all_recall": 0.5454545454545454,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7727272727272727
+        },
+        "candidate_coverage": 0.6818181818181818,
+        "mrr": 0.5031221303948576,
+        "ndcg@10": 0.4840434518651545,
+        "sample_count": 22
+      }
+    },
+    "P0_S1_B50": {
+      "CHALLENGE": {
+        "10": {
+          "all_recall": 0.48,
+          "any_recall": 0.92,
+          "average_gold_coverage": 0.7
+        },
+        "20": {
+          "all_recall": 0.68,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.84
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.4855213675213675,
+        "ndcg@10": 0.4839546238290978,
+        "sample_count": 25
+      },
+      "CORE": {
+        "10": {
+          "all_recall": 0.4411764705882353,
+          "any_recall": 0.4411764705882353,
+          "average_gold_coverage": 0.4411764705882353
+        },
+        "20": {
+          "all_recall": 0.6029411764705882,
+          "any_recall": 0.6029411764705882,
+          "average_gold_coverage": 0.6029411764705882
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.2311835350083302,
+        "ndcg@10": 0.2675042061456227,
+        "sample_count": 68
+      },
+      "CROSS_DOCUMENT": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "candidate_coverage": 0.6666666666666666,
+        "mrr": 0.3611111111111111,
+        "ndcg@10": 0.48625345384391633,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "10": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 0.9090909090909091,
+          "average_gold_coverage": 0.6818181818181818
+        },
+        "20": {
+          "all_recall": 0.6818181818181818,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8409090909090909
+        },
+        "candidate_coverage": 0.6818181818181818,
+        "mrr": 0.5024864024864024,
+        "ndcg@10": 0.4836411470088953,
+        "sample_count": 22
+      },
+      "MULTI": {
+        "10": {
+          "all_recall": 0.48,
+          "any_recall": 0.92,
+          "average_gold_coverage": 0.7
+        },
+        "20": {
+          "all_recall": 0.68,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.84
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.4855213675213675,
+        "ndcg@10": 0.4839546238290978,
+        "sample_count": 25
+      },
+      "OVERALL": {
+        "10": {
+          "all_recall": 0.45161290322580644,
+          "any_recall": 0.5698924731182796,
+          "average_gold_coverage": 0.510752688172043
+        },
+        "20": {
+          "all_recall": 0.6236559139784946,
+          "any_recall": 0.7096774193548387,
+          "average_gold_coverage": 0.6666666666666666
+        },
+        "candidate_coverage": 0.7526881720430108,
+        "mrr": 0.29955392009248005,
+        "ndcg@10": 0.32568980229709454,
+        "sample_count": 93
+      },
+      "SAME_PAGE": {
+        "10": {
+          "all_recall": 0.4411764705882353,
+          "any_recall": 0.4411764705882353,
+          "average_gold_coverage": 0.4411764705882353
+        },
+        "20": {
+          "all_recall": 0.6029411764705882,
+          "any_recall": 0.6029411764705882,
+          "average_gold_coverage": 0.6029411764705882
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.2311835350083302,
+        "ndcg@10": 0.2675042061456227,
+        "sample_count": 68
+      },
+      "SINGLE": {
+        "10": {
+          "all_recall": 0.4411764705882353,
+          "any_recall": 0.4411764705882353,
+          "average_gold_coverage": 0.4411764705882353
+        },
+        "20": {
+          "all_recall": 0.6029411764705882,
+          "any_recall": 0.6029411764705882,
+          "average_gold_coverage": 0.6029411764705882
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.2311835350083302,
+        "ndcg@10": 0.2675042061456227,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "10": {
+          "all_recall": 0.5897435897435898,
+          "any_recall": 0.5897435897435898,
+          "average_gold_coverage": 0.5897435897435898
+        },
+        "20": {
+          "all_recall": 0.8205128205128205,
+          "any_recall": 0.8205128205128205,
+          "average_gold_coverage": 0.8205128205128205
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.31572263110191195,
+        "ndcg@10": 0.36181787552439737,
+        "sample_count": 39
+      },
+      "TABLE_TABLE": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "candidate_coverage": 0.6666666666666666,
+        "mrr": 0.3611111111111111,
+        "ndcg@10": 0.48625345384391633,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "10": {
+          "all_recall": 0.2413793103448276,
+          "any_recall": 0.2413793103448276,
+          "average_gold_coverage": 0.2413793103448276
+        },
+        "20": {
+          "all_recall": 0.3103448275862069,
+          "any_recall": 0.3103448275862069,
+          "average_gold_coverage": 0.3103448275862069
+        },
+        "candidate_coverage": 0.4827586206896552,
+        "mrr": 0.1174930264686857,
+        "ndcg@10": 0.14066858180865,
+        "sample_count": 29
+      },
+      "TEXT_TABLE": {
+        "10": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 0.9090909090909091,
+          "average_gold_coverage": 0.6818181818181818
+        },
+        "20": {
+          "all_recall": 0.6818181818181818,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8409090909090909
+        },
+        "candidate_coverage": 0.6818181818181818,
+        "mrr": 0.5024864024864024,
+        "ndcg@10": 0.4836411470088953,
+        "sample_count": 22
+      }
+    },
+    "P0_S2_B100": {
+      "CHALLENGE": {
+        "10": {
+          "all_recall": 0.36,
+          "any_recall": 0.84,
+          "average_gold_coverage": 0.6
+        },
+        "20": {
+          "all_recall": 0.48,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.74
+        },
+        "candidate_coverage": 0.76,
+        "mrr": 0.3764876585402901,
+        "ndcg@10": 0.3891256728317497,
+        "sample_count": 25
+      },
+      "CORE": {
+        "10": {
+          "all_recall": 0.39705882352941174,
+          "any_recall": 0.39705882352941174,
+          "average_gold_coverage": 0.39705882352941174
+        },
+        "20": {
+          "all_recall": 0.5441176470588235,
+          "any_recall": 0.5441176470588235,
+          "average_gold_coverage": 0.5441176470588235
+        },
+        "candidate_coverage": 0.7941176470588235,
+        "mrr": 0.2165704322301702,
+        "ndcg@10": 0.24631929134131755,
+        "sample_count": 68
+      },
+      "CROSS_DOCUMENT": {
+        "10": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "20": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.5301129875204567,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "10": {
+          "all_recall": 0.2727272727272727,
+          "any_recall": 0.8181818181818182,
+          "average_gold_coverage": 0.5454545454545454
+        },
+        "20": {
+          "all_recall": 0.4090909090909091,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7045454545454546
+        },
+        "candidate_coverage": 0.7272727272727273,
+        "mrr": 0.3823723392503297,
+        "ndcg@10": 0.3699001299196532,
+        "sample_count": 22
+      },
+      "MULTI": {
+        "10": {
+          "all_recall": 0.36,
+          "any_recall": 0.84,
+          "average_gold_coverage": 0.6
+        },
+        "20": {
+          "all_recall": 0.48,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.74
+        },
+        "candidate_coverage": 0.76,
+        "mrr": 0.3764876585402901,
+        "ndcg@10": 0.3891256728317497,
+        "sample_count": 25
+      },
+      "OVERALL": {
+        "10": {
+          "all_recall": 0.3870967741935484,
+          "any_recall": 0.5161290322580645,
+          "average_gold_coverage": 0.45161290322580644
+        },
+        "20": {
+          "all_recall": 0.5268817204301075,
+          "any_recall": 0.6666666666666666,
+          "average_gold_coverage": 0.5967741935483871
+        },
+        "candidate_coverage": 0.7849462365591398,
+        "mrr": 0.25955893392643903,
+        "ndcg@10": 0.2847081035699283,
+        "sample_count": 93
+      },
+      "SAME_PAGE": {
+        "10": {
+          "all_recall": 0.39705882352941174,
+          "any_recall": 0.39705882352941174,
+          "average_gold_coverage": 0.39705882352941174
+        },
+        "20": {
+          "all_recall": 0.5441176470588235,
+          "any_recall": 0.5441176470588235,
+          "average_gold_coverage": 0.5441176470588235
+        },
+        "candidate_coverage": 0.7941176470588235,
+        "mrr": 0.2165704322301702,
+        "ndcg@10": 0.24631929134131755,
+        "sample_count": 68
+      },
+      "SINGLE": {
+        "10": {
+          "all_recall": 0.39705882352941174,
+          "any_recall": 0.39705882352941174,
+          "average_gold_coverage": 0.39705882352941174
+        },
+        "20": {
+          "all_recall": 0.5441176470588235,
+          "any_recall": 0.5441176470588235,
+          "average_gold_coverage": 0.5441176470588235
+        },
+        "candidate_coverage": 0.7941176470588235,
+        "mrr": 0.2165704322301702,
+        "ndcg@10": 0.24631929134131755,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "10": {
+          "all_recall": 0.5128205128205128,
+          "any_recall": 0.5128205128205128,
+          "average_gold_coverage": 0.5128205128205128
+        },
+        "20": {
+          "all_recall": 0.717948717948718,
+          "any_recall": 0.717948717948718,
+          "average_gold_coverage": 0.717948717948718
+        },
+        "candidate_coverage": 0.9743589743589743,
+        "mrr": 0.31032086406552967,
+        "ndcg@10": 0.3418696221654121,
+        "sample_count": 39
+      },
+      "TABLE_TABLE": {
+        "10": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "20": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.5301129875204567,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "10": {
+          "all_recall": 0.2413793103448276,
+          "any_recall": 0.2413793103448276,
+          "average_gold_coverage": 0.2413793103448276
+        },
+        "20": {
+          "all_recall": 0.3103448275862069,
+          "any_recall": 0.3103448275862069,
+          "average_gold_coverage": 0.3103448275862069
+        },
+        "candidate_coverage": 0.5517241379310345,
+        "mrr": 0.09049226527916956,
+        "ndcg@10": 0.11782057057788003,
+        "sample_count": 29
+      },
+      "TEXT_TABLE": {
+        "10": {
+          "all_recall": 0.2727272727272727,
+          "any_recall": 0.8181818181818182,
+          "average_gold_coverage": 0.5454545454545454
+        },
+        "20": {
+          "all_recall": 0.4090909090909091,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7045454545454546
+        },
+        "candidate_coverage": 0.7272727272727273,
+        "mrr": 0.3823723392503297,
+        "ndcg@10": 0.3699001299196532,
+        "sample_count": 22
+      }
+    },
+    "P0_S2_B50": {
+      "CHALLENGE": {
+        "10": {
+          "all_recall": 0.4,
+          "any_recall": 0.84,
+          "average_gold_coverage": 0.62
+        },
+        "20": {
+          "all_recall": 0.48,
+          "any_recall": 0.96,
+          "average_gold_coverage": 0.72
+        },
+        "candidate_coverage": 0.6,
+        "mrr": 0.3596148459383754,
+        "ndcg@10": 0.3860493492966932,
+        "sample_count": 25
+      },
+      "CORE": {
+        "10": {
+          "all_recall": 0.4264705882352941,
+          "any_recall": 0.4264705882352941,
+          "average_gold_coverage": 0.4264705882352941
+        },
+        "20": {
+          "all_recall": 0.5588235294117647,
+          "any_recall": 0.5588235294117647,
+          "average_gold_coverage": 0.5588235294117647
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.21922039885034342,
+        "ndcg@10": 0.25510490652009854,
+        "sample_count": 68
+      },
+      "CROSS_DOCUMENT": {
+        "10": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "20": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.49927930746548493,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "10": {
+          "all_recall": 0.3181818181818182,
+          "any_recall": 0.8181818181818182,
+          "average_gold_coverage": 0.5681818181818182
+        },
+        "20": {
+          "all_recall": 0.4090909090909091,
+          "any_recall": 0.9545454545454546,
+          "average_gold_coverage": 0.6818181818181818
+        },
+        "candidate_coverage": 0.5454545454545454,
+        "mrr": 0.36319868856633564,
+        "ndcg@10": 0.37060890045549433,
+        "sample_count": 22
+      },
+      "MULTI": {
+        "10": {
+          "all_recall": 0.4,
+          "any_recall": 0.84,
+          "average_gold_coverage": 0.62
+        },
+        "20": {
+          "all_recall": 0.48,
+          "any_recall": 0.96,
+          "average_gold_coverage": 0.72
+        },
+        "candidate_coverage": 0.6,
+        "mrr": 0.3596148459383754,
+        "ndcg@10": 0.3860493492966932,
+        "sample_count": 25
+      },
+      "OVERALL": {
+        "10": {
+          "all_recall": 0.41935483870967744,
+          "any_recall": 0.5376344086021505,
+          "average_gold_coverage": 0.478494623655914
+        },
+        "20": {
+          "all_recall": 0.5376344086021505,
+          "any_recall": 0.6666666666666666,
+          "average_gold_coverage": 0.6021505376344086
+        },
+        "candidate_coverage": 0.7311827956989247,
+        "mrr": 0.25696084161594346,
+        "ndcg@10": 0.2903050255460648,
+        "sample_count": 93
+      },
+      "SAME_PAGE": {
+        "10": {
+          "all_recall": 0.4264705882352941,
+          "any_recall": 0.4264705882352941,
+          "average_gold_coverage": 0.4264705882352941
+        },
+        "20": {
+          "all_recall": 0.5588235294117647,
+          "any_recall": 0.5588235294117647,
+          "average_gold_coverage": 0.5588235294117647
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.21922039885034342,
+        "ndcg@10": 0.25510490652009854,
+        "sample_count": 68
+      },
+      "SINGLE": {
+        "10": {
+          "all_recall": 0.4264705882352941,
+          "any_recall": 0.4264705882352941,
+          "average_gold_coverage": 0.4264705882352941
+        },
+        "20": {
+          "all_recall": 0.5588235294117647,
+          "any_recall": 0.5588235294117647,
+          "average_gold_coverage": 0.5588235294117647
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.21922039885034342,
+        "ndcg@10": 0.25510490652009854,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "10": {
+          "all_recall": 0.5384615384615384,
+          "any_recall": 0.5384615384615384,
+          "average_gold_coverage": 0.5384615384615384
+        },
+        "20": {
+          "all_recall": 0.7435897435897436,
+          "any_recall": 0.7435897435897436,
+          "average_gold_coverage": 0.7435897435897436
+        },
+        "candidate_coverage": 0.9743589743589743,
+        "mrr": 0.31503344312737386,
+        "ndcg@10": 0.35056199719017467,
+        "sample_count": 39
+      },
+      "TABLE_TABLE": {
+        "10": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "20": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.49927930746548493,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "10": {
+          "all_recall": 0.27586206896551724,
+          "any_recall": 0.27586206896551724,
+          "average_gold_coverage": 0.27586206896551724
+        },
+        "20": {
+          "all_recall": 0.3103448275862069,
+          "any_recall": 0.3103448275862069,
+          "average_gold_coverage": 0.3103448275862069
+        },
+        "candidate_coverage": 0.5172413793103449,
+        "mrr": 0.09036837378813009,
+        "ndcg@10": 0.12673157768792723,
+        "sample_count": 29
+      },
+      "TEXT_TABLE": {
+        "10": {
+          "all_recall": 0.3181818181818182,
+          "any_recall": 0.8181818181818182,
+          "average_gold_coverage": 0.5681818181818182
+        },
+        "20": {
+          "all_recall": 0.4090909090909091,
+          "any_recall": 0.9545454545454546,
+          "average_gold_coverage": 0.6818181818181818
+        },
+        "candidate_coverage": 0.5454545454545454,
+        "mrr": 0.36319868856633564,
+        "ndcg@10": 0.37060890045549433,
+        "sample_count": 22
+      }
+    },
+    "P2_S0_B100": {
+      "CHALLENGE": {
+        "10": {
+          "all_recall": 0.44,
+          "any_recall": 0.96,
+          "average_gold_coverage": 0.7
+        },
+        "20": {
+          "all_recall": 0.6,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8
+        },
+        "candidate_coverage": 0.6,
+        "mrr": 0.4682063492063492,
+        "ndcg@10": 0.4748000014768985,
+        "sample_count": 25
+      },
+      "CORE": {
+        "10": {
+          "all_recall": 0.5147058823529411,
+          "any_recall": 0.5147058823529411,
+          "average_gold_coverage": 0.5147058823529411
+        },
+        "20": {
+          "all_recall": 0.6176470588235294,
+          "any_recall": 0.6176470588235294,
+          "average_gold_coverage": 0.6176470588235294
+        },
+        "candidate_coverage": 0.7352941176470589,
+        "mrr": 0.22643313179150523,
+        "ndcg@10": 0.28498288275149974,
+        "sample_count": 68
+      },
+      "CROSS_DOCUMENT": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.38888888888888884,
+        "ndcg@10": 0.4914651418461975,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "10": {
+          "all_recall": 0.4090909090909091,
+          "any_recall": 0.9545454545454546,
+          "average_gold_coverage": 0.6818181818181818
+        },
+        "20": {
+          "all_recall": 0.5454545454545454,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7727272727272727
+        },
+        "candidate_coverage": 0.5454545454545454,
+        "mrr": 0.4790223665223665,
+        "ndcg@10": 0.47252748233563047,
+        "sample_count": 22
+      },
+      "MULTI": {
+        "10": {
+          "all_recall": 0.44,
+          "any_recall": 0.96,
+          "average_gold_coverage": 0.7
+        },
+        "20": {
+          "all_recall": 0.6,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8
+        },
+        "candidate_coverage": 0.6,
+        "mrr": 0.4682063492063492,
+        "ndcg@10": 0.4748000014768985,
+        "sample_count": 25
+      },
+      "OVERALL": {
+        "10": {
+          "all_recall": 0.4946236559139785,
+          "any_recall": 0.6344086021505376,
+          "average_gold_coverage": 0.5645161290322581
+        },
+        "20": {
+          "all_recall": 0.6129032258064516,
+          "any_recall": 0.7204301075268817,
+          "average_gold_coverage": 0.6666666666666666
+        },
+        "candidate_coverage": 0.6989247311827957,
+        "mrr": 0.29142593217183965,
+        "ndcg@10": 0.3360089899357467,
+        "sample_count": 93
+      },
+      "SAME_PAGE": {
+        "10": {
+          "all_recall": 0.5147058823529411,
+          "any_recall": 0.5147058823529411,
+          "average_gold_coverage": 0.5147058823529411
+        },
+        "20": {
+          "all_recall": 0.6176470588235294,
+          "any_recall": 0.6176470588235294,
+          "average_gold_coverage": 0.6176470588235294
+        },
+        "candidate_coverage": 0.7352941176470589,
+        "mrr": 0.22643313179150523,
+        "ndcg@10": 0.28498288275149974,
+        "sample_count": 68
+      },
+      "SINGLE": {
+        "10": {
+          "all_recall": 0.5147058823529411,
+          "any_recall": 0.5147058823529411,
+          "average_gold_coverage": 0.5147058823529411
+        },
+        "20": {
+          "all_recall": 0.6176470588235294,
+          "any_recall": 0.6176470588235294,
+          "average_gold_coverage": 0.6176470588235294
+        },
+        "candidate_coverage": 0.7352941176470589,
+        "mrr": 0.22643313179150523,
+        "ndcg@10": 0.28498288275149974,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "10": {
+          "all_recall": 0.717948717948718,
+          "any_recall": 0.717948717948718,
+          "average_gold_coverage": 0.717948717948718
+        },
+        "20": {
+          "all_recall": 0.8205128205128205,
+          "any_recall": 0.8205128205128205,
+          "average_gold_coverage": 0.8205128205128205
+        },
+        "candidate_coverage": 0.9487179487179487,
+        "mrr": 0.31759438679406116,
+        "ndcg@10": 0.400123470288233,
+        "sample_count": 39
+      },
+      "TABLE_TABLE": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.38888888888888884,
+        "ndcg@10": 0.4914651418461975,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "10": {
+          "all_recall": 0.2413793103448276,
+          "any_recall": 0.2413793103448276,
+          "average_gold_coverage": 0.2413793103448276
+        },
+        "20": {
+          "all_recall": 0.3448275862068966,
+          "any_recall": 0.3448275862068966,
+          "average_gold_coverage": 0.3448275862068966
+        },
+        "candidate_coverage": 0.4482758620689655,
+        "mrr": 0.10383696127082657,
+        "ndcg@10": 0.13013864434003086,
+        "sample_count": 29
+      },
+      "TEXT_TABLE": {
+        "10": {
+          "all_recall": 0.4090909090909091,
+          "any_recall": 0.9545454545454546,
+          "average_gold_coverage": 0.6818181818181818
+        },
+        "20": {
+          "all_recall": 0.5454545454545454,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7727272727272727
+        },
+        "candidate_coverage": 0.5454545454545454,
+        "mrr": 0.4790223665223665,
+        "ndcg@10": 0.47252748233563047,
+        "sample_count": 22
+      }
+    },
+    "P2_S0_B50": {
+      "CHALLENGE": {
+        "10": {
+          "all_recall": 0.44,
+          "any_recall": 0.96,
+          "average_gold_coverage": 0.7
+        },
+        "20": {
+          "all_recall": 0.6,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8
+        },
+        "candidate_coverage": 0.6,
+        "mrr": 0.4682063492063492,
+        "ndcg@10": 0.4748000014768985,
+        "sample_count": 25
+      },
+      "CORE": {
+        "10": {
+          "all_recall": 0.5,
+          "any_recall": 0.5,
+          "average_gold_coverage": 0.5
+        },
+        "20": {
+          "all_recall": 0.6176470588235294,
+          "any_recall": 0.6176470588235294,
+          "average_gold_coverage": 0.6176470588235294
+        },
+        "candidate_coverage": 0.7205882352941176,
+        "mrr": 0.22902720563922724,
+        "ndcg@10": 0.28300695144271565,
+        "sample_count": 68
+      },
+      "CROSS_DOCUMENT": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.38888888888888884,
+        "ndcg@10": 0.4914651418461975,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "10": {
+          "all_recall": 0.4090909090909091,
+          "any_recall": 0.9545454545454546,
+          "average_gold_coverage": 0.6818181818181818
+        },
+        "20": {
+          "all_recall": 0.5454545454545454,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7727272727272727
+        },
+        "candidate_coverage": 0.5454545454545454,
+        "mrr": 0.4790223665223665,
+        "ndcg@10": 0.47252748233563047,
+        "sample_count": 22
+      },
+      "MULTI": {
+        "10": {
+          "all_recall": 0.44,
+          "any_recall": 0.96,
+          "average_gold_coverage": 0.7
+        },
+        "20": {
+          "all_recall": 0.6,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8
+        },
+        "candidate_coverage": 0.6,
+        "mrr": 0.4682063492063492,
+        "ndcg@10": 0.4748000014768985,
+        "sample_count": 25
+      },
+      "OVERALL": {
+        "10": {
+          "all_recall": 0.4838709677419355,
+          "any_recall": 0.6236559139784946,
+          "average_gold_coverage": 0.553763440860215
+        },
+        "20": {
+          "all_recall": 0.6129032258064516,
+          "any_recall": 0.7204301075268817,
+          "average_gold_coverage": 0.6666666666666666
+        },
+        "candidate_coverage": 0.6881720430107527,
+        "mrr": 0.29332267434006654,
+        "ndcg@10": 0.33456422295728094,
+        "sample_count": 93
+      },
+      "SAME_PAGE": {
+        "10": {
+          "all_recall": 0.5,
+          "any_recall": 0.5,
+          "average_gold_coverage": 0.5
+        },
+        "20": {
+          "all_recall": 0.6176470588235294,
+          "any_recall": 0.6176470588235294,
+          "average_gold_coverage": 0.6176470588235294
+        },
+        "candidate_coverage": 0.7205882352941176,
+        "mrr": 0.22902720563922724,
+        "ndcg@10": 0.28300695144271565,
+        "sample_count": 68
+      },
+      "SINGLE": {
+        "10": {
+          "all_recall": 0.5,
+          "any_recall": 0.5,
+          "average_gold_coverage": 0.5
+        },
+        "20": {
+          "all_recall": 0.6176470588235294,
+          "any_recall": 0.6176470588235294,
+          "average_gold_coverage": 0.6176470588235294
+        },
+        "candidate_coverage": 0.7205882352941176,
+        "mrr": 0.22902720563922724,
+        "ndcg@10": 0.28300695144271565,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "10": {
+          "all_recall": 0.6923076923076923,
+          "any_recall": 0.6923076923076923,
+          "average_gold_coverage": 0.6923076923076923
+        },
+        "20": {
+          "all_recall": 0.8461538461538461,
+          "any_recall": 0.8461538461538461,
+          "average_gold_coverage": 0.8461538461538461
+        },
+        "candidate_coverage": 0.9487179487179487,
+        "mrr": 0.32271204913738843,
+        "ndcg@10": 0.39667825672419926,
+        "sample_count": 39
+      },
+      "TABLE_TABLE": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.38888888888888884,
+        "ndcg@10": 0.4914651418461975,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "10": {
+          "all_recall": 0.2413793103448276,
+          "any_recall": 0.2413793103448276,
+          "average_gold_coverage": 0.2413793103448276
+        },
+        "20": {
+          "all_recall": 0.3103448275862069,
+          "any_recall": 0.3103448275862069,
+          "average_gold_coverage": 0.3103448275862069
+        },
+        "candidate_coverage": 0.41379310344827586,
+        "mrr": 0.10303724369342421,
+        "ndcg@10": 0.13013864434003086,
+        "sample_count": 29
+      },
+      "TEXT_TABLE": {
+        "10": {
+          "all_recall": 0.4090909090909091,
+          "any_recall": 0.9545454545454546,
+          "average_gold_coverage": 0.6818181818181818
+        },
+        "20": {
+          "all_recall": 0.5454545454545454,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7727272727272727
+        },
+        "candidate_coverage": 0.5454545454545454,
+        "mrr": 0.4790223665223665,
+        "ndcg@10": 0.47252748233563047,
+        "sample_count": 22
+      }
+    },
+    "P2_S1_B100": {
+      "CHALLENGE": {
+        "10": {
+          "all_recall": 0.44,
+          "any_recall": 0.88,
+          "average_gold_coverage": 0.66
+        },
+        "20": {
+          "all_recall": 0.52,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.76
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.4372356532356532,
+        "ndcg@10": 0.43930905739263904,
+        "sample_count": 25
+      },
+      "CORE": {
+        "10": {
+          "all_recall": 0.45588235294117646,
+          "any_recall": 0.45588235294117646,
+          "average_gold_coverage": 0.45588235294117646
+        },
+        "20": {
+          "all_recall": 0.6323529411764706,
+          "any_recall": 0.6323529411764706,
+          "average_gold_coverage": 0.6323529411764706
+        },
+        "candidate_coverage": 0.8235294117647058,
+        "mrr": 0.23032166947012203,
+        "ndcg@10": 0.2698809565591864,
+        "sample_count": 68
+      },
+      "CROSS_DOCUMENT": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.46207642199134247,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "10": {
+          "all_recall": 0.4090909090909091,
+          "any_recall": 0.8636363636363636,
+          "average_gold_coverage": 0.6363636363636364
+        },
+        "20": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7272727272727273
+        },
+        "candidate_coverage": 0.6363636363636364,
+        "mrr": 0.4514041514041514,
+        "ndcg@10": 0.43620441676554317,
+        "sample_count": 22
+      },
+      "MULTI": {
+        "10": {
+          "all_recall": 0.44,
+          "any_recall": 0.88,
+          "average_gold_coverage": 0.66
+        },
+        "20": {
+          "all_recall": 0.52,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.76
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.4372356532356532,
+        "ndcg@10": 0.43930905739263904,
+        "sample_count": 25
+      },
+      "OVERALL": {
+        "10": {
+          "all_recall": 0.45161290322580644,
+          "any_recall": 0.5698924731182796,
+          "average_gold_coverage": 0.510752688172043
+        },
+        "20": {
+          "all_recall": 0.6021505376344086,
+          "any_recall": 0.7311827956989247,
+          "average_gold_coverage": 0.6666666666666666
+        },
+        "candidate_coverage": 0.7849462365591398,
+        "mrr": 0.2859437081167703,
+        "ndcg@10": 0.3154261449552758,
+        "sample_count": 93
+      },
+      "SAME_PAGE": {
+        "10": {
+          "all_recall": 0.45588235294117646,
+          "any_recall": 0.45588235294117646,
+          "average_gold_coverage": 0.45588235294117646
+        },
+        "20": {
+          "all_recall": 0.6323529411764706,
+          "any_recall": 0.6323529411764706,
+          "average_gold_coverage": 0.6323529411764706
+        },
+        "candidate_coverage": 0.8235294117647058,
+        "mrr": 0.23032166947012203,
+        "ndcg@10": 0.2698809565591864,
+        "sample_count": 68
+      },
+      "SINGLE": {
+        "10": {
+          "all_recall": 0.45588235294117646,
+          "any_recall": 0.45588235294117646,
+          "average_gold_coverage": 0.45588235294117646
+        },
+        "20": {
+          "all_recall": 0.6323529411764706,
+          "any_recall": 0.6323529411764706,
+          "average_gold_coverage": 0.6323529411764706
+        },
+        "candidate_coverage": 0.8235294117647058,
+        "mrr": 0.23032166947012203,
+        "ndcg@10": 0.2698809565591864,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "10": {
+          "all_recall": 0.5897435897435898,
+          "any_recall": 0.5897435897435898,
+          "average_gold_coverage": 0.5897435897435898
+        },
+        "20": {
+          "all_recall": 0.8205128205128205,
+          "any_recall": 0.8205128205128205,
+          "average_gold_coverage": 0.8205128205128205
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3197215385919328,
+        "ndcg@10": 0.36486434294177766,
+        "sample_count": 39
+      },
+      "TABLE_TABLE": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.46207642199134247,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "10": {
+          "all_recall": 0.27586206896551724,
+          "any_recall": 0.27586206896551724,
+          "average_gold_coverage": 0.27586206896551724
+        },
+        "20": {
+          "all_recall": 0.3793103448275862,
+          "any_recall": 0.3793103448275862,
+          "average_gold_coverage": 0.3793103448275862
+        },
+        "candidate_coverage": 0.5862068965517241,
+        "mrr": 0.11009425927182472,
+        "ndcg@10": 0.1421446783205293,
+        "sample_count": 29
+      },
+      "TEXT_TABLE": {
+        "10": {
+          "all_recall": 0.4090909090909091,
+          "any_recall": 0.8636363636363636,
+          "average_gold_coverage": 0.6363636363636364
+        },
+        "20": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7272727272727273
+        },
+        "candidate_coverage": 0.6363636363636364,
+        "mrr": 0.4514041514041514,
+        "ndcg@10": 0.43620441676554317,
+        "sample_count": 22
+      }
+    },
+    "P2_S1_B50": {
+      "CHALLENGE": {
+        "10": {
+          "all_recall": 0.44,
+          "any_recall": 0.88,
+          "average_gold_coverage": 0.66
+        },
+        "20": {
+          "all_recall": 0.6,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.4356269841269841,
+        "ndcg@10": 0.4389550291191309,
+        "sample_count": 25
+      },
+      "CORE": {
+        "10": {
+          "all_recall": 0.4411764705882353,
+          "any_recall": 0.4411764705882353,
+          "average_gold_coverage": 0.4411764705882353
+        },
+        "20": {
+          "all_recall": 0.6029411764705882,
+          "any_recall": 0.6029411764705882,
+          "average_gold_coverage": 0.6029411764705882
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.23096063639460102,
+        "ndcg@10": 0.26790386925897525,
+        "sample_count": 68
+      },
+      "CROSS_DOCUMENT": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.46207642199134247,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "10": {
+          "all_recall": 0.4090909090909091,
+          "any_recall": 0.8636363636363636,
+          "average_gold_coverage": 0.6363636363636364
+        },
+        "20": {
+          "all_recall": 0.5454545454545454,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7727272727272727
+        },
+        "candidate_coverage": 0.6363636363636364,
+        "mrr": 0.44957611832611827,
+        "ndcg@10": 0.4358021119092838,
+        "sample_count": 22
+      },
+      "MULTI": {
+        "10": {
+          "all_recall": 0.44,
+          "any_recall": 0.88,
+          "average_gold_coverage": 0.66
+        },
+        "20": {
+          "all_recall": 0.6,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.4356269841269841,
+        "ndcg@10": 0.4389550291191309,
+        "sample_count": 25
+      },
+      "OVERALL": {
+        "10": {
+          "all_recall": 0.44086021505376344,
+          "any_recall": 0.5591397849462365,
+          "average_gold_coverage": 0.5
+        },
+        "20": {
+          "all_recall": 0.6021505376344086,
+          "any_recall": 0.7096774193548387,
+          "average_gold_coverage": 0.6559139784946236
+        },
+        "candidate_coverage": 0.7526881720430108,
+        "mrr": 0.285978471806532,
+        "ndcg@10": 0.31388536384503857,
+        "sample_count": 93
+      },
+      "SAME_PAGE": {
+        "10": {
+          "all_recall": 0.4411764705882353,
+          "any_recall": 0.4411764705882353,
+          "average_gold_coverage": 0.4411764705882353
+        },
+        "20": {
+          "all_recall": 0.6029411764705882,
+          "any_recall": 0.6029411764705882,
+          "average_gold_coverage": 0.6029411764705882
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.23096063639460102,
+        "ndcg@10": 0.26790386925897525,
+        "sample_count": 68
+      },
+      "SINGLE": {
+        "10": {
+          "all_recall": 0.4411764705882353,
+          "any_recall": 0.4411764705882353,
+          "average_gold_coverage": 0.4411764705882353
+        },
+        "20": {
+          "all_recall": 0.6029411764705882,
+          "any_recall": 0.6029411764705882,
+          "average_gold_coverage": 0.6029411764705882
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.23096063639460102,
+        "ndcg@10": 0.26790386925897525,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "10": {
+          "all_recall": 0.5641025641025641,
+          "any_recall": 0.5641025641025641,
+          "average_gold_coverage": 0.5641025641025641
+        },
+        "20": {
+          "all_recall": 0.7948717948717948,
+          "any_recall": 0.7948717948717948,
+          "average_gold_coverage": 0.7948717948717948
+        },
+        "candidate_coverage": 0.9743589743589743,
+        "mrr": 0.32169705030356377,
+        "ndcg@10": 0.3614171138029479,
+        "sample_count": 39
+      },
+      "TABLE_TABLE": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.46207642199134247,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "10": {
+          "all_recall": 0.27586206896551724,
+          "any_recall": 0.27586206896551724,
+          "average_gold_coverage": 0.27586206896551724
+        },
+        "20": {
+          "all_recall": 0.3448275862068966,
+          "any_recall": 0.3448275862068966,
+          "average_gold_coverage": 0.3448275862068966
+        },
+        "candidate_coverage": 0.5172413793103449,
+        "mrr": 0.10893580389634075,
+        "ndcg@10": 0.1421446783205293,
+        "sample_count": 29
+      },
+      "TEXT_TABLE": {
+        "10": {
+          "all_recall": 0.4090909090909091,
+          "any_recall": 0.8636363636363636,
+          "average_gold_coverage": 0.6363636363636364
+        },
+        "20": {
+          "all_recall": 0.5454545454545454,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7727272727272727
+        },
+        "candidate_coverage": 0.6363636363636364,
+        "mrr": 0.44957611832611827,
+        "ndcg@10": 0.4358021119092838,
+        "sample_count": 22
+      }
+    },
+    "P2_S2_B100": {
+      "CHALLENGE": {
+        "10": {
+          "all_recall": 0.36,
+          "any_recall": 0.84,
+          "average_gold_coverage": 0.6
+        },
+        "20": {
+          "all_recall": 0.48,
+          "any_recall": 0.96,
+          "average_gold_coverage": 0.72
+        },
+        "candidate_coverage": 0.76,
+        "mrr": 0.3787185387711704,
+        "ndcg@10": 0.39011783523713894,
+        "sample_count": 25
+      },
+      "CORE": {
+        "10": {
+          "all_recall": 0.39705882352941174,
+          "any_recall": 0.39705882352941174,
+          "average_gold_coverage": 0.39705882352941174
+        },
+        "20": {
+          "all_recall": 0.5441176470588235,
+          "any_recall": 0.5441176470588235,
+          "average_gold_coverage": 0.5441176470588235
+        },
+        "candidate_coverage": 0.7941176470588235,
+        "mrr": 0.21658625933248213,
+        "ndcg@10": 0.24688425290717564,
+        "sample_count": 68
+      },
+      "CROSS_DOCUMENT": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.4710332252591074,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "10": {
+          "all_recall": 0.3181818181818182,
+          "any_recall": 0.8181818181818182,
+          "average_gold_coverage": 0.5681818181818182
+        },
+        "20": {
+          "all_recall": 0.4090909090909091,
+          "any_recall": 0.9545454545454546,
+          "average_gold_coverage": 0.6818181818181818
+        },
+        "candidate_coverage": 0.7272727272727273,
+        "mrr": 0.3849074304217845,
+        "ndcg@10": 0.3790839184159615,
+        "sample_count": 22
+      },
+      "MULTI": {
+        "10": {
+          "all_recall": 0.36,
+          "any_recall": 0.84,
+          "average_gold_coverage": 0.6
+        },
+        "20": {
+          "all_recall": 0.48,
+          "any_recall": 0.96,
+          "average_gold_coverage": 0.72
+        },
+        "candidate_coverage": 0.76,
+        "mrr": 0.3787185387711704,
+        "ndcg@10": 0.39011783523713894,
+        "sample_count": 25
+      },
+      "OVERALL": {
+        "10": {
+          "all_recall": 0.3870967741935484,
+          "any_recall": 0.5161290322580645,
+          "average_gold_coverage": 0.45161290322580644
+        },
+        "20": {
+          "all_recall": 0.5268817204301075,
+          "any_recall": 0.6559139784946236,
+          "average_gold_coverage": 0.5913978494623656
+        },
+        "candidate_coverage": 0.7849462365591398,
+        "mrr": 0.260170205418151,
+        "ndcg@10": 0.2853879040711443,
+        "sample_count": 93
+      },
+      "SAME_PAGE": {
+        "10": {
+          "all_recall": 0.39705882352941174,
+          "any_recall": 0.39705882352941174,
+          "average_gold_coverage": 0.39705882352941174
+        },
+        "20": {
+          "all_recall": 0.5441176470588235,
+          "any_recall": 0.5441176470588235,
+          "average_gold_coverage": 0.5441176470588235
+        },
+        "candidate_coverage": 0.7941176470588235,
+        "mrr": 0.21658625933248213,
+        "ndcg@10": 0.24688425290717564,
+        "sample_count": 68
+      },
+      "SINGLE": {
+        "10": {
+          "all_recall": 0.39705882352941174,
+          "any_recall": 0.39705882352941174,
+          "average_gold_coverage": 0.39705882352941174
+        },
+        "20": {
+          "all_recall": 0.5441176470588235,
+          "any_recall": 0.5441176470588235,
+          "average_gold_coverage": 0.5441176470588235
+        },
+        "candidate_coverage": 0.7941176470588235,
+        "mrr": 0.21658625933248213,
+        "ndcg@10": 0.24688425290717564,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "10": {
+          "all_recall": 0.5128205128205128,
+          "any_recall": 0.5128205128205128,
+          "average_gold_coverage": 0.5128205128205128
+        },
+        "20": {
+          "all_recall": 0.717948717948718,
+          "any_recall": 0.717948717948718,
+          "average_gold_coverage": 0.717948717948718
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3107552570669216,
+        "ndcg@10": 0.3420688982257155,
+        "sample_count": 39
+      },
+      "TABLE_TABLE": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.4710332252591074,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "10": {
+          "all_recall": 0.2413793103448276,
+          "any_recall": 0.2413793103448276,
+          "average_gold_coverage": 0.2413793103448276
+        },
+        "20": {
+          "all_recall": 0.3103448275862069,
+          "any_recall": 0.3103448275862069,
+          "average_gold_coverage": 0.3103448275862069
+        },
+        "candidate_coverage": 0.5172413793103449,
+        "mrr": 0.08994519341375326,
+        "ndcg@10": 0.11887731609948414,
+        "sample_count": 29
+      },
+      "TEXT_TABLE": {
+        "10": {
+          "all_recall": 0.3181818181818182,
+          "any_recall": 0.8181818181818182,
+          "average_gold_coverage": 0.5681818181818182
+        },
+        "20": {
+          "all_recall": 0.4090909090909091,
+          "any_recall": 0.9545454545454546,
+          "average_gold_coverage": 0.6818181818181818
+        },
+        "candidate_coverage": 0.7272727272727273,
+        "mrr": 0.3849074304217845,
+        "ndcg@10": 0.3790839184159615,
+        "sample_count": 22
+      }
+    },
+    "P2_S2_B50": {
+      "CHALLENGE": {
+        "10": {
+          "all_recall": 0.36,
+          "any_recall": 0.84,
+          "average_gold_coverage": 0.6
+        },
+        "20": {
+          "all_recall": 0.56,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.78
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.3505973266499582,
+        "ndcg@10": 0.375518156360507,
+        "sample_count": 25
+      },
+      "CORE": {
+        "10": {
+          "all_recall": 0.39705882352941174,
+          "any_recall": 0.39705882352941174,
+          "average_gold_coverage": 0.39705882352941174
+        },
+        "20": {
+          "all_recall": 0.5441176470588235,
+          "any_recall": 0.5441176470588235,
+          "average_gold_coverage": 0.5441176470588235
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.21857580232003093,
+        "ndcg@10": 0.2473900509504725,
+        "sample_count": 68
+      },
+      "CROSS_DOCUMENT": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3444444444444444,
+        "ndcg@10": 0.45581299667429837,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "10": {
+          "all_recall": 0.3181818181818182,
+          "any_recall": 0.8181818181818182,
+          "average_gold_coverage": 0.5681818181818182
+        },
+        "20": {
+          "all_recall": 0.5,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.75
+        },
+        "candidate_coverage": 0.6363636363636364,
+        "mrr": 0.35143635604161916,
+        "ndcg@10": 0.36456885995408095,
+        "sample_count": 22
+      },
+      "MULTI": {
+        "10": {
+          "all_recall": 0.36,
+          "any_recall": 0.84,
+          "average_gold_coverage": 0.6
+        },
+        "20": {
+          "all_recall": 0.56,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.78
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.3505973266499582,
+        "ndcg@10": 0.375518156360507,
+        "sample_count": 25
+      },
+      "OVERALL": {
+        "10": {
+          "all_recall": 0.3870967741935484,
+          "any_recall": 0.5161290322580645,
+          "average_gold_coverage": 0.45161290322580644
+        },
+        "20": {
+          "all_recall": 0.5483870967741935,
+          "any_recall": 0.6666666666666666,
+          "average_gold_coverage": 0.6075268817204301
+        },
+        "candidate_coverage": 0.7526881720430108,
+        "mrr": 0.2540654593979684,
+        "ndcg@10": 0.2818330900391915,
+        "sample_count": 93
+      },
+      "SAME_PAGE": {
+        "10": {
+          "all_recall": 0.39705882352941174,
+          "any_recall": 0.39705882352941174,
+          "average_gold_coverage": 0.39705882352941174
+        },
+        "20": {
+          "all_recall": 0.5441176470588235,
+          "any_recall": 0.5441176470588235,
+          "average_gold_coverage": 0.5441176470588235
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.21857580232003093,
+        "ndcg@10": 0.2473900509504725,
+        "sample_count": 68
+      },
+      "SINGLE": {
+        "10": {
+          "all_recall": 0.39705882352941174,
+          "any_recall": 0.39705882352941174,
+          "average_gold_coverage": 0.39705882352941174
+        },
+        "20": {
+          "all_recall": 0.5441176470588235,
+          "any_recall": 0.5441176470588235,
+          "average_gold_coverage": 0.5441176470588235
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.21857580232003093,
+        "ndcg@10": 0.2473900509504725,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "10": {
+          "all_recall": 0.5128205128205128,
+          "any_recall": 0.5128205128205128,
+          "average_gold_coverage": 0.5128205128205128
+        },
+        "20": {
+          "all_recall": 0.7435897435897436,
+          "any_recall": 0.7435897435897436,
+          "average_gold_coverage": 0.7435897435897436
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3154038186657736,
+        "ndcg@10": 0.34452237276923414,
+        "sample_count": 39
+      },
+      "TABLE_TABLE": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3444444444444444,
+        "ndcg@10": 0.45581299667429837,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "10": {
+          "all_recall": 0.2413793103448276,
+          "any_recall": 0.2413793103448276,
+          "average_gold_coverage": 0.2413793103448276
+        },
+        "20": {
+          "all_recall": 0.27586206896551724,
+          "any_recall": 0.27586206896551724,
+          "average_gold_coverage": 0.27586206896551724
+        },
+        "candidate_coverage": 0.4827586206896552,
+        "mrr": 0.08835881482058393,
+        "ndcg@10": 0.1167638250562759,
+        "sample_count": 29
+      },
+      "TEXT_TABLE": {
+        "10": {
+          "all_recall": 0.3181818181818182,
+          "any_recall": 0.8181818181818182,
+          "average_gold_coverage": 0.5681818181818182
+        },
+        "20": {
+          "all_recall": 0.5,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.75
+        },
+        "candidate_coverage": 0.6363636363636364,
+        "mrr": 0.35143635604161916,
+        "ndcg@10": 0.36456885995408095,
+        "sample_count": 22
+      }
+    }
+  },
+  "B2_3": {
+    "M0_B100": {
+      "CHALLENGE": {
+        "10": {
+          "all_recall": 0.48,
+          "any_recall": 0.92,
+          "average_gold_coverage": 0.7
+        },
+        "20": {
+          "all_recall": 0.56,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.78
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.4860808080808081,
+        "ndcg@10": 0.48430865210260593,
+        "sample_count": 25
+      },
+      "CORE": {
+        "10": {
+          "all_recall": 0.4411764705882353,
+          "any_recall": 0.4411764705882353,
+          "average_gold_coverage": 0.4411764705882353
+        },
+        "20": {
+          "all_recall": 0.6323529411764706,
+          "any_recall": 0.6323529411764706,
+          "average_gold_coverage": 0.6323529411764706
+        },
+        "candidate_coverage": 0.8088235294117647,
+        "mrr": 0.22993031276991474,
+        "ndcg@10": 0.2656429543530808,
+        "sample_count": 68
+      },
+      "CROSS_DOCUMENT": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "candidate_coverage": 0.6666666666666666,
+        "mrr": 0.3611111111111111,
+        "ndcg@10": 0.48625345384391633,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "10": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 0.9090909090909091,
+          "average_gold_coverage": 0.6818181818181818
+        },
+        "20": {
+          "all_recall": 0.5454545454545454,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7727272727272727
+        },
+        "candidate_coverage": 0.6818181818181818,
+        "mrr": 0.5031221303948576,
+        "ndcg@10": 0.4840434518651545,
+        "sample_count": 22
+      },
+      "MULTI": {
+        "10": {
+          "all_recall": 0.48,
+          "any_recall": 0.92,
+          "average_gold_coverage": 0.7
+        },
+        "20": {
+          "all_recall": 0.56,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.78
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.4860808080808081,
+        "ndcg@10": 0.48430865210260593,
+        "sample_count": 25
+      },
+      "OVERALL": {
+        "10": {
+          "all_recall": 0.45161290322580644,
+          "any_recall": 0.5698924731182796,
+          "average_gold_coverage": 0.510752688172043
+        },
+        "20": {
+          "all_recall": 0.6129032258064516,
+          "any_recall": 0.7311827956989247,
+          "average_gold_coverage": 0.6720430107526881
+        },
+        "candidate_coverage": 0.7741935483870968,
+        "mrr": 0.29878797279972474,
+        "ndcg@10": 0.3244240558986521,
+        "sample_count": 93
+      },
+      "SAME_PAGE": {
+        "10": {
+          "all_recall": 0.4411764705882353,
+          "any_recall": 0.4411764705882353,
+          "average_gold_coverage": 0.4411764705882353
+        },
+        "20": {
+          "all_recall": 0.6323529411764706,
+          "any_recall": 0.6323529411764706,
+          "average_gold_coverage": 0.6323529411764706
+        },
+        "candidate_coverage": 0.8088235294117647,
+        "mrr": 0.22993031276991474,
+        "ndcg@10": 0.2656429543530808,
+        "sample_count": 68
+      },
+      "SINGLE": {
+        "10": {
+          "all_recall": 0.4411764705882353,
+          "any_recall": 0.4411764705882353,
+          "average_gold_coverage": 0.4411764705882353
+        },
+        "20": {
+          "all_recall": 0.6323529411764706,
+          "any_recall": 0.6323529411764706,
+          "average_gold_coverage": 0.6323529411764706
+        },
+        "candidate_coverage": 0.8088235294117647,
+        "mrr": 0.22993031276991474,
+        "ndcg@10": 0.2656429543530808,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "10": {
+          "all_recall": 0.5897435897435898,
+          "any_recall": 0.5897435897435898,
+          "average_gold_coverage": 0.5897435897435898
+        },
+        "20": {
+          "all_recall": 0.8717948717948718,
+          "any_recall": 0.8717948717948718,
+          "average_gold_coverage": 0.8717948717948718
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3127408868051962,
+        "ndcg@10": 0.3585726159886832,
+        "sample_count": 39
+      },
+      "TABLE_TABLE": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "candidate_coverage": 0.6666666666666666,
+        "mrr": 0.3611111111111111,
+        "ndcg@10": 0.48625345384391633,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "10": {
+          "all_recall": 0.2413793103448276,
+          "any_recall": 0.2413793103448276,
+          "average_gold_coverage": 0.2413793103448276
+        },
+        "20": {
+          "all_recall": 0.3103448275862069,
+          "any_recall": 0.3103448275862069,
+          "average_gold_coverage": 0.3103448275862069
+        },
+        "candidate_coverage": 0.5517241379310345,
+        "mrr": 0.11856436837763976,
+        "ndcg@10": 0.14066858180865,
+        "sample_count": 29
+      },
+      "TEXT_TABLE": {
+        "10": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 0.9090909090909091,
+          "average_gold_coverage": 0.6818181818181818
+        },
+        "20": {
+          "all_recall": 0.5454545454545454,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7727272727272727
+        },
+        "candidate_coverage": 0.6818181818181818,
+        "mrr": 0.5031221303948576,
+        "ndcg@10": 0.4840434518651545,
+        "sample_count": 22
+      }
+    },
+    "M0_B50": {
+      "CHALLENGE": {
+        "10": {
+          "all_recall": 0.48,
+          "any_recall": 0.92,
+          "average_gold_coverage": 0.7
+        },
+        "20": {
+          "all_recall": 0.68,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.84
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.4855213675213675,
+        "ndcg@10": 0.4839546238290978,
+        "sample_count": 25
+      },
+      "CORE": {
+        "10": {
+          "all_recall": 0.4411764705882353,
+          "any_recall": 0.4411764705882353,
+          "average_gold_coverage": 0.4411764705882353
+        },
+        "20": {
+          "all_recall": 0.6029411764705882,
+          "any_recall": 0.6029411764705882,
+          "average_gold_coverage": 0.6029411764705882
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.2311835350083302,
+        "ndcg@10": 0.2675042061456227,
+        "sample_count": 68
+      },
+      "CROSS_DOCUMENT": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "candidate_coverage": 0.6666666666666666,
+        "mrr": 0.3611111111111111,
+        "ndcg@10": 0.48625345384391633,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "10": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 0.9090909090909091,
+          "average_gold_coverage": 0.6818181818181818
+        },
+        "20": {
+          "all_recall": 0.6818181818181818,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8409090909090909
+        },
+        "candidate_coverage": 0.6818181818181818,
+        "mrr": 0.5024864024864024,
+        "ndcg@10": 0.4836411470088953,
+        "sample_count": 22
+      },
+      "MULTI": {
+        "10": {
+          "all_recall": 0.48,
+          "any_recall": 0.92,
+          "average_gold_coverage": 0.7
+        },
+        "20": {
+          "all_recall": 0.68,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.84
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.4855213675213675,
+        "ndcg@10": 0.4839546238290978,
+        "sample_count": 25
+      },
+      "OVERALL": {
+        "10": {
+          "all_recall": 0.45161290322580644,
+          "any_recall": 0.5698924731182796,
+          "average_gold_coverage": 0.510752688172043
+        },
+        "20": {
+          "all_recall": 0.6236559139784946,
+          "any_recall": 0.7096774193548387,
+          "average_gold_coverage": 0.6666666666666666
+        },
+        "candidate_coverage": 0.7526881720430108,
+        "mrr": 0.29955392009248005,
+        "ndcg@10": 0.32568980229709454,
+        "sample_count": 93
+      },
+      "SAME_PAGE": {
+        "10": {
+          "all_recall": 0.4411764705882353,
+          "any_recall": 0.4411764705882353,
+          "average_gold_coverage": 0.4411764705882353
+        },
+        "20": {
+          "all_recall": 0.6029411764705882,
+          "any_recall": 0.6029411764705882,
+          "average_gold_coverage": 0.6029411764705882
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.2311835350083302,
+        "ndcg@10": 0.2675042061456227,
+        "sample_count": 68
+      },
+      "SINGLE": {
+        "10": {
+          "all_recall": 0.4411764705882353,
+          "any_recall": 0.4411764705882353,
+          "average_gold_coverage": 0.4411764705882353
+        },
+        "20": {
+          "all_recall": 0.6029411764705882,
+          "any_recall": 0.6029411764705882,
+          "average_gold_coverage": 0.6029411764705882
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.2311835350083302,
+        "ndcg@10": 0.2675042061456227,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "10": {
+          "all_recall": 0.5897435897435898,
+          "any_recall": 0.5897435897435898,
+          "average_gold_coverage": 0.5897435897435898
+        },
+        "20": {
+          "all_recall": 0.8205128205128205,
+          "any_recall": 0.8205128205128205,
+          "average_gold_coverage": 0.8205128205128205
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.31572263110191195,
+        "ndcg@10": 0.36181787552439737,
+        "sample_count": 39
+      },
+      "TABLE_TABLE": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "candidate_coverage": 0.6666666666666666,
+        "mrr": 0.3611111111111111,
+        "ndcg@10": 0.48625345384391633,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "10": {
+          "all_recall": 0.2413793103448276,
+          "any_recall": 0.2413793103448276,
+          "average_gold_coverage": 0.2413793103448276
+        },
+        "20": {
+          "all_recall": 0.3103448275862069,
+          "any_recall": 0.3103448275862069,
+          "average_gold_coverage": 0.3103448275862069
+        },
+        "candidate_coverage": 0.4827586206896552,
+        "mrr": 0.1174930264686857,
+        "ndcg@10": 0.14066858180865,
+        "sample_count": 29
+      },
+      "TEXT_TABLE": {
+        "10": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 0.9090909090909091,
+          "average_gold_coverage": 0.6818181818181818
+        },
+        "20": {
+          "all_recall": 0.6818181818181818,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8409090909090909
+        },
+        "candidate_coverage": 0.6818181818181818,
+        "mrr": 0.5024864024864024,
+        "ndcg@10": 0.4836411470088953,
+        "sample_count": 22
+      }
+    },
+    "M1_B100": {
+      "CHALLENGE": {
+        "10": {
+          "all_recall": 0.48,
+          "any_recall": 0.88,
+          "average_gold_coverage": 0.68
+        },
+        "20": {
+          "all_recall": 0.6,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.435298828622358,
+        "ndcg@10": 0.4560334293698351,
+        "sample_count": 25
+      },
+      "CORE": {
+        "10": {
+          "all_recall": 0.45588235294117646,
+          "any_recall": 0.45588235294117646,
+          "average_gold_coverage": 0.45588235294117646
+        },
+        "20": {
+          "all_recall": 0.6323529411764706,
+          "any_recall": 0.6323529411764706,
+          "average_gold_coverage": 0.6323529411764706
+        },
+        "candidate_coverage": 0.8088235294117647,
+        "mrr": 0.23037400317976214,
+        "ndcg@10": 0.26930916090589835,
+        "sample_count": 68
+      },
+      "CROSS_DOCUMENT": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "candidate_coverage": 0.6666666666666666,
+        "mrr": 0.3611111111111111,
+        "ndcg@10": 0.4952102571116812,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "10": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 0.8636363636363636,
+          "average_gold_coverage": 0.6590909090909091
+        },
+        "20": {
+          "all_recall": 0.5909090909090909,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7954545454545454
+        },
+        "candidate_coverage": 0.6818181818181818,
+        "mrr": 0.44541533555570995,
+        "ndcg@10": 0.4506911346777652,
+        "sample_count": 22
+      },
+      "MULTI": {
+        "10": {
+          "all_recall": 0.48,
+          "any_recall": 0.88,
+          "average_gold_coverage": 0.68
+        },
+        "20": {
+          "all_recall": 0.6,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.435298828622358,
+        "ndcg@10": 0.4560334293698351,
+        "sample_count": 25
+      },
+      "OVERALL": {
+        "10": {
+          "all_recall": 0.46236559139784944,
+          "any_recall": 0.5698924731182796,
+          "average_gold_coverage": 0.5161290322580645
+        },
+        "20": {
+          "all_recall": 0.6236559139784946,
+          "any_recall": 0.7311827956989247,
+          "average_gold_coverage": 0.6774193548387096
+        },
+        "candidate_coverage": 0.7741935483870968,
+        "mrr": 0.28546132184712664,
+        "ndcg@10": 0.3195038567295373,
+        "sample_count": 93
+      },
+      "SAME_PAGE": {
+        "10": {
+          "all_recall": 0.45588235294117646,
+          "any_recall": 0.45588235294117646,
+          "average_gold_coverage": 0.45588235294117646
+        },
+        "20": {
+          "all_recall": 0.6323529411764706,
+          "any_recall": 0.6323529411764706,
+          "average_gold_coverage": 0.6323529411764706
+        },
+        "candidate_coverage": 0.8088235294117647,
+        "mrr": 0.23037400317976214,
+        "ndcg@10": 0.26930916090589835,
+        "sample_count": 68
+      },
+      "SINGLE": {
+        "10": {
+          "all_recall": 0.45588235294117646,
+          "any_recall": 0.45588235294117646,
+          "average_gold_coverage": 0.45588235294117646
+        },
+        "20": {
+          "all_recall": 0.6323529411764706,
+          "any_recall": 0.6323529411764706,
+          "average_gold_coverage": 0.6323529411764706
+        },
+        "candidate_coverage": 0.8088235294117647,
+        "mrr": 0.23037400317976214,
+        "ndcg@10": 0.26930916090589835,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "10": {
+          "all_recall": 0.5897435897435898,
+          "any_recall": 0.5897435897435898,
+          "average_gold_coverage": 0.5897435897435898
+        },
+        "20": {
+          "all_recall": 0.8461538461538461,
+          "any_recall": 0.8461538461538461,
+          "average_gold_coverage": 0.8461538461538461
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3177914403987898,
+        "ndcg@10": 0.3613661937746105,
+        "sample_count": 39
+      },
+      "TABLE_TABLE": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "candidate_coverage": 0.6666666666666666,
+        "mrr": 0.3611111111111111,
+        "ndcg@10": 0.4952102571116812,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "10": {
+          "all_recall": 0.27586206896551724,
+          "any_recall": 0.27586206896551724,
+          "average_gold_coverage": 0.27586206896551724
+        },
+        "20": {
+          "all_recall": 0.3448275862068966,
+          "any_recall": 0.3448275862068966,
+          "average_gold_coverage": 0.3448275862068966
+        },
+        "candidate_coverage": 0.5517241379310345,
+        "mrr": 0.11281262209210408,
+        "ndcg@10": 0.14550832359969934,
+        "sample_count": 29
+      },
+      "TEXT_TABLE": {
+        "10": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 0.8636363636363636,
+          "average_gold_coverage": 0.6590909090909091
+        },
+        "20": {
+          "all_recall": 0.5909090909090909,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7954545454545454
+        },
+        "candidate_coverage": 0.6818181818181818,
+        "mrr": 0.44541533555570995,
+        "ndcg@10": 0.4506911346777652,
+        "sample_count": 22
+      }
+    },
+    "M1_B50": {
+      "CHALLENGE": {
+        "10": {
+          "all_recall": 0.48,
+          "any_recall": 0.88,
+          "average_gold_coverage": 0.68
+        },
+        "20": {
+          "all_recall": 0.6,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.435298828622358,
+        "ndcg@10": 0.4560334293698351,
+        "sample_count": 25
+      },
+      "CORE": {
+        "10": {
+          "all_recall": 0.45588235294117646,
+          "any_recall": 0.45588235294117646,
+          "average_gold_coverage": 0.45588235294117646
+        },
+        "20": {
+          "all_recall": 0.6323529411764706,
+          "any_recall": 0.6323529411764706,
+          "average_gold_coverage": 0.6323529411764706
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.22997202420635454,
+        "ndcg@10": 0.26930916090589835,
+        "sample_count": 68
+      },
+      "CROSS_DOCUMENT": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "candidate_coverage": 0.6666666666666666,
+        "mrr": 0.3611111111111111,
+        "ndcg@10": 0.4952102571116812,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "10": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 0.8636363636363636,
+          "average_gold_coverage": 0.6590909090909091
+        },
+        "20": {
+          "all_recall": 0.5909090909090909,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7954545454545454
+        },
+        "candidate_coverage": 0.6818181818181818,
+        "mrr": 0.44541533555570995,
+        "ndcg@10": 0.4506911346777652,
+        "sample_count": 22
+      },
+      "MULTI": {
+        "10": {
+          "all_recall": 0.48,
+          "any_recall": 0.88,
+          "average_gold_coverage": 0.68
+        },
+        "20": {
+          "all_recall": 0.6,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.435298828622358,
+        "ndcg@10": 0.4560334293698351,
+        "sample_count": 25
+      },
+      "OVERALL": {
+        "10": {
+          "all_recall": 0.46236559139784944,
+          "any_recall": 0.5698924731182796,
+          "average_gold_coverage": 0.5161290322580645
+        },
+        "20": {
+          "all_recall": 0.6236559139784946,
+          "any_recall": 0.7311827956989247,
+          "average_gold_coverage": 0.6774193548387096
+        },
+        "candidate_coverage": 0.7526881720430108,
+        "mrr": 0.28516740173753835,
+        "ndcg@10": 0.3195038567295373,
+        "sample_count": 93
+      },
+      "SAME_PAGE": {
+        "10": {
+          "all_recall": 0.45588235294117646,
+          "any_recall": 0.45588235294117646,
+          "average_gold_coverage": 0.45588235294117646
+        },
+        "20": {
+          "all_recall": 0.6323529411764706,
+          "any_recall": 0.6323529411764706,
+          "average_gold_coverage": 0.6323529411764706
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.22997202420635454,
+        "ndcg@10": 0.26930916090589835,
+        "sample_count": 68
+      },
+      "SINGLE": {
+        "10": {
+          "all_recall": 0.45588235294117646,
+          "any_recall": 0.45588235294117646,
+          "average_gold_coverage": 0.45588235294117646
+        },
+        "20": {
+          "all_recall": 0.6323529411764706,
+          "any_recall": 0.6323529411764706,
+          "average_gold_coverage": 0.6323529411764706
+        },
+        "candidate_coverage": 0.7794117647058824,
+        "mrr": 0.22997202420635454,
+        "ndcg@10": 0.26930916090589835,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "10": {
+          "all_recall": 0.5897435897435898,
+          "any_recall": 0.5897435897435898,
+          "average_gold_coverage": 0.5897435897435898
+        },
+        "20": {
+          "all_recall": 0.8461538461538461,
+          "any_recall": 0.8461538461538461,
+          "average_gold_coverage": 0.8461538461538461
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.3177914403987898,
+        "ndcg@10": 0.3613661937746105,
+        "sample_count": 39
+      },
+      "TABLE_TABLE": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "candidate_coverage": 0.6666666666666666,
+        "mrr": 0.3611111111111111,
+        "ndcg@10": 0.4952102571116812,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "10": {
+          "all_recall": 0.27586206896551724,
+          "any_recall": 0.27586206896551724,
+          "average_gold_coverage": 0.27586206896551724
+        },
+        "20": {
+          "all_recall": 0.3448275862068966,
+          "any_recall": 0.3448275862068966,
+          "average_gold_coverage": 0.3448275862068966
+        },
+        "candidate_coverage": 0.4827586206896552,
+        "mrr": 0.11187005070618293,
+        "ndcg@10": 0.14550832359969934,
+        "sample_count": 29
+      },
+      "TEXT_TABLE": {
+        "10": {
+          "all_recall": 0.45454545454545453,
+          "any_recall": 0.8636363636363636,
+          "average_gold_coverage": 0.6590909090909091
+        },
+        "20": {
+          "all_recall": 0.5909090909090909,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7954545454545454
+        },
+        "candidate_coverage": 0.6818181818181818,
+        "mrr": 0.44541533555570995,
+        "ndcg@10": 0.4506911346777652,
+        "sample_count": 22
+      }
+    },
+    "M2_B100": {
+      "CHALLENGE": {
+        "10": {
+          "all_recall": 0.36,
+          "any_recall": 0.76,
+          "average_gold_coverage": 0.56
+        },
+        "20": {
+          "all_recall": 0.44,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.72
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.4050942390942391,
+        "ndcg@10": 0.3670594986647746,
+        "sample_count": 25
+      },
+      "CORE": {
+        "10": {
+          "all_recall": 0.6176470588235294,
+          "any_recall": 0.6176470588235294,
+          "average_gold_coverage": 0.6176470588235294
+        },
+        "20": {
+          "all_recall": 0.7205882352941176,
+          "any_recall": 0.7205882352941176,
+          "average_gold_coverage": 0.7205882352941176
+        },
+        "candidate_coverage": 0.8088235294117647,
+        "mrr": 0.3283804798191743,
+        "ndcg@10": 0.3904379581031526,
+        "sample_count": 68
+      },
+      "CROSS_DOCUMENT": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "candidate_coverage": 0.6666666666666666,
+        "mrr": 0.5555555555555556,
+        "ndcg@10": 0.5470657570749381,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "10": {
+          "all_recall": 0.3181818181818182,
+          "any_recall": 0.7272727272727273,
+          "average_gold_coverage": 0.5227272727272727
+        },
+        "20": {
+          "all_recall": 0.4090909090909091,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7045454545454546
+        },
+        "candidate_coverage": 0.6818181818181818,
+        "mrr": 0.3845767868495141,
+        "ndcg@10": 0.34251319069975233,
+        "sample_count": 22
+      },
+      "MULTI": {
+        "10": {
+          "all_recall": 0.36,
+          "any_recall": 0.76,
+          "average_gold_coverage": 0.56
+        },
+        "20": {
+          "all_recall": 0.44,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.72
+        },
+        "candidate_coverage": 0.68,
+        "mrr": 0.4050942390942391,
+        "ndcg@10": 0.3670594986647746,
+        "sample_count": 25
+      },
+      "OVERALL": {
+        "10": {
+          "all_recall": 0.5483870967741935,
+          "any_recall": 0.6559139784946236,
+          "average_gold_coverage": 0.6021505376344086
+        },
+        "20": {
+          "all_recall": 0.6451612903225806,
+          "any_recall": 0.7956989247311828,
+          "average_gold_coverage": 0.7204301075268817
+        },
+        "candidate_coverage": 0.7741935483870968,
+        "mrr": 0.34900245811892283,
+        "ndcg@10": 0.38415342599606184,
+        "sample_count": 93
+      },
+      "SAME_PAGE": {
+        "10": {
+          "all_recall": 0.6176470588235294,
+          "any_recall": 0.6176470588235294,
+          "average_gold_coverage": 0.6176470588235294
+        },
+        "20": {
+          "all_recall": 0.7205882352941176,
+          "any_recall": 0.7205882352941176,
+          "average_gold_coverage": 0.7205882352941176
+        },
+        "candidate_coverage": 0.8088235294117647,
+        "mrr": 0.3283804798191743,
+        "ndcg@10": 0.3904379581031526,
+        "sample_count": 68
+      },
+      "SINGLE": {
+        "10": {
+          "all_recall": 0.6176470588235294,
+          "any_recall": 0.6176470588235294,
+          "average_gold_coverage": 0.6176470588235294
+        },
+        "20": {
+          "all_recall": 0.7205882352941176,
+          "any_recall": 0.7205882352941176,
+          "average_gold_coverage": 0.7205882352941176
+        },
+        "candidate_coverage": 0.8088235294117647,
+        "mrr": 0.3283804798191743,
+        "ndcg@10": 0.3904379581031526,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "10": {
+          "all_recall": 0.9230769230769231,
+          "any_recall": 0.9230769230769231,
+          "average_gold_coverage": 0.9230769230769231
+        },
+        "20": {
+          "all_recall": 1.0,
+          "any_recall": 1.0,
+          "average_gold_coverage": 1.0
+        },
+        "candidate_coverage": 1.0,
+        "mrr": 0.5197607947607946,
+        "ndcg@10": 0.6120414225230159,
+        "sample_count": 39
+      },
+      "TABLE_TABLE": {
+        "10": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "20": {
+          "all_recall": 0.6666666666666666,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.8333333333333334
+        },
+        "candidate_coverage": 0.6666666666666666,
+        "mrr": 0.5555555555555556,
+        "ndcg@10": 0.5470657570749381,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "10": {
+          "all_recall": 0.20689655172413793,
+          "any_recall": 0.20689655172413793,
+          "average_gold_coverage": 0.20689655172413793
+        },
+        "20": {
+          "all_recall": 0.3448275862068966,
+          "any_recall": 0.3448275862068966,
+          "average_gold_coverage": 0.3448275862068966
+        },
+        "candidate_coverage": 0.5517241379310345,
+        "mrr": 0.07100695282871919,
+        "ndcg@10": 0.09241950595230229,
+        "sample_count": 29
+      },
+      "TEXT_TABLE": {
+        "10": {
+          "all_recall": 0.3181818181818182,
+          "any_recall": 0.7272727272727273,
+          "average_gold_coverage": 0.5227272727272727
+        },
+        "20": {
+          "all_recall": 0.4090909090909091,
+          "any_recall": 1.0,
+          "average_gold_coverage": 0.7045454545454546
+        },
+        "candidate_coverage": 0.6818181818181818,
+        "mrr": 0.3845767868495141,
+        "ndcg@10": 0.34251319069975233,
+        "sample_count": 22
+      }
+    }
+  },
+  "counts": {
+    "CHALLENGE": 25,
+    "CORE": 68,
+    "CROSS_DOCUMENT": 3,
+    "CROSS_PAGE_SAME_DOCUMENT": 22,
+    "MULTI": 25,
+    "OVERALL": 93,
+    "SAME_PAGE": 68,
+    "SINGLE": 68,
+    "TABLE_ONLY": 39,
+    "TABLE_TABLE": 3,
+    "TEXT_ONLY": 29,
+    "TEXT_TABLE": 22
+  },
+  "mapping_rule": "validated modality field first; validated qa_type fallback; no question keywords",
+  "modality_coverage": {
+    "duplicate": 0,
+    "mapped": 93,
+    "missing": 0
+  }
+}

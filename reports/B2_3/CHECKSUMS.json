@@ -1,0 +1,84 @@
+{
+  "files": [
+    {
+      "bytes": 2557,
+      "path": "reports/B2_3/B2_3_REPORT.md",
+      "sha256": "f6922c0dc90a81e41f0a94293e5f4994dd7a2fdafce72858bd9d9a483450f999"
+    },
+    {
+      "bytes": 1412,
+      "path": "reports/B2_3/CACHE_MANIFEST.json",
+      "sha256": "32af3689afdcce06de52b025b9cd0e7a4bc0617026356fd6acdfe180f5ef498f"
+    },
+    {
+      "bytes": 674,
+      "path": "reports/B2_3/CONFIG.json",
+      "sha256": "076ea3d9c250a4ea525a60407138e1ca83488ea56afbd59d2b7d28721e78ded5"
+    },
+    {
+      "bytes": 445556,
+      "path": "reports/B2_3/FAILURE_TRANSITIONS.jsonl",
+      "sha256": "4bd02eefd5489329c0f2e2316190797458f6c07ae0306210e59feec091ad2e90"
+    },
+    {
+      "bytes": 2895,
+      "path": "reports/B2_3/FINAL_AUDIT.json",
+      "sha256": "4fb18157f282eaf734e74eaf1eeaaa979ad3cccfd0d1ea817799d353773626b8"
+    },
+    {
+      "bytes": 4660,
+      "path": "reports/B2_3/METRICS.json",
+      "sha256": "12bb11c3ce86e7921c01a987d21d4455279a54508c844311d596c4e9fc2b1022"
+    },
+    {
+      "bytes": 870,
+      "path": "reports/B2_3/MODEL_METADATA.json",
+      "sha256": "402d9afc4590972b0788ccc35453fc39e9a1ce99068f6814fefdf31a0bf7f22f"
+    },
+    {
+      "bytes": 820,
+      "path": "reports/B2_3/RANK_STABILITY.json",
+      "sha256": "1a8b932e29cedd71f7836a852c17524e379ddf4ff13f52cac5deeb41f8d08b9f"
+    },
+    {
+      "bytes": 1901,
+      "path": "reports/B2_3/READINESS.json",
+      "sha256": "eeb12c3feffb06afc169e34ebc96157b205e404cfed1dbf25a07d24a7769f319"
+    },
+    {
+      "bytes": 1067,
+      "path": "reports/B2_3/RESULTS.csv",
+      "sha256": "f25a47cf9564dea53d6c150957a66270581485b02887aec57f2bbe61670a8452"
+    },
+    {
+      "bytes": 104466,
+      "path": "reports/B2_3/SUBGROUP_METRICS.json",
+      "sha256": "56aa9a96eaf8878818503f707ab828df25fc8430d1f785c2a486b50a12539499"
+    },
+    {
+      "bytes": 2490681,
+      "path": "outputs/B2_3/rankings/m1_global_rrf_b100_dev.jsonl",
+      "sha256": "1afa01b73c8a865f63e75505c525be7137b264f38ef65a1e1f13693f3b0089b3"
+    },
+    {
+      "bytes": 1245512,
+      "path": "outputs/B2_3/rankings/m1_global_rrf_b50_dev.jsonl",
+      "sha256": "1bfb7f82296ec1a59402e350200199c1b5e3cf2e7a9741885a48a909b142c137"
+    },
+    {
+      "bytes": 2407658,
+      "path": "outputs/B2_3/rankings/m2_cross_encoder_b100_dev.jsonl",
+      "sha256": "9f093af4b7837ef3aa70f9b3e38fd7543ba126188dd517336095ec8a3b31a912"
+    },
+    {
+      "bytes": 498998,
+      "path": "outputs/B2_3/cache/m2_scores.jsonl",
+      "sha256": "58387bdcfbaa932445a8f65b9ca71b9e1910d28509efc909a1eb02e4618da1e3"
+    },
+    {
+      "bytes": 814,
+      "path": "outputs/B2_3/cache/m2_metadata.json",
+      "sha256": "cf12115a13242f690261ad912129173267fd70622d44015c11d089268698bf66"
+    }
+  ]
+}

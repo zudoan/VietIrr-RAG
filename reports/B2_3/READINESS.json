@@ -1,0 +1,68 @@
+{
+  "B2_3_VALID": true,
+  "M1_recovered_regressed": {
+    "recovered": 3,
+    "regressed": 2
+  },
+  "M1_remaining": 12,
+  "M2_recovered_regressed": {
+    "recovered": 9,
+    "regressed": 6
+  },
+  "M2_remaining": 6,
+  "bootstrap": {
+    "M1_B100_vs_M0_B100": {
+      "ci95_high": 0.053763440860215055,
+      "ci95_low": -0.03225806451612903,
+      "delta": 0.010752688172043012,
+      "improvements": 3,
+      "regressions": 2,
+      "resamples": 1000,
+      "seed": 42
+    },
+    "M2_B100_vs_M0_B100": {
+      "ci95_high": 0.10752688172043011,
+      "ci95_low": -0.053763440860215055,
+      "delta": 0.03225806451612903,
+      "improvements": 9,
+      "regressions": 6,
+      "resamples": 1000,
+      "seed": 42
+    }
+  },
+  "candidate_coverage@100": 0.7741935483870968,
+  "candidate_test_untouched": true,
+  "dev_qa": 93,
+  "latency": {
+    "M0_B100": 32.53854516108448,
+    "M0_B50": 31.924106451755975,
+    "M1_B100": 24.14816343967217,
+    "M1_B50": 23.934599999084902,
+    "M2_B100_inference_only": 752.4103161290392,
+    "M2_model_loading_seconds": 4.735481700001401
+  },
+  "main_bottleneck": "CANDIDATE_MISS",
+  "methods": {
+    "M0_B100": {
+      "all_r@10": 0.45161290322580644,
+      "all_r@20": 0.6129032258064516,
+      "mrr": 0.29878797279972474
+    },
+    "M1_B100": {
+      "all_r@10": 0.46236559139784944,
+      "all_r@20": 0.6236559139784946,
+      "mrr": 0.28546132184712664
+    },
+    "M2_B100": {
+      "all_r@10": 0.5483870967741935,
+      "all_r@20": 0.6451612903225806,
+      "mrr": 0.34900245811892283
+    }
+  },
+  "modality_mapping_coverage": 93,
+  "original_ranking_failures": 15,
+  "ranking_reproducibility_pass": true,
+  "recommended_next_step": "Study Complete Evidence Set Selection at fixed P0/S1/B100 while retaining a parallel candidate-miss track.",
+  "remaining_blockers": [],
+  "status": "PASS"
+}

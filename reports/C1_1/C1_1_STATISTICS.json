@@ -1,0 +1,188 @@
+{
+  "comparisons": {
+    "E4_vs_E0": {
+      "OVERALL": {
+        "gold_set_cluster_bootstrap": {
+          "ci95_high": 0.10118171251452919,
+          "ci95_low": 0.0,
+          "delta": 0.03225806451612903,
+          "method": "cluster_aware",
+          "recovered": 3,
+          "regressed": 0,
+          "resamples": 1000,
+          "seed": 42,
+          "supports_superiority": false,
+          "unit_count": 45
+        },
+        "qa_bootstrap": {
+          "ci95_high": 0.07526881720430108,
+          "ci95_low": 0.0,
+          "delta": 0.03225806451612903,
+          "method": "paired_qa",
+          "recovered": 3,
+          "regressed": 0,
+          "resamples": 1000,
+          "seed": 42,
+          "supports_superiority": false,
+          "unit_count": 93
+        },
+        "sample_count": 93
+      },
+      "RETRIEVAL_MULTI": {
+        "gold_set_cluster_bootstrap": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "delta": 0.0,
+          "method": "cluster_aware",
+          "recovered": 0,
+          "regressed": 0,
+          "resamples": 1000,
+          "seed": 42,
+          "supports_superiority": false,
+          "unit_count": 8
+        },
+        "qa_bootstrap": {
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "delta": 0.0,
+          "method": "paired_qa",
+          "recovered": 0,
+          "regressed": 0,
+          "resamples": 1000,
+          "seed": 42,
+          "supports_superiority": false,
+          "unit_count": 25
+        },
+        "sample_count": 25
+      }
+    },
+    "E4_vs_E2": {
+      "OVERALL": {
+        "gold_set_cluster_bootstrap": {
+          "ci95_high": 0.10146986166007904,
+          "ci95_low": -0.06451612903225806,
+          "delta": 0.010752688172043012,
+          "method": "cluster_aware",
+          "recovered": 5,
+          "regressed": 4,
+          "resamples": 1000,
+          "seed": 42,
+          "supports_superiority": false,
+          "unit_count": 45
+        },
+        "qa_bootstrap": {
+          "ci95_high": 0.07526881720430108,
+          "ci95_low": -0.053763440860215055,
+          "delta": 0.010752688172043012,
+          "method": "paired_qa",
+          "recovered": 5,
+          "regressed": 4,
+          "resamples": 1000,
+          "seed": 42,
+          "supports_superiority": false,
+          "unit_count": 93
+        },
+        "sample_count": 93
+      },
+      "RETRIEVAL_MULTI": {
+        "gold_set_cluster_bootstrap": {
+          "ci95_high": 0.4,
+          "ci95_low": 0.0,
+          "delta": 0.16,
+          "method": "cluster_aware",
+          "recovered": 4,
+          "regressed": 0,
+          "resamples": 1000,
+          "seed": 42,
+          "supports_superiority": false,
+          "unit_count": 8
+        },
+        "qa_bootstrap": {
+          "ci95_high": 0.32,
+          "ci95_low": 0.04,
+          "delta": 0.16,
+          "method": "paired_qa",
+          "recovered": 4,
+          "regressed": 0,
+          "resamples": 1000,
+          "seed": 42,
+          "supports_superiority": true,
+          "unit_count": 25
+        },
+        "sample_count": 25
+      }
+    }
+  },
+  "duplicated_gold_set_impact": {
+    "duplicated_signature_count": 14,
+    "max_signature_multiplicity": 11,
+    "qa_in_duplicated_signatures": 62,
+    "qa_weighted_delta": 0.03225806451612903,
+    "signature_balanced_delta": 0.011111111111111112
+  },
+  "multi_transitions": {
+    "E4_vs_E0": {
+      "recovered": 0,
+      "recovered_qa_ids": [],
+      "regressed": 0,
+      "regressed_qa_ids": []
+    },
+    "E4_vs_E2": {
+      "recovered": 4,
+      "recovered_qa_ids": [
+        "V3_1_CHAL_00165",
+        "V3_1_CHAL_00173",
+        "V3_1_CHAL_00195",
+        "V3_1_CHAL_00198"
+      ],
+      "regressed": 0,
+      "regressed_qa_ids": []
+    },
+    "E4_vs_E3": {
+      "recovered": 0,
+      "recovered_qa_ids": [],
+      "regressed": 0,
+      "regressed_qa_ids": []
+    }
+  },
+  "transitions": {
+    "E4_vs_E0": {
+      "recovered": 3,
+      "recovered_qa_ids": [
+        "V3_CORE_00428",
+        "V3_CORE_00429",
+        "V3_CORE_00431"
+      ],
+      "regressed": 0,
+      "regressed_qa_ids": []
+    },
+    "E4_vs_E2": {
+      "recovered": 5,
+      "recovered_qa_ids": [
+        "V3_1_CHAL_00165",
+        "V3_1_CHAL_00173",
+        "V3_1_CHAL_00195",
+        "V3_1_CHAL_00198",
+        "V3_CORE_00283"
+      ],
+      "regressed": 4,
+      "regressed_qa_ids": [
+        "V3_CORE_00038",
+        "V3_CORE_00405",
+        "V3_CORE_00430",
+        "V3_CORE_00432"
+      ]
+    },
+    "E4_vs_E3": {
+      "recovered": 3,
+      "recovered_qa_ids": [
+        "V3_CORE_00124",
+        "V3_CORE_00401",
+        "V3_CORE_00404"
+      ],
+      "regressed": 0,
+      "regressed_qa_ids": []
+    }
+  },
+  "unique_gold_sets": 45
+}

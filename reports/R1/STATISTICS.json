@@ -1,0 +1,418 @@
+{
+  "bootstrap_resamples": 1000,
+  "comparisons": {
+    "FIXED_POOL": {
+      "R1_vs_R0": {
+        "OVERALL": {
+          "all_r@20_gold_set_cluster_bootstrap": {
+            "ci95_high": 0.15074133763094272,
+            "ci95_low": -0.06198913917940466,
+            "delta": 0.043010752688172046,
+            "method": "cluster_aware",
+            "recovered": 10,
+            "regressed": 6,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 45
+          },
+          "all_r@20_qa_bootstrap": {
+            "ci95_high": 0.12903225806451613,
+            "ci95_low": -0.03252688172043009,
+            "delta": 0.043010752688172046,
+            "method": "paired_qa",
+            "recovered": 10,
+            "regressed": 6,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 93
+          },
+          "candidate_coverage_gold_set_cluster_bootstrap": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "delta": 0.0,
+            "method": "cluster_aware",
+            "recovered": 0,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 45
+          },
+          "candidate_coverage_qa_bootstrap": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "delta": 0.0,
+            "method": "paired_qa",
+            "recovered": 0,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 93
+          }
+        },
+        "RETRIEVAL_MULTI": {
+          "all_r@20_gold_set_cluster_bootstrap": {
+            "ci95_high": 0.10714285714285714,
+            "ci95_low": 0.0,
+            "delta": 0.04,
+            "method": "cluster_aware",
+            "recovered": 1,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 8
+          },
+          "all_r@20_qa_bootstrap": {
+            "ci95_high": 0.12,
+            "ci95_low": 0.0,
+            "delta": 0.04,
+            "method": "paired_qa",
+            "recovered": 1,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 25
+          },
+          "candidate_coverage_gold_set_cluster_bootstrap": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "delta": 0.0,
+            "method": "cluster_aware",
+            "recovered": 0,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 8
+          },
+          "candidate_coverage_qa_bootstrap": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "delta": 0.0,
+            "method": "paired_qa",
+            "recovered": 0,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 25
+          }
+        }
+      },
+      "R2_vs_R0": {
+        "OVERALL": {
+          "all_r@20_gold_set_cluster_bootstrap": {
+            "ci95_high": 0.19773255813953483,
+            "ci95_low": -0.017138364779874214,
+            "delta": 0.08602150537634409,
+            "method": "cluster_aware",
+            "recovered": 11,
+            "regressed": 3,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 45
+          },
+          "all_r@20_qa_bootstrap": {
+            "ci95_high": 0.16129032258064516,
+            "ci95_low": 0.010752688172043012,
+            "delta": 0.08602150537634409,
+            "method": "paired_qa",
+            "recovered": 11,
+            "regressed": 3,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": true,
+            "unit_count": 93
+          },
+          "candidate_coverage_gold_set_cluster_bootstrap": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "delta": 0.0,
+            "method": "cluster_aware",
+            "recovered": 0,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 45
+          },
+          "candidate_coverage_qa_bootstrap": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "delta": 0.0,
+            "method": "paired_qa",
+            "recovered": 0,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 93
+          }
+        },
+        "RETRIEVAL_MULTI": {
+          "all_r@20_gold_set_cluster_bootstrap": {
+            "ci95_high": 0.10714285714285714,
+            "ci95_low": 0.0,
+            "delta": 0.04,
+            "method": "cluster_aware",
+            "recovered": 1,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 8
+          },
+          "all_r@20_qa_bootstrap": {
+            "ci95_high": 0.12,
+            "ci95_low": 0.0,
+            "delta": 0.04,
+            "method": "paired_qa",
+            "recovered": 1,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 25
+          },
+          "candidate_coverage_gold_set_cluster_bootstrap": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "delta": 0.0,
+            "method": "cluster_aware",
+            "recovered": 0,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 8
+          },
+          "candidate_coverage_qa_bootstrap": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "delta": 0.0,
+            "method": "paired_qa",
+            "recovered": 0,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 25
+          }
+        }
+      }
+    },
+    "FULL_RETRIEVAL": {
+      "R1_vs_R0": {
+        "OVERALL": {
+          "all_r@20_gold_set_cluster_bootstrap": {
+            "ci95_high": 0.14285714285714285,
+            "ci95_low": -0.09090909090909091,
+            "delta": 0.021505376344086023,
+            "method": "cluster_aware",
+            "recovered": 8,
+            "regressed": 6,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 45
+          },
+          "all_r@20_qa_bootstrap": {
+            "ci95_high": 0.10752688172043011,
+            "ci95_low": -0.053763440860215055,
+            "delta": 0.021505376344086023,
+            "method": "paired_qa",
+            "recovered": 8,
+            "regressed": 6,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 93
+          },
+          "candidate_coverage_gold_set_cluster_bootstrap": {
+            "ci95_high": 0.0379746835443038,
+            "ci95_low": 0.0,
+            "delta": 0.010752688172043012,
+            "method": "cluster_aware",
+            "recovered": 1,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 45
+          },
+          "candidate_coverage_qa_bootstrap": {
+            "ci95_high": 0.03225806451612903,
+            "ci95_low": 0.0,
+            "delta": 0.010752688172043012,
+            "method": "paired_qa",
+            "recovered": 1,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 93
+          }
+        },
+        "RETRIEVAL_MULTI": {
+          "all_r@20_gold_set_cluster_bootstrap": {
+            "ci95_high": 0.10714285714285714,
+            "ci95_low": 0.0,
+            "delta": 0.04,
+            "method": "cluster_aware",
+            "recovered": 1,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 8
+          },
+          "all_r@20_qa_bootstrap": {
+            "ci95_high": 0.12,
+            "ci95_low": 0.0,
+            "delta": 0.04,
+            "method": "paired_qa",
+            "recovered": 1,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 25
+          },
+          "candidate_coverage_gold_set_cluster_bootstrap": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "delta": 0.0,
+            "method": "cluster_aware",
+            "recovered": 0,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 8
+          },
+          "candidate_coverage_qa_bootstrap": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "delta": 0.0,
+            "method": "paired_qa",
+            "recovered": 0,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 25
+          }
+        }
+      },
+      "R2_vs_R0": {
+        "OVERALL": {
+          "all_r@20_gold_set_cluster_bootstrap": {
+            "ci95_high": 0.14494512452511607,
+            "ci95_low": -0.07478398871451243,
+            "delta": 0.03225806451612903,
+            "method": "cluster_aware",
+            "recovered": 9,
+            "regressed": 6,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 45
+          },
+          "all_r@20_qa_bootstrap": {
+            "ci95_high": 0.11827956989247312,
+            "ci95_low": -0.053763440860215055,
+            "delta": 0.03225806451612903,
+            "method": "paired_qa",
+            "recovered": 9,
+            "regressed": 6,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 93
+          },
+          "candidate_coverage_gold_set_cluster_bootstrap": {
+            "ci95_high": 0.0379746835443038,
+            "ci95_low": 0.0,
+            "delta": 0.010752688172043012,
+            "method": "cluster_aware",
+            "recovered": 1,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 45
+          },
+          "candidate_coverage_qa_bootstrap": {
+            "ci95_high": 0.03225806451612903,
+            "ci95_low": 0.0,
+            "delta": 0.010752688172043012,
+            "method": "paired_qa",
+            "recovered": 1,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 93
+          }
+        },
+        "RETRIEVAL_MULTI": {
+          "all_r@20_gold_set_cluster_bootstrap": {
+            "ci95_high": 0.10714285714285714,
+            "ci95_low": 0.0,
+            "delta": 0.04,
+            "method": "cluster_aware",
+            "recovered": 1,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 8
+          },
+          "all_r@20_qa_bootstrap": {
+            "ci95_high": 0.12,
+            "ci95_low": 0.0,
+            "delta": 0.04,
+            "method": "paired_qa",
+            "recovered": 1,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 25
+          },
+          "candidate_coverage_gold_set_cluster_bootstrap": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "delta": 0.0,
+            "method": "cluster_aware",
+            "recovered": 0,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 8
+          },
+          "candidate_coverage_qa_bootstrap": {
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "delta": 0.0,
+            "method": "paired_qa",
+            "recovered": 0,
+            "regressed": 0,
+            "resamples": 1000,
+            "seed": 42,
+            "supports_superiority": false,
+            "unit_count": 25
+          }
+        }
+      }
+    }
+  },
+  "seed": 42
+}

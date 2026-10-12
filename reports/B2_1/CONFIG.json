@@ -1,0 +1,34 @@
+{
+  "bootstrap_resamples": 1000,
+  "candidate_budgets": [
+    50,
+    100,
+    200
+  ],
+  "candidate_test_policy": "SEALED_NOT_PARSED; BYTE_HASH_ONLY",
+  "e5_max_length": 512,
+  "evaluation_split": "dev",
+  "evidence_ks": [
+    10,
+    20,
+    50
+  ],
+  "page_budgets": [
+    10,
+    20,
+    50
+  ],
+  "page_ranking_depth": 100,
+  "page_representations": {
+    "P0": "direct page text; E5 max_length=512",
+    "P1": "E5-tokenizer windows; 384 total tokens; overlap 128; max-pool to page",
+    "P2": "source text/table retrieval units; max-pool E5 relevance to parent page"
+  },
+  "raw_ranking_depth": 200,
+  "rrf_k": 60,
+  "seed": 42,
+  "selection_policy": "fixed-P10 sum of All-R@20, Complete-Page-Recall@10, and Candidate-Coverage@100; latency tie-break",
+  "version": "B2.1",
+  "window_overlap_tokens": 128,
+  "window_total_tokens": 384
+}

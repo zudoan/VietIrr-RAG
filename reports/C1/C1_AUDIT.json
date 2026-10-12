@@ -1,0 +1,79 @@
+{
+  "artifact_recomputation": {
+    "errors": [],
+    "metrics": {
+      "E0": {
+        "all_r@20": 0.6236559139784946,
+        "candidate_coverage@100": 0.7741935483870968,
+        "multi_all_r@20": 0.6
+      },
+      "E1": {
+        "all_r@20": 0.5053763440860215,
+        "candidate_coverage@100": 0.8172043010752689,
+        "multi_all_r@20": 0.52
+      },
+      "E2": {
+        "all_r@20": 0.6451612903225806,
+        "candidate_coverage@100": 0.7741935483870968,
+        "multi_all_r@20": 0.44
+      },
+      "E3": {
+        "all_r@20": 0.6236559139784946,
+        "candidate_coverage@100": 0.7741935483870968,
+        "multi_all_r@20": 0.6
+      }
+    },
+    "status": "PASS",
+    "tolerance": 1e-12
+  },
+  "artifact_sha256": {
+    "cache/global_ranks.jsonl": "0070ed0020da2863906be9a3b1df775749480aa75afdc26e29f63d8be442a13f",
+    "candidates/g0_b100_dev.jsonl": "f331c04269b5112f45f4ee5e04e113f150f6216e1e22b07059bec3af198d9048",
+    "candidates/g1_b100_dev.jsonl": "ffa401f9b4cacc595eda03ee3e11033e36f40cee73971b06f985660c2c6cd287",
+    "rankings/e0_g0_global_rrf_dev.jsonl": "1902b7730f4f261a0a16cd30c6d99c38ff055b779894fdf0faec1692a8c202ec",
+    "rankings/e1_g1_global_rrf_dev.jsonl": "f465c8cda0c29715dde135b2a3600cf20331754fd6c54fb7d93edbd11f9c38a6",
+    "rankings/e2_g0_cross_encoder_dev.jsonl": "94bdd3bfed79f77b3776c1a51193bef6cde6989dbef2f6d3b22d85151fff708c",
+    "rankings/e3_g0_set_aware_dev.jsonl": "1400e27be40f512f70bc6a8909e21bcb55333f2715a9e5e75b6308d5e32eb08b",
+    "traces/e3_set_aware_traces.jsonl": "a926ec96217db74e4ba999f04b4ebc640f86a2c91e636cf6b7a9c96dbaf1d4d2"
+  },
+  "candidate_test_sha256_after": "a9b5f4375ae872778c26766ffd502e3f45c67ea27d9fd50f4050e51a36d3accf",
+  "candidate_test_sha256_before": "a9b5f4375ae872778c26766ffd502e3f45c67ea27d9fd50f4050e51a36d3accf",
+  "checks": {
+    "actual_experiments_93_each": true,
+    "artifact_metrics_independently_recomputed": true,
+    "candidate_ids_unique_and_le_100": true,
+    "candidate_test_not_loaded": true,
+    "candidate_test_untouched": true,
+    "checksums_verified_before_independent_audit": true,
+    "correct_retrieval_level_mapping": true,
+    "cross_document_evidence_allowed": true,
+    "deterministic_artifact_rerun": true,
+    "final_all_r20_le_candidate_coverage": true,
+    "no_fabricated_requirements_or_evidence": true,
+    "no_gold_or_answer_in_generation_signatures": true,
+    "pytest_pass": true,
+    "same_G0_pool_E0_E2_E3": true,
+    "same_global_rrf_scoring_E0_E1": true,
+    "selection_size_le_20_for_E3": true,
+    "selection_subset_of_candidate_pool": true,
+    "selector_does_not_use_relation_or_modality_annotations": true,
+    "source_E0_E2_reused_exactly": true,
+    "temporal_provenance_distinguishes_dates": true
+  },
+  "preflight": {
+    "B1_integrity": "PASS",
+    "B2_3_valid": true,
+    "dev_qa": 93,
+    "document_family_leakage": 0,
+    "missing_gold_retrieval_ids": [],
+    "retrieval_multi_qa": 25,
+    "unique_gold_evidence_sets": 45
+  },
+  "pytest": {
+    "passed": true,
+    "returncode": 0,
+    "summary": "40 passed in 7.80s"
+  },
+  "remaining_blockers": [],
+  "status": "PASS"
+}

@@ -1,0 +1,158 @@
+{
+  "cache": {
+    "bm25_page_hit": true,
+    "bm25_region_hit": true,
+    "e5_page_hit": true,
+    "e5_region_hit": true
+  },
+  "candidate_test_annotations_loaded_by_runner": false,
+  "candidate_test_bytes_hashed_only": true,
+  "candidate_test_hash_after": "a9b5f4375ae872778c26766ffd502e3f45c67ea27d9fd50f4050e51a36d3accf",
+  "candidate_test_hash_before": "a9b5f4375ae872778c26766ffd502e3f45c67ea27d9fd50f4050e51a36d3accf",
+  "candidate_test_used_for_evaluation_or_tuning": false,
+  "corpus_counts": {
+    "evidence_units": 27045,
+    "pages": 2479
+  },
+  "evaluation_split": "dev",
+  "experiment": "VIETIRR_RAG_PHASE_B2",
+  "frozen_config": {
+    "bm25": {
+      "b": 0.75,
+      "k1": 1.5,
+      "tokenizer": "unicode_nfc_casefold_word_v1"
+    },
+    "candidate_test_policy": "SEALED_NOT_READ_BY_B2_RUNNER",
+    "e5": {
+      "batch_size": 16,
+      "max_length": 512,
+      "model_id": "intfloat/multilingual-e5-large",
+      "normalize_embeddings": true,
+      "passage_prefix": "passage: ",
+      "query_prefix": "query: "
+    },
+    "evaluation_split": "dev",
+    "evidence_k": [
+      5,
+      10,
+      20,
+      50,
+      100,
+      200
+    ],
+    "hybrid": {
+      "fusion": "RRF",
+      "rrf_k": 60
+    },
+    "page_p": [
+      5,
+      10,
+      20,
+      50,
+      100
+    ],
+    "page_region": {
+      "fusion": "RRF",
+      "page_representation": "direct_text",
+      "page_top_p": 10,
+      "pruning": "hard",
+      "region_retrieval": "hybrid_bm25_e5",
+      "rrf_k": 60
+    },
+    "processed": {
+      "evidence_units": "data/processed/evidence_units.jsonl",
+      "pages": "data/processed/pages.jsonl"
+    },
+    "source": {
+      "benchmark": "data/v3_2_final_semantic",
+      "documents": "data/v3_1/metadata/documents.jsonl",
+      "pages": "data/pages.jsonl",
+      "regions": "data/parsed/regions.jsonl",
+      "tables": "data/parsed/tables.jsonl"
+    },
+    "top_k": 200,
+    "version": "B2"
+  },
+  "hardware": {
+    "cuda_available": true,
+    "cuda_version": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.10.11"
+  },
+  "human_validated": false,
+  "input_sha256": {
+    "dev": "cc460f860de59c00a961dc00dea56f204c66f270c7a48d2ee840cb73c302d30f",
+    "evidence_units": "123aaac55ba1d0b30c469087b29b5deeccf56e42ab498fc222538a19e8b524ba",
+    "pages": "d5c5adf5cda9e134fb4c689f97f98c6b9e936dedf2cf28f7e5996a8c3e7de94d"
+  },
+  "model": {
+    "device": "cuda",
+    "embedding_dimension": 1024,
+    "id": "intfloat/multilingual-e5-large",
+    "max_length": 512,
+    "normalized": true,
+    "page_embedding": {
+      "corpus_sha256": "d5c5adf5cda9e134fb4c689f97f98c6b9e936dedf2cf28f7e5996a8c3e7de94d",
+      "count": 2479,
+      "device": "cuda",
+      "dimension": 1024,
+      "effective_batch_size": 16,
+      "embedding_seconds": 82.34545819999994,
+      "initial_batch_size": 16,
+      "max_length": 512,
+      "max_observed_tokens": 4163,
+      "model_id": "intfloat/multilingual-e5-large",
+      "normalized": true,
+      "passage_prefix": "passage: ",
+      "revision": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3",
+      "truncated_count": 1652,
+      "truncated_rate": 0.6663977410246067
+    },
+    "passage_prefix": "passage: ",
+    "query_prefix": "query: ",
+    "region_embedding": {
+      "corpus_sha256": "123aaac55ba1d0b30c469087b29b5deeccf56e42ab498fc222538a19e8b524ba",
+      "count": 27045,
+      "device": "cuda",
+      "dimension": 1024,
+      "effective_batch_size": 16,
+      "embedding_seconds": 137.1267687999998,
+      "initial_batch_size": 16,
+      "max_length": 512,
+      "max_observed_tokens": 2786,
+      "model_id": "intfloat/multilingual-e5-large",
+      "normalized": true,
+      "passage_prefix": "passage: ",
+      "revision": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3",
+      "truncated_count": 280,
+      "truncated_rate": 0.01035311517840636
+    },
+    "revision": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3",
+    "similarity": "inner_product_on_L2_normalized_vectors",
+    "training": "none"
+  },
+  "software": {
+    "numpy": "2.2.6",
+    "pytest": "9.1.1",
+    "scipy": "1.15.3",
+    "sentence-transformers": "6.1.0",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.19.0"
+  },
+  "timing_seconds": {
+    "bm25_page_index_cpu": 0.0,
+    "bm25_region_index_cpu": 0.0,
+    "e5_page_embedding_gpu": 82.34545819999994,
+    "e5_page_query_encoding_gpu": 1.5480104000012034,
+    "e5_query_encoding_gpu": 1.6700127000003704,
+    "e5_region_embedding_gpu": 137.1267687999998,
+    "end_to_end_mixed_cpu_gpu_diagnostic_by_method": {
+      "bm25": 0.2461741000006441,
+      "e5": 2.2898850999999922,
+      "hybrid": 2.7912328999996134,
+      "page_region": 2.291072500000155
+    },
+    "evaluation_total_mixed_diagnostic": 7.8644319
+  }
+}

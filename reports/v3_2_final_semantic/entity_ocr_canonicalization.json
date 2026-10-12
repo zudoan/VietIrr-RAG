@@ -1,0 +1,894 @@
+{
+  "raw_source_preserved": true,
+  "records": [
+    {
+      "checks": [
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hiện tại — Wtb (triệu m3)",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich hi9n t;,1i — Wtb (trieu m3)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Cao Ngạn",
+          "path": "gold_evidence[1].entity",
+          "raw": "Cao Ngan",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hiện tại — Wtb (triệu m3)",
+          "path": "gold_evidence[1].metric_raw",
+          "raw": "Dung tich hi9n t;,1i — Wtb (trieu m3)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Cây Thông",
+          "path": "gold_evidence[2].entity",
+          "raw": "Cay Thong",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hiện tại — Wtb (triệu m3)",
+          "path": "gold_evidence[2].metric_raw",
+          "raw": "Dung tich hi9n t;,1i — Wtb (trieu m3)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hiện tại — Wtb (triệu m3)",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich hi9n t;,1i — Wtb (trieu m3)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Cao Ngạn",
+          "path": "gold_evidence[1].entity",
+          "raw": "Cao Ngan",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hiện tại — Wtb (triệu m3)",
+          "path": "gold_evidence[1].metric_raw",
+          "raw": "Dung tich hi9n t;,1i — Wtb (trieu m3)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Cây Thông",
+          "path": "gold_evidence[2].entity",
+          "raw": "Cay Thong",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hiện tại — Wtb (triệu m3)",
+          "path": "gold_evidence[2].metric_raw",
+          "raw": "Dung tich hi9n t;,1i — Wtb (trieu m3)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_1_CHAL_00086",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    },
+    {
+      "checks": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Ái Nghĩa",
+          "path": "gold_evidence[0].entity",
+          "raw": "Ai NghTa",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Diện tích đáp ứng (ha)",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dien tich dap irng (ha)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Diện tích đáp ứng (ha)",
+          "path": "gold_evidence[1].metric_raw",
+          "raw": "Dien tich dap irng (ha)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Bàu Nít",
+          "path": "gold_evidence[2].entity",
+          "raw": "Bau Nit",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Diện tích đáp ứng (ha)",
+          "path": "gold_evidence[2].metric_raw",
+          "raw": "Dien tich dap irng (ha)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Ái Nghĩa",
+          "path": "gold_evidence[0].entity",
+          "raw": "Ai NghTa",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Diện tích đáp ứng (ha)",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dien tich dap irng (ha)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Diện tích đáp ứng (ha)",
+          "path": "gold_evidence[1].metric_raw",
+          "raw": "Dien tich dap irng (ha)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Bàu Nít",
+          "path": "gold_evidence[2].entity",
+          "raw": "Bau Nit",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Diện tích đáp ứng (ha)",
+          "path": "gold_evidence[2].metric_raw",
+          "raw": "Dien tich dap irng (ha)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_1_CHAL_00088",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    },
+    {
+      "checks": [
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hiện tại — Wtb (triệu m3)",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich hi9n t;,1i — Wtb (trieu m3)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Cao Ngạn",
+          "path": "gold_evidence[1].entity",
+          "raw": "Cao Ngan",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hiện tại — Wtb (triệu m3)",
+          "path": "gold_evidence[1].metric_raw",
+          "raw": "Dung tich hi9n t;,1i — Wtb (trieu m3)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hiện tại — Wtb (triệu m3)",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich hi9n t;,1i — Wtb (trieu m3)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Cao Ngạn",
+          "path": "gold_evidence[1].entity",
+          "raw": "Cao Ngan",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hiện tại — Wtb (triệu m3)",
+          "path": "gold_evidence[1].metric_raw",
+          "raw": "Dung tich hi9n t;,1i — Wtb (trieu m3)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_1_CHAL_00110",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    },
+    {
+      "checks": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Cao Ngạn",
+          "path": "gold_evidence[0].entity",
+          "raw": "Cao Ngan",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hiện tại — Wtb (triệu m3)",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich hi9n t;,1i — Wtb (trieu m3)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Cây Thông",
+          "path": "gold_evidence[1].entity",
+          "raw": "Cay Thong",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hiện tại — Wtb (triệu m3)",
+          "path": "gold_evidence[1].metric_raw",
+          "raw": "Dung tich hi9n t;,1i — Wtb (trieu m3)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Cao Ngạn",
+          "path": "gold_evidence[0].entity",
+          "raw": "Cao Ngan",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hiện tại — Wtb (triệu m3)",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich hi9n t;,1i — Wtb (trieu m3)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Cây Thông",
+          "path": "gold_evidence[1].entity",
+          "raw": "Cay Thong",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hiện tại — Wtb (triệu m3)",
+          "path": "gold_evidence[1].metric_raw",
+          "raw": "Dung tich hi9n t;,1i — Wtb (trieu m3)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_1_CHAL_00117",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    },
+    {
+      "checks": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Cao Ngạn",
+          "path": "gold_evidence[0].entity",
+          "raw": "Cao Ngan",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Diện tích đáp ứng (ha)",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dien tich dap irng (ha)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Cây Thông",
+          "path": "gold_evidence[1].entity",
+          "raw": "Cay Thong",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Diện tích đáp ứng (ha)",
+          "path": "gold_evidence[1].metric_raw",
+          "raw": "Dien tich dap irng (ha)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Cao Ngạn",
+          "path": "gold_evidence[0].entity",
+          "raw": "Cao Ngan",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Diện tích đáp ứng (ha)",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dien tich dap irng (ha)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Cây Thông",
+          "path": "gold_evidence[1].entity",
+          "raw": "Cay Thong",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Diện tích đáp ứng (ha)",
+          "path": "gold_evidence[1].metric_raw",
+          "raw": "Dien tich dap irng (ha)",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_1_CHAL_00136",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    },
+    {
+      "checks": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Quảng Nam",
+          "path": "gold_evidence[0].entity",
+          "raw": "Quang Nam",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich bg to~m m3 (tri~u ) — Thi St kS",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Quảng Nam",
+          "path": "gold_evidence[0].entity",
+          "raw": "Quang Nam",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich bg to~m m3 (tri~u ) — Thi St kS",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_CORE_00323",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    },
+    {
+      "checks": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Quảng Ngãi",
+          "path": "gold_evidence[0].entity",
+          "raw": "QuangNgai",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich bg to~m m3 (tri~u ) — Thi St kS",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Quảng Ngãi",
+          "path": "gold_evidence[0].entity",
+          "raw": "QuangNgai",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich bg to~m m3 (tri~u ) — Thi St kS",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_CORE_00324",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    },
+    {
+      "checks": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Bình Định",
+          "path": "gold_evidence[0].entity",
+          "raw": "Blnh Dinh",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich bg to~m m3 (tri~u ) — Thi St kS",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Bình Định",
+          "path": "gold_evidence[0].entity",
+          "raw": "Blnh Dinh",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich bg to~m m3 (tri~u ) — Thi St kS",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_CORE_00325",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    },
+    {
+      "checks": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Khánh Hòa",
+          "path": "gold_evidence[0].entity",
+          "raw": "Khanh Hoa",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich bg to~m m3 (tri~u ) — Thi St kS",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Khánh Hòa",
+          "path": "gold_evidence[0].entity",
+          "raw": "Khanh Hoa",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich bg to~m m3 (tri~u ) — Thi St kS",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_CORE_00326",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    },
+    {
+      "checks": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "A Vương",
+          "path": "gold_evidence[0].entity",
+          "raw": "A Vuong",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich toan b(.> m3 (tri~u ) — ThiSt k6",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "A Vương",
+          "path": "gold_evidence[0].entity",
+          "raw": "A Vuong",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich toan b(.> m3 (tri~u ) — ThiSt k6",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_CORE_00329",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    },
+    {
+      "checks": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Đắk Đrinh",
+          "path": "gold_evidence[0].entity",
+          "raw": "Dak Drinh",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich toan b(.> m3 (tri~u ) — ThiSt k6",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Đắk Đrinh",
+          "path": "gold_evidence[0].entity",
+          "raw": "Dak Drinh",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich toan b(.> m3 (tri~u ) — ThiSt k6",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_CORE_00330",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    },
+    {
+      "checks": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Vĩnh Sơn C",
+          "path": "gold_evidence[0].entity",
+          "raw": "Vinh Son C",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich toan b(.> m3 (tri~u ) — ThiSt k6",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Vĩnh Sơn C",
+          "path": "gold_evidence[0].entity",
+          "raw": "Vinh Son C",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich toan b(.> m3 (tri~u ) — ThiSt k6",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_CORE_00331",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    },
+    {
+      "checks": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Ka Năk",
+          "path": "gold_evidence[0].entity",
+          "raw": "KaNak",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich toan b(.> m3 (tri~u ) — ThiSt k6",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Ka Năk",
+          "path": "gold_evidence[0].entity",
+          "raw": "KaNak",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich toan b(.> m3 (tri~u ) — ThiSt k6",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_CORE_00332",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    },
+    {
+      "checks": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "An Khê",
+          "path": "gold_evidence[0].entity",
+          "raw": "An Khe",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich toan b(.> m3 (tri~u ) — ThiSt k6",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "An Khê",
+          "path": "gold_evidence[0].entity",
+          "raw": "An Khe",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich toan b(.> m3 (tri~u ) — ThiSt k6",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_CORE_00333",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    },
+    {
+      "checks": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Sông Hinh",
+          "path": "gold_evidence[0].entity",
+          "raw": "Song Hinh",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich toan b(.> m3 (tri~u ) — ThiSt k6",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Sông Hinh",
+          "path": "gold_evidence[0].entity",
+          "raw": "Song Hinh",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        },
+        {
+          "normalization_basis": "reconstructed from the table's multi-level header, unit, and adjacent column labels",
+          "normalized": "Dung tích hồ toàn bộ (triệu m3) — Thiết kế",
+          "path": "gold_evidence[0].metric_raw",
+          "raw": "Dung tich toan b(.> m3 (tri~u ) — ThiSt k6",
+          "semantic_role": "metric",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_CORE_00335",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    },
+    {
+      "checks": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Nho Quan",
+          "path": "gold_evidence[0].entity",
+          "raw": "NHO QUAN",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "Nho Quan",
+          "path": "gold_evidence[0].entity",
+          "raw": "NHO QUAN",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_CORE_00352",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    },
+    {
+      "checks": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "C. An Trung",
+          "path": "gold_evidence[0].entity",
+          "raw": "C.An Trung",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "C. An Trung",
+          "path": "gold_evidence[0].entity",
+          "raw": "C.An Trung",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_CORE_00391",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    },
+    {
+      "checks": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "C. An Trung",
+          "path": "gold_evidence[0].entity",
+          "raw": "C.An Trung",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        }
+      ],
+      "normalizations": [
+        {
+          "normalization_basis": "canonical spelling confirmed by another legible occurrence in the same corpus/source family",
+          "normalized": "C. An Trung",
+          "path": "gold_evidence[0].entity",
+          "raw": "C.An Trung",
+          "semantic_role": "entity",
+          "status": "NORMALIZED"
+        }
+      ],
+      "qa_id": "V3_CORE_00399",
+      "raw_source_preserved": true,
+      "status": "NORMALIZED",
+      "uncertain_fields": []
+    }
+  ],
+  "status_counts": {
+    "CLEAN": 527,
+    "NORMALIZED": 18
+  },
+  "unresolved_accepted": []
+}

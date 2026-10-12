@@ -1,0 +1,33 @@
+{
+  "version": "R1",
+  "evaluation_split": "dev",
+  "representations": ["R0", "R1", "R2"],
+  "model": {
+    "id": "intfloat/multilingual-e5-large",
+    "query_prefix": "query: ",
+    "passage_prefix": "passage: ",
+    "max_length": 512,
+    "batch_size": 16,
+    "normalize_embeddings": true
+  },
+  "windowing": {
+    "content_tokens": 384,
+    "overlap_tokens": 128,
+    "aggregation": "max",
+    "apply_to_all_representations": true
+  },
+  "retrieval": {
+    "page_representation": "P0_FIXED",
+    "page_budget": 20,
+    "candidate_budget": 100,
+    "final_k": 20,
+    "rrf_k": 60,
+    "bm25": "FIXED_B2_CACHE"
+  },
+  "statistics": {"bootstrap_resamples": 1000, "seed": 42},
+  "baseline_tolerance": {
+    "overall_qa_count": 1,
+    "multi_qa_count": 1
+  },
+  "candidate_test_policy": "SEALED_NOT_PARSED; BYTE_HASH_ONLY"
+}

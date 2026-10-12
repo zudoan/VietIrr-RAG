@@ -1,0 +1,23 @@
+diagnostic_type,method,page_budget,candidate_budget,multi_complete_qa,multi_total_qa,multi_complete_rate,fully_complete_unique_gold_sets,total_unique_gold_sets,note
+RAW_PAGE_CEILING,P0,10,,11,25,0.44,2,8,Gold used only to score whether selected pages contain all gold units
+RAW_PAGE_CEILING,P0,20,,17,25,0.68,4,8,Gold used only to score whether selected pages contain all gold units
+RAW_PAGE_CEILING,P0,50,,21,25,0.84,6,8,Gold used only to score whether selected pages contain all gold units
+RAW_PAGE_CEILING,P2,10,,15,25,0.6,5,8,Gold used only to score whether selected pages contain all gold units
+RAW_PAGE_CEILING,P2,20,,17,25,0.68,5,8,Gold used only to score whether selected pages contain all gold units
+RAW_PAGE_CEILING,P2,50,,22,25,0.88,6,8,Gold used only to score whether selected pages contain all gold units
+BUDGETED_CANDIDATE,G0,20,100,17,25,0.68,4,8,
+BUDGETED_CANDIDATE,G1,mixed,100,21,25,0.84,6,8,
+BUDGETED_CANDIDATE,p0_s0_b100_dev,10,100,11,25,0.44,2,8,
+BUDGETED_CANDIDATE,p0_s0_b50_dev,10,50,11,25,0.44,2,8,
+BUDGETED_CANDIDATE,p0_s1_b100_dev,20,100,17,25,0.68,4,8,
+BUDGETED_CANDIDATE,p0_s1_b50_dev,20,50,17,25,0.68,4,8,
+BUDGETED_CANDIDATE,p0_s2_b100_dev,10,100,19,25,0.76,6,8,
+BUDGETED_CANDIDATE,p0_s2_b50_dev,10,50,15,25,0.6,4,8,
+BUDGETED_CANDIDATE,p2_s0_b100_dev,10,100,15,25,0.6,5,8,
+BUDGETED_CANDIDATE,p2_s0_b50_dev,10,50,15,25,0.6,5,8,
+BUDGETED_CANDIDATE,p2_s1_b100_dev,20,100,17,25,0.68,5,8,
+BUDGETED_CANDIDATE,p2_s1_b50_dev,20,50,17,25,0.68,5,8,
+BUDGETED_CANDIDATE,p2_s2_b100_dev,10,100,19,25,0.76,6,8,
+BUDGETED_CANDIDATE,p2_s2_b50_dev,10,50,17,25,0.68,5,8,
+FLAT_RANKING,FLAT_BM25_E5_UNION_TOP200,,200,23,25,0.92,7,8,
+ORACLE_DIAGNOSTIC_UNION,UNION_OF_EXISTING_ARTIFACTS,,varies,25,25,1.0,8,8,Non-deployable ceiling; gold is used only after retrieval to score completeness

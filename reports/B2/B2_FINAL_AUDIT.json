@@ -1,0 +1,44 @@
+{
+  "artifact_presence": {
+    "B2_BASELINE_METRICS.json": true,
+    "B2_BASELINE_REPORT.md": true,
+    "B2_CANDIDATE_CEILING.json": true,
+    "B2_EXPERIMENT_MANIFEST.json": true,
+    "B2_FAILURE_ANALYSIS.md": true,
+    "B2_FAILURE_DETAILS.jsonl": true,
+    "B2_PAGE_DIAGNOSTICS.json": true
+  },
+  "candidate_test_untouched": true,
+  "gates": {
+    "B1_INTEGRITY_PASS": true,
+    "B2_IMPLEMENTATION_COMPLETE": true,
+    "BM25_EXECUTED": true,
+    "CANDIDATE_TEST_UNTOUCHED": true,
+    "E5_EXECUTED": true,
+    "EVALUATION_VALID": true,
+    "FAILURE_DIAGNOSIS_COMPLETE": true,
+    "HYBRID_EXECUTED": true,
+    "NO_QA_GOLD_INDEX_LEAKAGE": true,
+    "PAGE_REGION_EXECUTED": true,
+    "REPRODUCIBILITY_PASS": true
+  },
+  "human_validated": false,
+  "index_leakage_fields": [
+    "answer",
+    "answer_evidence_ids",
+    "gold_evidence",
+    "question",
+    "retrieval_evidence_ids"
+  ],
+  "metric_invariants_pass": true,
+  "pytest_pass": true,
+  "ranking_sha256": {
+    "bm25": "4d554722b299b815ddddbf14228d18c6d8d67d0d9a216e594bdca0cdb8a29b04",
+    "e5": "0d0bf31488ce5e6f4b5228f3a7d9fd863d9a1e62172dc41f8adda274a73ff75c",
+    "hybrid": "9ded1335d2dcce0b1b05177103572cb99c46b18603e259f0ac012783e623ae42",
+    "page_region": "bb9d14548533b26277cf5cce35a745aa84e9084d1dacaa3918949279a990f927"
+  },
+  "rankings_valid": true,
+  "remaining_blockers": [],
+  "status": "PASS"
+}

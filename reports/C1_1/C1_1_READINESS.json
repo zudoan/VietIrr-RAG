@@ -1,0 +1,62 @@
+{
+  "C1_1_VALID": true,
+  "E4_vs_E0": {
+    "recovered": 3,
+    "recovered_qa_ids": [
+      "V3_CORE_00428",
+      "V3_CORE_00429",
+      "V3_CORE_00431"
+    ],
+    "regressed": 0,
+    "regressed_qa_ids": []
+  },
+  "E4_vs_E0_multi": {
+    "recovered": 0,
+    "recovered_qa_ids": [],
+    "regressed": 0,
+    "regressed_qa_ids": []
+  },
+  "EVIDENCE_SET_SELECTION_PROMISING": false,
+  "G1_regressions_analyzed": 13,
+  "READY_FOR_C2": false,
+  "candidate_test_untouched": true,
+  "decision": "EVIDENCE_SET_SELECTION_NOT_PROMISING",
+  "dev_qa": 93,
+  "experiments": {
+    "E0": {
+      "all_r@20": 0.6236559139784946,
+      "multi_all_r@20": 0.6
+    },
+    "E2": {
+      "all_r@20": 0.6451612903225806,
+      "multi_all_r@20": 0.44
+    },
+    "E3": {
+      "all_r@20": 0.6236559139784946,
+      "multi_all_r@20": 0.6
+    },
+    "E4": {
+      "all_r@20": 0.6559139784946236,
+      "multi_all_r@20": 0.6
+    }
+  },
+  "main_regression_causes": {
+    "COMPETING_EVIDENCE": 13,
+    "PROVENANCE_CONFUSION": 1,
+    "RANK_DISPLACEMENT": 13
+  },
+  "main_remaining_bottleneck": "G1_CANDIDATE_COMPETITION_AND_INCOMPLETE_STRUCTURED_METADATA",
+  "recommended_next_step": "Do not proceed to C2; prioritize candidate/ranking diagnosis over a more complex selector.",
+  "remaining_blockers": [],
+  "requirements": {
+    "after_forecast": 16,
+    "after_temporal": 6,
+    "before_forecast": 65,
+    "before_temporal": 91,
+    "first_evidence_saturation_after": 61,
+    "first_evidence_saturation_before": 78
+  },
+  "retrieval_multi_qa": 25,
+  "status": "PASS",
+  "unique_gold_sets": 45
+}

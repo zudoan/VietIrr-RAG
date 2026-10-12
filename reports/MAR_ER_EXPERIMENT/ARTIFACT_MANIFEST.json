@@ -1,0 +1,273 @@
+{
+  "candidate_test_included": false,
+  "candidate_test_sha256": "a9b5f4375ae872778c26766ffd502e3f45c67ea27d9fd50f4050e51a36d3accf",
+  "created_at_utc": "2026-10-12T11:12:51.314402+00:00",
+  "embedding_caches_included": false,
+  "excluded_large_cache_references": [
+    {
+      "bytes": 114339968,
+      "path": "outputs/R1/cache/r0_window_embeddings.npy",
+      "sha256": "a7f8b70a4a1cb75690a2f0f715788d137de062fb96ed3a0bf00f2af01764f57f"
+    },
+    {
+      "bytes": 114790528,
+      "path": "outputs/R1/cache/r1_window_embeddings.npy",
+      "sha256": "04d00e20726de81f050b636390190075a3cb87204a021248860d3bc45352ec09"
+    },
+    {
+      "bytes": 1552512,
+      "path": "outputs/MASH_ER/cache/table_struct_window_embeddings.npy",
+      "sha256": "eaef578df4404699a354ce9455c0e5fe1c97c014dcb137da964545f64eef108e"
+    },
+    {
+      "bytes": 9152939,
+      "path": "outputs/B2/cache/bm25_regions.pkl",
+      "sha256": "ba1b8f6c1cec3382608ad0f701d890d239c74deef83ae73c851c85a6ac054769"
+    }
+  ],
+  "experiment_valid": true,
+  "full_corpus_included": false,
+  "included_files": [
+    {
+      "bytes": 2729,
+      "path": "configs/mar_er.json",
+      "sha256": "266fe329232c3d43f9ea34bde874820d7c00ed272c7e3e31ccf47a0cea403d8b"
+    },
+    {
+      "bytes": 1769430,
+      "path": "data/benchmark/dev.jsonl",
+      "sha256": "cc460f860de59c00a961dc00dea56f204c66f270c7a48d2ee840cb73c302d30f"
+    },
+    {
+      "bytes": 4499905,
+      "path": "outputs/MAR_ER/metadata/evidence_manifest.jsonl",
+      "sha256": "46d03571f829d64f0703e22111eb42870d67f8e5ac7d8fd15023093ec8a020cc"
+    },
+    {
+      "bytes": 2477919,
+      "path": "outputs/MAR_ER/rankings/m0_dev.jsonl",
+      "sha256": "5590d7132768ca4b7d77dde88569c258204c5a0608ae924efa703dd7748e9b67"
+    },
+    {
+      "bytes": 2477374,
+      "path": "outputs/MAR_ER/rankings/m1_dev.jsonl",
+      "sha256": "ffd931aaa5129915a9c9c42fdcc09feb95afdc4d08d77b2a64928c3f8d966875"
+    },
+    {
+      "bytes": 2475943,
+      "path": "outputs/MAR_ER/rankings/m2_dev.jsonl",
+      "sha256": "dab2a8a711d6bbbdadf39d7fd5099544251592006d9b8eed21b4ffa54e934394"
+    },
+    {
+      "bytes": 2477919,
+      "path": "outputs/MAR_ER/rankings/m3_dev.jsonl",
+      "sha256": "1a909935ae9a78bc567bd922fedb13497e0ad0b7d6ee57d41d53edf431d22330"
+    },
+    {
+      "bytes": 2475549,
+      "path": "outputs/MAR_ER/rankings/m4_dev.jsonl",
+      "sha256": "3bd35b1380de4ade9c39f4ee5cb3ea739b7c176ea4bde54c638e627e58f51167"
+    },
+    {
+      "bytes": 7725632,
+      "path": "outputs/MAR_ER/traces/m0_score_traces.jsonl",
+      "sha256": "24e88bb7fe1ee40910b29d806e691619f369789f9fb5718d5ce25eaaa06ef9ec"
+    },
+    {
+      "bytes": 7725087,
+      "path": "outputs/MAR_ER/traces/m1_score_traces.jsonl",
+      "sha256": "e752b590c151a98ec41d3479953ec9bb2531e0746b95433f2533d1b8a9be753b"
+    },
+    {
+      "bytes": 8004172,
+      "path": "outputs/MAR_ER/traces/m2_score_traces.jsonl",
+      "sha256": "8cc64db90426c3ab14570aadad8c8cebe5284856b19f7bf5e3a72d9d2029af57"
+    },
+    {
+      "bytes": 7723772,
+      "path": "outputs/MAR_ER/traces/m3_score_traces.jsonl",
+      "sha256": "b5b578e52e5df5c132c911728b4cc0b14180497c43951acaab8df098878ef19c"
+    },
+    {
+      "bytes": 8007214,
+      "path": "outputs/MAR_ER/traces/m4_score_traces.jsonl",
+      "sha256": "dd94d0e6b7e64ebeb5213adf566ce5c1c7d1c478b1a6fadea3e8f735de6da343"
+    },
+    {
+      "bytes": 2491964,
+      "path": "outputs/MASH_ER/rankings/a0_dev.jsonl",
+      "sha256": "1a792b8abdb261dea51fb4fe714f63c4778fc8c6a0d96961344e4500363ee9f0"
+    },
+    {
+      "bytes": 439,
+      "path": "pyproject.toml",
+      "sha256": "151f4976add5374fbe11043eee31709bad3c405933baac08a269f0ac2bd71df3"
+    },
+    {
+      "bytes": 994,
+      "path": "reports/C1/C1_RESULTS.csv",
+      "sha256": "05b77fb609f9ac957371932e89b94a6fe98926d8da7151882748fd9afa360750"
+    },
+    {
+      "bytes": 10133,
+      "path": "reports/MAR_ER_DESIGN/EXPERIMENT_PLAN.md",
+      "sha256": "00741b20085371e60675598f6779e528dd053639051dc63d6ebfddbba11ec6ad"
+    },
+    {
+      "bytes": 9408,
+      "path": "reports/MAR_ER_DESIGN/FAILURE_ANALYSIS.md",
+      "sha256": "1f31bc1c01eace945fa8e0a018ddf7a449f0aed4420c6106fe2c3d3e9f7fd1dd"
+    },
+    {
+      "bytes": 17504,
+      "path": "reports/MAR_ER_DESIGN/METHOD_SPEC.md",
+      "sha256": "8844409e9fba1abd99488743c60bb2ce4ac0e4f2b8c881abf30599f4d7ef0139"
+    },
+    {
+      "bytes": 12176,
+      "path": "reports/MAR_ER_DESIGN/RESEARCH_READINESS.md",
+      "sha256": "e6a832dcbce6439930f66298d7625b1859f164143124e927fc278420a02b9bda"
+    },
+    {
+      "bytes": 2609,
+      "path": "reports/MAR_ER_EXPERIMENT/ABLATIONS.json",
+      "sha256": "22a53297560b7f104de1141d0813c3efd773c1d6ac3b1f4041d007c7407be244"
+    },
+    {
+      "bytes": 441,
+      "path": "reports/MAR_ER_EXPERIMENT/BASELINE_VERIFICATION.json",
+      "sha256": "ccd491bc87189a236f622f18335880458dc81ddda67caa8f021e0b05fc676796"
+    },
+    {
+      "bytes": 910,
+      "path": "reports/MAR_ER_EXPERIMENT/EFFICIENCY.json",
+      "sha256": "928e3770ddd91400ae0d1fa5b20bd835b750df0b576b6b1fe877d9d193c28a5f"
+    },
+    {
+      "bytes": 229,
+      "path": "reports/MAR_ER_EXPERIMENT/ENVIRONMENT.json",
+      "sha256": "ff2921bfdcf2275a1057cfbda5bd35ed3b0234c36ddd7584f80342a71ef7d2d0"
+    },
+    {
+      "bytes": 70570,
+      "path": "reports/MAR_ER_EXPERIMENT/FAILURE_TRANSITIONS.jsonl",
+      "sha256": "3ddbc3ba3d8cec6da64ba40175c1893acc0660d8cec86dfc7c008ffeab40301f"
+    },
+    {
+      "bytes": 1809,
+      "path": "reports/MAR_ER_EXPERIMENT/FINAL_AUDIT.json",
+      "sha256": "ef010902328cf1aad4265828ff4a5534373d5c6cc87ccaef27ee56ea54577fca"
+    },
+    {
+      "bytes": 7586,
+      "path": "reports/MAR_ER_EXPERIMENT/FROZEN_CONFIG.json",
+      "sha256": "11d422efea4ff9e085f4932d09273c5dfe7105fdd8cd73db354e086f0ca35798"
+    },
+    {
+      "bytes": 2128,
+      "path": "reports/MAR_ER_EXPERIMENT/MAR_ER_REPORT.md",
+      "sha256": "f6970a9cb7feff84b4776ffc9880351bca9991b2f192d4b0183fbe021f6b1f93"
+    },
+    {
+      "bytes": 2409,
+      "path": "reports/MAR_ER_EXPERIMENT/METHOD_IMPLEMENTATION_AUDIT.json",
+      "sha256": "bceefb7caf177c8afdd3118818f19e06cf66a89b889d655a28b0d72411e2fa29"
+    },
+    {
+      "bytes": 2493,
+      "path": "reports/MAR_ER_EXPERIMENT/PREFLIGHT.json",
+      "sha256": "dc42ad3911d35a17d9f27745920034cf1fd3bbd914c3c40d8b4bc2bc2986cc5a"
+    },
+    {
+      "bytes": 66949,
+      "path": "reports/MAR_ER_EXPERIMENT/RANK_STABILITY_AUDIT.json",
+      "sha256": "e14abf5877b5c0262e6ea649d2878ed4ac02c954115512c2c181520212d1c07f"
+    },
+    {
+      "bytes": 593,
+      "path": "reports/MAR_ER_EXPERIMENT/READINESS.json",
+      "sha256": "77a53c0f057954fbbdcb17b28a7857a592169522240c17a140b5f6d10349241a"
+    },
+    {
+      "bytes": 1452,
+      "path": "reports/MAR_ER_EXPERIMENT/RESULTS.csv",
+      "sha256": "f3a9d175624e8aaefee1d8201358ff2faf6b5c12a1a508a142b77dc32f629881"
+    },
+    {
+      "bytes": 5684,
+      "path": "reports/MAR_ER_EXPERIMENT/STATISTICS.json",
+      "sha256": "f3d3c7d76c8d9460642b65ac4110b9cae52c0575f50cf22ced4371521507c71a"
+    },
+    {
+      "bytes": 58218,
+      "path": "reports/MAR_ER_EXPERIMENT/SUBGROUPS.json",
+      "sha256": "3b77c0e949ce8fa4099a857944d71738c13f1f2804f282c07e66076b7ce73b28"
+    },
+    {
+      "bytes": 312,
+      "path": "reports/MAR_ER_EXPERIMENT/TEST_RESULTS.json",
+      "sha256": "7cd774737c11adaa870eed2d91ce24c5e3f0a674ac481242d885b004d3dfc435"
+    },
+    {
+      "bytes": 3852,
+      "path": "reports/MASH_ER/BASELINE_VERIFICATION.json",
+      "sha256": "1eba02b36cbb985f14ced81979bbf4fb1928432616853a86e7c4c0c48bb3111c"
+    },
+    {
+      "bytes": 1165,
+      "path": "reports/MASH_ER/RESULTS.csv",
+      "sha256": "2bac2c390d84f24d21326316058584c4c9a9443f3dd861330cf3e971e2aae4d0"
+    },
+    {
+      "bytes": 1720,
+      "path": "reports/R1/RESULTS.csv",
+      "sha256": "c6219e1f8b816f8cf6514ffdba0228c9111e6e634d16dadc632afb2d06d2e918"
+    },
+    {
+      "bytes": 11285,
+      "path": "scripts/audit_mar_er.py",
+      "sha256": "7dfe2363db2315d5add6028588b67655e8718fd2f3c5c68b64f322d3ab3b783c"
+    },
+    {
+      "bytes": 4549,
+      "path": "scripts/package_mar_er.py",
+      "sha256": "96e7486b5ca2da45d16685ee916e91d7e94dee1a007a77d57ba37b5f804027dc"
+    },
+    {
+      "bytes": 11101,
+      "path": "scripts/preflight_mar_er.py",
+      "sha256": "bd9319857a285f305ebcb5f002d692ad6d8f795c4221a8bdad252dedee9e6b11"
+    },
+    {
+      "bytes": 3262,
+      "path": "scripts/recompute_mar_er_metrics.py",
+      "sha256": "4dee1557217f7029b0b7d5c923e363b2adae64f84bb5f7d61311bfa0ba28994f"
+    },
+    {
+      "bytes": 1723,
+      "path": "scripts/run_mar_er.py",
+      "sha256": "6bd3e9b70f452b23cde291bfac7a80391297ceeb5f497c5e7ba11b323a394eec"
+    },
+    {
+      "bytes": 47038,
+      "path": "src/viirr_retrieval/mar_er.py",
+      "sha256": "109d1e42e1a1f53f4cacbf915a84c5beaa0f43ba7d68c60c834455c7e17d6fbc"
+    },
+    {
+      "bytes": 6446,
+      "path": "tests/test_mar_er.py",
+      "sha256": "a78f7583ab73641760c5e9f9accc637911d86211cc751e771da274aab8bd8f1a"
+    }
+  ],
+  "method_promising": false,
+  "package": "MAR-ER one-shot review bundle",
+  "paper_ready": false,
+  "purpose": "Recompute primary Dev metrics and inspect frozen method without GPU/model loading.",
+  "recompute_command": "python scripts/recompute_mar_er_metrics.py",
+  "scientific_limits": [
+    "Dev-only exploratory result.",
+    "Candidate Test remained sealed and is not in the bundle.",
+    "Only eight unique multi-evidence gold signatures.",
+    "PAPER_READY is fixed false for this round."
+  ]
+}

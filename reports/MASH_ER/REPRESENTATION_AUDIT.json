@@ -1,0 +1,81 @@
+{
+  "evidence_id_count": 27045,
+  "evidence_ids_unchanged": true,
+  "fallback_double_count": 0,
+  "gold_answer_or_qa_used": false,
+  "normalization": {
+    "fallback_multi_view": {
+      "alternate_dense": 0.0,
+      "bm25": 1.0,
+      "raw_dense": 1.0
+    },
+    "multi_view": {
+      "alternate_dense": 0.5,
+      "bm25": 1.0,
+      "raw_dense": 0.5
+    },
+    "rationale": "Dense-view weights sum to 1.0 in every representation so adding a view cannot create an unconditional score bonus.",
+    "raw_single_view": {
+      "bm25": 1.0,
+      "raw_dense": 1.0
+    }
+  },
+  "source_metadata_fabricated": false,
+  "token_window_distribution": {
+    "CONTEXT_ALL_EVIDENCE_CACHE_REFERENCE": {
+      "full_text_over_512": 305,
+      "full_text_truncation_rate": 0.011277500462192641,
+      "max_full_text_tokens": 2815,
+      "max_window_tokens": 389,
+      "multi_window_units": 423,
+      "unit_count": 27045,
+      "window_count": 28025,
+      "windows_over_512": 0
+    },
+    "RAW_ALL_EVIDENCE": {
+      "full_text_over_512": 280,
+      "full_text_truncation_rate": 0.01035311517840636,
+      "max_full_text_tokens": 2786,
+      "max_window_tokens": 389,
+      "multi_window_units": 385,
+      "unit_count": 27045,
+      "window_count": 27915,
+      "windows_over_512": 0
+    },
+    "TABLE_STRUCT": {
+      "evidence_count": 91,
+      "full_text_over_512": 45,
+      "full_text_truncation_rate": 0.4945054945054945,
+      "max_full_text_tokens": 3035,
+      "max_window_tokens": 389,
+      "multi_window_units": 58,
+      "unit_count": 91,
+      "window_count": 379,
+      "windows_over_512": 0
+    }
+  },
+  "unit_types": {
+    "TABLE_REGION": 91,
+    "TEXT_REGION": 26954
+  },
+  "view_manifest_sha256": "f5c325bbbd6a891c7d2e02a5c2f9ad7fb5ed884e643d5931617d48a18bc03ab3",
+  "views": {
+    "TABLE_RAW": {
+      "source": "original index_text",
+      "valid_evidence": 91
+    },
+    "TABLE_STRUCT": {
+      "fallback_to_raw": 0,
+      "source": "verified caption/headers/row labels/rows/units",
+      "valid_evidence": 91
+    },
+    "TEXT_CONTEXT": {
+      "source": "R1 verified title/section/page/local context",
+      "valid_evidence": 26954
+    },
+    "TEXT_RAW": {
+      "source": "original index_text",
+      "valid_evidence": 26954
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "inputs": {
+    "data/benchmark/all_qa.jsonl": "56858587453b15a095aa7b8b9390dbb1acfdab58b696bcd1bf65bfc6e4feec0d",
+    "data/benchmark/dev.jsonl": "cc460f860de59c00a961dc00dea56f204c66f270c7a48d2ee840cb73c302d30f",
+    "data/benchmark/train.jsonl": "f78ebfde31be02642cba6efca8f9f43089033cd25eb1ebb138444f55c87660d6",
+    "data/parsed/documents.jsonl": "820fe81784b0cf0ab304892b7bfd567aa51d55b2d9d9039c939396fa49ede894",
+    "data/parsed/pages.jsonl": "4b97a1380f7c5ef85f167b2410595ce0b94078b0f6e0f68c27efb3024662a558",
+    "data/parsed/regions.jsonl": "47a3b35ec6d0aff9d7bc5b3326af803de814a1106fdf313b97828728c947cba0",
+    "data/parsed/tables.jsonl": "a7f89f3d84030da88537f46bf87800b7b1a69f71f4e78760df2905f6f0044c0e",
+    "data/processed/evidence_units.jsonl": "123aaac55ba1d0b30c469087b29b5deeccf56e42ab498fc222538a19e8b524ba",
+    "outputs/B2_1/rankings/p0_pages_dev_top100.jsonl": "6e5524f4305ec1cd7ad870581c5328b4ceb748e4ba46401b461f837e5e35d7d0",
+    "outputs/C1/rankings/e0_g0_global_rrf_dev.jsonl": "1902b7730f4f261a0a16cd30c6d99c38ff055b779894fdf0faec1692a8c202ec",
+    "outputs/R1/rankings/full_retrieval_r0_dev.jsonl": "ccb1edb25671a48157c56bd6be2df7b35123d2339f56d872456d0ef17c50f258"
+  },
+  "large_cache_arrays": {
+    "outputs/MASH_ER/cache/table_struct_window_embeddings.npy": "eaef578df4404699a354ce9455c0e5fe1c97c014dcb137da964545f64eef108e"
+  },
+  "outputs": {
+    "outputs/MASH_ER/cache/CACHE_REFERENCES.json": "1cb254ad3d6412ffa633cc8befb3dc63edaf11e191f95925dd45f31ffdf6059c",
+    "outputs/MASH_ER/cache/table_struct_window_embeddings.json": "0c6cb9a596d3fa79b55a3f418c84e4583ba1dfa85c7d854da19dafd91735cd64",
+    "outputs/MASH_ER/rankings/a0_dev.jsonl": "1a792b8abdb261dea51fb4fe714f63c4778fc8c6a0d96961344e4500363ee9f0",
+    "outputs/MASH_ER/rankings/a1_dev.jsonl": "8e695daf1df51512b10ac7a2871746b80cebd3aa8301fd82ebf5bc0e28c991d9",
+    "outputs/MASH_ER/rankings/a2_dev.jsonl": "0ea4e002187a896f2be0621ca6a23fa5b88b86d2f7b8acf5d5ee7fc8e1c55346",
+    "outputs/MASH_ER/rankings/a3_dev.jsonl": "fbdf3bb29d87a000363f3cb0515ba213fe5f8deb712f9ab1c9a65b0fd527ac61",
+    "outputs/MASH_ER/traces/a0_score_traces.jsonl": "b398c9a9544e4f9b40aceb833dcc6cfdad362ac2add68ca734ea32fe3cf89644",
+    "outputs/MASH_ER/traces/a1_score_traces.jsonl": "0505de78b56e5e961d83e08c15caa52492b92ed829fbd3afcf4987bc9d103cdd",
+    "outputs/MASH_ER/traces/a2_score_traces.jsonl": "1483a5d9c31f02d071b6ddfa4537eadbececa4d9ebdbca7b2e153e1a467eee73",
+    "outputs/MASH_ER/traces/a3_score_traces.jsonl": "b1db7102ddb51d2d0245f3b742e524f577235fc3d0cac6bcdc99b427c06037b0",
+    "outputs/MASH_ER/views/table_struct_retrieval_text.jsonl": "2420061fb44b7da65147f9b01894ef0a8ead522a3a99dbb23505eeed156e3aed",
+    "outputs/MASH_ER/views/view_manifest.jsonl": "f5c325bbbd6a891c7d2e02a5c2f9ad7fb5ed884e643d5931617d48a18bc03ab3",
+    "outputs/MASH_ER/windows/table_struct_window_map.jsonl": "f8cd936c154a0b649372f7f31174d1791648988bda95e53521b456d565f58bb1",
+    "reports/MASH_ER/ABLATION.json": "386b0a3af37bdd65f5394333210f3adfe9979ce903b8388cb3afb5aad49ed7f4",
+    "reports/MASH_ER/BASELINE_VERIFICATION.json": "1eba02b36cbb985f14ced81979bbf4fb1928432616853a86e7c4c0c48bb3111c",
+    "reports/MASH_ER/CONFIG.json": "749109487311e11128f96b4b8a4e058d9847cb2f98eba4fa793bc1ff3d3f1504",
+    "reports/MASH_ER/EFFICIENCY.json": "84e8458677679cec1299b503ee646157a267b2ac4d140f72691c50a86569be23",
+    "reports/MASH_ER/FAILURE_ANALYSIS.jsonl": "8a2a33fe86f47e8bec6015fcf6129f4da2dec678514cebab61954c2aaa5ba1c5",
+    "reports/MASH_ER/MASH_ER_REPORT.md": "443edf5db172e2a773f27f16205959366b1f2260d61a658b145d25163b407881",
+    "reports/MASH_ER/METHOD_SPEC.md": "506a0c91d28e6b8e42838ad73d2b2530c0af977535608edf415abbc24f61237d",
+    "reports/MASH_ER/REPRESENTATION_AUDIT.json": "beaa0409e99e2fc093a66c4c7c95e035a459b15f5ba36c087854dfa96e63b5c6",
+    "reports/MASH_ER/RESULTS.csv": "2bac2c390d84f24d21326316058584c4c9a9443f3dd861330cf3e971e2aae4d0",
+    "reports/MASH_ER/STATISTICS.json": "3d2e91e8c5adbe837e5a56e91c65dd1dd5e872072f4b533e23f146c343b7148a",
+    "reports/MASH_ER/SUBGROUPS.json": "a71fc65df3fbaa19134e0fc3895d15792becf0546bd9886059d96111dc21392d",
+    "reports/MASH_ER/TEST_RESULTS.json": "21d1b4c48fbac04fc3c9cee99a5f54a91082187dfe2d4b9a9e15a25a8a9c3f22"
+  }
+}

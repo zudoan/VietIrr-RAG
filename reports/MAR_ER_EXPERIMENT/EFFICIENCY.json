@@ -1,0 +1,26 @@
+{
+  "cache_hits": {
+    "raw": true,
+    "table_struct": true,
+    "text_context": true
+  },
+  "cache_storage_bytes": {
+    "outputs/MASH_ER/cache/table_struct_window_embeddings.npy": 1552512,
+    "outputs/R1/cache/r0_window_embeddings.npy": 114339968,
+    "outputs/R1/cache/r1_window_embeddings.npy": 114790528
+  },
+  "device": "cuda",
+  "experiment_loop_seconds": 4.647835499999928,
+  "latency_ms_per_query": {
+    "M0": 17.29686451613371,
+    "M1": 24.517455913980722,
+    "M2": 24.51147849463205,
+    "M3": 17.664615053770646,
+    "M4": 24.806988172043425
+  },
+  "latency_scope": "Query encoding (amortized), BM25, cached dense scoring, fusion, candidate and final selection.",
+  "model_id": "intfloat/multilingual-e5-large",
+  "model_revision": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3",
+  "peak_vram_mb": 2194.4169921875,
+  "query_encoding_seconds_total": 0.5833609000000024
+}

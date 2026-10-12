@@ -1,0 +1,224 @@
+{
+  "SERIES_HOLDOUT_HEAVY": true,
+  "accepted_qa_reopened": 545,
+  "additional_critical_flags": {
+    "document_family_leakage": 0,
+    "evidence_mapping_error": 0,
+    "necessity_error": 0,
+    "negative_validation_error": 0,
+    "question_answer_alignment_error": 0,
+    "relation_validation_error": 0,
+    "table_semantics_error": 0
+  },
+  "additional_qa_generated": false,
+  "applicable_counts": {
+    "core_topic": 378,
+    "temporal": 66
+  },
+  "audit_status": "PASS",
+  "baseline_run": false,
+  "candidate_test_family_concentration": {
+    "qa_count": 109,
+    "share": 1.0,
+    "top_family": "IRR_SIWRP_2026_43c7d5c0",
+    "total": 109
+  },
+  "corpus_expanded": false,
+  "critical_semantic_red_flags": 0,
+  "failure_details": [
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00355"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00356"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00377"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00378"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00379"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00380"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00381"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00382"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00383"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00384"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00385"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00433"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00434"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00435"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00436"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00440"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00441"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00442"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00443"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00444"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00445"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00446"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00447"
+    },
+    {
+      "errors": [
+        "WATER_LEVEL_ELEVATION"
+      ],
+      "qa_id": "V3_CORE_00448"
+    }
+  ],
+  "gates": {
+    "CORE_TOPIC_ALIGNMENT_ERRORS_ZERO": true,
+    "DEV_RETRIEVAL_MULTI_QA_AT_LEAST_15": true,
+    "LEAKAGE_AUDIT_PASS": true,
+    "NECESSITY_VALIDATION_PASS": true,
+    "NEGATIVE_VALIDATION_PASS": true,
+    "QUESTION_ANSWER_ALIGNMENT_PASS": true,
+    "RELATION_VALIDATION_PASS": true,
+    "REPORT_CONSISTENCY_PASS": true,
+    "REPORT_DATE_AS_EVIDENCE_DATE_ERROR_ZERO": true,
+    "RETRIEVAL_EVIDENCE_MAPPING_PASS": true,
+    "SOURCE_TRACEABILITY_PASS": true,
+    "TABLE_METRIC_SEMANTICS_PASS": true,
+    "TEMPORAL_SEMANTIC_MISMATCH_ZERO": true,
+    "UNRESOLVED_OCR_ENTITY_ZERO": true,
+    "UNRESOLVED_OCR_METRIC_ZERO": true
+  },
+  "human_validated": false,
+  "model_training_run": false,
+  "negative_failures": [],
+  "rag_built": false,
+  "red_flags": {
+    "ambiguous_canonical_entity": 0,
+    "answer_time_mismatch": 0,
+    "broken_evidence_reference": 0,
+    "invalid_temporal_negative": 0,
+    "metric_qualifier_loss": 0,
+    "missing_required_evidence_time": 0,
+    "question_time_mismatch": 0,
+    "question_topic_mismatch": 0,
+    "report_date_as_measurement_date": 0,
+    "unresolved_ocr_entity": 0,
+    "unresolved_ocr_metric": 0,
+    "water_level_from_channel_bed_elevation": 0,
+    "water_level_from_ground_elevation": 0,
+    "water_level_from_structure_elevation": 0
+  },
+  "report_consistency_checks": {
+    "answer_evidence": true,
+    "leakage": true,
+    "location": true,
+    "modality": true,
+    "negatives": true,
+    "qa_partition": true,
+    "qa_total": true,
+    "required_files": true,
+    "retrieval_evidence": true,
+    "splits": true
+  },
+  "temporal_negative_audited": 174
+}

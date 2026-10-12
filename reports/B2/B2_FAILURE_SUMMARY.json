@@ -1,0 +1,18 @@
+{
+  "counts": {
+    "candidate_mapping_failures_at_k20": 0,
+    "cross_document_failures_at_k20": 2,
+    "failed_at_k10": 48,
+    "failed_at_k20": 38,
+    "oracle_gold_page_all_r@10": 1.0,
+    "oracle_gold_page_all_r@20": 1.0,
+    "page_localization_failures_at_k20": 32,
+    "page_pruning_misses_at_k20": 26,
+    "page_retrieval_misses_beyond_100_at_k20": 6,
+    "region_ranking_failures_at_k20": 6,
+    "table_involving_failures_at_k20": 19
+  },
+  "main_bottleneck": "PAGE_LOCALIZATION",
+  "oracle_is_diagnostic_only": true,
+  "recommended_phase_c_direction": "Prioritize page localization and cross-document page candidate recall before region reranking."
+}

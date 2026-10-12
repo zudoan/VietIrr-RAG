@@ -1,0 +1,95 @@
+{
+  "artifact_recomputation": {
+    "errors": [],
+    "metrics": {
+      "E0": {
+        "all_r@20": 0.6236559139784946,
+        "candidate_coverage@100": 0.7741935483870968,
+        "multi_all_r@20": 0.6
+      },
+      "E2": {
+        "all_r@20": 0.6451612903225806,
+        "candidate_coverage@100": 0.7741935483870968,
+        "multi_all_r@20": 0.44
+      },
+      "E3": {
+        "all_r@20": 0.6236559139784946,
+        "candidate_coverage@100": 0.7741935483870968,
+        "multi_all_r@20": 0.6
+      },
+      "E4": {
+        "all_r@20": 0.6559139784946236,
+        "candidate_coverage@100": 0.7741935483870968,
+        "multi_all_r@20": 0.6
+      }
+    },
+    "status": "PASS",
+    "tolerance": 1e-12
+  },
+  "artifact_sha256": {
+    "rankings/e4_g0_set_aware_v2_dev.jsonl": "2258aa528ad370c66d6687d7e9a7cef213ed58605841f451a5a74d18b38ca439",
+    "representations/e4_candidate_representations_dev.jsonl": "34df40a11b89cb48245d13b89d9eb933decaafa90148d878b3162a016bb5abb8",
+    "traces/e4_set_aware_v2_traces.jsonl": "5acfa2f8e4299e6ea30abb4d26c2fa0a43abcb28345653df13e1315602ee6691"
+  },
+  "baseline_recomputed": {
+    "E0": {
+      "all_r@20": 0.6236559139784946,
+      "candidate_coverage@100": 0.7741935483870968,
+      "multi_all_r@20": 0.6
+    },
+    "E2": {
+      "all_r@20": 0.6451612903225806,
+      "candidate_coverage@100": 0.7741935483870968,
+      "multi_all_r@20": 0.44
+    },
+    "E3": {
+      "all_r@20": 0.6236559139784946,
+      "candidate_coverage@100": 0.7741935483870968,
+      "multi_all_r@20": 0.6
+    }
+  },
+  "candidate_test_sha256_after": "a9b5f4375ae872778c26766ffd502e3f45c67ea27d9fd50f4050e51a36d3accf",
+  "candidate_test_sha256_before": "a9b5f4375ae872778c26766ffd502e3f45c67ea27d9fd50f4050e51a36d3accf",
+  "checks": {
+    "all_13_G1_regressions_analyzed": true,
+    "baseline_metrics_recomputed_from_rankings": true,
+    "candidate_test_not_loaded": true,
+    "candidate_test_untouched": true,
+    "checksums_verified_before_independent_audit": true,
+    "cross_document_comparison_allowed": true,
+    "deterministic_outputs": true,
+    "entity_metric_time_mapping_uses_real_schema": true,
+    "metrics_independently_recomputed": true,
+    "metrics_recomputed": true,
+    "no_automatic_first_evidence_completeness": true,
+    "no_gold_answer_or_relation_in_inference_signatures": true,
+    "preflight_verified_from_artifacts": true,
+    "pytest_pass": true,
+    "regression_diagnosis_recomputed": true,
+    "report_date_distinct_from_evidence_date": true,
+    "retrieval_level_semantics_preserved": true,
+    "same_G0_candidates_E0_E2_E3_E4": true,
+    "selected_subset_unique_le_20": true,
+    "uncertain_requirements_fallback_exact": true
+  },
+  "preflight": {
+    "B1_integrity": "PASS",
+    "C1_valid": true,
+    "dev_qa": 93,
+    "g0_budget_max": 100,
+    "g0_budget_min": 100,
+    "g1_budget_max": 100,
+    "g1_budget_min": 100,
+    "missing_candidate_documents": [],
+    "phase_a_metadata_mapping_errors": 0,
+    "retrieval_multi_qa": 25,
+    "unique_gold_sets": 45
+  },
+  "pytest": {
+    "passed": true,
+    "returncode": 0,
+    "summary": "55 passed in 7.62s"
+  },
+  "remaining_blockers": [],
+  "status": "PASS"
+}

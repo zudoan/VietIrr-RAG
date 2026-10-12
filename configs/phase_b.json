@@ -1,0 +1,38 @@
+{
+  "version": "B2",
+  "source": {
+    "documents": "data/v3_1/metadata/documents.jsonl",
+    "pages": "data/pages.jsonl",
+    "regions": "data/parsed/regions.jsonl",
+    "tables": "data/parsed/tables.jsonl",
+    "benchmark": "data/v3_2_final_semantic"
+  },
+  "processed": {
+    "evidence_units": "data/processed/evidence_units.jsonl",
+    "pages": "data/processed/pages.jsonl"
+  },
+  "evaluation_split": "dev",
+  "candidate_test_policy": "SEALED_NOT_READ_BY_B2_RUNNER",
+  "top_k": 200,
+  "evidence_k": [5, 10, 20, 50, 100, 200],
+  "page_p": [5, 10, 20, 50, 100],
+  "bm25": {"k1": 1.5, "b": 0.75, "tokenizer": "unicode_nfc_casefold_word_v1"},
+  "e5": {
+    "model_id": "intfloat/multilingual-e5-large",
+    "query_prefix": "query: ",
+    "passage_prefix": "passage: ",
+    "max_length": 512,
+    "batch_size": 16,
+    "normalize_embeddings": true
+  },
+  "hybrid": {"fusion": "RRF", "rrf_k": 60},
+  "page_region": {
+    "page_representation": "direct_text",
+    "page_top_p": 10,
+    "region_retrieval": "hybrid_bm25_e5",
+    "fusion": "RRF",
+    "rrf_k": 60,
+    "pruning": "hard"
+  }
+}
+

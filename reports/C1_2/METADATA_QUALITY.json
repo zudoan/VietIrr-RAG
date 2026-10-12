@@ -1,0 +1,106 @@
+{
+  "after_c1_2": {
+    "candidate_occurrences": 9300,
+    "evidence_role_by_occurrence": {
+      "ACTION": 324,
+      "CONDITION": 25,
+      "EXPLANATION": 20,
+      "FORECAST": 3951,
+      "MEASUREMENT": 5447,
+      "RECOMMENDATION": 74,
+      "RULE": 258,
+      "STATUS": 147,
+      "UNKNOWN": 2061
+    },
+    "evidence_role_by_unique_evidence_id": {
+      "ACTION": 79,
+      "CONDITION": 9,
+      "EXPLANATION": 6,
+      "FORECAST": 448,
+      "MEASUREMENT": 538,
+      "RECOMMENDATION": 23,
+      "RULE": 32,
+      "STATUS": 34,
+      "UNKNOWN": 506
+    },
+    "field_validity_by_occurrence": {
+      "entity": {
+        "MISSING": 8639,
+        "VALID": 661
+      },
+      "evidence_time": {
+        "MISSING": 9102,
+        "VALID": 198
+      },
+      "forecast_time": {
+        "MISSING": 9045,
+        "VALID": 255
+      },
+      "metric": {
+        "MISSING": 8639,
+        "VALID": 661
+      },
+      "reference_value": {
+        "MISSING": 9299,
+        "VALID": 1
+      },
+      "value_unit": {
+        "MISSING": 8639,
+        "VALID": 661
+      }
+    },
+    "field_validity_by_unique_evidence_id": {
+      "entity": {
+        "MISSING": 1298,
+        "VALID": 34
+      },
+      "evidence_time": {
+        "MISSING": 1326,
+        "VALID": 6
+      },
+      "forecast_time": {
+        "MISSING": 1319,
+        "VALID": 13
+      },
+      "metric": {
+        "MISSING": 1298,
+        "VALID": 34
+      },
+      "reference_value": {
+        "MISSING": 1331,
+        "VALID": 1
+      },
+      "value_unit": {
+        "MISSING": 1298,
+        "VALID": 34
+      }
+    },
+    "role_accuracy_claimed": false,
+    "source_valid_time_by_occurrence": 390,
+    "source_valid_time_by_unique_evidence_id": 16,
+    "structured_metadata_by_occurrence": {
+      "MISSING": 8639,
+      "VALID": 661
+    },
+    "structured_metadata_by_unique_evidence_id": {
+      "MISSING": 1298,
+      "VALID": 34
+    },
+    "unique_evidence_ids": 1332
+  },
+  "before_c1_1": {
+    "candidate_occurrences": 9300,
+    "evidence_time_known_old_rule": 661,
+    "evidence_time_with_actual_raw_start_or_end": 390,
+    "metadata_known_old_rule": 9300
+  },
+  "corrections": {
+    "document_reporting_time_separate": true,
+    "empty_time_objects_reclassified_missing": 271,
+    "forecast_time_separate": true,
+    "raw_values_and_source_locators_preserved": true,
+    "reference_value_separate": true,
+    "region_type_no_longer_implies_metadata_known": true
+  },
+  "interpretation": "Coverage is descriptive only; role accuracy is not claimed without verified labels."
+}

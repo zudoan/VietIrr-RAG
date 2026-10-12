@@ -1,0 +1,174 @@
+{
+  "candidate_test_sha256": "a9b5f4375ae872778c26766ffd502e3f45c67ea27d9fd50f4050e51a36d3accf",
+  "config": {
+    "candidate_test_policy": "SEALED_NOT_PARSED; BYTE_HASH_ONLY",
+    "design_spec": "reports/MAR_ER_DESIGN/METHOD_SPEC.md",
+    "evaluation_split": "dev",
+    "expected_counts": {
+      "dev_qa": 93,
+      "multi_unique_gold_sets": 8,
+      "retrieval_multi_qa": 25,
+      "retrieval_units": 27045,
+      "table_units": 91,
+      "text_units": 26954,
+      "unique_gold_sets": 45
+    },
+    "methods": {
+      "M0": {
+        "adaptive_fusion": false,
+        "candidate_recovery": false,
+        "rank_stability": false
+      },
+      "M1": {
+        "adaptive_fusion": true,
+        "candidate_recovery": false,
+        "rank_stability": false
+      },
+      "M2": {
+        "adaptive_fusion": false,
+        "candidate_recovery": true,
+        "rank_stability": false
+      },
+      "M3": {
+        "adaptive_fusion": false,
+        "candidate_recovery": false,
+        "rank_stability": true
+      },
+      "M4": {
+        "adaptive_fusion": true,
+        "candidate_recovery": true,
+        "rank_stability": true
+      }
+    },
+    "model": {
+      "batch_size": 16,
+      "id": "intfloat/multilingual-e5-large",
+      "max_length": 512,
+      "normalize_embeddings": true,
+      "passage_prefix": "passage: ",
+      "query_prefix": "query: ",
+      "revision": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3"
+    },
+    "one_shot": true,
+    "paper_ready_default": false,
+    "post_result_parameter_changes_allowed": false,
+    "retrieval": {
+      "adaptive_dense": "u_raw + alternate_valid * corroboration * max(u_alternate - u_raw, 0)",
+      "adaptive_relevance": "0.5 * u_bm25 + 0.5 * adaptive_dense",
+      "candidate_anchor": 80,
+      "candidate_budget": 100,
+      "candidate_sources": [
+        "MATCHED_BASELINE_A0",
+        "GLOBAL_BM25_RAW",
+        "GLOBAL_E5_RAW",
+        "UNIFIED_MODALITY_ALTERNATE_E5",
+        "P0_PAGE_TO_REGION"
+      ],
+      "corroboration": "max(u_bm25, u_page)",
+      "final_k": 20,
+      "hard_page_budget": 20,
+      "intrusion_budget": 5,
+      "matched_baseline": "MASH_ER_A0_RAW_HARD_PAGE20",
+      "page_rank_limit": 100,
+      "page_region_source": "outputs/B2_1/rankings/p0_p20_dev_top200.jsonl",
+      "page_representation": "P0_FIXED",
+      "protected_top_k": 15,
+      "rank_utility": "(rrf_k + 1) / (rrf_k + rank); missing=0",
+      "raw_relevance": "0.5 * u_bm25 + 0.5 * u_raw",
+      "rescue_quota": 20,
+      "rrf_k": 60,
+      "source_depth": 100,
+      "tie_break": [
+        "score_desc",
+        "baseline_rank_asc",
+        "evidence_id_asc"
+      ]
+    },
+    "statistics": {
+      "bootstrap_resamples": 1000,
+      "cluster_key": "canonical_sorted_gold_evidence_ids",
+      "confidence_level": 0.95,
+      "seed": 42
+    },
+    "version": "MAR_ER_V1_ONE_SHOT",
+    "windowing": {
+      "aggregation": "max",
+      "content_tokens": 384,
+      "overlap_tokens": 128,
+      "raw_cache": "outputs/R1/cache/r0_window_embeddings.npy",
+      "table_struct_cache": "outputs/MASH_ER/cache/table_struct_window_embeddings.npy",
+      "text_context_cache": "outputs/R1/cache/r1_window_embeddings.npy"
+    }
+  },
+  "frozen_at_utc": "2026-10-12T11:12:15.275515+00:00",
+  "hashes": {
+    "configs/mar_er.json": "266fe329232c3d43f9ea34bde874820d7c00ed272c7e3e31ccf47a0cea403d8b",
+    "data/benchmark/dev.jsonl": "cc460f860de59c00a961dc00dea56f204c66f270c7a48d2ee840cb73c302d30f",
+    "data/parsed/pages.jsonl": "4b97a1380f7c5ef85f167b2410595ce0b94078b0f6e0f68c27efb3024662a558",
+    "data/processed/evidence_units.jsonl": "123aaac55ba1d0b30c469087b29b5deeccf56e42ab498fc222538a19e8b524ba",
+    "outputs/B2/cache/bm25_regions.pkl": "ba1b8f6c1cec3382608ad0f701d890d239c74deef83ae73c851c85a6ac054769",
+    "outputs/B2_1/rankings/p0_p20_dev_top200.jsonl": "d1c35a8b5b2bc64169ff9482970992f9d56247e77217deace47efb8894d95547",
+    "outputs/B2_1/rankings/p0_pages_dev_top100.jsonl": "6e5524f4305ec1cd7ad870581c5328b4ceb748e4ba46401b461f837e5e35d7d0",
+    "outputs/MASH_ER/cache/table_struct_window_embeddings.npy": "eaef578df4404699a354ce9455c0e5fe1c97c014dcb137da964545f64eef108e",
+    "outputs/MASH_ER/rankings/a0_dev.jsonl": "1a792b8abdb261dea51fb4fe714f63c4778fc8c6a0d96961344e4500363ee9f0",
+    "outputs/MASH_ER/views/view_manifest.jsonl": "f5c325bbbd6a891c7d2e02a5c2f9ad7fb5ed884e643d5931617d48a18bc03ab3",
+    "outputs/MASH_ER/windows/table_struct_window_map.jsonl": "f8cd936c154a0b649372f7f31174d1791648988bda95e53521b456d565f58bb1",
+    "outputs/R1/cache/r0_window_embeddings.npy": "a7f8b70a4a1cb75690a2f0f715788d137de062fb96ed3a0bf00f2af01764f57f",
+    "outputs/R1/cache/r1_window_embeddings.npy": "04d00e20726de81f050b636390190075a3cb87204a021248860d3bc45352ec09",
+    "outputs/R1/windows/r0_window_map.jsonl": "9060db2363e92d0982cbc1f42de4c65c2b7894dc3343340f38ecc46d2f784eec",
+    "outputs/R1/windows/r1_window_map.jsonl": "5d0d0eaee1d045711dae1d71f6c7ab9b31b51b9772d592e366a3a3024cd704f1",
+    "reports/MAR_ER_DESIGN/EXPERIMENT_PLAN.md": "00741b20085371e60675598f6779e528dd053639051dc63d6ebfddbba11ec6ad",
+    "reports/MAR_ER_DESIGN/METHOD_SPEC.md": "8844409e9fba1abd99488743c60bb2ce4ac0e4f2b8c881abf30599f4d7ef0139",
+    "reports/MAR_ER_DESIGN/RESEARCH_READINESS.md": "e6a832dcbce6439930f66298d7625b1859f164143124e927fc278420a02b9bda",
+    "scripts/audit_mar_er.py": "7dfe2363db2315d5add6028588b67655e8718fd2f3c5c68b64f322d3ab3b783c",
+    "scripts/package_mar_er.py": "96e7486b5ca2da45d16685ee916e91d7e94dee1a007a77d57ba37b5f804027dc",
+    "scripts/preflight_mar_er.py": "bd9319857a285f305ebcb5f002d692ad6d8f795c4221a8bdad252dedee9e6b11",
+    "scripts/recompute_mar_er_metrics.py": "4dee1557217f7029b0b7d5c923e363b2adae64f84bb5f7d61311bfa0ba28994f",
+    "scripts/run_mar_er.py": "6bd3e9b70f452b23cde291bfac7a80391297ceeb5f497c5e7ba11b323a394eec",
+    "src/viirr_retrieval/mar_er.py": "109d1e42e1a1f53f4cacbf915a84c5beaa0f43ba7d68c60c834455c7e17d6fbc",
+    "tests/test_mar_er.py": "a78f7583ab73641760c5e9f9accc637911d86211cc751e771da274aab8bd8f1a"
+  },
+  "protected_inputs": [
+    "configs/mar_er.json",
+    "reports/MAR_ER_DESIGN/METHOD_SPEC.md",
+    "reports/MAR_ER_DESIGN/EXPERIMENT_PLAN.md",
+    "reports/MAR_ER_DESIGN/RESEARCH_READINESS.md",
+    "data/benchmark/dev.jsonl",
+    "data/processed/evidence_units.jsonl",
+    "data/parsed/pages.jsonl",
+    "outputs/B2/cache/bm25_regions.pkl",
+    "outputs/B2_1/rankings/p0_pages_dev_top100.jsonl",
+    "outputs/B2_1/rankings/p0_p20_dev_top200.jsonl",
+    "outputs/MASH_ER/rankings/a0_dev.jsonl",
+    "outputs/MASH_ER/views/view_manifest.jsonl",
+    "outputs/R1/windows/r0_window_map.jsonl",
+    "outputs/R1/windows/r1_window_map.jsonl",
+    "outputs/MASH_ER/windows/table_struct_window_map.jsonl",
+    "outputs/R1/cache/r0_window_embeddings.npy",
+    "outputs/R1/cache/r1_window_embeddings.npy",
+    "outputs/MASH_ER/cache/table_struct_window_embeddings.npy"
+  ],
+  "protocol": {
+    "bootstrap_resamples": 1000,
+    "methods": [
+      "M0",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "official_runs_allowed": 1,
+    "post_result_tuning": false,
+    "seed": 42
+  },
+  "source_files": [
+    "src/viirr_retrieval/mar_er.py",
+    "scripts/preflight_mar_er.py",
+    "scripts/run_mar_er.py",
+    "scripts/audit_mar_er.py",
+    "scripts/recompute_mar_er_metrics.py",
+    "scripts/package_mar_er.py",
+    "tests/test_mar_er.py"
+  ],
+  "status": "FROZEN_BEFORE_OFFICIAL_M0_M4_RUN"
+}

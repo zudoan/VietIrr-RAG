@@ -1,0 +1,226 @@
+{
+  "B2_2_VALID": true,
+  "best_page_representation": "P0",
+  "best_strategy": "S1",
+  "candidate_budget": 100,
+  "candidate_test_untouched": true,
+  "dev_qa": 93,
+  "failure_recovery": {
+    "S1": {
+      "all_dev_recovered_vs_S0": 6,
+      "all_dev_regressed_vs_S0": 7,
+      "old_25_page_pruning_failures_recovered": 6
+    },
+    "S2": {
+      "all_dev_recovered_vs_S0": 3,
+      "all_dev_regressed_vs_S0": 11,
+      "old_25_page_pruning_failures_recovered": 3
+    }
+  },
+  "main_remaining_bottleneck": "REGION_RANKING",
+  "paired_bootstrap": {
+    "P0_S1_B100_vs_S0": {
+      "all_r@20": {
+        "ci95_high": 0.0967741935483871,
+        "ci95_low": -0.053763440860215055,
+        "delta": 0.021505376344086023,
+        "improvements": 8,
+        "regressions": 6,
+        "resamples": 1000,
+        "seed": 42
+      },
+      "candidate_coverage": {
+        "ci95_high": 0.1935483870967742,
+        "ci95_low": 0.053763440860215055,
+        "delta": 0.11827956989247312,
+        "improvements": 12,
+        "regressions": 1,
+        "resamples": 1000,
+        "seed": 42
+      }
+    },
+    "P0_S1_B50_vs_S0": {
+      "all_r@20": {
+        "ci95_high": 0.10752688172043011,
+        "ci95_low": -0.054032258064516114,
+        "delta": 0.021505376344086023,
+        "improvements": 9,
+        "regressions": 7,
+        "resamples": 1000,
+        "seed": 42
+      },
+      "candidate_coverage": {
+        "ci95_high": 0.17204301075268819,
+        "ci95_low": 0.043010752688172046,
+        "delta": 0.10752688172043011,
+        "improvements": 11,
+        "regressions": 1,
+        "resamples": 1000,
+        "seed": 42
+      }
+    },
+    "P0_S2_B100_vs_S0": {
+      "all_r@20": {
+        "ci95_high": 0.021505376344086023,
+        "ci95_low": -0.15053763440860216,
+        "delta": -0.06451612903225806,
+        "improvements": 6,
+        "regressions": 12,
+        "resamples": 1000,
+        "seed": 42
+      },
+      "candidate_coverage": {
+        "ci95_high": 0.20430107526881722,
+        "ci95_low": 0.06451612903225806,
+        "delta": 0.12903225806451613,
+        "improvements": 12,
+        "regressions": 0,
+        "resamples": 1000,
+        "seed": 42
+      }
+    },
+    "P0_S2_B50_vs_S0": {
+      "all_r@20": {
+        "ci95_high": 0.021774193548386854,
+        "ci95_low": -0.15053763440860216,
+        "delta": -0.06451612903225806,
+        "improvements": 6,
+        "regressions": 12,
+        "resamples": 1000,
+        "seed": 42
+      },
+      "candidate_coverage": {
+        "ci95_high": 0.15053763440860216,
+        "ci95_low": 0.03225806451612903,
+        "delta": 0.08602150537634409,
+        "improvements": 8,
+        "regressions": 0,
+        "resamples": 1000,
+        "seed": 42
+      }
+    },
+    "P2_S1_B100_vs_S0": {
+      "all_r@20": {
+        "ci95_high": 0.06451612903225806,
+        "ci95_low": -0.08602150537634409,
+        "delta": -0.010752688172043012,
+        "improvements": 6,
+        "regressions": 7,
+        "resamples": 1000,
+        "seed": 42
+      },
+      "candidate_coverage": {
+        "ci95_high": 0.15053763440860216,
+        "ci95_low": 0.021505376344086023,
+        "delta": 0.08602150537634409,
+        "improvements": 9,
+        "regressions": 1,
+        "resamples": 1000,
+        "seed": 42
+      }
+    },
+    "P2_S1_B50_vs_S0": {
+      "all_r@20": {
+        "ci95_high": 0.06451612903225806,
+        "ci95_low": -0.08602150537634409,
+        "delta": -0.010752688172043012,
+        "improvements": 6,
+        "regressions": 7,
+        "resamples": 1000,
+        "seed": 42
+      },
+      "candidate_coverage": {
+        "ci95_high": 0.12903225806451613,
+        "ci95_low": 0.0,
+        "delta": 0.06451612903225806,
+        "improvements": 8,
+        "regressions": 2,
+        "resamples": 1000,
+        "seed": 42
+      }
+    },
+    "P2_S2_B100_vs_S0": {
+      "all_r@20": {
+        "ci95_high": -0.010752688172043012,
+        "ci95_low": -0.16129032258064516,
+        "delta": -0.08602150537634409,
+        "improvements": 3,
+        "regressions": 11,
+        "resamples": 1000,
+        "seed": 42
+      },
+      "candidate_coverage": {
+        "ci95_high": 0.15053763440860216,
+        "ci95_low": 0.03225806451612903,
+        "delta": 0.08602150537634409,
+        "improvements": 8,
+        "regressions": 0,
+        "resamples": 1000,
+        "seed": 42
+      }
+    },
+    "P2_S2_B50_vs_S0": {
+      "all_r@20": {
+        "ci95_high": 0.010752688172043012,
+        "ci95_low": -0.13978494623655913,
+        "delta": -0.06451612903225806,
+        "improvements": 4,
+        "regressions": 10,
+        "resamples": 1000,
+        "seed": 42
+      },
+      "candidate_coverage": {
+        "ci95_high": 0.11827956989247312,
+        "ci95_low": 0.021505376344086023,
+        "delta": 0.06451612903225806,
+        "improvements": 6,
+        "regressions": 0,
+        "resamples": 1000,
+        "seed": 42
+      }
+    }
+  },
+  "ranking_reproducibility_pass": true,
+  "region_ranking_failures_remaining": 15,
+  "remaining_blockers": [],
+  "statistical_support": "INCONCLUSIVE",
+  "status": "PASS",
+  "summary_B100": {
+    "P0_S0": {
+      "all_r@20": 0.5913978494623656,
+      "average_unique_candidates": 99.93548387096774,
+      "budgeted_candidate_coverage": 0.6559139784946236,
+      "latency_ms_per_query": 32.5119397851375
+    },
+    "P0_S1": {
+      "all_r@20": 0.6129032258064516,
+      "average_unique_candidates": 100.0,
+      "budgeted_candidate_coverage": 0.7741935483870968,
+      "latency_ms_per_query": 32.53854516108448
+    },
+    "P0_S2": {
+      "all_r@20": 0.5268817204301075,
+      "average_unique_candidates": 100.0,
+      "budgeted_candidate_coverage": 0.7849462365591398,
+      "latency_ms_per_query": 37.35953763410385
+    },
+    "P2_S0": {
+      "all_r@20": 0.6129032258064516,
+      "average_unique_candidates": 99.90322580645162,
+      "budgeted_candidate_coverage": 0.6989247311827957,
+      "latency_ms_per_query": 32.41596774219082
+    },
+    "P2_S1": {
+      "all_r@20": 0.6021505376344086,
+      "average_unique_candidates": 100.0,
+      "budgeted_candidate_coverage": 0.7849462365591398,
+      "latency_ms_per_query": 32.52153978477293
+    },
+    "P2_S2": {
+      "all_r@20": 0.5268817204301075,
+      "average_unique_candidates": 100.0,
+      "budgeted_candidate_coverage": 0.7849462365591398,
+      "latency_ms_per_query": 37.20867311795867
+    }
+  }
+}

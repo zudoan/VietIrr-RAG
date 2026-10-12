@@ -1,0 +1,35 @@
+{
+  "complete_candidate_coverage_by_page_budget": {
+    "10": 0.6559139784946236,
+    "100": 0.9354838709677419,
+    "20": 0.7849462365591398,
+    "5": 0.4731182795698925,
+    "50": 0.8924731182795699
+  },
+  "gold_page_metrics": {
+    "10": {
+      "any_gold_page_recall": 0.8064516129032258,
+      "complete_gold_page_recall": 0.6559139784946236
+    },
+    "100": {
+      "any_gold_page_recall": 0.956989247311828,
+      "complete_gold_page_recall": 0.9354838709677419
+    },
+    "20": {
+      "any_gold_page_recall": 0.8709677419354839,
+      "complete_gold_page_recall": 0.7849462365591398
+    },
+    "5": {
+      "any_gold_page_recall": 0.7096774193548387,
+      "complete_gold_page_recall": 0.4731182795698925
+    },
+    "50": {
+      "any_gold_page_recall": 0.9354838709677419,
+      "complete_gold_page_recall": 0.8924731182795699
+    }
+  },
+  "other_p_values_are_candidate_ceiling_diagnostics_only": true,
+  "page_top_p_10_is_frozen_baseline": true,
+  "representation": "direct_text",
+  "retriever": "BM25+E5 RRF(k=60)"
+}

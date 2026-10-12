@@ -1,0 +1,28 @@
+{
+  "M0": {
+    "B50_to_B100_recovered": 2,
+    "B50_to_B100_regressed": 3,
+    "candidate_B50_subset_of_B100_queries": 93,
+    "mean_absolute_gold_rank_change": 0.7894736842105263,
+    "mean_top20_jaccard": 0.8613706692248065,
+    "shared_candidate_score_invariance_rate": 0.21763440860215053
+  },
+  "M1": {
+    "B50_to_B100_recovered": 0,
+    "B50_to_B100_regressed": 0,
+    "candidate_B50_subset_of_B100_queries": 93,
+    "mean_absolute_gold_rank_change": 0.05263157894736842,
+    "mean_top20_jaccard": 1.0,
+    "shared_candidate_score_invariance_rate": 1.0
+  },
+  "M1_B100_vs_M0_B100": {
+    "absolute_gain": 0.010752688172043012,
+    "recovered": 3,
+    "regressed": 2
+  },
+  "M2_B100_vs_M0_B100": {
+    "absolute_gain": 0.03225806451612903,
+    "recovered": 9,
+    "regressed": 6
+  }
+}

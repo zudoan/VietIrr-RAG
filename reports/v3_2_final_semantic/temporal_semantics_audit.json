@@ -1,0 +1,4204 @@
+{
+  "records": [
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00002"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00003"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00004"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00005"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00007"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00008"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00012"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00013"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00016"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2019-06-30",
+          "2019-07-25"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "document_title",
+              "normalized_end": "2019-06-30",
+              "normalized_start": "2019-06-01",
+              "raw": "Từ 01/6 đến 30/6/2019"
+            },
+            "evidence_time": {
+              "basis": "document_title",
+              "normalization_basis": "metric has no point date; value is indexed by the explicit report period",
+              "normalized_end": "2019-06-30",
+              "normalized_start": "2019-06-01",
+              "raw": "Từ 01/6 đến 30/6/2019",
+              "source": "explicit report reference period",
+              "source_priority": 5
+            },
+            "metric_raw": "Diện tích đáp ứng (ha)",
+            "status": "PASS",
+            "time_type": "REFERENCE_PERIOD"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "document_title",
+              "normalized_end": "2019-07-25",
+              "normalized_start": "2019-07-19",
+              "raw": "Từ 19/7 đến 25/7/2019"
+            },
+            "evidence_time": {
+              "basis": "document_title",
+              "normalization_basis": "metric has no point date; value is indexed by the explicit report period",
+              "normalized_end": "2019-07-25",
+              "normalized_start": "2019-07-19",
+              "raw": "Từ 19/7 đến 25/7/2019",
+              "source": "explicit report reference period",
+              "source_priority": 5
+            },
+            "metric_raw": "Diện tích đáp ứng (ha)",
+            "status": "PASS",
+            "time_type": "REFERENCE_PERIOD"
+          }
+        ],
+        "proposed_answer": "Diện tích đáp ứng tháng 06/2019 của Hồ Thác La là 342 ha. Diện tích đáp ứng từ 19/07/2019 đến 25/07/2019 của Hồ Thác La là 333 ha.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, diện tích đáp ứng tháng 06/2019 và diện tích đáp ứng từ 19/07/2019 đến 25/07/2019 của Hồ Thác La lần lượt là bao nhiêu?",
+        "question_time": [
+          "2019-06-30",
+          "2019-07-25"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00018"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 05/10/2026 của Tri Tôn là 1,94 m. Mực nước lớn nhất thực đo ngày 03/10/2026 của Tri Tôn là 2,00 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 05/10/2026 và mực nước lớn nhất thực đo ngày 03/10/2026 của Tri Tôn lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00019"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 05/10/2026 của Vĩnh Điều là 1,46 m. Mực nước lớn nhất thực đo ngày 03/10/2026 của Vĩnh Điều là 1,49 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 05/10/2026 và mực nước lớn nhất thực đo ngày 03/10/2026 của Vĩnh Điều lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00020"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-02",
+              "normalized_start": "2026-10-02",
+              "raw": "02/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 02/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 04/10/2026 của Xẻo Rô là 0,88 m. Mực nước lớn nhất thực đo ngày 02/10/2026 của Xẻo Rô là 0,83 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 04/10/2026 và mực nước lớn nhất thực đo ngày 02/10/2026 của Xẻo Rô lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00021"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-02",
+              "normalized_start": "2026-10-02",
+              "raw": "02/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 02/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 04/10/2026 của An Long là 2,73 m. Mực nước lớn nhất thực đo ngày 02/10/2026 của An Long là 2,94 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 04/10/2026 và mực nước lớn nhất thực đo ngày 02/10/2026 của An Long lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00022"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "06/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 06/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00023"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-02",
+              "normalized_start": "2026-10-02",
+              "raw": "02/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 02/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 04/10/2026 của Cao Lãnh là 1,80 m. Mực nước lớn nhất thực đo ngày 02/10/2026 của Cao Lãnh là 2,07 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 04/10/2026 và mực nước lớn nhất thực đo ngày 02/10/2026 của Cao Lãnh lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00024"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-09-30",
+              "normalized_start": "2026-09-30",
+              "raw": "30/9",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 30/9",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 01/10/2026 của Trần Đề là 2,06 m. Mực nước lớn nhất thực đo ngày 30/09/2026 của Trần Đề là 2,19 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 01/10/2026 và mực nước lớn nhất thực đo ngày 30/09/2026 của Trần Đề lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00025"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "06/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 06/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00026"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00027"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-02",
+              "normalized_start": "2026-10-02",
+              "raw": "02/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 02/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 04/10/2026 của Bến Lức là 1,00 m. Mực nước lớn nhất thực đo ngày 02/10/2026 của Bến Lức là 1,25 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 04/10/2026 và mực nước lớn nhất thực đo ngày 02/10/2026 của Bến Lức lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00028"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-02",
+              "normalized_start": "2026-10-02",
+              "raw": "02/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 02/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 04/10/2026 của Lai Vung là 1,95 m. Mực nước lớn nhất thực đo ngày 02/10/2026 của Lai Vung là 2,16 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 04/10/2026 và mực nước lớn nhất thực đo ngày 02/10/2026 của Lai Vung lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00029"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-09-30",
+              "normalized_start": "2026-09-30",
+              "raw": "30/9",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 30/9",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 01/10/2026 của Tân Hiệp là 1,14 m. Mực nước lớn nhất thực đo ngày 30/09/2026 của Tân Hiệp là 1,12 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 01/10/2026 và mực nước lớn nhất thực đo ngày 30/09/2026 của Tân Hiệp lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00030"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 03/10/2026 của Long Định là 1,22 m. Mực nước lớn nhất thực đo ngày 01/10/2026 của Long Định là 0,93 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 03/10/2026 và mực nước lớn nhất thực đo ngày 01/10/2026 của Long Định lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00031"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2019-06-30",
+          "2019-07-25"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "document_title",
+              "normalized_end": "2019-06-30",
+              "normalized_start": "2019-06-01",
+              "raw": "Từ 01/6 đến 30/6/2019"
+            },
+            "evidence_time": {
+              "basis": "document_title",
+              "normalization_basis": "metric has no point date; value is indexed by the explicit report period",
+              "normalized_end": "2019-06-30",
+              "normalized_start": "2019-06-01",
+              "raw": "Từ 01/6 đến 30/6/2019",
+              "source": "explicit report reference period",
+              "source_priority": 5
+            },
+            "metric_raw": "Diện tích đáp ứng (ha)",
+            "status": "PASS",
+            "time_type": "REFERENCE_PERIOD"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "document_title",
+              "normalized_end": "2019-07-25",
+              "normalized_start": "2019-07-19",
+              "raw": "Từ 19/7 đến 25/7/2019"
+            },
+            "evidence_time": {
+              "basis": "document_title",
+              "normalization_basis": "metric has no point date; value is indexed by the explicit report period",
+              "normalized_end": "2019-07-25",
+              "normalized_start": "2019-07-19",
+              "raw": "Từ 19/7 đến 25/7/2019",
+              "source": "explicit report reference period",
+              "source_priority": 5
+            },
+            "metric_raw": "Diện tích đáp ứng (ha)",
+            "status": "PASS",
+            "time_type": "REFERENCE_PERIOD"
+          }
+        ],
+        "proposed_answer": "Diện tích đáp ứng tháng 06/2019 của Hồ Đá Lải là 110 ha. Diện tích đáp ứng từ 19/07/2019 đến 25/07/2019 của Hồ Đá Lải là 64 ha.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, diện tích đáp ứng tháng 06/2019 và diện tích đáp ứng từ 19/07/2019 đến 25/07/2019 của Hồ Đá Lải lần lượt là bao nhiêu?",
+        "question_time": [
+          "2019-06-30",
+          "2019-07-25"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00032"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-02",
+              "normalized_start": "2026-10-02",
+              "raw": "02/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 02/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 04/10/2026 của Vị Thanh là 0,92 m. Mực nước lớn nhất thực đo ngày 02/10/2026 của Vị Thanh là 0,91 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 04/10/2026 và mực nước lớn nhất thực đo ngày 02/10/2026 của Vị Thanh lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00033"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 05/10/2026 của Khánh An là 3,98 m. Mực nước lớn nhất thực đo ngày 03/10/2026 của Khánh An là 4,11 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 05/10/2026 và mực nước lớn nhất thực đo ngày 03/10/2026 của Khánh An lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00034"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00035"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00036"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-09-30",
+              "normalized_start": "2026-09-30",
+              "raw": "30/9",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 30/9",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 01/10/2026 của Trường Xuân là 2,27 m. Mực nước lớn nhất thực đo ngày 30/09/2026 của Trường Xuân là 2,26 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 01/10/2026 và mực nước lớn nhất thực đo ngày 30/09/2026 của Trường Xuân lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00037"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-02",
+              "normalized_start": "2026-10-02",
+              "raw": "02/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 02/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 04/10/2026 của Vàm Nao là 2,39 m. Mực nước lớn nhất thực đo ngày 02/10/2026 của Vàm Nao là 2,63 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 04/10/2026 và mực nước lớn nhất thực đo ngày 02/10/2026 của Vàm Nao lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00038"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-02",
+              "normalized_start": "2026-10-02",
+              "raw": "02/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 02/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 04/10/2026 của Cần Thơ là 1,39 m. Mực nước lớn nhất thực đo ngày 02/10/2026 của Cần Thơ là 1,85 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 04/10/2026 và mực nước lớn nhất thực đo ngày 02/10/2026 của Cần Thơ lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00039"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 03/10/2026 của Trường Xuân là 2,25 m. Mực nước lớn nhất thực đo ngày 01/10/2026 của Trường Xuân là 2,27 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 03/10/2026 và mực nước lớn nhất thực đo ngày 01/10/2026 của Trường Xuân lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00040"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2019-06-30",
+          "2019-07-25"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "document_title",
+              "normalized_end": "2019-06-30",
+              "normalized_start": "2019-06-01",
+              "raw": "Từ 01/6 đến 30/6/2019"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2019-01-31",
+              "normalized_start": "2019-01-01",
+              "raw": "thang 01/2019",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Dự báo tháng 01/2019 — Dung tích cuối tháng so với TK (%)",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "document_title",
+              "normalized_end": "2019-07-25",
+              "normalized_start": "2019-07-19",
+              "raw": "Từ 19/7 đến 25/7/2019"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2019-07-25",
+              "normalized_start": "2019-07-19",
+              "raw": "19/07den 25/07/2019",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Dự báo tuần 19/07đến 25/07/2019 — Dung tích cuối tuần so với TK (%)",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": "Hồ Đập Trời có tỷ lệ dung tích trữ 79 % trong tháng 01/2019. Hồ Đập Trời có tỷ lệ dung tích trữ 89 % trong giai đoạn từ 19/07/2019 đến 25/07/2019.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, tỷ lệ dung tích cuối tháng dự báo so với thiết kế tháng 01/2019 và tỷ lệ dung tích cuối tuần dự báo so với thiết kế từ 19/07/2019 đến 25/07/2019 của Hồ Đập Trời lần lượt là bao nhiêu?",
+        "question_time": [
+          "2019-06-30",
+          "2019-07-25"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00041"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 03/10/2026 của Đại Ngãi là 1,44 m. Mực nước lớn nhất thực đo ngày 01/10/2026 của Đại Ngãi là 1,79 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 03/10/2026 và mực nước lớn nhất thực đo ngày 01/10/2026 của Đại Ngãi lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00042"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-02",
+              "normalized_start": "2026-10-02",
+              "raw": "02/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 02/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 04/10/2026 của Rạch Giá là 0,74 m. Mực nước lớn nhất thực đo ngày 02/10/2026 của Rạch Giá là 0,73 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 04/10/2026 và mực nước lớn nhất thực đo ngày 02/10/2026 của Rạch Giá lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00043"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-02",
+              "normalized_start": "2026-10-02",
+              "raw": "02/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 02/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 04/10/2026 của Mỹ Thuận là 1,28 m. Mực nước lớn nhất thực đo ngày 02/10/2026 của Mỹ Thuận là 1,60 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 04/10/2026 và mực nước lớn nhất thực đo ngày 02/10/2026 của Mỹ Thuận lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00044"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 05/10/2026 của Vàm Răng là 1,10 m. Mực nước lớn nhất thực đo ngày 03/10/2026 của Vàm Răng là 1,05 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 05/10/2026 và mực nước lớn nhất thực đo ngày 03/10/2026 của Vàm Răng lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00045"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-09-30",
+              "normalized_start": "2026-09-30",
+              "raw": "30/9",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 30/9",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 01/10/2026 của Tuyên Nhơn là 1,29 m. Mực nước lớn nhất thực đo ngày 30/09/2026 của Tuyên Nhơn là 1,27 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 01/10/2026 và mực nước lớn nhất thực đo ngày 30/09/2026 của Tuyên Nhơn lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00046"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-02",
+              "normalized_start": "2026-10-02",
+              "raw": "02/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 02/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 04/10/2026 của Mỹ Hóa là 1,01 m. Mực nước lớn nhất thực đo ngày 02/10/2026 của Mỹ Hóa là 1,36 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 04/10/2026 và mực nước lớn nhất thực đo ngày 02/10/2026 của Mỹ Hóa lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00047"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00048"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 03/10/2026 của Bình Đại là 1,16 m. Mực nước lớn nhất thực đo ngày 01/10/2026 của Bình Đại là 1,40 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 03/10/2026 và mực nước lớn nhất thực đo ngày 01/10/2026 của Bình Đại lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00049"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 05/10/2026 của Châu Đốc* là 2,66 m. Mực nước lớn nhất thực đo ngày 03/10/2026 của Châu Đốc* là 2,87 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 05/10/2026 và mực nước lớn nhất thực đo ngày 03/10/2026 của Châu Đốc* lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00050"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 05/10/2026 của Dinh Bà là 2,81 m. Mực nước lớn nhất thực đo ngày 03/10/2026 của Dinh Bà là 3,00 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 05/10/2026 và mực nước lớn nhất thực đo ngày 03/10/2026 của Dinh Bà lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00051"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 05/10/2026 của Bến Lức là 1,02 m. Mực nước lớn nhất thực đo ngày 03/10/2026 của Bến Lức là 1,12 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 05/10/2026 và mực nước lớn nhất thực đo ngày 03/10/2026 của Bến Lức lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00052"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00053"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 03/10/2026 của Tri Tôn là 1,99 m. Mực nước lớn nhất thực đo ngày 01/10/2026 của Tri Tôn là 2,03 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 03/10/2026 và mực nước lớn nhất thực đo ngày 01/10/2026 của Tri Tôn lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-03",
+          "2026-10-04"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00054"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "06/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 06/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00055"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-02",
+              "normalized_start": "2026-10-02",
+              "raw": "02/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 02/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 04/10/2026 của Long Định là 1,11 m. Mực nước lớn nhất thực đo ngày 02/10/2026 của Long Định là 1,18 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 04/10/2026 và mực nước lớn nhất thực đo ngày 02/10/2026 của Long Định lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00056"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "ngày 04 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-04",
+              "normalized_start": "2026-10-04",
+              "raw": "04/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 04/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-02",
+              "normalized_start": "2026-10-02",
+              "raw": "02/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 02/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 04/10/2026 của Tân Châu* là 2,98 m. Mực nước lớn nhất thực đo ngày 02/10/2026 của Tân Châu* là 3,18 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 04/10/2026 và mực nước lớn nhất thực đo ngày 02/10/2026 của Tân Châu* lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-04",
+          "2026-10-05"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00057"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00058"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 05/10/2026 của Mỹ Tho là 1,15 m. Mực nước lớn nhất thực đo ngày 03/10/2026 của Mỹ Tho là 1,18 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 05/10/2026 và mực nước lớn nhất thực đo ngày 03/10/2026 của Mỹ Tho lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00059"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-09-30",
+              "normalized_start": "2026-09-30",
+              "raw": "30/9",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 30/9",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 01/10/2026 của Cai Lậy là 1,80 m. Mực nước lớn nhất thực đo ngày 30/09/2026 của Cai Lậy là 1,78 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 01/10/2026 và mực nước lớn nhất thực đo ngày 30/09/2026 của Cai Lậy lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00060"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-09-30",
+              "normalized_start": "2026-09-30",
+              "raw": "30/9",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 30/9",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 01/10/2026 của Vàm Rầy là 1,11 m. Mực nước lớn nhất thực đo ngày 30/09/2026 của Vàm Rầy là 1,08 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 01/10/2026 và mực nước lớn nhất thực đo ngày 30/09/2026 của Vàm Rầy lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00061"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 05/10/2026 của Rạch Giá là 0,69 m. Mực nước lớn nhất thực đo ngày 03/10/2026 của Rạch Giá là 0,73 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 05/10/2026 và mực nước lớn nhất thực đo ngày 03/10/2026 của Rạch Giá lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00062"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "06/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 06/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00063"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 05/10/2026 của Vị Thanh là 0,92 m. Mực nước lớn nhất thực đo ngày 03/10/2026 của Vị Thanh là 0,93 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 05/10/2026 và mực nước lớn nhất thực đo ngày 03/10/2026 của Vị Thanh lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00064"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 05/10/2026 của Mỹ Thuận là 1,17 m. Mực nước lớn nhất thực đo ngày 03/10/2026 của Mỹ Thuận là 1,38 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 05/10/2026 và mực nước lớn nhất thực đo ngày 03/10/2026 của Mỹ Thuận lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00065"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00066"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 05/10/2026 của Long Định là 0,91 m. Mực nước lớn nhất thực đo ngày 03/10/2026 của Long Định là 1,08 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 05/10/2026 và mực nước lớn nhất thực đo ngày 03/10/2026 của Long Định lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00067"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "06/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 06/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00068"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "06/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 06/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00069"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-09-30",
+              "normalized_start": "2026-09-30",
+              "raw": "30/9",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 30/9",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 01/10/2026 của Mộc Hoá là 1,74 m. Mực nước lớn nhất thực đo ngày 30/09/2026 của Mộc Hoá là 1,72 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 01/10/2026 và mực nước lớn nhất thực đo ngày 30/09/2026 của Mộc Hoá lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00070"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 05/10/2026 của Vàm Đồn là 2,46 m. Mực nước lớn nhất thực đo ngày 03/10/2026 của Vàm Đồn là 2,45 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 05/10/2026 và mực nước lớn nhất thực đo ngày 03/10/2026 của Vàm Đồn lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00071"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "06/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 06/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00072"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "errors": [],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "ngày 01 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-01",
+              "normalized_start": "2026-10-01",
+              "raw": "01/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 01/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "ngày 03 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          }
+        ],
+        "proposed_answer": null,
+        "proposed_question": null,
+        "question_time": [
+          "2026-10-01",
+          "2026-10-03"
+        ],
+        "status": "PASS"
+      },
+      "qa_id": "V3_1_CHAL_00073"
+    },
+    {
+      "final_status": "PASS",
+      "initial": {
+        "answer_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "errors": [
+          "QUESTION_TIME_MISMATCH",
+          "ANSWER_TIME_MISMATCH"
+        ],
+        "evidence": [
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "ngày 05 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-05",
+              "normalized_start": "2026-10-05",
+              "raw": "05/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất dự báo (m) — 05/10",
+            "status": "PASS",
+            "time_type": "FORECAST_DATE"
+          },
+          {
+            "document_reporting_time": {
+              "basis": "explicit document-title date",
+              "normalized_end": "2026-10-06",
+              "normalized_start": "2026-10-06",
+              "raw": "ngày 06 tháng 10 năm 2026"
+            },
+            "evidence_time": {
+              "normalization_basis": "explicit date/range in metric header",
+              "normalized_end": "2026-10-03",
+              "normalized_start": "2026-10-03",
+              "raw": "03/10",
+              "source": "semantic_tuple.metric.raw",
+              "source_priority": 1
+            },
+            "metric_raw": "Mực nước lớn nhất thực đo (m) — 03/10",
+            "status": "PASS",
+            "time_type": "OBSERVATION_DATE"
+          }
+        ],
+        "proposed_answer": "Mực nước lớn nhất dự báo ngày 05/10/2026 của Cờ Đỏ là 1,28 m. Mực nước lớn nhất thực đo ngày 03/10/2026 của Cờ Đỏ là 1,48 m.",
+        "proposed_question": "Theo chuỗi tài liệu liên quan, mực nước lớn nhất dự báo ngày 05/10/2026 và mực nước lớn nhất thực đo ngày 03/10/2026 của Cờ Đỏ lần lượt là bao nhiêu?",
+        "question_time": [
+          "2026-10-05",
+          "2026-10-06"
+        ],
+        "repair_basis": "metric/header evidence dates override document publication/reporting dates",
+        "status": "REPAIR"
+      },
+      "qa_id": "V3_1_CHAL_00074"
+    }
+  ],
+  "remaining_errors": [],
+  "source_priority": [
+    "metric/header evidence date",
+    "semantic tuple time",
+    "explicit reference period"
+  ],
+  "status_counts": {
+    "PASS": 24,
+    "REPAIR": 42,
+    "SKIP_NOT_APPLICABLE": 479
+  }
+}

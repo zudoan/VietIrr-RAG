@@ -1,0 +1,44 @@
+{
+  "bootstrap_resamples": 1000,
+  "candidate_budget": 100,
+  "candidate_test_policy": "SEALED_NOT_PARSED; BYTE_HASH_ONLY",
+  "decision_gate": {
+    "max_g1_candidate_regressions": 2,
+    "max_g1_overall_all_r20_drop": 0.03,
+    "max_r3_overall_all_r20_drop": 0.03
+  },
+  "evaluation_split": "dev",
+  "g0": {
+    "source": "B2.2 P0/S1/B100"
+  },
+  "g1": {
+    "backfill": "fixed-priority sequential scan over P0_PAGE, P2_PAGE, FLAT_E5, FLAT_BM25",
+    "quotas": {
+      "FLAT_BM25": 10,
+      "FLAT_E5": 10,
+      "P0_PAGE": 60,
+      "P2_PAGE": 20
+    },
+    "source_priority": [
+      "P0_PAGE",
+      "P2_PAGE",
+      "FLAT_E5",
+      "FLAT_BM25"
+    ]
+  },
+  "r3": {
+    "fallback": "R0 ordering when no reliable question-only requirement is detected",
+    "training_free": true,
+    "weights": {
+      "base_relevance": 0.6,
+      "provenance_compatibility": 0.1,
+      "question_overlap": 0.05,
+      "redundancy_penalty": 0.15,
+      "unmet_requirement": 0.25
+    }
+  },
+  "rrf_k": 60,
+  "seed": 42,
+  "selection_budget": 20,
+  "version": "C1"
+}

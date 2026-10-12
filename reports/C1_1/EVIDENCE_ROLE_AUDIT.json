@@ -1,0 +1,37 @@
+{
+  "fallback_reason_counts": {
+    "NO_EXPLICIT_SUPPORTED_INTENT_PATTERN": 26
+  },
+  "field_coverage": {
+    "document_reporting_time_known": 8081,
+    "entity_known": 661,
+    "evidence_time_known": 661,
+    "metric_known": 661,
+    "unknown_role": 2061,
+    "value_unit_known": 661
+  },
+  "representation_count": 9300,
+  "role_counts": {
+    "ACTION": 324,
+    "CONDITION": 25,
+    "EXPLANATION": 20,
+    "FORECAST": 3951,
+    "MEASUREMENT": 5447,
+    "RECOMMENDATION": 74,
+    "RULE": 258,
+    "STATUS": 147,
+    "UNKNOWN": 2061
+  },
+  "schema_checks": {
+    "document_reporting_period_field_present": true,
+    "region_type_present": true,
+    "table_semantic_tuple_fields_present": true
+  },
+  "time_separation": {
+    "document_reporting_time_source": "document_reporting_period only",
+    "evidence_time_source": "table semantic tuple only",
+    "report_date_used_as_evidence_date": 0,
+    "representations_with_both_time_types": 661
+  },
+  "unique_evidence_ids": 1332
+}

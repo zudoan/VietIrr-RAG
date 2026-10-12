@@ -1,0 +1,69 @@
+{
+  "device": "cuda",
+  "embedding_dimension": 1024,
+  "hardware": {
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.10.11"
+  },
+  "input_sha256": {
+    "dev": "cc460f860de59c00a961dc00dea56f204c66f270c7a48d2ee840cb73c302d30f",
+    "evidence_units": "123aaac55ba1d0b30c469087b29b5deeccf56e42ab498fc222538a19e8b524ba",
+    "pages": "d5c5adf5cda9e134fb4c689f97f98c6b9e936dedf2cf28f7e5996a8c3e7de94d",
+    "phase_b2_1_config": "b5e9ec54af5689bb5509ec6e58ce9dcd9d2ca7762831ef4b33df2b827bc99b65",
+    "phase_b_config": "6e90193ea4e823031e2e0be444c17a30b1e2fea1d12aab605f2a2361f3f62583"
+  },
+  "model_id": "intfloat/multilingual-e5-large",
+  "model_revision": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3",
+  "p1_embedding": {
+    "bytes": 24592512,
+    "cache_hit": true,
+    "count": 6004,
+    "dimension": 1024,
+    "effective_batch_size": 16,
+    "indexing_seconds": 145.34297700000025,
+    "model_id": "intfloat/multilingual-e5-large",
+    "normalized": true,
+    "revision": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3",
+    "window_overlap_tokens": 128,
+    "window_total_tokens": 384,
+    "windows_sha256": "16defc496f360d2a19626d03c4f8e5eaf06406218f6a597579fb8429b287a1da"
+  },
+  "reused": {
+    "page_bm25": {
+      "cache_hit": true
+    },
+    "page_p0_e5": {
+      "cache_hit": true,
+      "path": "outputs/B2/cache/e5_pages.npy",
+      "sha256": "2b0bae6876709afc6c2e60b5cecf377c0b6562560aba904c6d0e5adaa633a519"
+    },
+    "region_bm25": {
+      "cache_hit": true
+    },
+    "region_e5": {
+      "cache_hit": true,
+      "path": "outputs/B2/cache/e5_regions.npy",
+      "sha256": "b0e81df52246ee2a72bc24e3185037fe18b9a8040ba20398408d6e02462fc99e"
+    }
+  },
+  "software": {
+    "numpy": "2.2.6",
+    "sentence-transformers": "6.1.0",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.19.0"
+  },
+  "windowing": {
+    "max_actual_tokens": 384,
+    "overlap_source_tokens": 128,
+    "page_count": 2479,
+    "pages_over_512": 1652,
+    "payload_token_limit": 380,
+    "prefix_token_count": 2,
+    "special_token_count": 2,
+    "window_count": 6004,
+    "window_total_tokens": 384,
+    "windows_over_512": 0
+  }
+}

@@ -1,0 +1,3099 @@
+{
+  "candidate_budgets": [
+    50,
+    100
+  ],
+  "configurations": {
+    "P0_S0_B100": {
+      "CROSS_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.6666666666666666,
+          "20": 0.6666666666666666,
+          "50": 0.6666666666666666
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.3333333333333333,
+        "final_all_evidence_recall": {
+          "10": 0.3333333333333333,
+          "20": 0.3333333333333333,
+          "50": 0.3333333333333333
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 94.89683333110104,
+        "mrr": 0.4444444444444444,
+        "ndcg@10": 0.44811577780813444,
+        "raw_page_candidate_ceiling": 0.3333333333333333,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.6590909090909091,
+          "20": 0.7045454545454546,
+          "50": 0.7272727272727273
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.45454545454545453,
+        "final_all_evidence_recall": {
+          "10": 0.36363636363636365,
+          "20": 0.45454545454545453,
+          "50": 0.45454545454545453
+        },
+        "final_any_evidence_recall": {
+          "10": 0.9545454545454546,
+          "20": 0.9545454545454546,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 31.141309091749875,
+        "mrr": 0.47167325428194995,
+        "ndcg@10": 0.46427480173674884,
+        "raw_page_candidate_ceiling": 0.45454545454545453,
+        "sample_count": 22
+      },
+      "OVERALL": {
+        "average_gold_coverage": {
+          "10": 0.5645161290322581,
+          "20": 0.6612903225806451,
+          "50": 0.7204301075268817
+        },
+        "average_unique_candidates": 99.93548387096774,
+        "budgeted_candidate_coverage": 0.6559139784946236,
+        "final_all_evidence_recall": {
+          "10": 0.4838709677419355,
+          "20": 0.5913978494623656,
+          "50": 0.6451612903225806
+        },
+        "final_any_evidence_recall": {
+          "10": 0.6451612903225806,
+          "20": 0.7311827956989247,
+          "50": 0.7956989247311828
+        },
+        "latency_ms_per_query": 32.5119397851375,
+        "mrr": 0.29967536328815586,
+        "ndcg@10": 0.34121463351883263,
+        "raw_page_candidate_ceiling": 0.6559139784946236,
+        "sample_count": 93
+      },
+      "RETRIEVAL_MULTI": {
+        "average_gold_coverage": {
+          "10": 0.66,
+          "20": 0.7,
+          "50": 0.72
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.44,
+        "final_all_evidence_recall": {
+          "10": 0.36,
+          "20": 0.44,
+          "50": 0.44
+        },
+        "final_any_evidence_recall": {
+          "10": 0.96,
+          "20": 0.96,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 38.791972000472015,
+        "mrr": 0.46840579710144925,
+        "ndcg@10": 0.4623357188653152,
+        "raw_page_candidate_ceiling": 0.44,
+        "sample_count": 25
+      },
+      "RETRIEVAL_SINGLE": {
+        "average_gold_coverage": {
+          "10": 0.5294117647058824,
+          "20": 0.6470588235294118,
+          "50": 0.7205882352941176
+        },
+        "average_unique_candidates": 99.91176470588235,
+        "budgeted_candidate_coverage": 0.7352941176470589,
+        "final_all_evidence_recall": {
+          "10": 0.5294117647058824,
+          "20": 0.6470588235294118,
+          "50": 0.7205882352941176
+        },
+        "final_any_evidence_recall": {
+          "10": 0.5294117647058824,
+          "20": 0.6470588235294118,
+          "50": 0.7205882352941176
+        },
+        "latency_ms_per_query": 30.203104411852753,
+        "mrr": 0.23764211556268028,
+        "ndcg@10": 0.29668482272968466,
+        "raw_page_candidate_ceiling": 0.7352941176470589,
+        "sample_count": 68
+      },
+      "SAME_PAGE": {
+        "average_gold_coverage": {
+          "10": 0.5294117647058824,
+          "20": 0.6470588235294118,
+          "50": 0.7205882352941176
+        },
+        "average_unique_candidates": 99.91176470588235,
+        "budgeted_candidate_coverage": 0.7352941176470589,
+        "final_all_evidence_recall": {
+          "10": 0.5294117647058824,
+          "20": 0.6470588235294118,
+          "50": 0.7205882352941176
+        },
+        "final_any_evidence_recall": {
+          "10": 0.5294117647058824,
+          "20": 0.6470588235294118,
+          "50": 0.7205882352941176
+        },
+        "latency_ms_per_query": 30.203104411852753,
+        "mrr": 0.23764211556268028,
+        "ndcg@10": 0.29668482272968466,
+        "raw_page_candidate_ceiling": 0.7352941176470589,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TABLE_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.6666666666666666,
+          "20": 0.6666666666666666,
+          "50": 0.6666666666666666
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.3333333333333333,
+        "final_all_evidence_recall": {
+          "10": 0.3333333333333333,
+          "20": 0.3333333333333333,
+          "50": 0.3333333333333333
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 94.89683333110104,
+        "mrr": 0.4444444444444444,
+        "ndcg@10": 0.44811577780813444,
+        "raw_page_candidate_ceiling": 0.3333333333333333,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TEXT_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.6590909090909091,
+          "20": 0.7045454545454546,
+          "50": 0.7272727272727273
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.45454545454545453,
+        "final_all_evidence_recall": {
+          "10": 0.36363636363636365,
+          "20": 0.45454545454545453,
+          "50": 0.45454545454545453
+        },
+        "final_any_evidence_recall": {
+          "10": 0.9545454545454546,
+          "20": 0.9545454545454546,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 31.141309091749875,
+        "mrr": 0.47167325428194995,
+        "ndcg@10": 0.46427480173674884,
+        "raw_page_candidate_ceiling": 0.45454545454545453,
+        "sample_count": 22
+      }
+    },
+    "P0_S0_B50": {
+      "CROSS_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.6666666666666666,
+          "20": 0.6666666666666666,
+          "50": 0.6666666666666666
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.3333333333333333,
+        "final_all_evidence_recall": {
+          "10": 0.3333333333333333,
+          "20": 0.3333333333333333,
+          "50": 0.3333333333333333
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 94.24836666585179,
+        "mrr": 0.4444444444444444,
+        "ndcg@10": 0.44811577780813444,
+        "raw_page_candidate_ceiling": 0.3333333333333333,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.6590909090909091,
+          "20": 0.7272727272727273,
+          "50": 0.7272727272727273
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.45454545454545453,
+        "final_all_evidence_recall": {
+          "10": 0.36363636363636365,
+          "20": 0.45454545454545453,
+          "50": 0.45454545454545453
+        },
+        "final_any_evidence_recall": {
+          "10": 0.9545454545454546,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 30.567527274384204,
+        "mrr": 0.47222222222222227,
+        "ndcg@10": 0.46427480173674884,
+        "raw_page_candidate_ceiling": 0.45454545454545453,
+        "sample_count": 22
+      },
+      "OVERALL": {
+        "average_gold_coverage": {
+          "10": 0.5752688172043011,
+          "20": 0.6774193548387096,
+          "50": 0.7204301075268817
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.6451612903225806,
+        "final_all_evidence_recall": {
+          "10": 0.4946236559139785,
+          "20": 0.6021505376344086,
+          "50": 0.6451612903225806
+        },
+        "final_any_evidence_recall": {
+          "10": 0.6559139784946236,
+          "20": 0.7526881720430108,
+          "50": 0.7956989247311828
+        },
+        "latency_ms_per_query": 31.932729032495864,
+        "mrr": 0.30166719904577,
+        "ndcg@10": 0.3454525652472774,
+        "raw_page_candidate_ceiling": 0.6559139784946236,
+        "sample_count": 93
+      },
+      "RETRIEVAL_MULTI": {
+        "average_gold_coverage": {
+          "10": 0.66,
+          "20": 0.72,
+          "50": 0.72
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.44,
+        "final_all_evidence_recall": {
+          "10": 0.36,
+          "20": 0.44,
+          "50": 0.44
+        },
+        "final_any_evidence_recall": {
+          "10": 0.96,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 38.209228001360316,
+        "mrr": 0.46888888888888886,
+        "ndcg@10": 0.4623357188653152,
+        "raw_page_candidate_ceiling": 0.44,
+        "sample_count": 25
+      },
+      "RETRIEVAL_SINGLE": {
+        "average_gold_coverage": {
+          "10": 0.5441176470588235,
+          "20": 0.6617647058823529,
+          "50": 0.7205882352941176
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.7205882352941176,
+        "final_all_evidence_recall": {
+          "10": 0.5441176470588235,
+          "20": 0.6617647058823529,
+          "50": 0.7205882352941176
+        },
+        "final_any_evidence_recall": {
+          "10": 0.5441176470588235,
+          "20": 0.6617647058823529,
+          "50": 0.7205882352941176
+        },
+        "latency_ms_per_query": 29.625192646883935,
+        "mrr": 0.24018863660344683,
+        "ndcg@10": 0.302480817593587,
+        "raw_page_candidate_ceiling": 0.7352941176470589,
+        "sample_count": 68
+      },
+      "SAME_PAGE": {
+        "average_gold_coverage": {
+          "10": 0.5441176470588235,
+          "20": 0.6617647058823529,
+          "50": 0.7205882352941176
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.7205882352941176,
+        "final_all_evidence_recall": {
+          "10": 0.5441176470588235,
+          "20": 0.6617647058823529,
+          "50": 0.7205882352941176
+        },
+        "final_any_evidence_recall": {
+          "10": 0.5441176470588235,
+          "20": 0.6617647058823529,
+          "50": 0.7205882352941176
+        },
+        "latency_ms_per_query": 29.625192646883935,
+        "mrr": 0.24018863660344683,
+        "ndcg@10": 0.302480817593587,
+        "raw_page_candidate_ceiling": 0.7352941176470589,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TABLE_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.6666666666666666,
+          "20": 0.6666666666666666,
+          "50": 0.6666666666666666
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.3333333333333333,
+        "final_all_evidence_recall": {
+          "10": 0.3333333333333333,
+          "20": 0.3333333333333333,
+          "50": 0.3333333333333333
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 94.24836666585179,
+        "mrr": 0.4444444444444444,
+        "ndcg@10": 0.44811577780813444,
+        "raw_page_candidate_ceiling": 0.3333333333333333,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TEXT_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.6590909090909091,
+          "20": 0.7272727272727273,
+          "50": 0.7272727272727273
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.45454545454545453,
+        "final_all_evidence_recall": {
+          "10": 0.36363636363636365,
+          "20": 0.45454545454545453,
+          "50": 0.45454545454545453
+        },
+        "final_any_evidence_recall": {
+          "10": 0.9545454545454546,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 30.567527274384204,
+        "mrr": 0.47222222222222227,
+        "ndcg@10": 0.46427480173674884,
+        "raw_page_candidate_ceiling": 0.45454545454545453,
+        "sample_count": 22
+      }
+    },
+    "P0_S1_B100": {
+      "CROSS_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.8333333333333334,
+          "20": 0.8333333333333334,
+          "50": 0.8333333333333334
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.6666666666666666,
+        "final_all_evidence_recall": {
+          "10": 0.6666666666666666,
+          "20": 0.6666666666666666,
+          "50": 0.6666666666666666
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 94.86599999945611,
+        "mrr": 0.3611111111111111,
+        "ndcg@10": 0.48625345384391633,
+        "raw_page_candidate_ceiling": 0.6666666666666666,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.6818181818181818,
+          "20": 0.7727272727272727,
+          "50": 0.8409090909090909
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.6818181818181818,
+        "final_all_evidence_recall": {
+          "10": 0.45454545454545453,
+          "20": 0.5454545454545454,
+          "50": 0.6818181818181818
+        },
+        "final_any_evidence_recall": {
+          "10": 0.9090909090909091,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 31.17785454593435,
+        "mrr": 0.5031221303948576,
+        "ndcg@10": 0.4840434518651545,
+        "raw_page_candidate_ceiling": 0.6818181818181818,
+        "sample_count": 22
+      },
+      "OVERALL": {
+        "average_gold_coverage": {
+          "10": 0.510752688172043,
+          "20": 0.6720430107526881,
+          "50": 0.7956989247311828
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.7741935483870968,
+        "final_all_evidence_recall": {
+          "10": 0.45161290322580644,
+          "20": 0.6129032258064516,
+          "50": 0.7526881720430108
+        },
+        "final_any_evidence_recall": {
+          "10": 0.5698924731182796,
+          "20": 0.7311827956989247,
+          "50": 0.8387096774193549
+        },
+        "latency_ms_per_query": 32.53854516108448,
+        "mrr": 0.29878797279972474,
+        "ndcg@10": 0.3244240558986521,
+        "raw_page_candidate_ceiling": 0.7849462365591398,
+        "sample_count": 93
+      },
+      "RETRIEVAL_MULTI": {
+        "average_gold_coverage": {
+          "10": 0.7,
+          "20": 0.78,
+          "50": 0.84
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.68,
+        "final_all_evidence_recall": {
+          "10": 0.48,
+          "20": 0.56,
+          "50": 0.68
+        },
+        "final_any_evidence_recall": {
+          "10": 0.92,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 38.82043200035696,
+        "mrr": 0.4860808080808081,
+        "ndcg@10": 0.48430865210260593,
+        "raw_page_candidate_ceiling": 0.68,
+        "sample_count": 25
+      },
+      "RETRIEVAL_SINGLE": {
+        "average_gold_coverage": {
+          "10": 0.4411764705882353,
+          "20": 0.6323529411764706,
+          "50": 0.7794117647058824
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.8088235294117647,
+        "final_all_evidence_recall": {
+          "10": 0.4411764705882353,
+          "20": 0.6323529411764706,
+          "50": 0.7794117647058824
+        },
+        "final_any_evidence_recall": {
+          "10": 0.4411764705882353,
+          "20": 0.6323529411764706,
+          "50": 0.7794117647058824
+        },
+        "latency_ms_per_query": 30.22902794076371,
+        "mrr": 0.22993031276991474,
+        "ndcg@10": 0.2656429543530808,
+        "raw_page_candidate_ceiling": 0.8235294117647058,
+        "sample_count": 68
+      },
+      "SAME_PAGE": {
+        "average_gold_coverage": {
+          "10": 0.4411764705882353,
+          "20": 0.6323529411764706,
+          "50": 0.7794117647058824
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.8088235294117647,
+        "final_all_evidence_recall": {
+          "10": 0.4411764705882353,
+          "20": 0.6323529411764706,
+          "50": 0.7794117647058824
+        },
+        "final_any_evidence_recall": {
+          "10": 0.4411764705882353,
+          "20": 0.6323529411764706,
+          "50": 0.7794117647058824
+        },
+        "latency_ms_per_query": 30.22902794076371,
+        "mrr": 0.22993031276991474,
+        "ndcg@10": 0.2656429543530808,
+        "raw_page_candidate_ceiling": 0.8235294117647058,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TABLE_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.8333333333333334,
+          "20": 0.8333333333333334,
+          "50": 0.8333333333333334
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.6666666666666666,
+        "final_all_evidence_recall": {
+          "10": 0.6666666666666666,
+          "20": 0.6666666666666666,
+          "50": 0.6666666666666666
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 94.86599999945611,
+        "mrr": 0.3611111111111111,
+        "ndcg@10": 0.48625345384391633,
+        "raw_page_candidate_ceiling": 0.6666666666666666,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TEXT_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.6818181818181818,
+          "20": 0.7727272727272727,
+          "50": 0.8409090909090909
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.6818181818181818,
+        "final_all_evidence_recall": {
+          "10": 0.45454545454545453,
+          "20": 0.5454545454545454,
+          "50": 0.6818181818181818
+        },
+        "final_any_evidence_recall": {
+          "10": 0.9090909090909091,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 31.17785454593435,
+        "mrr": 0.5031221303948576,
+        "ndcg@10": 0.4840434518651545,
+        "raw_page_candidate_ceiling": 0.6818181818181818,
+        "sample_count": 22
+      }
+    },
+    "P0_S1_B50": {
+      "CROSS_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.8333333333333334,
+          "20": 0.8333333333333334,
+          "50": 0.8333333333333334
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.6666666666666666,
+        "final_all_evidence_recall": {
+          "10": 0.6666666666666666,
+          "20": 0.6666666666666666,
+          "50": 0.6666666666666666
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 94.27273333252136,
+        "mrr": 0.3611111111111111,
+        "ndcg@10": 0.48625345384391633,
+        "raw_page_candidate_ceiling": 0.6666666666666666,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.6818181818181818,
+          "20": 0.8409090909090909,
+          "50": 0.8409090909090909
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.6818181818181818,
+        "final_all_evidence_recall": {
+          "10": 0.45454545454545453,
+          "20": 0.6818181818181818,
+          "50": 0.6818181818181818
+        },
+        "final_any_evidence_recall": {
+          "10": 0.9090909090909091,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 30.568063637143826,
+        "mrr": 0.5024864024864024,
+        "ndcg@10": 0.4836411470088953,
+        "raw_page_candidate_ceiling": 0.6818181818181818,
+        "sample_count": 22
+      },
+      "OVERALL": {
+        "average_gold_coverage": {
+          "10": 0.510752688172043,
+          "20": 0.6666666666666666,
+          "50": 0.7956989247311828
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.7526881720430108,
+        "final_all_evidence_recall": {
+          "10": 0.45161290322580644,
+          "20": 0.6236559139784946,
+          "50": 0.7526881720430108
+        },
+        "final_any_evidence_recall": {
+          "10": 0.5698924731182796,
+          "20": 0.7096774193548387,
+          "50": 0.8387096774193549
+        },
+        "latency_ms_per_query": 31.924106451755975,
+        "mrr": 0.29955392009248005,
+        "ndcg@10": 0.32568980229709454,
+        "raw_page_candidate_ceiling": 0.7849462365591398,
+        "sample_count": 93
+      },
+      "RETRIEVAL_MULTI": {
+        "average_gold_coverage": {
+          "10": 0.7,
+          "20": 0.84,
+          "50": 0.84
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.68,
+        "final_all_evidence_recall": {
+          "10": 0.48,
+          "20": 0.68,
+          "50": 0.68
+        },
+        "final_any_evidence_recall": {
+          "10": 0.92,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 38.21262400058913,
+        "mrr": 0.4855213675213675,
+        "ndcg@10": 0.4839546238290978,
+        "raw_page_candidate_ceiling": 0.68,
+        "sample_count": 25
+      },
+      "RETRIEVAL_SINGLE": {
+        "average_gold_coverage": {
+          "10": 0.4411764705882353,
+          "20": 0.6029411764705882,
+          "50": 0.7794117647058824
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.7794117647058824,
+        "final_all_evidence_recall": {
+          "10": 0.4411764705882353,
+          "20": 0.6029411764705882,
+          "50": 0.7794117647058824
+        },
+        "final_any_evidence_recall": {
+          "10": 0.4411764705882353,
+          "20": 0.6029411764705882,
+          "50": 0.7794117647058824
+        },
+        "latency_ms_per_query": 29.612151470567316,
+        "mrr": 0.2311835350083302,
+        "ndcg@10": 0.2675042061456227,
+        "raw_page_candidate_ceiling": 0.8235294117647058,
+        "sample_count": 68
+      },
+      "SAME_PAGE": {
+        "average_gold_coverage": {
+          "10": 0.4411764705882353,
+          "20": 0.6029411764705882,
+          "50": 0.7794117647058824
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.7794117647058824,
+        "final_all_evidence_recall": {
+          "10": 0.4411764705882353,
+          "20": 0.6029411764705882,
+          "50": 0.7794117647058824
+        },
+        "final_any_evidence_recall": {
+          "10": 0.4411764705882353,
+          "20": 0.6029411764705882,
+          "50": 0.7794117647058824
+        },
+        "latency_ms_per_query": 29.612151470567316,
+        "mrr": 0.2311835350083302,
+        "ndcg@10": 0.2675042061456227,
+        "raw_page_candidate_ceiling": 0.8235294117647058,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TABLE_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.8333333333333334,
+          "20": 0.8333333333333334,
+          "50": 0.8333333333333334
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.6666666666666666,
+        "final_all_evidence_recall": {
+          "10": 0.6666666666666666,
+          "20": 0.6666666666666666,
+          "50": 0.6666666666666666
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 94.27273333252136,
+        "mrr": 0.3611111111111111,
+        "ndcg@10": 0.48625345384391633,
+        "raw_page_candidate_ceiling": 0.6666666666666666,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TEXT_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.6818181818181818,
+          "20": 0.8409090909090909,
+          "50": 0.8409090909090909
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.6818181818181818,
+        "final_all_evidence_recall": {
+          "10": 0.45454545454545453,
+          "20": 0.6818181818181818,
+          "50": 0.6818181818181818
+        },
+        "final_any_evidence_recall": {
+          "10": 0.9090909090909091,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 30.568063637143826,
+        "mrr": 0.5024864024864024,
+        "ndcg@10": 0.4836411470088953,
+        "raw_page_candidate_ceiling": 0.6818181818181818,
+        "sample_count": 22
+      }
+    },
+    "P0_S2_B100": {
+      "CROSS_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 1.0,
+        "final_all_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 99.64610000073056,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.5301129875204567,
+        "raw_page_candidate_ceiling": 0.3333333333333333,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.5454545454545454,
+          "20": 0.7045454545454546,
+          "50": 0.8636363636363636
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.7272727272727273,
+        "final_all_evidence_recall": {
+          "10": 0.2727272727272727,
+          "20": 0.4090909090909091,
+          "50": 0.7272727272727273
+        },
+        "final_any_evidence_recall": {
+          "10": 0.8181818181818182,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 36.06472272655413,
+        "mrr": 0.3823723392503297,
+        "ndcg@10": 0.3699001299196532,
+        "raw_page_candidate_ceiling": 0.45454545454545453,
+        "sample_count": 22
+      },
+      "OVERALL": {
+        "average_gold_coverage": {
+          "10": 0.45161290322580644,
+          "20": 0.5967741935483871,
+          "50": 0.7849462365591398
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.7849462365591398,
+        "final_all_evidence_recall": {
+          "10": 0.3870967741935484,
+          "20": 0.5268817204301075,
+          "50": 0.7526881720430108
+        },
+        "final_any_evidence_recall": {
+          "10": 0.5161290322580645,
+          "20": 0.6666666666666666,
+          "50": 0.8172043010752689
+        },
+        "latency_ms_per_query": 37.35953763410385,
+        "mrr": 0.25955893392643903,
+        "ndcg@10": 0.2847081035699283,
+        "raw_page_candidate_ceiling": 0.6559139784946236,
+        "sample_count": 93
+      },
+      "RETRIEVAL_MULTI": {
+        "average_gold_coverage": {
+          "10": 0.6,
+          "20": 0.74,
+          "50": 0.88
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.76,
+        "final_all_evidence_recall": {
+          "10": 0.36,
+          "20": 0.48,
+          "50": 0.76
+        },
+        "final_any_evidence_recall": {
+          "10": 0.84,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 43.694487999455305,
+        "mrr": 0.3764876585402901,
+        "ndcg@10": 0.3891256728317497,
+        "raw_page_candidate_ceiling": 0.44,
+        "sample_count": 25
+      },
+      "RETRIEVAL_SINGLE": {
+        "average_gold_coverage": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.75
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.7941176470588235,
+        "final_all_evidence_recall": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.75
+        },
+        "final_any_evidence_recall": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.75
+        },
+        "latency_ms_per_query": 35.03051176448935,
+        "mrr": 0.2165704322301702,
+        "ndcg@10": 0.24631929134131755,
+        "raw_page_candidate_ceiling": 0.7352941176470589,
+        "sample_count": 68
+      },
+      "SAME_PAGE": {
+        "average_gold_coverage": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.75
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.7941176470588235,
+        "final_all_evidence_recall": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.75
+        },
+        "final_any_evidence_recall": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.75
+        },
+        "latency_ms_per_query": 35.03051176448935,
+        "mrr": 0.2165704322301702,
+        "ndcg@10": 0.24631929134131755,
+        "raw_page_candidate_ceiling": 0.7352941176470589,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TABLE_TABLE": {
+        "average_gold_coverage": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 1.0,
+        "final_all_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 99.64610000073056,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.5301129875204567,
+        "raw_page_candidate_ceiling": 0.3333333333333333,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TEXT_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.5454545454545454,
+          "20": 0.7045454545454546,
+          "50": 0.8636363636363636
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.7272727272727273,
+        "final_all_evidence_recall": {
+          "10": 0.2727272727272727,
+          "20": 0.4090909090909091,
+          "50": 0.7272727272727273
+        },
+        "final_any_evidence_recall": {
+          "10": 0.8181818181818182,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 36.06472272655413,
+        "mrr": 0.3823723392503297,
+        "ndcg@10": 0.3699001299196532,
+        "raw_page_candidate_ceiling": 0.45454545454545453,
+        "sample_count": 22
+      }
+    },
+    "P0_S2_B50": {
+      "CROSS_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 1.0,
+        "final_all_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 98.9939333339862,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.49927930746548493,
+        "raw_page_candidate_ceiling": 0.3333333333333333,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.5681818181818182,
+          "20": 0.6818181818181818,
+          "50": 0.7727272727272727
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.5454545454545454,
+        "final_all_evidence_recall": {
+          "10": 0.3181818181818182,
+          "20": 0.4090909090909091,
+          "50": 0.5454545454545454
+        },
+        "final_any_evidence_recall": {
+          "10": 0.8181818181818182,
+          "20": 0.9545454545454546,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 35.44273181730453,
+        "mrr": 0.36319868856633564,
+        "ndcg@10": 0.37060890045549433,
+        "raw_page_candidate_ceiling": 0.45454545454545453,
+        "sample_count": 22
+      },
+      "OVERALL": {
+        "average_gold_coverage": {
+          "10": 0.478494623655914,
+          "20": 0.6021505376344086,
+          "50": 0.7849462365591398
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.7311827956989247,
+        "final_all_evidence_recall": {
+          "10": 0.41935483870967744,
+          "20": 0.5376344086021505,
+          "50": 0.7311827956989247
+        },
+        "final_any_evidence_recall": {
+          "10": 0.5376344086021505,
+          "20": 0.6666666666666666,
+          "50": 0.8387096774193549
+        },
+        "latency_ms_per_query": 36.73364731171156,
+        "mrr": 0.25696084161594346,
+        "ndcg@10": 0.2903050255460648,
+        "raw_page_candidate_ceiling": 0.6559139784946236,
+        "sample_count": 93
+      },
+      "RETRIEVAL_MULTI": {
+        "average_gold_coverage": {
+          "10": 0.62,
+          "20": 0.72,
+          "50": 0.8
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.6,
+        "final_all_evidence_recall": {
+          "10": 0.4,
+          "20": 0.48,
+          "50": 0.6
+        },
+        "final_any_evidence_recall": {
+          "10": 0.84,
+          "20": 0.96,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 43.06887599930633,
+        "mrr": 0.3596148459383754,
+        "ndcg@10": 0.3860493492966932,
+        "raw_page_candidate_ceiling": 0.44,
+        "sample_count": 25
+      },
+      "RETRIEVAL_SINGLE": {
+        "average_gold_coverage": {
+          "10": 0.4264705882352941,
+          "20": 0.5588235294117647,
+          "50": 0.7794117647058824
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.7794117647058824,
+        "final_all_evidence_recall": {
+          "10": 0.4264705882352941,
+          "20": 0.5588235294117647,
+          "50": 0.7794117647058824
+        },
+        "final_any_evidence_recall": {
+          "10": 0.4264705882352941,
+          "20": 0.5588235294117647,
+          "50": 0.7794117647058824
+        },
+        "latency_ms_per_query": 34.40451911774289,
+        "mrr": 0.21922039885034342,
+        "ndcg@10": 0.25510490652009854,
+        "raw_page_candidate_ceiling": 0.7352941176470589,
+        "sample_count": 68
+      },
+      "SAME_PAGE": {
+        "average_gold_coverage": {
+          "10": 0.4264705882352941,
+          "20": 0.5588235294117647,
+          "50": 0.7794117647058824
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.7794117647058824,
+        "final_all_evidence_recall": {
+          "10": 0.4264705882352941,
+          "20": 0.5588235294117647,
+          "50": 0.7794117647058824
+        },
+        "final_any_evidence_recall": {
+          "10": 0.4264705882352941,
+          "20": 0.5588235294117647,
+          "50": 0.7794117647058824
+        },
+        "latency_ms_per_query": 34.40451911774289,
+        "mrr": 0.21922039885034342,
+        "ndcg@10": 0.25510490652009854,
+        "raw_page_candidate_ceiling": 0.7352941176470589,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TABLE_TABLE": {
+        "average_gold_coverage": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 1.0,
+        "final_all_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 98.9939333339862,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.49927930746548493,
+        "raw_page_candidate_ceiling": 0.3333333333333333,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TEXT_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.5681818181818182,
+          "20": 0.6818181818181818,
+          "50": 0.7727272727272727
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.5454545454545454,
+        "final_all_evidence_recall": {
+          "10": 0.3181818181818182,
+          "20": 0.4090909090909091,
+          "50": 0.5454545454545454
+        },
+        "final_any_evidence_recall": {
+          "10": 0.8181818181818182,
+          "20": 0.9545454545454546,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 35.44273181730453,
+        "mrr": 0.36319868856633564,
+        "ndcg@10": 0.37060890045549433,
+        "raw_page_candidate_ceiling": 0.45454545454545453,
+        "sample_count": 22
+      }
+    },
+    "P2_S0_B100": {
+      "CROSS_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.8333333333333334,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 1.0,
+        "final_all_evidence_recall": {
+          "10": 0.6666666666666666,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 94.73409999797393,
+        "mrr": 0.38888888888888884,
+        "ndcg@10": 0.4914651418461975,
+        "raw_page_candidate_ceiling": 1.0,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.6818181818181818,
+          "20": 0.7727272727272727,
+          "50": 0.7727272727272727
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.5454545454545454,
+        "final_all_evidence_recall": {
+          "10": 0.4090909090909091,
+          "20": 0.5454545454545454,
+          "50": 0.5454545454545454
+        },
+        "final_any_evidence_recall": {
+          "10": 0.9545454545454546,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 31.036795454962306,
+        "mrr": 0.4790223665223665,
+        "ndcg@10": 0.47252748233563047,
+        "raw_page_candidate_ceiling": 0.5454545454545454,
+        "sample_count": 22
+      },
+      "OVERALL": {
+        "average_gold_coverage": {
+          "10": 0.5645161290322581,
+          "20": 0.6666666666666666,
+          "50": 0.7419354838709677
+        },
+        "average_unique_candidates": 99.90322580645162,
+        "budgeted_candidate_coverage": 0.6989247311827957,
+        "final_all_evidence_recall": {
+          "10": 0.4946236559139785,
+          "20": 0.6129032258064516,
+          "50": 0.6881720430107527
+        },
+        "final_any_evidence_recall": {
+          "10": 0.6344086021505376,
+          "20": 0.7204301075268817,
+          "50": 0.7956989247311828
+        },
+        "latency_ms_per_query": 32.41596774219082,
+        "mrr": 0.29142593217183965,
+        "ndcg@10": 0.3360089899357467,
+        "raw_page_candidate_ceiling": 0.6989247311827957,
+        "sample_count": 93
+      },
+      "RETRIEVAL_MULTI": {
+        "average_gold_coverage": {
+          "10": 0.7,
+          "20": 0.8,
+          "50": 0.8
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.6,
+        "final_all_evidence_recall": {
+          "10": 0.44,
+          "20": 0.6,
+          "50": 0.6
+        },
+        "final_any_evidence_recall": {
+          "10": 0.96,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 38.6804720001237,
+        "mrr": 0.4682063492063492,
+        "ndcg@10": 0.4748000014768985,
+        "raw_page_candidate_ceiling": 0.6,
+        "sample_count": 25
+      },
+      "RETRIEVAL_SINGLE": {
+        "average_gold_coverage": {
+          "10": 0.5147058823529411,
+          "20": 0.6176470588235294,
+          "50": 0.7205882352941176
+        },
+        "average_unique_candidates": 99.86764705882354,
+        "budgeted_candidate_coverage": 0.7352941176470589,
+        "final_all_evidence_recall": {
+          "10": 0.5147058823529411,
+          "20": 0.6176470588235294,
+          "50": 0.7205882352941176
+        },
+        "final_any_evidence_recall": {
+          "10": 0.5147058823529411,
+          "20": 0.6176470588235294,
+          "50": 0.7205882352941176
+        },
+        "latency_ms_per_query": 30.11284117677432,
+        "mrr": 0.22643313179150523,
+        "ndcg@10": 0.28498288275149974,
+        "raw_page_candidate_ceiling": 0.7352941176470589,
+        "sample_count": 68
+      },
+      "SAME_PAGE": {
+        "average_gold_coverage": {
+          "10": 0.5147058823529411,
+          "20": 0.6176470588235294,
+          "50": 0.7205882352941176
+        },
+        "average_unique_candidates": 99.86764705882354,
+        "budgeted_candidate_coverage": 0.7352941176470589,
+        "final_all_evidence_recall": {
+          "10": 0.5147058823529411,
+          "20": 0.6176470588235294,
+          "50": 0.7205882352941176
+        },
+        "final_any_evidence_recall": {
+          "10": 0.5147058823529411,
+          "20": 0.6176470588235294,
+          "50": 0.7205882352941176
+        },
+        "latency_ms_per_query": 30.11284117677432,
+        "mrr": 0.22643313179150523,
+        "ndcg@10": 0.28498288275149974,
+        "raw_page_candidate_ceiling": 0.7352941176470589,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TABLE_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.8333333333333334,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 1.0,
+        "final_all_evidence_recall": {
+          "10": 0.6666666666666666,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 94.73409999797393,
+        "mrr": 0.38888888888888884,
+        "ndcg@10": 0.4914651418461975,
+        "raw_page_candidate_ceiling": 1.0,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TEXT_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.6818181818181818,
+          "20": 0.7727272727272727,
+          "50": 0.7727272727272727
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.5454545454545454,
+        "final_all_evidence_recall": {
+          "10": 0.4090909090909091,
+          "20": 0.5454545454545454,
+          "50": 0.5454545454545454
+        },
+        "final_any_evidence_recall": {
+          "10": 0.9545454545454546,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 31.036795454962306,
+        "mrr": 0.4790223665223665,
+        "ndcg@10": 0.47252748233563047,
+        "raw_page_candidate_ceiling": 0.5454545454545454,
+        "sample_count": 22
+      }
+    },
+    "P2_S0_B50": {
+      "CROSS_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.8333333333333334,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 1.0,
+        "final_all_evidence_recall": {
+          "10": 0.6666666666666666,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 94.11243333185364,
+        "mrr": 0.38888888888888884,
+        "ndcg@10": 0.4914651418461975,
+        "raw_page_candidate_ceiling": 1.0,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.6818181818181818,
+          "20": 0.7727272727272727,
+          "50": 0.7727272727272727
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.5454545454545454,
+        "final_all_evidence_recall": {
+          "10": 0.4090909090909091,
+          "20": 0.5454545454545454,
+          "50": 0.5454545454545454
+        },
+        "final_any_evidence_recall": {
+          "10": 0.9545454545454546,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 30.430504545868395,
+        "mrr": 0.4790223665223665,
+        "ndcg@10": 0.47252748233563047,
+        "raw_page_candidate_ceiling": 0.5454545454545454,
+        "sample_count": 22
+      },
+      "OVERALL": {
+        "average_gold_coverage": {
+          "10": 0.553763440860215,
+          "20": 0.6666666666666666,
+          "50": 0.7419354838709677
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.6881720430107527,
+        "final_all_evidence_recall": {
+          "10": 0.4838709677419355,
+          "20": 0.6129032258064516,
+          "50": 0.6881720430107527
+        },
+        "final_any_evidence_recall": {
+          "10": 0.6236559139784946,
+          "20": 0.7204301075268817,
+          "50": 0.7956989247311828
+        },
+        "latency_ms_per_query": 31.801744086502975,
+        "mrr": 0.29332267434006654,
+        "ndcg@10": 0.33456422295728094,
+        "raw_page_candidate_ceiling": 0.6989247311827957,
+        "sample_count": 93
+      },
+      "RETRIEVAL_MULTI": {
+        "average_gold_coverage": {
+          "10": 0.7,
+          "20": 0.8,
+          "50": 0.8
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.6,
+        "final_all_evidence_recall": {
+          "10": 0.44,
+          "20": 0.6,
+          "50": 0.6
+        },
+        "final_any_evidence_recall": {
+          "10": 0.96,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 38.072336000186624,
+        "mrr": 0.4682063492063492,
+        "ndcg@10": 0.4748000014768985,
+        "raw_page_candidate_ceiling": 0.6,
+        "sample_count": 25
+      },
+      "RETRIEVAL_SINGLE": {
+        "average_gold_coverage": {
+          "10": 0.5,
+          "20": 0.6176470588235294,
+          "50": 0.7205882352941176
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.7205882352941176,
+        "final_all_evidence_recall": {
+          "10": 0.5,
+          "20": 0.6176470588235294,
+          "50": 0.7205882352941176
+        },
+        "final_any_evidence_recall": {
+          "10": 0.5,
+          "20": 0.6176470588235294,
+          "50": 0.7205882352941176
+        },
+        "latency_ms_per_query": 29.49637941235457,
+        "mrr": 0.22902720563922724,
+        "ndcg@10": 0.28300695144271565,
+        "raw_page_candidate_ceiling": 0.7352941176470589,
+        "sample_count": 68
+      },
+      "SAME_PAGE": {
+        "average_gold_coverage": {
+          "10": 0.5,
+          "20": 0.6176470588235294,
+          "50": 0.7205882352941176
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.7205882352941176,
+        "final_all_evidence_recall": {
+          "10": 0.5,
+          "20": 0.6176470588235294,
+          "50": 0.7205882352941176
+        },
+        "final_any_evidence_recall": {
+          "10": 0.5,
+          "20": 0.6176470588235294,
+          "50": 0.7205882352941176
+        },
+        "latency_ms_per_query": 29.49637941235457,
+        "mrr": 0.22902720563922724,
+        "ndcg@10": 0.28300695144271565,
+        "raw_page_candidate_ceiling": 0.7352941176470589,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TABLE_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.8333333333333334,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 1.0,
+        "final_all_evidence_recall": {
+          "10": 0.6666666666666666,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 94.11243333185364,
+        "mrr": 0.38888888888888884,
+        "ndcg@10": 0.4914651418461975,
+        "raw_page_candidate_ceiling": 1.0,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TEXT_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.6818181818181818,
+          "20": 0.7727272727272727,
+          "50": 0.7727272727272727
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.5454545454545454,
+        "final_all_evidence_recall": {
+          "10": 0.4090909090909091,
+          "20": 0.5454545454545454,
+          "50": 0.5454545454545454
+        },
+        "final_any_evidence_recall": {
+          "10": 0.9545454545454546,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 30.430504545868395,
+        "mrr": 0.4790223665223665,
+        "ndcg@10": 0.47252748233563047,
+        "raw_page_candidate_ceiling": 0.5454545454545454,
+        "sample_count": 22
+      }
+    },
+    "P2_S1_B100": {
+      "CROSS_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.8333333333333334,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 1.0,
+        "final_all_evidence_recall": {
+          "10": 0.6666666666666666,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 94.84016666707855,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.46207642199134247,
+        "raw_page_candidate_ceiling": 1.0,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.6363636363636364,
+          "20": 0.7272727272727273,
+          "50": 0.8181818181818182
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.6363636363636364,
+        "final_all_evidence_recall": {
+          "10": 0.4090909090909091,
+          "20": 0.45454545454545453,
+          "50": 0.6363636363636364
+        },
+        "final_any_evidence_recall": {
+          "10": 0.8636363636363636,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 31.148063636216897,
+        "mrr": 0.4514041514041514,
+        "ndcg@10": 0.43620441676554317,
+        "raw_page_candidate_ceiling": 0.6363636363636364,
+        "sample_count": 22
+      },
+      "OVERALL": {
+        "average_gold_coverage": {
+          "10": 0.510752688172043,
+          "20": 0.6666666666666666,
+          "50": 0.8064516129032258
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.7849462365591398,
+        "final_all_evidence_recall": {
+          "10": 0.45161290322580644,
+          "20": 0.6021505376344086,
+          "50": 0.7634408602150538
+        },
+        "final_any_evidence_recall": {
+          "10": 0.5698924731182796,
+          "20": 0.7311827956989247,
+          "50": 0.8494623655913979
+        },
+        "latency_ms_per_query": 32.52153978477293,
+        "mrr": 0.2859437081167703,
+        "ndcg@10": 0.3154261449552758,
+        "raw_page_candidate_ceiling": 0.7956989247311828,
+        "sample_count": 93
+      },
+      "RETRIEVAL_MULTI": {
+        "average_gold_coverage": {
+          "10": 0.66,
+          "20": 0.76,
+          "50": 0.84
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.68,
+        "final_all_evidence_recall": {
+          "10": 0.44,
+          "20": 0.52,
+          "50": 0.68
+        },
+        "final_any_evidence_recall": {
+          "10": 0.88,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 38.791115999920294,
+        "mrr": 0.4372356532356532,
+        "ndcg@10": 0.43930905739263904,
+        "raw_page_candidate_ceiling": 0.68,
+        "sample_count": 25
+      },
+      "RETRIEVAL_SINGLE": {
+        "average_gold_coverage": {
+          "10": 0.45588235294117646,
+          "20": 0.6323529411764706,
+          "50": 0.7941176470588235
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.8235294117647058,
+        "final_all_evidence_recall": {
+          "10": 0.45588235294117646,
+          "20": 0.6323529411764706,
+          "50": 0.7941176470588235
+        },
+        "final_any_evidence_recall": {
+          "10": 0.45588235294117646,
+          "20": 0.6323529411764706,
+          "50": 0.7941176470588235
+        },
+        "latency_ms_per_query": 30.216548529204054,
+        "mrr": 0.23032166947012203,
+        "ndcg@10": 0.2698809565591864,
+        "raw_page_candidate_ceiling": 0.8382352941176471,
+        "sample_count": 68
+      },
+      "SAME_PAGE": {
+        "average_gold_coverage": {
+          "10": 0.45588235294117646,
+          "20": 0.6323529411764706,
+          "50": 0.7941176470588235
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.8235294117647058,
+        "final_all_evidence_recall": {
+          "10": 0.45588235294117646,
+          "20": 0.6323529411764706,
+          "50": 0.7941176470588235
+        },
+        "final_any_evidence_recall": {
+          "10": 0.45588235294117646,
+          "20": 0.6323529411764706,
+          "50": 0.7941176470588235
+        },
+        "latency_ms_per_query": 30.216548529204054,
+        "mrr": 0.23032166947012203,
+        "ndcg@10": 0.2698809565591864,
+        "raw_page_candidate_ceiling": 0.8382352941176471,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TABLE_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.8333333333333334,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 1.0,
+        "final_all_evidence_recall": {
+          "10": 0.6666666666666666,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 94.84016666707855,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.46207642199134247,
+        "raw_page_candidate_ceiling": 1.0,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TEXT_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.6363636363636364,
+          "20": 0.7272727272727273,
+          "50": 0.8181818181818182
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.6363636363636364,
+        "final_all_evidence_recall": {
+          "10": 0.4090909090909091,
+          "20": 0.45454545454545453,
+          "50": 0.6363636363636364
+        },
+        "final_any_evidence_recall": {
+          "10": 0.8636363636363636,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 31.148063636216897,
+        "mrr": 0.4514041514041514,
+        "ndcg@10": 0.43620441676554317,
+        "raw_page_candidate_ceiling": 0.6363636363636364,
+        "sample_count": 22
+      }
+    },
+    "P2_S1_B50": {
+      "CROSS_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.8333333333333334,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 1.0,
+        "final_all_evidence_recall": {
+          "10": 0.6666666666666666,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 94.21733333389663,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.46207642199134247,
+        "raw_page_candidate_ceiling": 1.0,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.6363636363636364,
+          "20": 0.7727272727272727,
+          "50": 0.8181818181818182
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.6363636363636364,
+        "final_all_evidence_recall": {
+          "10": 0.4090909090909091,
+          "20": 0.5454545454545454,
+          "50": 0.6363636363636364
+        },
+        "final_any_evidence_recall": {
+          "10": 0.8636363636363636,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 30.534990908894212,
+        "mrr": 0.44957611832611827,
+        "ndcg@10": 0.4358021119092838,
+        "raw_page_candidate_ceiling": 0.6363636363636364,
+        "sample_count": 22
+      },
+      "OVERALL": {
+        "average_gold_coverage": {
+          "10": 0.5,
+          "20": 0.6559139784946236,
+          "50": 0.7956989247311828
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.7526881720430108,
+        "final_all_evidence_recall": {
+          "10": 0.44086021505376344,
+          "20": 0.6021505376344086,
+          "50": 0.7526881720430108
+        },
+        "final_any_evidence_recall": {
+          "10": 0.5591397849462365,
+          "20": 0.7096774193548387,
+          "50": 0.8387096774193549
+        },
+        "latency_ms_per_query": 31.90214193560795,
+        "mrr": 0.285978471806532,
+        "ndcg@10": 0.31388536384503857,
+        "raw_page_candidate_ceiling": 0.7956989247311828,
+        "sample_count": 93
+      },
+      "RETRIEVAL_MULTI": {
+        "average_gold_coverage": {
+          "10": 0.66,
+          "20": 0.8,
+          "50": 0.84
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.68,
+        "final_all_evidence_recall": {
+          "10": 0.44,
+          "20": 0.6,
+          "50": 0.68
+        },
+        "final_any_evidence_recall": {
+          "10": 0.88,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 38.1768719998945,
+        "mrr": 0.4356269841269841,
+        "ndcg@10": 0.4389550291191309,
+        "raw_page_candidate_ceiling": 0.68,
+        "sample_count": 25
+      },
+      "RETRIEVAL_SINGLE": {
+        "average_gold_coverage": {
+          "10": 0.4411764705882353,
+          "20": 0.6029411764705882,
+          "50": 0.7794117647058824
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.7794117647058824,
+        "final_all_evidence_recall": {
+          "10": 0.4411764705882353,
+          "20": 0.6029411764705882,
+          "50": 0.7794117647058824
+        },
+        "final_any_evidence_recall": {
+          "10": 0.4411764705882353,
+          "20": 0.6029411764705882,
+          "50": 0.7794117647058824
+        },
+        "latency_ms_per_query": 29.595255882561425,
+        "mrr": 0.23096063639460102,
+        "ndcg@10": 0.26790386925897525,
+        "raw_page_candidate_ceiling": 0.8382352941176471,
+        "sample_count": 68
+      },
+      "SAME_PAGE": {
+        "average_gold_coverage": {
+          "10": 0.4411764705882353,
+          "20": 0.6029411764705882,
+          "50": 0.7794117647058824
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.7794117647058824,
+        "final_all_evidence_recall": {
+          "10": 0.4411764705882353,
+          "20": 0.6029411764705882,
+          "50": 0.7794117647058824
+        },
+        "final_any_evidence_recall": {
+          "10": 0.4411764705882353,
+          "20": 0.6029411764705882,
+          "50": 0.7794117647058824
+        },
+        "latency_ms_per_query": 29.595255882561425,
+        "mrr": 0.23096063639460102,
+        "ndcg@10": 0.26790386925897525,
+        "raw_page_candidate_ceiling": 0.8382352941176471,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TABLE_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.8333333333333334,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 1.0,
+        "final_all_evidence_recall": {
+          "10": 0.6666666666666666,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 94.21733333389663,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.46207642199134247,
+        "raw_page_candidate_ceiling": 1.0,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TEXT_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.6363636363636364,
+          "20": 0.7727272727272727,
+          "50": 0.8181818181818182
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.6363636363636364,
+        "final_all_evidence_recall": {
+          "10": 0.4090909090909091,
+          "20": 0.5454545454545454,
+          "50": 0.6363636363636364
+        },
+        "final_any_evidence_recall": {
+          "10": 0.8636363636363636,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 30.534990908894212,
+        "mrr": 0.44957611832611827,
+        "ndcg@10": 0.4358021119092838,
+        "raw_page_candidate_ceiling": 0.6363636363636364,
+        "sample_count": 22
+      }
+    },
+    "P2_S2_B100": {
+      "CROSS_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.8333333333333334,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 1.0,
+        "final_all_evidence_recall": {
+          "10": 0.6666666666666666,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 99.42230000160635,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.4710332252591074,
+        "raw_page_candidate_ceiling": 1.0,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.5681818181818182,
+          "20": 0.6818181818181818,
+          "50": 0.8636363636363636
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.7272727272727273,
+        "final_all_evidence_recall": {
+          "10": 0.3181818181818182,
+          "20": 0.4090909090909091,
+          "50": 0.7272727272727273
+        },
+        "final_any_evidence_recall": {
+          "10": 0.8181818181818182,
+          "20": 0.9545454545454546,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 35.9116227267474,
+        "mrr": 0.3849074304217845,
+        "ndcg@10": 0.3790839184159615,
+        "raw_page_candidate_ceiling": 0.5454545454545454,
+        "sample_count": 22
+      },
+      "OVERALL": {
+        "average_gold_coverage": {
+          "10": 0.45161290322580644,
+          "20": 0.5913978494623656,
+          "50": 0.7526881720430108
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.7849462365591398,
+        "final_all_evidence_recall": {
+          "10": 0.3870967741935484,
+          "20": 0.5268817204301075,
+          "50": 0.7204301075268817
+        },
+        "final_any_evidence_recall": {
+          "10": 0.5161290322580645,
+          "20": 0.6559139784946236,
+          "50": 0.7849462365591398
+        },
+        "latency_ms_per_query": 37.20867311795867,
+        "mrr": 0.260170205418151,
+        "ndcg@10": 0.2853879040711443,
+        "raw_page_candidate_ceiling": 0.6989247311827957,
+        "sample_count": 93
+      },
+      "RETRIEVAL_MULTI": {
+        "average_gold_coverage": {
+          "10": 0.6,
+          "20": 0.72,
+          "50": 0.88
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.76,
+        "final_all_evidence_recall": {
+          "10": 0.36,
+          "20": 0.48,
+          "50": 0.76
+        },
+        "final_any_evidence_recall": {
+          "10": 0.84,
+          "20": 0.96,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 43.53290399973048,
+        "mrr": 0.3787185387711704,
+        "ndcg@10": 0.39011783523713894,
+        "raw_page_candidate_ceiling": 0.6,
+        "sample_count": 25
+      },
+      "RETRIEVAL_SINGLE": {
+        "average_gold_coverage": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.7058823529411765
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.7941176470588235,
+        "final_all_evidence_recall": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.7058823529411765
+        },
+        "final_any_evidence_recall": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.7058823529411765
+        },
+        "latency_ms_per_query": 34.883588234954324,
+        "mrr": 0.21658625933248213,
+        "ndcg@10": 0.24688425290717564,
+        "raw_page_candidate_ceiling": 0.7352941176470589,
+        "sample_count": 68
+      },
+      "SAME_PAGE": {
+        "average_gold_coverage": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.7058823529411765
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.7941176470588235,
+        "final_all_evidence_recall": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.7058823529411765
+        },
+        "final_any_evidence_recall": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.7058823529411765
+        },
+        "latency_ms_per_query": 34.883588234954324,
+        "mrr": 0.21658625933248213,
+        "ndcg@10": 0.24688425290717564,
+        "raw_page_candidate_ceiling": 0.7352941176470589,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TABLE_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.8333333333333334,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 1.0,
+        "final_all_evidence_recall": {
+          "10": 0.6666666666666666,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 99.42230000160635,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.4710332252591074,
+        "raw_page_candidate_ceiling": 1.0,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TEXT_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.5681818181818182,
+          "20": 0.6818181818181818,
+          "50": 0.8636363636363636
+        },
+        "average_unique_candidates": 100.0,
+        "budgeted_candidate_coverage": 0.7272727272727273,
+        "final_all_evidence_recall": {
+          "10": 0.3181818181818182,
+          "20": 0.4090909090909091,
+          "50": 0.7272727272727273
+        },
+        "final_any_evidence_recall": {
+          "10": 0.8181818181818182,
+          "20": 0.9545454545454546,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 35.9116227267474,
+        "mrr": 0.3849074304217845,
+        "ndcg@10": 0.3790839184159615,
+        "raw_page_candidate_ceiling": 0.5454545454545454,
+        "sample_count": 22
+      }
+    },
+    "P2_S2_B50": {
+      "CROSS_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.8333333333333334,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 1.0,
+        "final_all_evidence_recall": {
+          "10": 0.6666666666666666,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 98.82256666727092,
+        "mrr": 0.3444444444444444,
+        "ndcg@10": 0.45581299667429837,
+        "raw_page_candidate_ceiling": 1.0,
+        "sample_count": 3
+      },
+      "CROSS_PAGE_SAME_DOCUMENT": {
+        "average_gold_coverage": {
+          "10": 0.5681818181818182,
+          "20": 0.75,
+          "50": 0.8181818181818182
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.6363636363636364,
+        "final_all_evidence_recall": {
+          "10": 0.3181818181818182,
+          "20": 0.5,
+          "50": 0.6363636363636364
+        },
+        "final_any_evidence_recall": {
+          "10": 0.8181818181818182,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 35.30245909049964,
+        "mrr": 0.35143635604161916,
+        "ndcg@10": 0.36456885995408095,
+        "raw_page_candidate_ceiling": 0.5454545454545454,
+        "sample_count": 22
+      },
+      "OVERALL": {
+        "average_gold_coverage": {
+          "10": 0.45161290322580644,
+          "20": 0.6075268817204301,
+          "50": 0.7956989247311828
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.7526881720430108,
+        "final_all_evidence_recall": {
+          "10": 0.3870967741935484,
+          "20": 0.5483870967741935,
+          "50": 0.7526881720430108
+        },
+        "final_any_evidence_recall": {
+          "10": 0.5161290322580645,
+          "20": 0.6666666666666666,
+          "50": 0.8387096774193549
+        },
+        "latency_ms_per_query": 36.59887311814894,
+        "mrr": 0.2540654593979684,
+        "ndcg@10": 0.2818330900391915,
+        "raw_page_candidate_ceiling": 0.6989247311827957,
+        "sample_count": 93
+      },
+      "RETRIEVAL_MULTI": {
+        "average_gold_coverage": {
+          "10": 0.6,
+          "20": 0.78,
+          "50": 0.84
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.68,
+        "final_all_evidence_recall": {
+          "10": 0.36,
+          "20": 0.56,
+          "50": 0.68
+        },
+        "final_any_evidence_recall": {
+          "10": 0.84,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 42.924871999712195,
+        "mrr": 0.3505973266499582,
+        "ndcg@10": 0.375518156360507,
+        "raw_page_candidate_ceiling": 0.6,
+        "sample_count": 25
+      },
+      "RETRIEVAL_SINGLE": {
+        "average_gold_coverage": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.7794117647058824
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.7794117647058824,
+        "final_all_evidence_recall": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.7794117647058824
+        },
+        "final_any_evidence_recall": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.7794117647058824
+        },
+        "latency_ms_per_query": 34.27313823522127,
+        "mrr": 0.21857580232003093,
+        "ndcg@10": 0.2473900509504725,
+        "raw_page_candidate_ceiling": 0.7352941176470589,
+        "sample_count": 68
+      },
+      "SAME_PAGE": {
+        "average_gold_coverage": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.7794117647058824
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.7794117647058824,
+        "final_all_evidence_recall": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.7794117647058824
+        },
+        "final_any_evidence_recall": {
+          "10": 0.39705882352941174,
+          "20": 0.5441176470588235,
+          "50": 0.7794117647058824
+        },
+        "latency_ms_per_query": 34.27313823522127,
+        "mrr": 0.21857580232003093,
+        "ndcg@10": 0.2473900509504725,
+        "raw_page_candidate_ceiling": 0.7352941176470589,
+        "sample_count": 68
+      },
+      "TABLE_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TABLE_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.8333333333333334,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 1.0,
+        "final_all_evidence_recall": {
+          "10": 0.6666666666666666,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "final_any_evidence_recall": {
+          "10": 1.0,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 98.82256666727092,
+        "mrr": 0.3444444444444444,
+        "ndcg@10": 0.45581299667429837,
+        "raw_page_candidate_ceiling": 1.0,
+        "sample_count": 3
+      },
+      "TEXT_ONLY": {
+        "average_gold_coverage": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "average_unique_candidates": NaN,
+        "budgeted_candidate_coverage": NaN,
+        "final_all_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "final_any_evidence_recall": {
+          "10": NaN,
+          "20": NaN,
+          "50": NaN
+        },
+        "latency_ms_per_query": NaN,
+        "mrr": NaN,
+        "ndcg@10": NaN,
+        "raw_page_candidate_ceiling": NaN,
+        "sample_count": 0
+      },
+      "TEXT_TABLE": {
+        "average_gold_coverage": {
+          "10": 0.5681818181818182,
+          "20": 0.75,
+          "50": 0.8181818181818182
+        },
+        "average_unique_candidates": 50.0,
+        "budgeted_candidate_coverage": 0.6363636363636364,
+        "final_all_evidence_recall": {
+          "10": 0.3181818181818182,
+          "20": 0.5,
+          "50": 0.6363636363636364
+        },
+        "final_any_evidence_recall": {
+          "10": 0.8181818181818182,
+          "20": 1.0,
+          "50": 1.0
+        },
+        "latency_ms_per_query": 35.30245909049964,
+        "mrr": 0.35143635604161916,
+        "ndcg@10": 0.36456885995408095,
+        "raw_page_candidate_ceiling": 0.5454545454545454,
+        "sample_count": 22
+      }
+    }
+  },
+  "denominator": 93,
+  "evaluation_split": "dev",
+  "failure_recovery": {
+    "S1": {
+      "all_dev_recovered_vs_S0": 6,
+      "all_dev_regressed_vs_S0": 7,
+      "old_25_page_pruning_failures_recovered": 6
+    },
+    "S2": {
+      "all_dev_recovered_vs_S0": 3,
+      "all_dev_regressed_vs_S0": 11,
+      "old_25_page_pruning_failures_recovered": 3
+    }
+  },
+  "final_k": [
+    10,
+    20,
+    50
+  ],
+  "historical_B2_1_correction": {
+    "comparability": "B2.1 final recall remains valid; its candidate-coverage label is not used as a B2.2 candidate-pool metric",
+    "issue": "B2.1 labeled final All Recall@B as candidate coverage@B",
+    "status": "CORRECTED_IN_B2_2"
+  },
+  "metrics_are_independently_computed": true,
+  "paired_bootstrap": {
+    "P0_S1_B100_vs_S0": {
+      "all_r@20": {
+        "ci95_high": 0.0967741935483871,
+        "ci95_low": -0.053763440860215055,
+        "delta": 0.021505376344086023,
+        "improvements": 8,
+        "regressions": 6,
+        "resamples": 1000,
+        "seed": 42
+      },
+      "candidate_coverage": {
+        "ci95_high": 0.1935483870967742,
+        "ci95_low": 0.053763440860215055,
+        "delta": 0.11827956989247312,
+        "improvements": 12,
+        "regressions": 1,
+        "resamples": 1000,
+        "seed": 42
+      }
+    },
+    "P0_S1_B50_vs_S0": {
+      "all_r@20": {
+        "ci95_high": 0.10752688172043011,
+        "ci95_low": -0.054032258064516114,
+        "delta": 0.021505376344086023,
+        "improvements": 9,
+        "regressions": 7,
+        "resamples": 1000,
+        "seed": 42
+      },
+      "candidate_coverage": {
+        "ci95_high": 0.17204301075268819,
+        "ci95_low": 0.043010752688172046,
+        "delta": 0.10752688172043011,
+        "improvements": 11,
+        "regressions": 1,
+        "resamples": 1000,
+        "seed": 42
+      }
+    },
+    "P0_S2_B100_vs_S0": {
+      "all_r@20": {
+        "ci95_high": 0.021505376344086023,
+        "ci95_low": -0.15053763440860216,
+        "delta": -0.06451612903225806,
+        "improvements": 6,
+        "regressions": 12,
+        "resamples": 1000,
+        "seed": 42
+      },
+      "candidate_coverage": {
+        "ci95_high": 0.20430107526881722,
+        "ci95_low": 0.06451612903225806,
+        "delta": 0.12903225806451613,
+        "improvements": 12,
+        "regressions": 0,
+        "resamples": 1000,
+        "seed": 42
+      }
+    },
+    "P0_S2_B50_vs_S0": {
+      "all_r@20": {
+        "ci95_high": 0.021774193548386854,
+        "ci95_low": -0.15053763440860216,
+        "delta": -0.06451612903225806,
+        "improvements": 6,
+        "regressions": 12,
+        "resamples": 1000,
+        "seed": 42
+      },
+      "candidate_coverage": {
+        "ci95_high": 0.15053763440860216,
+        "ci95_low": 0.03225806451612903,
+        "delta": 0.08602150537634409,
+        "improvements": 8,
+        "regressions": 0,
+        "resamples": 1000,
+        "seed": 42
+      }
+    },
+    "P2_S1_B100_vs_S0": {
+      "all_r@20": {
+        "ci95_high": 0.06451612903225806,
+        "ci95_low": -0.08602150537634409,
+        "delta": -0.010752688172043012,
+        "improvements": 6,
+        "regressions": 7,
+        "resamples": 1000,
+        "seed": 42
+      },
+      "candidate_coverage": {
+        "ci95_high": 0.15053763440860216,
+        "ci95_low": 0.021505376344086023,
+        "delta": 0.08602150537634409,
+        "improvements": 9,
+        "regressions": 1,
+        "resamples": 1000,
+        "seed": 42
+      }
+    },
+    "P2_S1_B50_vs_S0": {
+      "all_r@20": {
+        "ci95_high": 0.06451612903225806,
+        "ci95_low": -0.08602150537634409,
+        "delta": -0.010752688172043012,
+        "improvements": 6,
+        "regressions": 7,
+        "resamples": 1000,
+        "seed": 42
+      },
+      "candidate_coverage": {
+        "ci95_high": 0.12903225806451613,
+        "ci95_low": 0.0,
+        "delta": 0.06451612903225806,
+        "improvements": 8,
+        "regressions": 2,
+        "resamples": 1000,
+        "seed": 42
+      }
+    },
+    "P2_S2_B100_vs_S0": {
+      "all_r@20": {
+        "ci95_high": -0.010752688172043012,
+        "ci95_low": -0.16129032258064516,
+        "delta": -0.08602150537634409,
+        "improvements": 3,
+        "regressions": 11,
+        "resamples": 1000,
+        "seed": 42
+      },
+      "candidate_coverage": {
+        "ci95_high": 0.15053763440860216,
+        "ci95_low": 0.03225806451612903,
+        "delta": 0.08602150537634409,
+        "improvements": 8,
+        "regressions": 0,
+        "resamples": 1000,
+        "seed": 42
+      }
+    },
+    "P2_S2_B50_vs_S0": {
+      "all_r@20": {
+        "ci95_high": 0.010752688172043012,
+        "ci95_low": -0.13978494623655913,
+        "delta": -0.06451612903225806,
+        "improvements": 4,
+        "regressions": 10,
+        "resamples": 1000,
+        "seed": 42
+      },
+      "candidate_coverage": {
+        "ci95_high": 0.11827956989247312,
+        "ci95_low": 0.021505376344086023,
+        "delta": 0.06451612903225806,
+        "improvements": 6,
+        "regressions": 0,
+        "resamples": 1000,
+        "seed": 42
+      }
+    }
+  }
+}

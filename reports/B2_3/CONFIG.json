@@ -1,0 +1,28 @@
+{
+  "bootstrap_resamples": 1000,
+  "candidate_budgets": [
+    50,
+    100
+  ],
+  "candidate_source": "P0/S1 from B2.2",
+  "candidate_test_policy": "SEALED_NOT_PARSED; BYTE_HASH_ONLY",
+  "cross_encoder": {
+    "dtype": "float16_on_cuda",
+    "initial_batch_size": 16,
+    "max_length": 512,
+    "model_id": "BAAI/bge-reranker-v2-m3"
+  },
+  "evaluation_split": "dev",
+  "final_k": [
+    10,
+    20
+  ],
+  "methods": {
+    "M0": "pool-local BM25/E5 RRF",
+    "M1": "full-corpus global-rank BM25/E5 RRF restricted to candidate pool",
+    "M2": "BAAI/bge-reranker-v2-m3 zero-shot cross-encoder"
+  },
+  "rrf_k": 60,
+  "seed": 42,
+  "version": "B2.3"
+}

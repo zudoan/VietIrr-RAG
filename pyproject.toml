@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "viirr-retrieval"
+version = "0.2.0"
+description = "Leakage-safe retrieval baselines for VietIrrDocBench"
+requires-python = ">=3.10"
+dependencies = ["numpy", "rank-bm25"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+corpus = ["beautifulsoup4", "PyMuPDF", "requests"]
+research = [
+  "pytest>=8",
+  "scipy",
+  "sentence-transformers",
+  "torch",
+  "transformers",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

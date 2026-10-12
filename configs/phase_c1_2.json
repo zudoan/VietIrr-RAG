@@ -1,0 +1,25 @@
+{
+  "version": "C1.2",
+  "evaluation_split": "dev",
+  "seed": 42,
+  "baseline_candidate_pool": "G0/B100",
+  "baseline_page_representation": "P0",
+  "baseline_page_budget": 20,
+  "candidate_budget": 100,
+  "page_budgets_for_existing_artifacts": [10, 20, 50],
+  "candidate_budgets_for_existing_artifacts": [50, 100],
+  "metadata_policy": {
+    "validity_states": ["VALID", "PARTIAL", "MISSING", "AMBIGUOUS"],
+    "empty_time_is_missing": true,
+    "reporting_time_is_not_evidence_time": true,
+    "region_type_is_not_structured_metadata": true,
+    "unknown_value": "UNKNOWN"
+  },
+  "diagnostic_policy": {
+    "gold_use": "offline_failure_diagnosis_only",
+    "existing_artifacts_only": true,
+    "no_new_model_inference": true,
+    "oracle_union_is_not_deployable": true
+  },
+  "candidate_test_policy": "SEALED_NOT_PARSED; BYTE_HASH_ONLY"
+}

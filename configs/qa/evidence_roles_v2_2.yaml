@@ -1,0 +1,94 @@
+version: "v2.2"
+taxonomy_name: "VietIrrDocBench Evidence Semantic Roles"
+description: "Standardized semantic role taxonomy for Vietnamese irrigation & water-resources QA evidence grounding"
+
+roles:
+  VALUE:
+    description: "Quantitative measurement or numerical state extracted from tables or text."
+    positive_cues: ["đạt", "là", "giá trị", "trị số", "mực nước", "lưu lượng", "dung tích"]
+    negative_examples: ["Quy định hồ phải xả 500 m3/s", "Dự báo ngày mai mưa to"]
+    required_characteristics: "Must contain explicit numerical value and unit/context."
+
+  REFERENCE_VALUE:
+    description: "Baseline, historical average, or regulatory reference figure (e.g. TBNN, thiết kế, cùng kỳ)."
+    positive_cues: ["TBNN", "so với trung bình nhiều năm", "mực nước dâng bình thường", "mực nước chết", "dung tích hữu ích"]
+    negative_examples: ["Mực nước hiện tại lúc 7h là 105.2m"]
+    required_characteristics: "Must represent a reference benchmark rather than a transient observation."
+
+  COMPARISON:
+    description: "Relative statement comparing current conditions against thresholds, previous periods, or baselines."
+    positive_cues: ["cao hơn", "thấp hơn", "tăng", "giảm", "chênh lệch", "so với"]
+    negative_examples: ["Mực nước là 100m"]
+    required_characteristics: "Must convey a comparative difference or trend."
+
+  STATUS:
+    description: "Descriptive assessment of current water resources, infrastructure, or meteorological situation."
+    positive_cues: ["hiện trạng", "tình hình", "diễn biến", "khô hạn", "ngập lụt", "xâm nhập mặn gay gắt"]
+    negative_examples: ["Dự báo trong 3 ngày tới mặn tăng", "Yêu cầu các hồ đóng cửa xả"]
+    required_characteristics: "Must describe present observed state, not future forecast or directive."
+
+  FORECAST:
+    description: "Prospective projection or predictive modeling of weather, hydrology, water demand, or salinity."
+    positive_cues: ["dự báo", "dự kiến", "khả năng", "xu thế", "trong những ngày tới", "triển vọng"]
+    negative_examples: ["Yêu cầu Chi cục Thủy lợi thông báo lịch lấy nước", "Hồ đang xả 200 m3/s"]
+    required_characteristics: "Must express future anticipated conditions. CANNOT be labeled as OPERATIONAL_RULE or OPERATIONAL_ACTION."
+
+  CAUSE:
+    description: "Physical, operational, or climatic factor explaining an observed hydrological or hydraulic phenomenon."
+    positive_cues: ["nguyên nhân do", "bởi vì", "do ảnh hưởng của", "dẫn đến", "hậu quả do"]
+    negative_examples: ["Kiến nghị UBND tỉnh chỉ đạo"]
+    required_characteristics: "Must establish causal link to hydrological state."
+
+  EXPLANATION:
+    description: "Elaboration or technical narrative detailing how or why conditions developed."
+    positive_cues: ["cụ thể", "phân tích", "đánh giá kỹ thuật", "nhận định", "chứng minh"]
+    negative_examples: ["Chỉ thị số 05/CT-BNN"]
+    required_characteristics: "Must provide substantive diagnostic context."
+
+  RECOMMENDATION:
+    description: "Technical suggestion, proposal, or advisory note submitted by monitoring agencies to authorities."
+    positive_cues: ["kiến nghị", "đề nghị", "đề xuất", "khuyến cáo", "tham mưu"]
+    negative_examples: ["Thủ tướng Chính phủ yêu cầu các Bộ...", "Dự báo mưa vừa"]
+    required_characteristics: "Must express consultative or advisory measures."
+
+  OPERATIONAL_RULE:
+    description: "Mandatory protocol, threshold condition, or procedural rule governing reservoir/structure operation."
+    positive_cues: ["quy định", "nguyên tắc vận hành", "điều hành", "quy trình", "khi mực nước đạt ngưỡng", "trong thời kỳ mùa cạn", "trong thời kỳ mùa lũ"]
+    negative_examples: ["Nhận định thời tiết tuần này", "Mực nước hồ hiện tại"]
+    required_characteristics: "Must state a regulatory or operational condition/procedure, not a descriptive forecast."
+
+  OPERATIONAL_ACTION:
+    description: "Enacted directive, command, or concrete intervention executed/ordered by competent authority."
+    positive_cues: ["chỉ đạo", "yêu cầu", "mở cửa xả", "đóng cửa xả", "vận hành trạm bơm", "chủ động lấy nước", "phát lệnh"]
+    negative_examples: ["Dự báo mực nước có thể đạt báo động 2"]
+    required_characteristics: "Must express concrete administrative or technical action."
+
+  THRESHOLD:
+    description: "Specified boundary value triggering a change in operational state or emergency alert level."
+    positive_cues: ["ngưỡng", "báo động 1", "báo động 2", "báo động 3", "mực nước cao nhất cho phép", "giới hạn kiểm soát"]
+    negative_examples: ["Mực nước đo được ngày 20/7"]
+    required_characteristics: "Must define a trigger limit or safety threshold."
+
+  TEMPORAL_CONTEXT:
+    description: "Temporal metadata specifying date, observation interval, week, month, or hydrological season."
+    positive_cues: ["thời gian", "ngày", "tuần", "tháng", "năm", "thời kỳ mùa cạn", "thời kỳ mùa lũ"]
+    negative_examples: ["Lưu vực sông Hồng"]
+    required_characteristics: "Specifies temporal bounding."
+
+  ENTITY_CONTEXT:
+    description: "Geographic, structural, or administrative identification of reservoir, station, river, or basin."
+    positive_cues: ["hồ chứa", "đập", "trạm thủy văn", "cống", "lưu vực sông", "địa bàn"]
+    negative_examples: ["Đo vào tuần trước"]
+    required_characteristics: "Must identify specific named entity."
+
+  TABLE_SUPPORT:
+    description: "Supporting tabular matrix context providing structure or validation to text statements."
+    positive_cues: ["bảng", "biểu", "phụ lục số liệu"]
+    negative_examples: ["Đoạn văn thuyết minh"]
+    required_characteristics: "Structured tabular provenance."
+
+  TEXT_SUPPORT:
+    description: "Supporting prose passage reinforcing or clarifying tabular entries."
+    positive_cues: ["thuyết minh", "báo cáo chi tiết", "ghi chú"]
+    negative_examples: ["Hàng 5 cột 3"]
+    required_characteristics: "Unstructured textual provenance."

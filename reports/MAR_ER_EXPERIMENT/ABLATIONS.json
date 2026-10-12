@@ -1,0 +1,85 @@
+{
+  "deltas_vs_m0": {
+    "M1": {
+      "all_r@20": 0.0,
+      "candidate_coverage@100": 0.0,
+      "multi_all_r@20": 0.0,
+      "unique_gold_set_balanced_all_r@20": 0.07003367003367
+    },
+    "M2": {
+      "all_r@20": -0.09677419354838712,
+      "candidate_coverage@100": 0.032258064516129004,
+      "multi_all_r@20": -0.039999999999999925,
+      "unique_gold_set_balanced_all_r@20": -0.04882154882154888
+    },
+    "M3": {
+      "all_r@20": 0.0,
+      "candidate_coverage@100": 0.0,
+      "multi_all_r@20": 0.0,
+      "unique_gold_set_balanced_all_r@20": 0.0
+    },
+    "M4": {
+      "all_r@20": -0.032258064516129004,
+      "candidate_coverage@100": 0.05376344086021512,
+      "multi_all_r@20": 0.0,
+      "unique_gold_set_balanced_all_r@20": 0.005387205387205274
+    }
+  },
+  "historical_context": {
+    "GLOBAL_RRF_E0": {
+      "matched_control": false,
+      "path": "outputs/C1/rankings/e0_g0_global_rrf_dev.jsonl",
+      "record_count": 93
+    },
+    "MASH_ER_A3": {
+      "matched_control": false,
+      "path": "outputs/MASH_ER/rankings/a3_dev.jsonl",
+      "record_count": 93
+    },
+    "R1_CONTEXTUAL_R2_FULL": {
+      "matched_control": false,
+      "path": "outputs/R1/rankings/full_retrieval_r2_dev.jsonl",
+      "record_count": 93
+    }
+  },
+  "historical_context_is_not_matched_control": true,
+  "m4_transitions_vs_m0": {
+    "candidate_lost": 0,
+    "candidate_recovered": 5,
+    "final_recovered": 2,
+    "final_regressed": 5,
+    "recovered_unique_gold_signatures": 2
+  },
+  "primary_metrics": {
+    "M0": {
+      "all_r@20": 0.6236559139784946,
+      "candidate_coverage@100": 0.7741935483870968,
+      "multi_all_r@20": 0.6,
+      "unique_gold_set_balanced_all_r@20": 0.4683501683501684
+    },
+    "M1": {
+      "all_r@20": 0.6236559139784946,
+      "candidate_coverage@100": 0.7741935483870968,
+      "multi_all_r@20": 0.6,
+      "unique_gold_set_balanced_all_r@20": 0.5383838383838384
+    },
+    "M2": {
+      "all_r@20": 0.5268817204301075,
+      "candidate_coverage@100": 0.8064516129032258,
+      "multi_all_r@20": 0.56,
+      "unique_gold_set_balanced_all_r@20": 0.41952861952861953
+    },
+    "M3": {
+      "all_r@20": 0.6236559139784946,
+      "candidate_coverage@100": 0.7741935483870968,
+      "multi_all_r@20": 0.6,
+      "unique_gold_set_balanced_all_r@20": 0.4683501683501684
+    },
+    "M4": {
+      "all_r@20": 0.5913978494623656,
+      "candidate_coverage@100": 0.8279569892473119,
+      "multi_all_r@20": 0.6,
+      "unique_gold_set_balanced_all_r@20": 0.4737373737373737
+    }
+  }
+}

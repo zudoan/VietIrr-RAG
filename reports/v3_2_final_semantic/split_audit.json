@@ -1,0 +1,66 @@
+{
+  "SERIES_HOLDOUT_HEAVY": true,
+  "candidate_test_family_concentration": {
+    "qa_count": 109,
+    "share": 1.0,
+    "top_family": "IRR_SIWRP_2026_43c7d5c0",
+    "total": 109
+  },
+  "document_family_leakage_count": 0,
+  "document_leaks": {},
+  "group_leaks": {},
+  "leakage_audit_pass": true,
+  "per_split": {
+    "candidate_test": {
+      "challenge": 88,
+      "core": 21,
+      "cross_document": 63,
+      "modalities": {
+        "table_only": 18,
+        "table_table": 63,
+        "text_only": 4,
+        "text_table": 24
+      },
+      "retrieval_multi": 88,
+      "retrieval_three_plus": 9,
+      "same_document_cross_page": 1,
+      "same_page": 45,
+      "total": 109
+    },
+    "dev": {
+      "challenge": 25,
+      "core": 68,
+      "cross_document": 3,
+      "modalities": {
+        "table_only": 39,
+        "table_table": 3,
+        "text_only": 29,
+        "text_table": 22
+      },
+      "retrieval_multi": 25,
+      "retrieval_three_plus": 0,
+      "same_document_cross_page": 22,
+      "same_page": 68,
+      "total": 93
+    },
+    "train": {
+      "challenge": 54,
+      "core": 289,
+      "cross_document": 0,
+      "modalities": {
+        "table_only": 74,
+        "table_table": 43,
+        "text_only": 217,
+        "text_table": 9
+      },
+      "retrieval_multi": 11,
+      "retrieval_three_plus": 0,
+      "same_document_cross_page": 11,
+      "same_page": 332,
+      "total": 343
+    }
+  },
+  "split_changes": [],
+  "split_preserved": true,
+  "strategy": "preserve existing split because no QA rejection requires rebalancing"
+}

@@ -1,0 +1,43 @@
+{
+  "R1_VALID": true,
+  "READY_FOR_R2": false,
+  "baseline_verified": true,
+  "blockers": [],
+  "candidate_test_sealed": true,
+  "main_bottleneck": "FIXED_PAGE_LOCALIZATION_AND_PRUNING",
+  "main_finding": "NO_RELIABLE_CONTEXTUALIZATION_GAIN",
+  "recommended_next_step": "Stop contextual enrichment and keep the raw representation; do not proceed without new evidence.",
+  "status": "PASS",
+  "summary_transitions": {
+    "FIXED_POOL": {
+      "R1": {
+        "GOLD_RANK_DEGRADED": 22,
+        "GOLD_RANK_IMPROVED": 35,
+        "NO_CHANGE": 36,
+        "unique_gold_sets_improved": 21
+      },
+      "R2": {
+        "GOLD_RANK_DEGRADED": 24,
+        "GOLD_RANK_IMPROVED": 34,
+        "NO_CHANGE": 35,
+        "unique_gold_sets_improved": 21
+      }
+    },
+    "FULL_RETRIEVAL": {
+      "R1": {
+        "CANDIDATE_RECOVERED": 1,
+        "GOLD_RANK_DEGRADED": 24,
+        "GOLD_RANK_IMPROVED": 33,
+        "NO_CHANGE": 36,
+        "unique_gold_sets_improved": 21
+      },
+      "R2": {
+        "CANDIDATE_RECOVERED": 1,
+        "GOLD_RANK_DEGRADED": 26,
+        "GOLD_RANK_IMPROVED": 33,
+        "NO_CHANGE": 34,
+        "unique_gold_sets_improved": 22
+      }
+    }
+  }
+}

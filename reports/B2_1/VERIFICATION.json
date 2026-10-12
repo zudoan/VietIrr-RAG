@@ -1,0 +1,172 @@
+{
+  "B2_VERIFIED": true,
+  "candidate_test_matches_frozen": true,
+  "candidate_test_sha256": "a9b5f4375ae872778c26766ffd502e3f45c67ea27d9fd50f4050e51a36d3accf",
+  "counts": {
+    "dev_qa": 93,
+    "evidence_units": 27045,
+    "pages": 2479
+  },
+  "errors": [],
+  "index_leakage_pass": true,
+  "mapping": {
+    "mapping_error_count": 0,
+    "source_and_parent_mapping_pass": true
+  },
+  "metric_match_tolerance": 1e-12,
+  "metrics_recomputed_independently": {
+    "bm25": {
+      "10": {
+        "all_recall": 0.17204301075268819,
+        "any_recall": 0.26881720430107525,
+        "gold_coverage": 0.22043010752688172
+      },
+      "100": {
+        "all_recall": 0.4838709677419355,
+        "any_recall": 0.5806451612903226,
+        "gold_coverage": 0.532258064516129
+      },
+      "20": {
+        "all_recall": 0.27956989247311825,
+        "any_recall": 0.40860215053763443,
+        "gold_coverage": 0.34408602150537637
+      },
+      "200": {
+        "all_recall": 0.5913978494623656,
+        "any_recall": 0.6666666666666666,
+        "gold_coverage": 0.6290322580645161
+      },
+      "5": {
+        "all_recall": 0.12903225806451613,
+        "any_recall": 0.15053763440860216,
+        "gold_coverage": 0.13978494623655913
+      },
+      "50": {
+        "all_recall": 0.3978494623655914,
+        "any_recall": 0.5268817204301075,
+        "gold_coverage": 0.46236559139784944
+      },
+      "mrr": 0.09504327879063473,
+      "ndcg@10": 0.1128344589511364,
+      "sample_count": 93
+    },
+    "e5": {
+      "10": {
+        "all_recall": 0.3978494623655914,
+        "any_recall": 0.5161290322580645,
+        "gold_coverage": 0.45698924731182794
+      },
+      "100": {
+        "all_recall": 0.7956989247311828,
+        "any_recall": 0.8494623655913979,
+        "gold_coverage": 0.8225806451612904
+      },
+      "20": {
+        "all_recall": 0.5483870967741935,
+        "any_recall": 0.6236559139784946,
+        "gold_coverage": 0.5860215053763441
+      },
+      "200": {
+        "all_recall": 0.8494623655913979,
+        "any_recall": 0.8709677419354839,
+        "gold_coverage": 0.8602150537634409
+      },
+      "5": {
+        "all_recall": 0.24731182795698925,
+        "any_recall": 0.3655913978494624,
+        "gold_coverage": 0.3064516129032258
+      },
+      "50": {
+        "all_recall": 0.7419354838709677,
+        "any_recall": 0.8064516129032258,
+        "gold_coverage": 0.7741935483870968
+      },
+      "mrr": 0.27357352362245657,
+      "ndcg@10": 0.2937461932051048,
+      "sample_count": 93
+    },
+    "hybrid": {
+      "10": {
+        "all_recall": 0.3548387096774194,
+        "any_recall": 0.4838709677419355,
+        "gold_coverage": 0.41935483870967744
+      },
+      "100": {
+        "all_recall": 0.8064516129032258,
+        "any_recall": 0.8172043010752689,
+        "gold_coverage": 0.8118279569892473
+      },
+      "20": {
+        "all_recall": 0.4946236559139785,
+        "any_recall": 0.6129032258064516,
+        "gold_coverage": 0.553763440860215
+      },
+      "200": {
+        "all_recall": 0.8602150537634409,
+        "any_recall": 0.8709677419354839,
+        "gold_coverage": 0.8655913978494624
+      },
+      "5": {
+        "all_recall": 0.3010752688172043,
+        "any_recall": 0.3870967741935484,
+        "gold_coverage": 0.34408602150537637
+      },
+      "50": {
+        "all_recall": 0.7096774193548387,
+        "any_recall": 0.7634408602150538,
+        "gold_coverage": 0.7365591397849462
+      },
+      "mrr": 0.26268904667058407,
+      "ndcg@10": 0.2767119813976169,
+      "sample_count": 93
+    },
+    "page_region": {
+      "10": {
+        "all_recall": 0.4838709677419355,
+        "any_recall": 0.6451612903225806,
+        "gold_coverage": 0.5645161290322581
+      },
+      "100": {
+        "all_recall": 0.6559139784946236,
+        "any_recall": 0.8064516129032258,
+        "gold_coverage": 0.7311827956989247
+      },
+      "20": {
+        "all_recall": 0.5913978494623656,
+        "any_recall": 0.7311827956989247,
+        "gold_coverage": 0.6612903225806451
+      },
+      "200": {
+        "all_recall": 0.6559139784946236,
+        "any_recall": 0.8064516129032258,
+        "gold_coverage": 0.7311827956989247
+      },
+      "5": {
+        "all_recall": 0.3333333333333333,
+        "any_recall": 0.46236559139784944,
+        "gold_coverage": 0.3978494623655914
+      },
+      "50": {
+        "all_recall": 0.6451612903225806,
+        "any_recall": 0.7956989247311828,
+        "gold_coverage": 0.7204301075268817
+      },
+      "mrr": 0.29966517358128825,
+      "ndcg@10": 0.34121463351883263,
+      "sample_count": 93
+    }
+  },
+  "ranking_sha256": {
+    "bm25": "4d554722b299b815ddddbf14228d18c6d8d67d0d9a216e594bdca0cdb8a29b04",
+    "e5": "0d0bf31488ce5e6f4b5228f3a7d9fd863d9a1e62172dc41f8adda274a73ff75c",
+    "hybrid": "9ded1335d2dcce0b1b05177103572cb99c46b18603e259f0ac012783e623ae42",
+    "page_region": "bb9d14548533b26277cf5cce35a745aa84e9084d1dacaa3918949279a990f927"
+  },
+  "rankings_unique_and_deterministic": true,
+  "reported_metrics_match": true,
+  "split_integrity": {
+    "candidate_test_policy": "byte-hashed only; not parsed",
+    "train_dev_leakage_group_overlap": 0,
+    "train_dev_qa_overlap": 0
+  }
+}

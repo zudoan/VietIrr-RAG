@@ -1,0 +1,87 @@
+{
+  "artifact_recomputation": {
+    "configurations": {
+      "M0_B100": {
+        "all_recall": {
+          "10": 0.45161290322580644,
+          "20": 0.6129032258064516
+        },
+        "candidate_coverage": 0.7741935483870968,
+        "mrr": 0.29878797279972474,
+        "ndcg@10": 0.3244240558986521
+      },
+      "M0_B50": {
+        "all_recall": {
+          "10": 0.45161290322580644,
+          "20": 0.6236559139784946
+        },
+        "candidate_coverage": 0.7526881720430108,
+        "mrr": 0.29955392009248005,
+        "ndcg@10": 0.32568980229709454
+      },
+      "M1_B100": {
+        "all_recall": {
+          "10": 0.46236559139784944,
+          "20": 0.6236559139784946
+        },
+        "candidate_coverage": 0.7741935483870968,
+        "mrr": 0.2854613218471268,
+        "ndcg@10": 0.31950385672953724
+      },
+      "M1_B50": {
+        "all_recall": {
+          "10": 0.46236559139784944,
+          "20": 0.6236559139784946
+        },
+        "candidate_coverage": 0.7526881720430108,
+        "mrr": 0.28516740173753846,
+        "ndcg@10": 0.31950385672953724
+      },
+      "M2_B100": {
+        "all_recall": {
+          "10": 0.5483870967741935,
+          "20": 0.6451612903225806
+        },
+        "candidate_coverage": 0.7741935483870968,
+        "mrr": 0.34900245811892283,
+        "ndcg@10": 0.3841534259960619
+      }
+    },
+    "errors": [],
+    "status": "PASS",
+    "tolerance": 1e-12
+  },
+  "candidate_test_sha256_after": "a9b5f4375ae872778c26766ffd502e3f45c67ea27d9fd50f4050e51a36d3accf",
+  "candidate_test_sha256_before": "a9b5f4375ae872778c26766ffd502e3f45c67ea27d9fd50f4050e51a36d3accf",
+  "checks": {
+    "artifact_metrics_independently_recomputed": true,
+    "cached_rerun_ranking_reproducibility": true,
+    "candidate_test_not_parsed": true,
+    "candidate_test_untouched": true,
+    "candidate_unique_and_bounded": true,
+    "execution_real": true,
+    "global_rank_rrf_full_corpus": true,
+    "m2_actual_model_scores": true,
+    "m2_cached_scores_match_ranking": true,
+    "metrics_recomputed_from_rankings": true,
+    "modality_coverage_93": true,
+    "no_gold_in_reranker_input_signature": true,
+    "phase_a_unchanged": true,
+    "pool_local_and_global_distinct": true,
+    "pytest_pass": true,
+    "same_candidates_M0_M1_M2_B100": true,
+    "stable_tie_breaking": true
+  },
+  "pytest": {
+    "passed": true,
+    "returncode": 0,
+    "summary": "29 passed in 7.92s"
+  },
+  "ranking_sha256": {
+    "m1_global_rrf_b100_dev.jsonl": "1afa01b73c8a865f63e75505c525be7137b264f38ef65a1e1f13693f3b0089b3",
+    "m1_global_rrf_b50_dev.jsonl": "1bfb7f82296ec1a59402e350200199c1b5e3cf2e7a9741885a48a909b142c137",
+    "m2_cross_encoder_b100_dev.jsonl": "9f093af4b7837ef3aa70f9b3e38fd7543ba126188dd517336095ec8a3b31a912"
+  },
+  "remaining_blockers": [],
+  "status": "PASS"
+}

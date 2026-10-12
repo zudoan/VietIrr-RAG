@@ -1,0 +1,19 @@
+{
+  "after_sha256": {
+    "bm25_dev_top200.jsonl": "4d554722b299b815ddddbf14228d18c6d8d67d0d9a216e594bdca0cdb8a29b04",
+    "e5_dev_top200.jsonl": "0d0bf31488ce5e6f4b5228f3a7d9fd863d9a1e62172dc41f8adda274a73ff75c",
+    "hybrid_dev_top200.jsonl": "9ded1335d2dcce0b1b05177103572cb99c46b18603e259f0ac012783e623ae42",
+    "page_hybrid_dev_top100.jsonl": "dc0a305dd398a6acbb62a6fd23e262b16f0ad26820e5fa2414837b7b256d96af",
+    "page_region_dev_top200.jsonl": "bb9d14548533b26277cf5cce35a745aa84e9084d1dacaa3918949279a990f927"
+  },
+  "before_sha256": {
+    "bm25_dev_top200.jsonl": "4d554722b299b815ddddbf14228d18c6d8d67d0d9a216e594bdca0cdb8a29b04",
+    "e5_dev_top200.jsonl": "0d0bf31488ce5e6f4b5228f3a7d9fd863d9a1e62172dc41f8adda274a73ff75c",
+    "hybrid_dev_top200.jsonl": "9ded1335d2dcce0b1b05177103572cb99c46b18603e259f0ac012783e623ae42",
+    "page_hybrid_dev_top100.jsonl": "dc0a305dd398a6acbb62a6fd23e262b16f0ad26820e5fa2414837b7b256d96af",
+    "page_region_dev_top200.jsonl": "bb9d14548533b26277cf5cce35a745aa84e9084d1dacaa3918949279a990f927"
+  },
+  "candidate_test_annotations_loaded": false,
+  "rankings_identical": true,
+  "rerun_from_cache": true
+}

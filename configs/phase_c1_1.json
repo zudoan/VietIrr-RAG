@@ -1,0 +1,37 @@
+{
+  "version": "C1.1",
+  "evaluation_split": "dev",
+  "candidate_source": "G0/B100 from C1",
+  "selection_budget": 20,
+  "seed": 42,
+  "bootstrap_resamples": 1000,
+  "requirement_extractor": {
+    "version": "question_only_v2_strict",
+    "uncertain_policy": "fallback_to_E0",
+    "temporal_policy": "explicit comparison intent required; dates alone are insufficient",
+    "forecast_policy": "explicit forecast predicate or direct forecast question required"
+  },
+  "evidence_representation": {
+    "missing_value": "UNKNOWN",
+    "table_metadata": "data/parsed/tables.jsonl semantic_tuples",
+    "text_metadata": "data/parsed/regions.jsonl region_type and index_text",
+    "document_metadata": "data/parsed/documents.jsonl document_reporting_period",
+    "report_date_is_not_evidence_date": true
+  },
+  "e4": {
+    "weights": {
+      "base_relevance": 0.65,
+      "unmet_requirement": 0.25,
+      "provenance_compatibility": 0.1,
+      "redundancy_penalty": 0.1
+    },
+    "metadata_sufficiency": "every predicted requirement needs candidate-role support; temporal comparison needs two distinct evidence times",
+    "fallback": "E0 ordering when requirements are uncertain or metadata is insufficient",
+    "training_free": true
+  },
+  "decision_gate": {
+    "max_overall_all_r20_drop": 0.03,
+    "requires_positive_multi_all_r20_delta": true
+  },
+  "candidate_test_policy": "SEALED_NOT_PARSED; BYTE_HASH_ONLY"
+}

@@ -1,0 +1,9 @@
+{
+  "legacy_baselines_are_not_matched": true,
+  "matched_baseline": "M0 recomputed from the frozen A0 evidence universe/caches",
+  "matched_queries": 93,
+  "per_query_top100_exact_match_with_mash_a0": true,
+  "preflight_sha256": "dc42ad3911d35a17d9f27745920034cf1fd3bbd914c3c40d8b4bc2bc2986cc5a",
+  "ranking_scale_note": "MAR normalized R0 is a positive 30.5x rescaling of two-source RRF; order is identical.",
+  "status": "PASS"
+}

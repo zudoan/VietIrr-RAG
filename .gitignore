@@ -1,0 +1,92 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+.venv_*/
+
+# Node / frontend build
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+npm-debug.log*
+
+# Environment / editor / OS
+.env
+.env.*
+!.env.example
+!frontend/.env.example
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Large datasets and generated retrieval artifacts
+/data/*
+!/data/README.md
+/outputs/
+/snapshots/
+/logs/
+/checksums/
+/.vendor/
+/VietIrrDocBench_v1_candidate/
+
+# Local review/package bundles
+/b2.3/
+/r1/
+/r1.1/
+/r1.2/
+/r1.3/
+/*.zip
+
+# Historical root reports superseded by V3.2 reports
+/CROSS_DOMAIN_COMPATIBILITY.md
+/DATASET_CARD.md
+/STAGE1_FREEZE_REPORT.md
+
+# Publish only verified research report groups
+/reports/*
+!/reports/B2/
+!/reports/B2/**
+!/reports/B2_1/
+!/reports/B2_1/**
+!/reports/B2_2/
+!/reports/B2_2/**
+!/reports/B2_3/
+!/reports/B2_3/**
+!/reports/C1/
+!/reports/C1/**
+!/reports/C1_1/
+!/reports/C1_1/**
+!/reports/C1_2/
+!/reports/C1_2/**
+!/reports/R1/
+!/reports/R1/**
+!/reports/MASH_ER/
+!/reports/MASH_ER/**
+!/reports/MAR_ER_DESIGN/
+!/reports/MAR_ER_DESIGN/**
+!/reports/MAR_ER_EXPERIMENT/
+!/reports/MAR_ER_EXPERIMENT/**
+!/reports/v3_2_final_semantic/
+!/reports/v3_2_final_semantic/**
+
+# Binary/model/cache formats must stay outside Git
+*.pdf
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.bin
+*.zip
+*.7z
+*.rar

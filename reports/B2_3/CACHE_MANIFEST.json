@@ -1,0 +1,38 @@
+{
+  "bm25_cache_hit": true,
+  "e5": {
+    "cache_hit": true,
+    "model_id": "intfloat/multilingual-e5-large",
+    "revision": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3"
+  },
+  "hardware": {
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.10.11"
+  },
+  "inputs": {
+    "B100_candidates": {
+      "path": "outputs/B2_2/rankings/p0_s1_b100_dev.jsonl",
+      "sha256": "4ee8325ef4df2b9f8971ca76516e6a6765e7ce2f610ba1eeef43a329722549d3"
+    },
+    "B50_candidates": {
+      "path": "outputs/B2_2/rankings/p0_s1_b50_dev.jsonl",
+      "sha256": "934aa0fe83ce64ad22fd2d3a6600b7bcf608533877859c6df80a2838c7b18b5f"
+    },
+    "dev": {
+      "path": "data/benchmark/dev.jsonl",
+      "sha256": "cc460f860de59c00a961dc00dea56f204c66f270c7a48d2ee840cb73c302d30f"
+    },
+    "units": {
+      "path": "data/processed/evidence_units.jsonl",
+      "sha256": "123aaac55ba1d0b30c469087b29b5deeccf56e42ab498fc222538a19e8b524ba"
+    }
+  },
+  "m2_score_cache_hit": true,
+  "ranking_sha256": {
+    "m1_global_rrf_b100_dev.jsonl": "1afa01b73c8a865f63e75505c525be7137b264f38ef65a1e1f13693f3b0089b3",
+    "m1_global_rrf_b50_dev.jsonl": "1bfb7f82296ec1a59402e350200199c1b5e3cf2e7a9741885a48a909b142c137",
+    "m2_cross_encoder_b100_dev.jsonl": "9f093af4b7837ef3aa70f9b3e38fd7543ba126188dd517336095ec8a3b31a912"
+  }
+}

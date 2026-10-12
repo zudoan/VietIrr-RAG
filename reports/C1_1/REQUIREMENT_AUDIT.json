@@ -1,0 +1,1631 @@
+{
+  "after": {
+    "cardinality": {
+      "0": 26,
+      "1": 46,
+      "2": 21
+    },
+    "fallback_to_e0": 26,
+    "first_evidence_saturation": 61,
+    "forecast": 16,
+    "requirement_counts": {
+      "FORECAST": 16,
+      "RECOMMENDATION": 2,
+      "TEMPORAL_COMPARISON": 6,
+      "VALUE": 64
+    },
+    "temporal_comparison": 6,
+    "uncertain": 26
+  },
+  "after_rule_consistency": {
+    "forecast_without_explicit_forecast_intent_rule": 0,
+    "note": "Rule consistency is automatic diagnostics, not human validation.",
+    "temporal_without_explicit_comparison_rule": 0
+  },
+  "before": {
+    "first_evidence_saturation": 78,
+    "forecast": 65,
+    "requirement_counts": {
+      "ACTION": 2,
+      "FORECAST": 65,
+      "TEMPORAL_COMPARISON": 91,
+      "VALUE": 74
+    },
+    "temporal_comparison": 91,
+    "uncertain": 0
+  },
+  "manual_review_queue": {
+    "human_validated": false,
+    "rows": [
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TABLE_TABLE",
+        "prediction": {
+          "component_count": 2,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            },
+            {
+              "basis": "explicit question intent",
+              "matched_text": "so voi",
+              "requirement": "TEMPORAL_COMPARISON",
+              "rule": "\\bso voi\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE",
+            "TEMPORAL_COMPARISON"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_1_CHAL_00041",
+        "question": "Theo chuỗi tài liệu liên quan, tỷ lệ dung tích cuối tháng dự báo so với thiết kế tháng 01/2019 và tỷ lệ dung tích cuối tuần dự báo so với thiết kế từ 19/07/2019 đến 25/07/2019 của Hồ Đập Trời lần lượt là bao nhiêu?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "MULTI",
+        "selected_evidence_ids": [
+          "TAB_IRR_CTL_2019_848be3bc_P0004_01",
+          "TAB_IRR_CTL_2019_2154c957_P0004_02",
+          "REG_IRR_CTL_2019_5278ca2b_P0003_B022",
+          "REG_IRR_CTL_2019_848be3bc_P0003_B022",
+          "TAB_IRR_CTL_2019_848be3bc_P0003_02",
+          "TAB_IRR_CTL_2019_5278ca2b_P0005_01",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0003_B002",
+          "REG_IRR_CTL_2026_79f76fed_P0003_B013",
+          "TAB_IRR_CTL_2019_a1445f42_P0003_01",
+          "REG_IRR_CTL_2019_6b023172_P0003_B031",
+          "REG_IRR_CTL_2026_79f76fed_P0003_B015",
+          "REG_IRR_CTL_2019_645d37d3_P0002_B032",
+          "REG_IRR_CTL_2019_a1445f42_P0002_B025",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0004_B015",
+          "REG_IRR_CTL_2026_79f76fed_P0003_B014",
+          "REG_IRR_CTL_2019_6b023172_P0003_B002",
+          "TAB_IRR_CTL_2019_5278ca2b_P0005_02",
+          "TAB_IRR_CTL_2019_645d37d3_P0004_01",
+          "REG_IRR_CTL_2019_1549026e_P0002_B024",
+          "REG_IRR_CTL_2019_645d37d3_P0002_B033"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TEXT_TABLE",
+        "prediction": {
+          "component_count": 2,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            },
+            {
+              "basis": "explicit question intent",
+              "matched_text": "du bao dieu gi",
+              "requirement": "FORECAST",
+              "rule": "\\b(?:du bao|du kien|nhan dinh)\\b.{0,50}\\b(?:gi|the nao|ra sao)\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE",
+            "FORECAST"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_1_CHAL_00194",
+        "question": "Theo Bản tin dự báo nguồn nước Lưu vực sông Bằng Giang (Từ 19/7 đến 25/7/2019), chỉ tiêu Lượng mưa lũy tích từ đầu năm (mm) của Cao Bằng là bao nhiêu và báo cáo dự báo điều gì liên quan đến đối tượng này?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "MULTI",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2019_2154c957_P0005_B013",
+          "TAB_IRR_CTL_2019_a1445f42_P0001_01",
+          "REG_IRR_CTL_2019_848be3bc_P0004_B037",
+          "TAB_IRR_CTL_2019_5278ca2b_P0001_01",
+          "TAB_IRR_CTL_2019_1549026e_P0001_01",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B025",
+          "REG_IRR_CTL_2019_2154c957_P0005_B014",
+          "REG_IRR_CTL_2019_6b023172_P0001_B024",
+          "TAB_IRR_CTL_2019_6b023172_P0001_01",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B010",
+          "REG_IRR_CTL_2019_848be3bc_P0004_B036",
+          "TAB_IRR_CTL_2019_848be3bc_P0004_01",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B007",
+          "REG_IRR_CTL_2019_645d37d3_P0001_B025",
+          "TAB_IRR_CTL_2019_d9169102_P0001_01",
+          "TAB_IRR_CTL_2019_645d37d3_P0001_01",
+          "REG_IRR_CTL_2019_1549026e_P0001_B029",
+          "REG_IRR_CTL_2025_72b54901_P0008_B013",
+          "REG_IRR_CTL_2019_d9169102_P0001_B023",
+          "REG_IRR_CTL_2019_2154c957_P0001_B030"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TABLE_ONLY",
+        "prediction": {
+          "component_count": 1,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_CORE_00428",
+        "question": "Theo Bản tin dự báo nguồn nước Lưu vực sông Lục Nam (Từ 19/7 đến 25/7/2019), dung tích toàn bộ theo thiết kế của Hồ Bầu Lầy được ghi nhận là bao nhiêu?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2019_645d37d3_P0002_B032",
+          "REG_IRR_CTL_2019_1549026e_P0002_B023",
+          "REG_IRR_CTL_2019_1549026e_P0002_B026",
+          "REG_IRR_CTL_2019_645d37d3_P0002_B033",
+          "TAB_IRR_CTL_2019_645d37d3_P0003_02",
+          "REG_IRR_CTL_2019_2154c957_P0005_B013",
+          "REG_IRR_SIWRP_2026_80e590ea_P0007_B007",
+          "REG_IRR_CTL_2019_5278ca2b_P0003_B022",
+          "REG_IRR_CTL_2019_6b023172_P0003_B030",
+          "REG_IRR_CTL_2019_1549026e_P0002_B024",
+          "TAB_IRR_CTL_2019_5278ca2b_P0005_01",
+          "REG_IRR_CTL_2019_1549026e_P0002_B022",
+          "REG_IRR_CTL_2019_6b023172_P0003_B002",
+          "TAB_IRR_CTL_2019_a1445f42_P0003_01",
+          "REG_IRR_SIWRP_2026_80e590ea_P0007_B017",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B012",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B014",
+          "TAB_IRR_CTL_2019_645d37d3_P0004_01",
+          "REG_IRR_CTL_2019_645d37d3_P0002_B034",
+          "TAB_IRR_CTL_2019_645d37d3_P0002_01"
+        ]
+      },
+      {
+        "fallback_reasons": [
+          "NO_EXPLICIT_SUPPORTED_INTENT_PATTERN"
+        ],
+        "fallback_to_e0": true,
+        "human_validated": false,
+        "modality": "TEXT_ONLY",
+        "prediction": {
+          "component_count": 0,
+          "reasons": [],
+          "requirements": [],
+          "status": "UNCERTAIN",
+          "uncertain_reason": "NO_EXPLICIT_SUPPORTED_INTENT_PATTERN"
+        },
+        "qa_id": "V3_CORE_00160",
+        "question": "Bản tin DB nguồn nước và KHSDN vùng NAM TRUNG BỘ - TUẦN 14/3/2025 ÷ 20/3/2025 ghi nhận thông tin gì về nguồn nước?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2026_79f76fed_P0001_B015",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B014",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0001_B011",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B012",
+          "REG_IRR_CTL_2025_1a40ba4e_P0005_B007",
+          "REG_IRR_CTL_2025_1a40ba4e_P0008_B030",
+          "REG_IRR_CTL_2025_1a40ba4e_P0005_B003",
+          "REG_IRR_CTL_2025_f394449d_P0001_B008",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B009",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0001_B009",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B010",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0001_B014",
+          "REG_IRR_CTL_2025_1a40ba4e_P0005_B005",
+          "REG_IRR_CTL_2024_9c1d87a6_P0013_B010",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B013",
+          "REG_IRR_CTL_2025_6f169c9f_P0001_B007",
+          "REG_IRR_CTL_2024_9a520097_P0013_B017",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0001_B006",
+          "REG_IRR_CTL_2019_01834078_P0001_B003",
+          "REG_IRR_CTL_2025_071bf686_P0012_B004"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TABLE_TABLE",
+        "prediction": {
+          "component_count": 1,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_1_CHAL_00018",
+        "question": "Theo chuỗi tài liệu liên quan, diện tích đáp ứng tháng 06/2019 và diện tích đáp ứng từ 19/07/2019 đến 25/07/2019 của Hồ Thác La lần lượt là bao nhiêu?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "MULTI",
+        "selected_evidence_ids": [
+          "TAB_IRR_CTL_2019_848be3bc_P0004_01",
+          "TAB_IRR_CTL_2019_2154c957_P0004_02",
+          "TAB_IRR_CTL_2019_5278ca2b_P0005_01",
+          "TAB_IRR_CTL_2019_1fc21515_P0003_02",
+          "TAB_IRR_CTL_2019_0009185e_P0006_01",
+          "TAB_IRR_CTL_2019_645d37d3_P0004_01",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B010",
+          "TAB_IRR_CTL_2019_a1445f42_P0003_01",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0013_B029",
+          "TAB_IRR_CTL_2019_d9169102_P0005_01",
+          "TAB_IRR_CTL_2019_5278ca2b_P0005_02",
+          "REG_IRR_CTL_2026_79f76fed_P0006_B006",
+          "REG_IRR_CTL_2019_0009185e_P0006_B016",
+          "TAB_IRR_CTL_2019_6b023172_P0003_02",
+          "REG_IRR_CTL_2019_d9169102_P0001_B008",
+          "TAB_IRR_CTL_2019_5278ca2b_P0001_01",
+          "REG_IRR_CTL_2019_c565a3a3_P0005_B000",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0006_B026",
+          "REG_IRR_CTL_2019_6b023172_P0003_B008",
+          "REG_IRR_CTL_2019_0009185e_P0006_B051"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TEXT_TABLE",
+        "prediction": {
+          "component_count": 1,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_1_CHAL_00162",
+        "question": "Theo Bản tin dự báo nguồn nước Lưu vực sông Lục Nam (Từ 19/7 đến 25/7/2019), chỉ tiêu Dung tích trữ thiết kế (triệu m3) của Hồ Suối Mỡ là bao nhiêu và báo cáo nêu ngoại lệ hoặc lưu ý gì liên quan đến đối tượng này?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "MULTI",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2019_5278ca2b_P0003_B022",
+          "REG_IRR_CTL_2019_645d37d3_P0002_B032",
+          "REG_IRR_CTL_2019_1549026e_P0002_B026",
+          "REG_IRR_CTL_2019_848be3bc_P0002_B027",
+          "REG_IRR_CTL_2019_645d37d3_P0005_B029",
+          "REG_IRR_CTL_2019_d9169102_P0003_B038",
+          "REG_IRR_CTL_2019_a1445f42_P0002_B024",
+          "REG_IRR_CTL_2019_645d37d3_P0002_B033",
+          "REG_IRR_CTL_2019_d9169102_P0004_B005",
+          "REG_IRR_CTL_2019_1549026e_P0002_B024",
+          "REG_IRR_CTL_2019_a1445f42_P0002_B042",
+          "REG_IRR_CTL_2019_2154c957_P0005_B013",
+          "REG_IRR_CTL_2019_d9169102_P0003_B037",
+          "TAB_IRR_CTL_2019_5278ca2b_P0005_01",
+          "REG_IRR_SIWRP_2026_80e590ea_P0007_B007",
+          "TAB_IRR_CTL_2019_645d37d3_P0004_01",
+          "REG_IRR_CTL_2019_1549026e_P0002_B023",
+          "TAB_IRR_CTL_2019_d9169102_P0003_01",
+          "REG_IRR_CTL_2019_6b023172_P0003_B002",
+          "REG_IRR_CTL_2019_a1445f42_P0002_B025"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TABLE_ONLY",
+        "prediction": {
+          "component_count": 2,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            },
+            {
+              "basis": "explicit question intent",
+              "matched_text": "so voi",
+              "requirement": "TEMPORAL_COMPARISON",
+              "rule": "\\bso voi\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE",
+            "TEMPORAL_COMPARISON"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_CORE_00410",
+        "question": "Theo Bản tin dự báo nguồn nước Lưu vực sông Thương (Từ 19/7 đến 25/7/2019), tỷ lệ dung tích hiện tại so với thiết kế của Tam Hoa được ghi nhận là bao nhiêu?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2025_fe5fdf2c_P0003_B002",
+          "REG_IRR_CTL_2019_848be3bc_P0002_B027",
+          "TAB_IRR_CTL_2019_848be3bc_P0004_01",
+          "REG_IRR_CTL_2026_79f76fed_P0003_B014",
+          "REG_IRR_CTL_2026_79f76fed_P0003_B015",
+          "REG_IRR_CTL_2026_79f76fed_P0004_B002",
+          "REG_IRR_CTL_2026_79f76fed_P0004_B001",
+          "TAB_IRR_CTL_2019_a1445f42_P0003_01",
+          "REG_IRR_CTL_2019_a1445f42_P0002_B024",
+          "REG_IRR_CTL_2026_79f76fed_P0003_B013",
+          "REG_IRR_CTL_2019_a1445f42_P0002_B025",
+          "REG_IRR_CTL_2019_6b023172_P0003_B030",
+          "REG_IRR_CTL_2019_1549026e_P0002_B024",
+          "REG_IRR_CTL_2019_1549026e_P0002_B023",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0004_B015",
+          "REG_IRR_CTL_2019_1549026e_P0002_B022",
+          "REG_IRR_CTL_2019_a1445f42_P0003_B040",
+          "REG_IRR_CTL_2019_a1445f42_P0003_B002",
+          "REG_IRR_CTL_2019_1549026e_P0002_B026",
+          "REG_IRR_CTL_2019_6b023172_P0003_B002"
+        ]
+      },
+      {
+        "fallback_reasons": [
+          "NO_EXPLICIT_SUPPORTED_INTENT_PATTERN"
+        ],
+        "fallback_to_e0": true,
+        "human_validated": false,
+        "modality": "TEXT_ONLY",
+        "prediction": {
+          "component_count": 0,
+          "reasons": [],
+          "requirements": [],
+          "status": "UNCERTAIN",
+          "uncertain_reason": "NO_EXPLICIT_SUPPORTED_INTENT_PATTERN"
+        },
+        "qa_id": "V3_CORE_00087",
+        "question": "Theo Bản tin DB nguồn nước và KHSDN vùng NAM TRUNG BỘ - TUẦN 14/3/2025 ÷ 20/3/2025, tài liệu nêu nội dung gì về dung tích hồ chứa?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2025_fe5fdf2c_P0004_B015",
+          "REG_IRR_CTL_2026_79f76fed_P0005_B001",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B012",
+          "REG_IRR_CTL_2019_a1445f42_P0002_B042",
+          "REG_IRR_SIWRP_2026_80e590ea_P0002_B005",
+          "REG_IRR_GOV_2023_29fb8ed6_P0004_B025",
+          "REG_IRR_CTL_2019_a1445f42_P0002_B024",
+          "REG_IRR_CTL_2019_d9169102_P0003_B038",
+          "REG_IRR_CTL_2026_79f76fed_P0005_B003",
+          "REG_IRR_SIWRP_2026_80e590ea_P0005_B005",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B014",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0003_B001",
+          "REG_IRR_CTL_2019_1549026e_P0002_B024",
+          "REG_IRR_CTL_2019_d9169102_P0003_B037",
+          "REG_IRR_GOV_2023_29fb8ed6_P0010_B018",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0001_B011",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B015",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0004_B016",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0001_B014",
+          "REG_IRR_SIWRP_2026_bd225888_P0005_B001"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TABLE_TABLE",
+        "prediction": {
+          "component_count": 1,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_1_CHAL_00032",
+        "question": "Theo chuỗi tài liệu liên quan, diện tích đáp ứng tháng 06/2019 và diện tích đáp ứng từ 19/07/2019 đến 25/07/2019 của Hồ Đá Lải lần lượt là bao nhiêu?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "MULTI",
+        "selected_evidence_ids": [
+          "TAB_IRR_CTL_2019_5278ca2b_P0005_01",
+          "TAB_IRR_CTL_2019_2154c957_P0004_02",
+          "TAB_IRR_CTL_2019_848be3bc_P0004_01",
+          "TAB_IRR_CTL_2019_1fc21515_P0003_02",
+          "TAB_IRR_CTL_2019_848be3bc_P0003_02",
+          "TAB_IRR_CTL_2019_645d37d3_P0003_02",
+          "REG_IRR_CTL_2019_d9169102_P0004_B008",
+          "TAB_IRR_CTL_2019_645d37d3_P0004_01",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B010",
+          "TAB_IRR_CTL_2019_a1445f42_P0003_01",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0013_B029",
+          "TAB_IRR_CTL_2019_5278ca2b_P0001_01",
+          "TAB_IRR_CTL_2019_5278ca2b_P0005_02",
+          "TAB_IRR_CTL_2019_d9169102_P0005_01",
+          "REG_IRR_CTL_2019_1fc21515_P0003_B027",
+          "REG_IRR_CTL_2026_79f76fed_P0006_B006",
+          "TAB_IRR_CTL_2019_6b023172_P0003_02",
+          "REG_IRR_CTL_2019_6b023172_P0003_B008",
+          "REG_IRR_CTL_2019_c565a3a3_P0005_B000",
+          "REG_IRR_CTL_2019_d9169102_P0005_B018"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TEXT_TABLE",
+        "prediction": {
+          "component_count": 2,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            },
+            {
+              "basis": "explicit question intent",
+              "matched_text": "du bao dieu gi",
+              "requirement": "FORECAST",
+              "rule": "\\b(?:du bao|du kien|nhan dinh)\\b.{0,50}\\b(?:gi|the nao|ra sao)\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE",
+            "FORECAST"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_1_CHAL_00142",
+        "question": "Theo Bản tin dự báo nguồn nước Lưu vực sông Thương (Từ 19/7 đến 25/7/2019), chỉ tiêu Lượng mưa (tháng/tuần) trước (mm) của Bắc Giang là bao nhiêu và báo cáo dự báo điều gì liên quan đến đối tượng này?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "MULTI",
+        "selected_evidence_ids": [
+          "TAB_IRR_CTL_2019_a1445f42_P0001_01",
+          "REG_IRR_CTL_2019_2154c957_P0005_B013",
+          "REG_IRR_CTL_2019_5278ca2b_P0006_B012",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B023",
+          "TAB_IRR_CTL_2019_1549026e_P0001_01",
+          "REG_IRR_CTL_2019_a1445f42_P0003_B040",
+          "REG_IRR_CTL_2019_1fc21515_P0004_B029",
+          "REG_IRR_CTL_2019_2154c957_P0005_B014",
+          "REG_IRR_CTL_2019_9b94947e_P0012_B004",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B010",
+          "TAB_IRR_CTL_2019_848be3bc_P0004_01",
+          "REG_IRR_CTL_2019_848be3bc_P0004_B036",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B020",
+          "REG_IRR_CTL_2019_0009185e_P0001_B026",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B021",
+          "TAB_IRR_CTL_2019_5278ca2b_P0001_01",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B022",
+          "TAB_IRR_CTL_2019_0009185e_P0001_01",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B007",
+          "REG_IRR_CTL_2019_1fc21515_P0004_B031"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TABLE_ONLY",
+        "prediction": {
+          "component_count": 1,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_CORE_00409",
+        "question": "Theo Bản tin dự báo nguồn nước Lưu vực sông Thương (Từ 19/7 đến 25/7/2019), lượng mưa tháng/tuần trước của Bắc Sơn được ghi nhận là bao nhiêu?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "TAB_IRR_CTL_2019_a1445f42_P0001_01",
+          "REG_IRR_CTL_2019_2154c957_P0005_B013",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B022",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B023",
+          "REG_IRR_CTL_2019_a1445f42_P0003_B040",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B021",
+          "REG_IRR_CTL_2019_5278ca2b_P0006_B012",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B020",
+          "REG_IRR_CTL_2019_645d37d3_P0004_B029",
+          "REG_IRR_CTL_2025_1a40ba4e_P0008_B013",
+          "TAB_IRR_CTL_2019_1549026e_P0001_01",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B006",
+          "REG_IRR_CTL_2025_c5b0924e_P0010_B013",
+          "REG_IRR_CTL_2025_72b54901_P0008_B013",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B010",
+          "REG_IRR_CTL_2019_2154c957_P0005_B014",
+          "REG_IRR_CTL_2019_1549026e_P0003_B049",
+          "REG_IRR_CTL_2019_1fc21515_P0004_B029",
+          "TAB_IRR_CTL_2019_5278ca2b_P0001_01",
+          "REG_IRR_CTL_2019_645d37d3_P0001_B025"
+        ]
+      },
+      {
+        "fallback_reasons": [
+          "NO_EXPLICIT_SUPPORTED_INTENT_PATTERN"
+        ],
+        "fallback_to_e0": true,
+        "human_validated": false,
+        "modality": "TEXT_ONLY",
+        "prediction": {
+          "component_count": 0,
+          "reasons": [],
+          "requirements": [],
+          "status": "UNCERTAIN",
+          "uncertain_reason": "NO_EXPLICIT_SUPPORTED_INTENT_PATTERN"
+        },
+        "qa_id": "V3_CORE_00031",
+        "question": "Tài liệu Bản tin dự báo nguồn nước Lưu vực sông Bằng Giang (Từ 19/7 đến 25/7/2019) trình bày nội dung gì đối với nguồn nước?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2019_1549026e_P0002_B026",
+          "REG_IRR_CTL_2019_2154c957_P0005_B013",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B010",
+          "REG_IRR_CTL_2019_6b023172_P0003_B031",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B007",
+          "REG_IRR_CTL_2019_0009185e_P0001_B004",
+          "TAB_IRR_CTL_2019_a1445f42_P0003_01",
+          "REG_IRR_CTL_2019_6b023172_P0003_B029",
+          "TAB_IRR_CTL_2019_1549026e_P0001_01",
+          "REG_IRR_CTL_2019_2154c957_P0005_B014",
+          "REG_IRR_CTL_2019_645d37d3_P0004_B029",
+          "REG_IRR_CTL_2019_645d37d3_P0001_B005",
+          "REG_IRR_CTL_2019_6b023172_P0001_B014",
+          "REG_IRR_CTL_2024_9a520097_P0013_B018",
+          "TAB_IRR_CTL_2019_5278ca2b_P0001_01",
+          "REG_IRR_CTL_2019_d9169102_P0001_B008",
+          "REG_IRR_CTL_2019_01834078_P0001_B004",
+          "TAB_IRR_CTL_2019_645d37d3_P0004_01",
+          "REG_IRR_CTL_2019_2154c957_P0001_B005",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B007"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TEXT_TABLE",
+        "prediction": {
+          "component_count": 2,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            },
+            {
+              "basis": "explicit question intent",
+              "matched_text": "du bao dieu gi",
+              "requirement": "FORECAST",
+              "rule": "\\b(?:du bao|du kien|nhan dinh)\\b.{0,50}\\b(?:gi|the nao|ra sao)\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE",
+            "FORECAST"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_1_CHAL_00195",
+        "question": "Theo Bản tin dự báo nguồn nước Lưu vực sông Bằng Giang (Từ 19/7 đến 25/7/2019), chỉ tiêu Lượng mưa trong tháng/tuần (mm) của Lạng Sơn là bao nhiêu và báo cáo dự báo điều gì liên quan đến đối tượng này?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "MULTI",
+        "selected_evidence_ids": [
+          "TAB_IRR_CTL_2019_a1445f42_P0001_01",
+          "REG_IRR_CTL_2019_2154c957_P0005_B013",
+          "REG_IRR_CTL_2019_5278ca2b_P0006_B012",
+          "TAB_IRR_CTL_2019_1549026e_P0001_01",
+          "REG_IRR_CTL_2019_645d37d3_P0004_B029",
+          "TAB_IRR_CTL_2019_6b023172_P0001_01",
+          "REG_IRR_CTL_2019_2154c957_P0005_B014",
+          "REG_IRR_CTL_2019_6b023172_P0004_B034",
+          "REG_IRR_CTL_2019_1549026e_P0003_B049",
+          "REG_IRR_CTL_2019_9b94947e_P0012_B004",
+          "REG_IRR_CTL_2019_1fc21515_P0004_B029",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B007",
+          "REG_IRR_CTL_2019_645d37d3_P0001_B025",
+          "REG_IRR_CTL_2019_1fc21515_P0004_B031",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B023",
+          "TAB_IRR_CTL_2019_a1445f42_P0003_01",
+          "TAB_IRR_CTL_2019_d9169102_P0001_01",
+          "TAB_IRR_CTL_2019_645d37d3_P0001_01",
+          "REG_IRR_CTL_2019_1fc21515_P0004_B022",
+          "REG_IRR_CTL_2019_d9169102_P0001_B023"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TABLE_ONLY",
+        "prediction": {
+          "component_count": 1,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_CORE_00432",
+        "question": "Theo Bản tin dự báo nguồn nước Lưu vực sông Lục Nam (Từ 19/7 đến 25/7/2019), dung tích toàn bộ theo thiết kế của Hồ Đồng Cốc được ghi nhận là bao nhiêu?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2019_645d37d3_P0002_B032",
+          "REG_IRR_CTL_2019_1549026e_P0002_B026",
+          "REG_IRR_CTL_2019_848be3bc_P0002_B027",
+          "REG_IRR_CTL_2019_645d37d3_P0002_B033",
+          "REG_IRR_CTL_2019_1549026e_P0002_B023",
+          "REG_IRR_SIWRP_2026_80e590ea_P0007_B007",
+          "REG_IRR_CTL_2019_1549026e_P0002_B024",
+          "REG_IRR_CTL_2019_1549026e_P0002_B022",
+          "TAB_IRR_CTL_2019_5278ca2b_P0005_01",
+          "REG_IRR_CTL_2019_2154c957_P0005_B013",
+          "REG_IRR_CTL_2019_6b023172_P0003_B002",
+          "REG_IRR_CTL_2019_6b023172_P0003_B030",
+          "TAB_IRR_CTL_2019_645d37d3_P0004_01",
+          "REG_IRR_CTL_2019_645d37d3_P0002_B034",
+          "REG_IRR_SIWRP_2026_80e590ea_P0007_B017",
+          "TAB_IRR_CTL_2019_a1445f42_P0003_01",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B012",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B014",
+          "REG_IRR_CTL_2019_6b023172_P0003_B001",
+          "TAB_IRR_CTL_2019_5278ca2b_P0005_02"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TEXT_ONLY",
+        "prediction": {
+          "component_count": 1,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "du bao chat luong nuoc tuan 1, thang 4 cho biet dieu gi",
+              "requirement": "FORECAST",
+              "rule": "\\b(?:du bao|du kien|nhan dinh)\\b.{0,50}\\b(?:gi|the nao|ra sao)\\b"
+            }
+          ],
+          "requirements": [
+            "FORECAST"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_CORE_00026",
+        "question": "Tài liệu Giám sát và dự báo chất lượng nước hồ Đại Lải - Bản tin dự báo chất lượng nước tuần 1, Tháng 4 cho biết điều gì liên quan đến tưới và sản xuất nông nghiệp?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2025_2eab834e_P0012_B001",
+          "REG_IRR_CTL_2025_8e18c023_P0001_B003",
+          "REG_IRR_CTL_2025_fc49f05e_P0001_B003",
+          "REG_IRR_CTL_2025_045c6247_P0001_B004",
+          "REG_IRR_CTL_2025_787e653b_P0012_B001",
+          "REG_IRR_CTL_2025_2eab834e_P0012_B004",
+          "REG_IRR_CTL_2025_2eab834e_P0012_B003",
+          "REG_IRR_CTL_2025_409e3de1_P0002_B001",
+          "REG_IRR_CTL_2025_787e653b_P0012_B004",
+          "REG_IRR_CTL_2025_409e3de1_P0002_B009",
+          "REG_IRR_CTL_2025_787e653b_P0012_B003",
+          "REG_IRR_CTL_2025_342e964b_P0001_B005",
+          "TAB_IRR_CTL_2019_5278ca2b_P0005_01",
+          "REG_IRR_CTL_2025_409e3de1_P0003_B004",
+          "REG_IRR_CTL_2025_c5b0924e_P0002_B005",
+          "REG_IRR_CTL_2025_c5b0924e_P0002_B009",
+          "REG_IRR_CTL_2025_4b36c472_P0001_B005",
+          "REG_IRR_CTL_2025_6f169c9f_P0001_B005",
+          "REG_IRR_CTL_2025_342e964b_P0001_B010",
+          "REG_IRR_CTL_2025_b70ea2f6_P0001_B005"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TEXT_TABLE",
+        "prediction": {
+          "component_count": 2,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            },
+            {
+              "basis": "explicit question intent",
+              "matched_text": "du bao dieu gi",
+              "requirement": "FORECAST",
+              "rule": "\\b(?:du bao|du kien|nhan dinh)\\b.{0,50}\\b(?:gi|the nao|ra sao)\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE",
+            "FORECAST"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_1_CHAL_00192",
+        "question": "Theo Bản tin dự báo nguồn nước Lưu vực sông Bằng Giang (Từ 19/7 đến 25/7/2019), chỉ tiêu So sánh lượng mưa lũy tích với cùng kỳ (+/-%) — TBNN của Cao Bằng là bao nhiêu và báo cáo dự báo điều gì liên quan đến đối tượng này?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "MULTI",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2019_c565a3a3_P0005_B039",
+          "REG_IRR_CTL_2019_848be3bc_P0004_B037",
+          "TAB_IRR_CTL_2019_a1445f42_P0001_01",
+          "REG_IRR_CTL_2019_6b023172_P0001_B024",
+          "REG_IRR_CTL_2019_c565a3a3_P0005_B038",
+          "REG_IRR_CTL_2019_a1445f42_P0003_B040",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B017",
+          "REG_IRR_CTL_2019_2154c957_P0005_B014",
+          "TAB_IRR_CTL_2019_1549026e_P0001_01",
+          "REG_IRR_CTL_2019_2154c957_P0005_B013",
+          "TAB_IRR_CTL_2019_5278ca2b_P0001_01",
+          "REG_IRR_CTL_2019_d9169102_P0001_B024",
+          "REG_IRR_CTL_2019_645d37d3_P0001_B014",
+          "TAB_IRR_CTL_2019_6b023172_P0001_01",
+          "REG_IRR_CTL_2019_d9169102_P0006_B001",
+          "REG_IRR_CTL_2019_c565a3a3_P0001_B022",
+          "REG_IRR_CTL_2019_d9169102_P0006_B002",
+          "TAB_IRR_CTL_2019_1fc21515_P0004_02",
+          "TAB_IRR_CTL_2019_d9169102_P0001_01",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B022"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TABLE_ONLY",
+        "prediction": {
+          "component_count": 1,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_CORE_00407",
+        "question": "Theo Bản tin dự báo nguồn nước Lưu vực sông Thương (Từ 19/7 đến 25/7/2019), lượng mưa tháng/tuần trước của Cầu Sơn được ghi nhận là bao nhiêu?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2019_2154c957_P0005_B013",
+          "TAB_IRR_CTL_2019_a1445f42_P0001_01",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B021",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B023",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B022",
+          "REG_IRR_CTL_2019_a1445f42_P0003_B040",
+          "REG_IRR_CTL_2019_5278ca2b_P0006_B012",
+          "REG_IRR_CTL_2019_1549026e_P0002_B026",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B020",
+          "REG_IRR_CTL_2019_645d37d3_P0004_B029",
+          "REG_IRR_CTL_2025_1a40ba4e_P0008_B013",
+          "TAB_IRR_CTL_2019_1549026e_P0001_01",
+          "REG_IRR_CTL_2025_c5b0924e_P0010_B013",
+          "REG_IRR_CTL_2025_72b54901_P0008_B013",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B010",
+          "REG_IRR_CTL_2019_2154c957_P0005_B014",
+          "REG_IRR_CTL_2019_1549026e_P0003_B049",
+          "TAB_IRR_CTL_2019_a1445f42_P0003_01",
+          "REG_IRR_CTL_2019_645d37d3_P0001_B025",
+          "TAB_IRR_CTL_2019_5278ca2b_P0001_01"
+        ]
+      },
+      {
+        "fallback_reasons": [
+          "NO_EXPLICIT_SUPPORTED_INTENT_PATTERN"
+        ],
+        "fallback_to_e0": true,
+        "human_validated": false,
+        "modality": "TEXT_ONLY",
+        "prediction": {
+          "component_count": 0,
+          "reasons": [],
+          "requirements": [],
+          "status": "UNCERTAIN",
+          "uncertain_reason": "NO_EXPLICIT_SUPPORTED_INTENT_PATTERN"
+        },
+        "qa_id": "V3_CORE_00158",
+        "question": "Từ Bản tin dự báo nguồn nước Lưu vực sông Thương (Từ 19/7 đến 25/7/2019), có thể xác định nội dung nào về dung tích hồ chứa?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2019_1549026e_P0002_B026",
+          "REG_IRR_CTL_2019_2154c957_P0005_B013",
+          "REG_IRR_CTL_2026_79f76fed_P0005_B002",
+          "REG_IRR_CTL_2019_d9169102_P0004_B005",
+          "REG_IRR_SIWRP_2026_80e590ea_P0007_B007",
+          "REG_IRR_CTL_2019_1549026e_P0002_B023",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B021",
+          "REG_IRR_CTL_2026_79f76fed_P0005_B003",
+          "TAB_IRR_CTL_2019_848be3bc_P0004_01",
+          "REG_IRR_CTL_2026_79f76fed_P0005_B001",
+          "TAB_IRR_CTL_2019_5278ca2b_P0005_01",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B023",
+          "REG_IRR_CTL_2019_1549026e_P0002_B022",
+          "REG_IRR_GOV_2023_29fb8ed6_P0004_B003",
+          "REG_IRR_CTL_2019_1549026e_P0002_B024",
+          "REG_IRR_GOV_2023_29fb8ed6_P0010_B021",
+          "REG_IRR_CTL_2019_6b023172_P0003_B030",
+          "TAB_IRR_CTL_2019_a1445f42_P0003_01",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B020",
+          "REG_IRR_GOV_2023_29fb8ed6_P0004_B005"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TEXT_TABLE",
+        "prediction": {
+          "component_count": 2,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            },
+            {
+              "basis": "explicit question intent",
+              "matched_text": "du bao dieu gi",
+              "requirement": "FORECAST",
+              "rule": "\\b(?:du bao|du kien|nhan dinh)\\b.{0,50}\\b(?:gi|the nao|ra sao)\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE",
+            "FORECAST"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_1_CHAL_00165",
+        "question": "Theo Bản tin dự báo nguồn nước Lưu vực sông Bằng Giang (Từ 19/7 đến 25/7/2019), chỉ tiêu So sánh lượng mưa lũy tích với cùng kỳ (+/-%) — TBNN của Lạng Sơn là bao nhiêu và báo cáo dự báo điều gì liên quan đến đối tượng này?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "MULTI",
+        "selected_evidence_ids": [
+          "TAB_IRR_CTL_2019_a1445f42_P0001_01",
+          "REG_IRR_CTL_2019_848be3bc_P0004_B037",
+          "REG_IRR_CTL_2019_c565a3a3_P0005_B039",
+          "TAB_IRR_CTL_2019_6b023172_P0001_01",
+          "REG_IRR_CTL_2019_c565a3a3_P0005_B038",
+          "TAB_IRR_CTL_2019_1549026e_P0001_01",
+          "REG_IRR_CTL_2019_a1445f42_P0003_B040",
+          "REG_IRR_CTL_2019_6b023172_P0001_B023",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B017",
+          "REG_IRR_CTL_2019_2154c957_P0005_B014",
+          "TAB_IRR_CTL_2019_5278ca2b_P0001_01",
+          "REG_IRR_CTL_2019_2154c957_P0005_B013",
+          "REG_IRR_CTL_2019_645d37d3_P0001_B014",
+          "REG_IRR_CTL_2019_c565a3a3_P0001_B022",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B022",
+          "REG_IRR_CTL_2019_d9169102_P0001_B024",
+          "TAB_IRR_CTL_2019_d9169102_P0001_01",
+          "TAB_IRR_CTL_2019_645d37d3_P0001_01",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B014",
+          "REG_IRR_CTL_2019_6b023172_P0004_B034"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TABLE_ONLY",
+        "prediction": {
+          "component_count": 1,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_CORE_00421",
+        "question": "Theo Bản tin DB nguồn nước và KHSDN vùng NAM TRUNG BỘ - TUẦN 14/3/2025 ÷ 20/3/2025, dung tích hiện tại của Khánh Hoà được ghi nhận là bao nhiêu?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2026_79f76fed_P0001_B012",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B015",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0004_B015",
+          "REG_IRR_CTL_2019_1549026e_P0002_B024",
+          "REG_IRR_CTL_2026_79f76fed_P0005_B001",
+          "REG_IRR_CTL_2019_a1445f42_P0002_B025",
+          "REG_IRR_CTL_2019_a1445f42_P0002_B024",
+          "REG_IRR_CTL_2026_79f76fed_P0003_B013",
+          "REG_IRR_CTL_2026_79f76fed_P0004_B001",
+          "TAB_IRR_CTL_2026_79f76fed_P0008_01",
+          "REG_IRR_CTL_2026_79f76fed_P0003_B015",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B014",
+          "REG_IRR_CTL_2026_79f76fed_P0005_B003",
+          "REG_IRR_CTL_2026_79f76fed_P0004_B002",
+          "REG_IRR_CTL_2026_79f76fed_P0007_B001",
+          "TAB_IRR_CTL_2019_a1445f42_P0003_01",
+          "REG_IRR_CTL_2026_79f76fed_P0008_B039",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0005_B020",
+          "REG_IRR_CTL_2026_79f76fed_P0010_B039",
+          "REG_IRR_CTL_2026_79f76fed_P0010_B038"
+        ]
+      },
+      {
+        "fallback_reasons": [
+          "NO_EXPLICIT_SUPPORTED_INTENT_PATTERN"
+        ],
+        "fallback_to_e0": true,
+        "human_validated": false,
+        "modality": "TEXT_ONLY",
+        "prediction": {
+          "component_count": 0,
+          "reasons": [],
+          "requirements": [],
+          "status": "UNCERTAIN",
+          "uncertain_reason": "NO_EXPLICIT_SUPPORTED_INTENT_PATTERN"
+        },
+        "qa_id": "V3_CORE_00017",
+        "question": "Nội dung được nêu trong Giám sát và dự báo chất lượng nước hồ Núi Cốc - Bản tin kết quả quan trắc chất lượng nước đợt 5 năm 2025 về chất lượng nước là gì?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2025_3c8d720f_P0001_B003",
+          "REG_IRR_CTL_2025_80810c73_P0010_B002",
+          "REG_IRR_CTL_2025_80810c73_P0001_B003",
+          "REG_IRR_CTL_2025_b0541877_P0012_B002",
+          "REG_IRR_CTL_2025_b0541877_P0001_B003",
+          "REG_IRR_CTL_2025_1a40ba4e_P0002_B009",
+          "REG_IRR_CTL_2025_72b54901_P0002_B009",
+          "REG_IRR_CTL_2025_1a40ba4e_P0002_B010",
+          "REG_IRR_CTL_2025_3c8d720f_P0003_B001",
+          "REG_IRR_CTL_2025_c5b0924e_P0002_B008",
+          "REG_IRR_CTL_2025_57989573_P0001_B008",
+          "REG_IRR_CTL_2025_72b54901_P0002_B010",
+          "REG_IRR_CTL_2025_409e3de1_P0002_B009",
+          "REG_IRR_CTL_2025_c5b0924e_P0002_B009",
+          "REG_IRR_CTL_2025_787e653b_P0001_B002",
+          "REG_IRR_CTL_2025_57989573_P0001_B009",
+          "REG_IRR_CTL_2025_3c8d720f_P0001_B002",
+          "REG_IRR_CTL_2025_b0541877_P0001_B012",
+          "REG_IRR_CTL_2025_80810c73_P0001_B012",
+          "REG_IRR_CTL_2025_57989573_P0001_B010"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TEXT_TABLE",
+        "prediction": {
+          "component_count": 2,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            },
+            {
+              "basis": "explicit question intent",
+              "matched_text": "khuyen nghi gi",
+              "requirement": "RECOMMENDATION",
+              "rule": "\\b(?:khuyen nghi|kien nghi|de xuat)\\b.{0,50}\\b(?:gi|nao|the nao|ra sao)\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE",
+            "RECOMMENDATION"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_1_CHAL_00176",
+        "question": "Theo Bản tin DB nguồn nước và KHSDN vùng NAM TRUNG BỘ - TUẦN 14/3/2025 ÷ 20/3/2025, chỉ tiêu Diện tích đáp ứng (ha) của Tà Mon là bao nhiêu và báo cáo khuyến nghị gì liên quan đến đối tượng này?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "MULTI",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2026_79f76fed_P0007_B003",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0005_B020",
+          "TAB_IRR_CTL_2026_79f76fed_P0008_01",
+          "TAB_IRR_CTL_2019_6b023172_P0003_02",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B015",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B014",
+          "TAB_IRR_CTL_2019_a1445f42_P0003_01",
+          "REG_IRR_CTL_2019_1549026e_P0003_B014",
+          "REG_IRR_CTL_2026_79f76fed_P0007_B001",
+          "REG_IRR_CTL_2025_a1f7e268_P0012_B002",
+          "TAB_IRR_CTL_2026_79f76fed_P0019_01",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B012",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B009",
+          "TAB_IRR_CTL_2019_848be3bc_P0004_01",
+          "REG_IRR_CTL_2025_4a42bc98_P0006_B002",
+          "REG_IRR_CTL_2019_0009185e_P0006_B002",
+          "REG_IRR_CTL_2026_79f76fed_P0006_B004",
+          "REG_IRR_CTL_2025_4a42bc98_P0006_B003",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B011",
+          "REG_IRR_CTL_2025_a1f7e268_P0012_B007"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TABLE_ONLY",
+        "prediction": {
+          "component_count": 1,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_CORE_00423",
+        "question": "Theo Bản tin dự báo nguồn nước Lưu vực sông Lục Nam (Từ 19/7 đến 25/7/2019), lượng mưa từ 1/1 đến 16/7/2019 của Sơn Động được ghi nhận là bao nhiêu?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2019_645d37d3_P0001_B025",
+          "TAB_IRR_CTL_2019_645d37d3_P0001_01",
+          "REG_IRR_CTL_2019_2154c957_P0005_B013",
+          "REG_IRR_CTL_2019_2154c957_P0001_B030",
+          "REG_IRR_CTL_2019_2154c957_P0001_B016",
+          "REG_IRR_CTL_2019_645d37d3_P0004_B029",
+          "REG_IRR_CTL_2019_645d37d3_P0001_B026",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B025",
+          "REG_IRR_CTL_2019_5278ca2b_P0006_B012",
+          "REG_IRR_CTL_2019_d9169102_P0006_B001",
+          "REG_IRR_CTL_2019_1549026e_P0001_B029",
+          "REG_IRR_CTL_2019_6b023172_P0001_B022",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B021",
+          "REG_IRR_CTL_2019_d9169102_P0001_B023",
+          "TAB_IRR_CTL_2019_1549026e_P0001_01",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B010",
+          "REG_IRR_CTL_2019_2154c957_P0005_B014",
+          "REG_IRR_CTL_2019_1549026e_P0003_B049",
+          "REG_IRR_CTL_2025_1a40ba4e_P0008_B013",
+          "REG_IRR_CTL_2019_645d37d3_P0004_B030"
+        ]
+      },
+      {
+        "fallback_reasons": [
+          "NO_EXPLICIT_SUPPORTED_INTENT_PATTERN"
+        ],
+        "fallback_to_e0": true,
+        "human_validated": false,
+        "modality": "TEXT_ONLY",
+        "prediction": {
+          "component_count": 0,
+          "reasons": [],
+          "requirements": [],
+          "status": "UNCERTAIN",
+          "uncertain_reason": "NO_EXPLICIT_SUPPORTED_INTENT_PATTERN"
+        },
+        "qa_id": "V3_CORE_00038",
+        "question": "Bản tin DB nguồn nước và KHSDN vùng NAM TRUNG BỘ - TUẦN 14/3/2025 ÷ 20/3/2025 mô tả vấn đề cấp nước như thế nào?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2026_79f76fed_P0001_B015",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B014",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B009",
+          "REG_IRR_CTL_2026_79f76fed_P0010_B039",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0001_B011",
+          "REG_IRR_CTL_2026_79f76fed_P0006_B004",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0001_B014",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B012",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0001_B009",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B010",
+          "REG_IRR_CTL_2025_1a40ba4e_P0008_B030",
+          "REG_IRR_CTL_2025_1a40ba4e_P0005_B007",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B013",
+          "REG_IRR_CTL_2025_1a40ba4e_P0005_B003",
+          "REG_IRR_CTL_2026_79f76fed_P0006_B002",
+          "TAB_IRR_CTL_2019_a1445f42_P0003_01",
+          "REG_IRR_CTL_2025_87c80ea9_P0008_B001",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0001_B006",
+          "REG_IRR_CTL_2025_87c80ea9_P0008_B002",
+          "REG_IRR_CTL_2025_1a40ba4e_P0005_B005"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TEXT_TABLE",
+        "prediction": {
+          "component_count": 2,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            },
+            {
+              "basis": "explicit question intent",
+              "matched_text": "du bao dieu gi",
+              "requirement": "FORECAST",
+              "rule": "\\b(?:du bao|du kien|nhan dinh)\\b.{0,50}\\b(?:gi|the nao|ra sao)\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE",
+            "FORECAST"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_1_CHAL_00149",
+        "question": "Theo Bản tin dự báo nguồn nước Lưu vực sông Thương (Từ 19/7 đến 25/7/2019), chỉ tiêu Lượng mưa lũy tích từ 1.1.2019 (mm) của Hữu Lũng là bao nhiêu và báo cáo dự báo điều gì liên quan đến đối tượng này?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "MULTI",
+        "selected_evidence_ids": [
+          "TAB_IRR_CTL_2019_a1445f42_P0001_01",
+          "REG_IRR_CTL_2019_2154c957_P0005_B013",
+          "REG_IRR_CTL_2019_a1445f42_P0003_B040",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B022",
+          "REG_IRR_CTL_2019_5278ca2b_P0006_B012",
+          "TAB_IRR_CTL_2019_1549026e_P0001_01",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B021",
+          "REG_IRR_CTL_2019_2154c957_P0005_B014",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B023",
+          "TAB_IRR_CTL_2019_5278ca2b_P0001_01",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B025",
+          "REG_IRR_CTL_2019_1fc21515_P0004_B029",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B010",
+          "REG_IRR_CTL_2019_1fc21515_P0004_B031",
+          "REG_IRR_CTL_2019_5278ca2b_P0006_B013",
+          "TAB_IRR_CTL_2019_a1445f42_P0003_01",
+          "REG_IRR_CTL_2019_1549026e_P0001_B030",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B020",
+          "REG_IRR_CTL_2019_645d37d3_P0001_B025",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B007"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TABLE_ONLY",
+        "prediction": {
+          "component_count": 1,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_CORE_00405",
+        "question": "Theo Bản tin dự báo nguồn nước Lưu vực sông Bằng Giang (Từ 19/7 đến 25/7/2019), lượng mưa trong tháng/tuần của Đình Lập được ghi nhận là bao nhiêu?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2019_2154c957_P0005_B013",
+          "REG_IRR_CTL_2019_645d37d3_P0004_B029",
+          "TAB_IRR_CTL_2019_1549026e_P0001_01",
+          "REG_IRR_CTL_2025_1a40ba4e_P0008_B013",
+          "TAB_IRR_CTL_2019_a1445f42_P0001_01",
+          "TAB_IRR_CTL_2019_0009185e_P0001_01",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B023",
+          "REG_IRR_CTL_2025_72b54901_P0008_B013",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B010",
+          "TAB_IRR_CTL_2019_645d37d3_P0001_01",
+          "REG_IRR_CTL_2019_1549026e_P0003_B049",
+          "REG_IRR_CTL_2025_c5b0924e_P0010_B013",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B020",
+          "TAB_IRR_CTL_2019_5278ca2b_P0001_01",
+          "REG_IRR_CTL_2019_2154c957_P0005_B014",
+          "REG_IRR_CTL_2019_1fc21515_P0004_B029",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B007",
+          "TAB_IRR_CTL_2019_848be3bc_P0004_01",
+          "REG_IRR_CTL_2019_848be3bc_P0004_B036",
+          "REG_IRR_CTL_2019_0009185e_P0001_B024"
+        ]
+      },
+      {
+        "fallback_reasons": [
+          "NO_EXPLICIT_SUPPORTED_INTENT_PATTERN"
+        ],
+        "fallback_to_e0": true,
+        "human_validated": false,
+        "modality": "TEXT_ONLY",
+        "prediction": {
+          "component_count": 0,
+          "reasons": [],
+          "requirements": [],
+          "status": "UNCERTAIN",
+          "uncertain_reason": "NO_EXPLICIT_SUPPORTED_INTENT_PATTERN"
+        },
+        "qa_id": "V3_CORE_00283",
+        "question": "Từ Bản tin DB nguồn nước và KHSDN vùng NAM TRUNG BỘ - TUẦN 14/3/2025 ÷ 20/3/2025, có thể xác định nội dung nào về dung tích hồ chứa?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2025_fe5fdf2c_P0004_B015",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B012",
+          "REG_IRR_CTL_2026_79f76fed_P0005_B001",
+          "REG_IRR_CTL_2019_a1445f42_P0002_B042",
+          "REG_IRR_SIWRP_2026_80e590ea_P0002_B005",
+          "REG_IRR_CTL_2019_5278ca2b_P0003_B022",
+          "REG_IRR_CTL_2019_d9169102_P0003_B038",
+          "REG_IRR_CTL_2026_79f76fed_P0003_B013",
+          "REG_IRR_SIWRP_2026_80e590ea_P0005_B005",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0003_B001",
+          "REG_IRR_CTL_2019_a1445f42_P0002_B024",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B015",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0001_B011",
+          "REG_IRR_CTL_2026_79f76fed_P0005_B003",
+          "REG_IRR_CTL_2019_d9169102_P0003_B037",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B014",
+          "REG_IRR_SIWRP_2026_80e590ea_P0005_B001",
+          "REG_IRR_GOV_2023_29fb8ed6_P0004_B005",
+          "REG_IRR_CTL_2019_a1445f42_P0002_B025",
+          "REG_IRR_CTL_2025_1a40ba4e_P0008_B030"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TEXT_TABLE",
+        "prediction": {
+          "component_count": 1,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_1_CHAL_00182",
+        "question": "Theo Bản tin DB nguồn nước và KHSDN vùng NAM TRUNG BỘ - TUẦN 14/3/2025 ÷ 20/3/2025, chỉ tiêu Diện tích đáp ứng (ha) của Ninh Thuận là bao nhiêu và báo cáo nêu ngoại lệ hoặc lưu ý gì liên quan đến đối tượng này?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "MULTI",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2026_79f76fed_P0001_B015",
+          "TAB_IRR_CTL_2026_79f76fed_P0008_01",
+          "REG_IRR_CTL_2026_79f76fed_P0007_B002",
+          "REG_IRR_CTL_2026_79f76fed_P0007_B003",
+          "REG_IRR_CTL_2026_79f76fed_P0007_B001",
+          "REG_IRR_CTL_2026_79f76fed_P0006_B004",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0005_B020",
+          "REG_IRR_CTL_2026_79f76fed_P0008_B039",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B012",
+          "REG_IRR_CTL_2026_79f76fed_P0010_B039",
+          "REG_IRR_CTL_2026_79f76fed_P0006_B005",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B014",
+          "REG_IRR_GOV_2024_7f8a5df6_P0026_B001",
+          "TAB_IRR_CTL_2019_5278ca2b_P0005_01",
+          "REG_IRR_CTL_2026_79f76fed_P0006_B006",
+          "REG_IRR_CTL_2026_79f76fed_P0004_B001",
+          "REG_IRR_CTL_2026_79f76fed_P0010_B038",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B013",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B009",
+          "REG_IRR_CTL_2025_c5b0924e_P0011_B009"
+        ]
+      },
+      {
+        "fallback_reasons": [],
+        "fallback_to_e0": false,
+        "human_validated": false,
+        "modality": "TABLE_ONLY",
+        "prediction": {
+          "component_count": 1,
+          "reasons": [
+            {
+              "basis": "explicit question intent",
+              "matched_text": "bao nhieu",
+              "requirement": "VALUE",
+              "rule": "\\bbao nhieu\\b"
+            }
+          ],
+          "requirements": [
+            "VALUE"
+          ],
+          "status": "CERTAIN",
+          "uncertain_reason": null
+        },
+        "qa_id": "V3_CORE_00417",
+        "question": "Theo Bản tin DB nguồn nước và KHSDN vùng NAM TRUNG BỘ - TUẦN 14/3/2025 ÷ 20/3/2025, dung tích hiện tại của Bình Định được ghi nhận là bao nhiêu?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2025_fe5fdf2c_P0004_B015",
+          "REG_IRR_CTL_2019_5278ca2b_P0003_B022",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B012",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B015",
+          "REG_IRR_CTL_2026_79f76fed_P0003_B013",
+          "REG_IRR_CTL_2026_79f76fed_P0003_B015",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B014",
+          "REG_IRR_CTL_2026_79f76fed_P0004_B002",
+          "TAB_IRR_CTL_2026_79f76fed_P0008_01",
+          "REG_IRR_CTL_2026_79f76fed_P0004_B026",
+          "REG_IRR_CTL_2026_79f76fed_P0004_B001",
+          "REG_IRR_CTL_2026_79f76fed_P0003_B014",
+          "REG_IRR_CTL_2026_79f76fed_P0001_B013",
+          "REG_IRR_SIWRP_2026_80e590ea_P0002_B006",
+          "REG_IRR_CTL_2025_1a40ba4e_P0008_B030",
+          "REG_IRR_SIWRP_2026_80e590ea_P0002_B005",
+          "REG_IRR_CTL_2025_1a40ba4e_P0008_B013",
+          "REG_IRR_CTL_2026_79f76fed_P0010_B039",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0001_B011",
+          "REG_IRR_CTL_2025_fe5fdf2c_P0004_B025"
+        ]
+      },
+      {
+        "fallback_reasons": [
+          "NO_EXPLICIT_SUPPORTED_INTENT_PATTERN"
+        ],
+        "fallback_to_e0": true,
+        "human_validated": false,
+        "modality": "TEXT_ONLY",
+        "prediction": {
+          "component_count": 0,
+          "reasons": [],
+          "requirements": [],
+          "status": "UNCERTAIN",
+          "uncertain_reason": "NO_EXPLICIT_SUPPORTED_INTENT_PATTERN"
+        },
+        "qa_id": "V3_CORE_00122",
+        "question": "Về lượng mưa, Bản tin dự báo nguồn nước Lưu vực sông Thương (Từ 19/7 đến 25/7/2019) nêu thông tin cụ thể nào?",
+        "queue_status": "PENDING_HUMAN_REVIEW",
+        "retrieval_group": "SINGLE",
+        "selected_evidence_ids": [
+          "REG_IRR_CTL_2019_2154c957_P0005_B013",
+          "REG_IRR_CTL_2019_5278ca2b_P0006_B012",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B023",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B021",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B020",
+          "REG_IRR_CTL_2019_2154c957_P0005_B014",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B010",
+          "TAB_IRR_CTL_2019_1549026e_P0001_01",
+          "REG_IRR_CTL_2019_a1445f42_P0001_B007",
+          "REG_IRR_CTL_2019_1fc21515_P0004_B029",
+          "REG_IRR_CTL_2019_9b94947e_P0001_B009",
+          "REG_IRR_CTL_2019_5278ca2b_P0001_B025",
+          "TAB_IRR_CTL_2019_5278ca2b_P0001_01",
+          "REG_IRR_CTL_2019_1549026e_P0003_B024",
+          "REG_IRR_CTL_2019_d9169102_P0001_B008",
+          "REG_IRR_CTL_2019_1549026e_P0001_B029",
+          "REG_IRR_CTL_2019_0009185e_P0001_B026",
+          "REG_IRR_CTL_2019_645d37d3_P0001_B025",
+          "REG_IRR_CTL_2019_2154c957_P0001_B030",
+          "REG_IRR_CTL_2019_1fc21515_P0004_B031"
+        ]
+      }
+    ],
+    "sample_count": 30,
+    "selection": "deterministic balanced queue"
+  },
+  "prior_rule_based_false_positive_flags": {
+    "forecast": [
+      "V3_1_CHAL_00041",
+      "V3_1_CHAL_00162",
+      "V3_1_CHAL_00173",
+      "V3_1_CHAL_00198",
+      "V3_CORE_00017",
+      "V3_CORE_00031",
+      "V3_CORE_00034",
+      "V3_CORE_00036",
+      "V3_CORE_00040",
+      "V3_CORE_00042",
+      "V3_CORE_00043",
+      "V3_CORE_00052",
+      "V3_CORE_00080",
+      "V3_CORE_00081",
+      "V3_CORE_00083",
+      "V3_CORE_00096",
+      "V3_CORE_00120",
+      "V3_CORE_00122",
+      "V3_CORE_00125",
+      "V3_CORE_00158",
+      "V3_CORE_00187",
+      "V3_CORE_00351",
+      "V3_CORE_00352",
+      "V3_CORE_00353",
+      "V3_CORE_00354",
+      "V3_CORE_00355",
+      "V3_CORE_00356",
+      "V3_CORE_00400",
+      "V3_CORE_00401",
+      "V3_CORE_00402",
+      "V3_CORE_00403",
+      "V3_CORE_00404",
+      "V3_CORE_00405",
+      "V3_CORE_00406",
+      "V3_CORE_00407",
+      "V3_CORE_00408",
+      "V3_CORE_00409",
+      "V3_CORE_00410",
+      "V3_CORE_00422",
+      "V3_CORE_00423",
+      "V3_CORE_00424",
+      "V3_CORE_00425",
+      "V3_CORE_00426",
+      "V3_CORE_00427",
+      "V3_CORE_00428",
+      "V3_CORE_00429",
+      "V3_CORE_00430",
+      "V3_CORE_00431",
+      "V3_CORE_00432"
+    ],
+    "temporal_comparison": [
+      "V3_1_CHAL_00018",
+      "V3_1_CHAL_00032",
+      "V3_1_CHAL_00142",
+      "V3_1_CHAL_00144",
+      "V3_1_CHAL_00145",
+      "V3_1_CHAL_00148",
+      "V3_1_CHAL_00149",
+      "V3_1_CHAL_00151",
+      "V3_1_CHAL_00153",
+      "V3_1_CHAL_00162",
+      "V3_1_CHAL_00165",
+      "V3_1_CHAL_00171",
+      "V3_1_CHAL_00172",
+      "V3_1_CHAL_00174",
+      "V3_1_CHAL_00176",
+      "V3_1_CHAL_00182",
+      "V3_1_CHAL_00184",
+      "V3_1_CHAL_00185",
+      "V3_1_CHAL_00188",
+      "V3_1_CHAL_00192",
+      "V3_1_CHAL_00194",
+      "V3_1_CHAL_00195",
+      "V3_CORE_00017",
+      "V3_CORE_00026",
+      "V3_CORE_00028",
+      "V3_CORE_00031",
+      "V3_CORE_00034",
+      "V3_CORE_00036",
+      "V3_CORE_00038",
+      "V3_CORE_00040",
+      "V3_CORE_00042",
+      "V3_CORE_00043",
+      "V3_CORE_00052",
+      "V3_CORE_00077",
+      "V3_CORE_00080",
+      "V3_CORE_00083",
+      "V3_CORE_00087",
+      "V3_CORE_00096",
+      "V3_CORE_00122",
+      "V3_CORE_00124",
+      "V3_CORE_00125",
+      "V3_CORE_00158",
+      "V3_CORE_00160",
+      "V3_CORE_00187",
+      "V3_CORE_00189",
+      "V3_CORE_00217",
+      "V3_CORE_00244",
+      "V3_CORE_00283",
+      "V3_CORE_00298",
+      "V3_CORE_00351",
+      "V3_CORE_00352",
+      "V3_CORE_00353",
+      "V3_CORE_00354",
+      "V3_CORE_00355",
+      "V3_CORE_00356",
+      "V3_CORE_00401",
+      "V3_CORE_00402",
+      "V3_CORE_00404",
+      "V3_CORE_00405",
+      "V3_CORE_00406",
+      "V3_CORE_00407",
+      "V3_CORE_00408",
+      "V3_CORE_00409",
+      "V3_CORE_00411",
+      "V3_CORE_00412",
+      "V3_CORE_00413",
+      "V3_CORE_00414",
+      "V3_CORE_00415",
+      "V3_CORE_00416",
+      "V3_CORE_00417",
+      "V3_CORE_00418",
+      "V3_CORE_00419",
+      "V3_CORE_00420",
+      "V3_CORE_00421",
+      "V3_CORE_00422",
+      "V3_CORE_00423",
+      "V3_CORE_00424",
+      "V3_CORE_00425",
+      "V3_CORE_00426",
+      "V3_CORE_00427",
+      "V3_CORE_00428",
+      "V3_CORE_00429",
+      "V3_CORE_00430",
+      "V3_CORE_00431",
+      "V3_CORE_00432"
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "candidate_test_policy": "SEALED_NOT_PARSED; BYTE_HASH_ONLY",
+  "evaluation_split": "dev",
+  "methods": {
+    "A0": {
+      "representation": "RAW_SINGLE_VIEW",
+      "retrieval": "HARD_PAGE_REGION"
+    },
+    "A1": {
+      "representation": "RAW_SINGLE_VIEW",
+      "retrieval": "SOFT_HIERARCHY"
+    },
+    "A2": {
+      "representation": "MODALITY_AWARE_MULTI_VIEW",
+      "retrieval": "HARD_PAGE_REGION"
+    },
+    "A3": {
+      "representation": "MODALITY_AWARE_MULTI_VIEW",
+      "retrieval": "SOFT_HIERARCHY"
+    }
+  },
+  "model": {
+    "batch_size": 16,
+    "id": "intfloat/multilingual-e5-large",
+    "max_length": 512,
+    "normalize_embeddings": true,
+    "passage_prefix": "passage: ",
+    "query_prefix": "query: ",
+    "revision": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3"
+  },
+  "novelty_status": "UNVERIFIED_WORKING_METHOD_NAME",
+  "retrieval": {
+    "bm25": "FIXED_B2_CACHE",
+    "candidate_budget": 100,
+    "final_k": 20,
+    "hard_page_budget": 20,
+    "page_rank_limit": 100,
+    "page_representation": "P0_FIXED",
+    "rrf_k": 60,
+    "score_normalization": {
+      "fallback_multi_view": {
+        "alternate_dense": 0.0,
+        "bm25": 1.0,
+        "raw_dense": 1.0
+      },
+      "multi_view": {
+        "alternate_dense": 0.5,
+        "bm25": 1.0,
+        "raw_dense": 0.5
+      },
+      "rationale": "Dense-view weights sum to 1.0 in every representation so adding a view cannot create an unconditional score bonus.",
+      "raw_single_view": {
+        "bm25": 1.0,
+        "raw_dense": 1.0
+      }
+    },
+    "soft_page_lambda": 0.25
+  },
+  "statistics": {
+    "bootstrap_resamples": 1000,
+    "seed": 42
+  },
+  "version": "MASH_ER_V1",
+  "windowing": {
+    "aggregation": "max",
+    "content_tokens": 384,
+    "overlap_tokens": 128
+  }
+}

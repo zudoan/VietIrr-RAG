@@ -1,0 +1,18 @@
+{
+  "version": "B2.2",
+  "evaluation_split": "dev",
+  "seed": 42,
+  "bootstrap_resamples": 1000,
+  "page_representations": ["P0", "P2"],
+  "strategies": {
+    "S0": {"name": "Hard Page-to-Region", "page_budget": 10},
+    "S1": {"name": "Relaxed Page-to-Region", "page_budget": 20},
+    "S2": {"name": "Page plus Flat Rescue", "page_budget": 10, "page_quota": 0.7, "flat_quota": 0.3}
+  },
+  "candidate_budgets": [50, 100],
+  "diagnostic_candidate_budget": 200,
+  "final_k": [10, 20, 50],
+  "rrf_k": 60,
+  "flat_rescue": "deduplicated round-robin of flat BM25 and flat E5; candidates on selected pages excluded",
+  "candidate_test_policy": "SEALED_NOT_PARSED; BYTE_HASH_ONLY"
+}

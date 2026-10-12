@@ -1,0 +1,18 @@
+{
+  "EXPERIMENT_VALID": true,
+  "METHOD_PROMISING": false,
+  "PAPER_READY": false,
+  "blockers": [],
+  "candidate_test_sealed": true,
+  "limitations": [
+    "Dev was repeatedly used for method diagnosis; results are exploratory.",
+    "Only 8 independent multi-evidence gold signatures are available.",
+    "No Candidate Test or external benchmark was run.",
+    "Novelty has not been established against complete prior art."
+  ],
+  "recovered_qa": 2,
+  "recovered_unique_gold_signatures": 2,
+  "regressed_qa": 5,
+  "result_class": "STOP_MAR_ER_BRANCH",
+  "status": "PASS"
+}
