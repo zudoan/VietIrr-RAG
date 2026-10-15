@@ -1,0 +1,187 @@
+{
+  "suite": "VIETIRR_RAG_V4_4_MANDATORY_22",
+  "generated_at_utc": "2026-10-15T08:33:04.905192+00:00",
+  "total": 22,
+  "passed": 22,
+  "failed": 0,
+  "all_passed": true,
+  "candidate_test_accessed": false,
+  "results": [
+    {
+      "case_id": "C01",
+      "name": "corpus document missing",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "missing file rejected",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "C02",
+      "name": "canonical hash mismatch",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "wrong digest rejected",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "C03",
+      "name": "duplicate physical PDF",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "same digest under two IDs rejected",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "C04",
+      "name": "incorrect domain assignment",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "out-of-vocabulary assignment rejected",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "C05",
+      "name": "title suggests content but PDF does not",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "title metadata is not accepted as evidence",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "R06",
+      "name": "same facility name, different entities",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "ENTITY_COLLISION detected",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "R07",
+      "name": "same basin does not prove applicability",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "BASIN_ONLY_APPLICABILITY detected",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "R08",
+      "name": "draft treated as effective rule",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "DRAFT_AS_EFFECTIVE detected",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "R09",
+      "name": "invalid replacement relation",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "UNSUPPORTED_REPLACEMENT detected",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "R10",
+      "name": "same metric with incompatible times",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "INCOMPATIBLE_TIME_ROLE detected",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "R11",
+      "name": "same value with different units",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "INCOMPATIBLE_UNIT detected",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "R12",
+      "name": "unrelated evidence in a set",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "off-entity/off-topic member detected",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "Q13",
+      "name": "cross-document label with one source",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "single-source cross-document claim rejected",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "Q14",
+      "name": "multi-hop without dependency",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "broken dependency rejected",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "Q15",
+      "name": "arithmetic uses wrong table result",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "incorrect sum rejected",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "Q16",
+      "name": "extrema lacks complete scope",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "unproven maximum scope rejected",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "Q17",
+      "name": "duplicate question with altered entity",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "entity-swap template inflation detected",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "Q18",
+      "name": "legitimate simple factual QA",
+      "expected": "ACCEPT_VALID",
+      "passed": true,
+      "detail": "actual date/count QA accepted",
+      "fixture_type": "actual_positive"
+    },
+    {
+      "case_id": "Q19",
+      "name": "legitimate single-document comparison",
+      "expected": "ACCEPT_VALID",
+      "passed": true,
+      "detail": "actual time-scope comparison accepted",
+      "fixture_type": "actual_positive"
+    },
+    {
+      "case_id": "Q20",
+      "name": "legitimate real cross-document QA",
+      "expected": "ACCEPT_VALID",
+      "passed": true,
+      "detail": "two real documents plus registered relation accepted",
+      "fixture_type": "actual_positive"
+    },
+    {
+      "case_id": "Q21",
+      "name": "insufficient evidence scope",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "partial scope rejected",
+      "fixture_type": "synthetic_negative"
+    },
+    {
+      "case_id": "Q22",
+      "name": "frozen 38 modified",
+      "expected": "DETECT_INVALID",
+      "passed": true,
+      "detail": "checksum mutation is detected without changing the parent file",
+      "fixture_type": "synthetic_negative"
+    }
+  ]
+}

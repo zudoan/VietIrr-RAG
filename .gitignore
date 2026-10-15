@@ -44,6 +44,20 @@ Thumbs.db
 /r1.3/
 /*.zip
 
+# Local V4.4 audit and handoff workspaces (large, duplicate, or source-bearing)
+/.tmp/
+/VR4.4_new/
+/VR4_4_COMPLETE_AUDIT_HANDOFF/
+/VR4_4_SCIENTIFIC_DEEP_AUDIT_HANDOFF/
+
+# Canonical source-bearing artifacts retained locally; publish *_PUBLIC projections only
+/research/vietirr_v4_3/QA_FACT_VERIFICATION.csv
+/research/vietirr_v4_3/QA_MACHINE_SOURCE_CHECKS.jsonl
+/research/vietirr_v4_3/QA_SOURCE_VERIFICATION_GAPS.csv
+/research/vietirr_v4_4/baseline/PILOT_38_OPEN_ISSUES.md
+/research/vietirr_v4_4_deep_audit/packs/PACK_RELATION_AUDIT.jsonl
+/research/vietirr_v4_4_deep_audit/qa/QA_48_HUMAN_REVIEW_QUEUE.csv
+
 # Historical root reports superseded by V3.2 reports
 /CROSS_DOMAIN_COMPATIBILITY.md
 /DATASET_CARD.md

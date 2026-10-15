@@ -1,0 +1,16 @@
+{
+  "candidate_test_policy": "SEALED_NOT_OPENED_NOT_HASHED",
+  "files_read": [
+    "data/benchmark/train.jsonl",
+    "data/benchmark/dev.jsonl",
+    "data/qa/train.jsonl",
+    "data/qa/dev.jsonl",
+    "research/vietirr_v4_1/QA_GROUND_UP_PILOT.jsonl"
+  ],
+  "comparison_questions": 1081,
+  "new_qa": 38,
+  "exact_matches": [],
+  "near_matches_threshold_0_82": [],
+  "internal_near_duplicates": [],
+  "pass": true
+}

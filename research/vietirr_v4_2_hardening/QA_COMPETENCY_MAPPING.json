@@ -1,0 +1,46 @@
+{
+  "SINGLE_FACT_LOOKUP": {
+    "legacy": "Q01",
+    "definition": "one bounded fact"
+  },
+  "MULTI_FACT_LOOKUP": {
+    "legacy": "Q01",
+    "definition": "multiple answer components without arithmetic"
+  },
+  "QUANTITATIVE_COMPARISON": {
+    "legacy": "Q04",
+    "definition": "ordered relation over compatible quantities"
+  },
+  "VERIFIABLE_COMPUTATION": {
+    "legacy": "Q08",
+    "definition": "declared deterministic arithmetic"
+  },
+  "TEMPORAL_COMPARISON": {
+    "legacy": "Q05",
+    "definition": "aligned same-metric comparison over time"
+  },
+  "SINGLE_DOCUMENT_SYNTHESIS": {
+    "legacy": "Q06",
+    "definition": "necessary facts across sections of one canonical document"
+  },
+  "CROSS_DOCUMENT_SYNTHESIS": {
+    "legacy": "Q06",
+    "definition": "necessary facts from at least two canonical documents with verified relation"
+  },
+  "RULE_APPLICATION": {
+    "legacy": "Q03",
+    "definition": "applicable actor/action/scope/condition"
+  },
+  "CONDITION_EVALUATION": {
+    "legacy": "Q03",
+    "definition": "evaluate an explicit condition or threshold"
+  },
+  "VERSION_RESOLUTION": {
+    "legacy": "Q09",
+    "definition": "resolve version/effectivity"
+  },
+  "INSUFFICIENT_EVIDENCE": {
+    "legacy": "Q10",
+    "definition": "bounded abstention with named missing dependency"
+  }
+}

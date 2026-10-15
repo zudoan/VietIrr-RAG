@@ -1,0 +1,18 @@
+{
+  "BASELINE_48_QA_PRESERVED": true,
+  "BENCHMARK_EXPANSION_READY": "PARTIAL_CONTROLLED_EXPANSION_ONLY",
+  "CORPUS_SCREENING_COMPLETE": true,
+  "DEEP_CONTENT_AUDIT_COMPLETE": true,
+  "HUMAN_REVIEW_PENDING": true,
+  "LINKED_PACKS_SOURCE_SUPPORTED": "PARTIAL",
+  "NEW_QA_PILOT_COMPLETE": true,
+  "OFFICIAL_GOLD_READY": false,
+  "QA_SOURCE_QUALITY_ASSESSED": true,
+  "generated_at": "2026-10-15T09:51:00+00:00",
+  "limitations": [
+    "No QA is promoted to human gold.",
+    "Scanned numeric clauses require human page-image review.",
+    "Draft/unissued-looking documents are not treated as effective law.",
+    "Sông Hương chronology inconsistency is unresolved."
+  ]
+}

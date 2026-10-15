@@ -5,3 +5,6 @@
 *.jsonl text eol=lf
 *.csv text eol=lf
 reports/** linguist-generated=true
+
+# Frozen research manifests use byte-level SHA-256; preserve source bytes.
+research/** -text !eol diff

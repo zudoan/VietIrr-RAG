@@ -1,0 +1,258 @@
+{
+  "total": 50,
+  "passed": 50,
+  "failed": 0,
+  "all_pass": true,
+  "checks": [
+    {
+      "check": "required:DOMAIN_USE_CASE_COVERAGE.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_COVERAGE_MATRIX.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:COVERAGE_GAP_REPORT.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:EVIDENCE_BANK.jsonl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:EVIDENCE_RELATIONS.jsonl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:EVIDENCE_SET_CANDIDATES.jsonl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:EVIDENCE_BANK_AUDIT.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:V4_1_PILOT_REVIEW.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:V4_1_PILOT_REVIEW_REPORT.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_GENERATION_PROTOCOL.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_GENERATION_PIPELINE.py",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:V4_2_QA_DRAFTS.jsonl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:V4_2_QA_AUDIT.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_DUPLICATE_REPORT.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_VALIDATOR_PATCH.py",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_ADVERSARIAL_TESTS/TEST_RESULTS.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_MUTATION_TEST_REPORT.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_REPRODUCIBILITY_REPORT.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:V4_2_DATASET_QUALITY_REPORT.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:V4_2_BENCHMARK_READINESS.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "v4_1_and_frozen_inputs_unchanged",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "candidate_policy_sealed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "candidate_has_no_hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "coverage_26_cells",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "eligible_cells_18",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "coverage_gaps_disclosed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence_units_59",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence_eight_documents",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence_provenance_complete",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "relations_21",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_fake_verified_relations",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_gold_eligible_sets",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "pilot_all_10_reviewed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "pilot_decisions_honest",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "new_drafts_38",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "ground_up_lineage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "generation_order",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "all_eligible_cells_filled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_human_gold",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "validator_l1_l2_pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "human_layer_review",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "duplicate_audit_pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "duplicate_audit_excludes_candidate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "mutations_16_of_16",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "test13_reproduced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "readiness_not_overclaimed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "bundle_checksums",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "bundle_has_source_fixture",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "bundle_excludes_candidate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "bundle_excludes_pdfs",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "audit": "VIETIRR_RAG_V4_4_INDEPENDENT_ARTIFACT_AUDIT",
+  "generated_at_utc": "2026-10-15T08:33:13.168138+00:00",
+  "checks_total": 30,
+  "checks_passed": 30,
+  "checks_failed": 0,
+  "all_passed": true,
+  "candidate_test_accessed": false,
+  "human_verified_count": 0,
+  "official_gold_count": 0,
+  "checks": [
+    {
+      "check_id": "FROZEN_V4_2_QA_DRAFTS.jsonl",
+      "passed": true,
+      "detail": "parent artifact exists and matches frozen hash"
+    },
+    {
+      "check_id": "FROZEN_QA_EVIDENCE_REPAIR.jsonl",
+      "passed": true,
+      "detail": "parent artifact exists and matches frozen hash"
+    },
+    {
+      "check_id": "FROZEN_QA_38_FULL_AUDIT.csv",
+      "passed": true,
+      "detail": "parent artifact exists and matches frozen hash"
+    },
+    {
+      "check_id": "FROZEN_QA_SEMANTIC_CLUSTERS.json",
+      "passed": true,
+      "detail": "parent artifact exists and matches frozen hash"
+    },
+    {
+      "check_id": "FROZEN_QA_SOURCE_DOSSIERS.jsonl",
+      "passed": true,
+      "detail": "parent artifact exists and matches frozen hash"
+    },
+    {
+      "check_id": "FROZEN_QA_MACHINE_SOURCE_CHECKS.jsonl",
+      "passed": true,
+      "detail": "parent artifact exists and matches frozen hash"
+    },
+    {
+      "check_id": "FROZEN_QA_REVIEW_PRIORITY.csv",
+      "passed": true,
+      "detail": "parent artifact exists and matches frozen hash"
+    },
+    {
+      "check_id": "PILOT_COUNT",
+      "passed": true,
+      "detail": "38 records retained"
+    },
+    {
+      "check_id": "PILOT_KEEP_SCOPE",
+      "passed": true,
+      "detail": "KEEP means question retention only"
+    },
+    {
+      "check_id": "PILOT_DECISION_PROVENANCE",
+      "passed": true,
+      "detail": "decision provenance and source-status preservation are explicit"
+    },
+    {
+      "check_id": "NO_FAKE_PILOT_HUMAN",
+      "passed": true,
+      "detail": "no pilot promoted to human/gold"
+    },
+    {
+      "check_id": "PILOT_GOLD_POLICY",
+      "passed": true,
+      "detail": "KEEP never implies automatic gold"
+    },
+    {
+      "check_id": "CORPUS_CARDINALITY",
+      "passed": true,
+      "detail": "93 unique canonical documents profiled"
+    },
+    {
+      "check_id": "CORPUS_HASHES",
+      "passed": true,
+      "detail": "all 93 physical PDFs exist and match canonical hashes"
+    },
+    {
+      "check_id": "CORPUS_PROFILE_IDS",
+      "passed": true,
+      "detail": "profile set equals manifest set"
+    },
+    {
+      "check_id": "COVERAGE_LAYERS",
+      "passed": true,
+      "detail": "corpus breadth and typed-evidence depth are separated"
+    },
+    {
+      "check_id": "TYPED_EVIDENCE_DEPTH",
+      "passed": true,
+      "detail": "typed evidence currently covers 8 documents"
+    },
+    {
+      "check_id": "PACK_COUNTS",
+      "passed": true,
+      "detail": "3 selected packs and 7 explicit relations"
+    },
+    {
+      "check_id": "RELATION_STATUS",
+      "passed": true,
+      "detail": "no relation is mislabeled human-verified"
+    },
+    {
+      "check_id": "RELATION_DOCUMENTS",
+      "passed": true,
+      "detail": "relation endpoints are canonical or explicitly external"
+    },
+    {
+      "check_id": "PACK_EVIDENCE_PROVENANCE",
+      "passed": true,
+      "detail": "every pack evidence unit has document hash, page and source span"
+    },
+    {
+      "check_id": "QA_CARDINALITY",
+      "passed": true,
+      "detail": "10 non-quota-driven QA drafts"
+    },
+    {
+      "check_id": "QA_REVIEW_SEPARATION",
+      "passed": true,
+      "detail": "new QA remains pending human and non-gold"
+    },
+    {
+      "check_id": "QA_VALIDATION_STATUS",
+      "passed": true,
+      "detail": "expected 7/3 machine/review split"
+    },
+    {
+      "check_id": "QA_CROSS_DOCUMENT_REAL",
+      "passed": true,
+      "detail": "cross-document QA uses at least two source documents"
+    },
+    {
+      "check_id": "QA_ARITHMETIC",
+      "passed": true,
+      "detail": "all explicit arithmetic traces reproduce"
+    },
+    {
+      "check_id": "MANDATORY_TESTS",
+      "passed": true,
+      "detail": "22/22 mandatory tests pass"
+    },
+    {
+      "check_id": "BUNDLE_SOURCE_FREE",
+      "passed": true,
+      "detail": "review ZIP embeds no source PDF"
+    },
+    {
+      "check_id": "BUNDLE_CANDIDATE_TEST_FREE",
+      "passed": true,
+      "detail": "no Candidate Test path is bundled"
+    },
+    {
+      "check_id": "BUNDLE_HASHES",
+      "passed": true,
+      "detail": "bundled support files match manifest hashes"
+    }
+  ]
+}

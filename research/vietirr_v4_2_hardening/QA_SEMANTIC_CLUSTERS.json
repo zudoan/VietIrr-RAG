@@ -1,0 +1,1397 @@
+{
+  "fingerprint_schema_version": "1.0",
+  "qa_fingerprints": {
+    "V42-QA-001": {
+      "primary_source_families": [
+        "V4_CTTL_2025_77c60f84"
+      ],
+      "entities": [
+        "Hệ thống Bắc Nam Hà"
+      ],
+      "geographies": [
+        "Bắc Nam Hà"
+      ],
+      "metric_set": [
+        "diện tích tự nhiên"
+      ],
+      "time_scope": [
+        "2025"
+      ],
+      "underlying_facts": [
+        "EV001"
+      ],
+      "reasoning_operation": "LOOKUP",
+      "competency": "SINGLE_FACT_LOOKUP",
+      "business_intent": "Facility/system planning",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "d01929f4c37263e9cba48ec953e644d04a1ef3ecdd0615b9abc4c148300be702"
+    },
+    "V42-QA-002": {
+      "primary_source_families": [
+        "V4_CTTL_2025_77c60f84"
+      ],
+      "entities": [
+        "Hệ thống Bắc Nam Hà"
+      ],
+      "geographies": [
+        "Bắc Nam Hà"
+      ],
+      "metric_set": [
+        "diện tích ngoài đê",
+        "diện tích trong đê"
+      ],
+      "time_scope": [
+        "2025"
+      ],
+      "underlying_facts": [
+        "EV002",
+        "EV003"
+      ],
+      "reasoning_operation": "MULTI_LOOKUP",
+      "competency": "MULTI_FACT_LOOKUP",
+      "business_intent": "Facility/system planning",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "7dfa37669efeb3755f1f3a30a358f4c25627827800c7f3254ee39d7c49fdc72e"
+    },
+    "V42-QA-003": {
+      "primary_source_families": [
+        "V4_CTTL_2025_77c60f84"
+      ],
+      "entities": [
+        "Hệ thống Bắc Nam Hà"
+      ],
+      "geographies": [
+        "Bắc Nam Hà"
+      ],
+      "metric_set": [
+        "diện tích ngoài đê",
+        "diện tích trong đê",
+        "diện tích tự nhiên"
+      ],
+      "time_scope": [
+        "2025"
+      ],
+      "underlying_facts": [
+        "EV001",
+        "EV002",
+        "EV003"
+      ],
+      "reasoning_operation": "ARITHMETIC",
+      "competency": "VERIFIABLE_COMPUTATION",
+      "business_intent": "Identify named facilities and attributes",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "8b37facc9b3730f7d6f6c1ec627fc32f226f159c248a9cf2c5a320dcd84450a2"
+    },
+    "V42-QA-004": {
+      "primary_source_families": [
+        "V4_CTTL_2025_77c60f84"
+      ],
+      "entities": [
+        "Hệ thống Bắc Nam Hà"
+      ],
+      "geographies": [
+        "Bắc Nam Hà"
+      ],
+      "metric_set": [
+        "diện tích ngoài đê",
+        "diện tích trong đê"
+      ],
+      "time_scope": [
+        "2025"
+      ],
+      "underlying_facts": [
+        "EV002",
+        "EV003"
+      ],
+      "reasoning_operation": "COMPARE",
+      "competency": "QUANTITATIVE_COMPARISON",
+      "business_intent": "Identify named facilities and attributes",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "ab563330c759d8c2d76403d1d29978eafd33cae8dddbb3ad52e49b7216b60b4a"
+    },
+    "V42-QA-005": {
+      "primary_source_families": [
+        "V4_CTTL_2024_dda51c21"
+      ],
+      "entities": [
+        "Hệ thống Cái Lớn–Cái Bé"
+      ],
+      "geographies": [
+        "Kiên Giang; Hậu Giang"
+      ],
+      "metric_set": [
+        "diện tích tự nhiên"
+      ],
+      "time_scope": [
+        "dự thảo 2024"
+      ],
+      "underlying_facts": [
+        "EV010"
+      ],
+      "reasoning_operation": "LOOKUP",
+      "competency": "SINGLE_FACT_LOOKUP",
+      "business_intent": "Facility/system planning",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "a3414cf2191ffde2945874d9437ff256118fcd0264cbeafcf08666e5eff0eff1"
+    },
+    "V42-QA-006": {
+      "primary_source_families": [
+        "V4_CTTL_2024_dda51c21"
+      ],
+      "entities": [
+        "Hệ thống Cái Lớn–Cái Bé"
+      ],
+      "geographies": [
+        "Kiên Giang; Hậu Giang"
+      ],
+      "metric_set": [
+        "diện tích hưởng lợi trực tiếp",
+        "diện tích hỗ trợ"
+      ],
+      "time_scope": [
+        "dự thảo 2024"
+      ],
+      "underlying_facts": [
+        "EV011",
+        "EV012"
+      ],
+      "reasoning_operation": "ARITHMETIC",
+      "competency": "VERIFIABLE_COMPUTATION",
+      "business_intent": "Facility/system planning",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "c41f520130e816cc89934ed956d2613561b9fe52792d47674edce34f4c4d6eee"
+    },
+    "V42-QA-007": {
+      "primary_source_families": [
+        "IRR_GOV_2023_29fb8ed6"
+      ],
+      "entities": [
+        "Lưu vực sông Hương",
+        "Sông Hương"
+      ],
+      "geographies": [
+        "Thừa Thiên Huế"
+      ],
+      "metric_set": [
+        "chiều dài xấp xỉ",
+        "diện tích lưu vực xấp xỉ"
+      ],
+      "time_scope": [
+        "None"
+      ],
+      "underlying_facts": [
+        "EV024",
+        "EV025"
+      ],
+      "reasoning_operation": "MULTI_LOOKUP",
+      "competency": "MULTI_FACT_LOOKUP",
+      "business_intent": "Identify reservoir and basin attributes",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "42895ba28006bbb98b146e19a0bf64b0d01add38f8e8d213bc5961383015fde5"
+    },
+    "V42-QA-008": {
+      "primary_source_families": [
+        "IRR_GOV_2023_29fb8ed6"
+      ],
+      "entities": [
+        "Ba hồ chứa lưu vực sông Hương"
+      ],
+      "geographies": [
+        "Thừa Thiên Huế"
+      ],
+      "metric_set": [
+        "tên hồ chứa"
+      ],
+      "time_scope": [
+        "None"
+      ],
+      "underlying_facts": [
+        "EV026"
+      ],
+      "reasoning_operation": "MULTI_LOOKUP",
+      "competency": "MULTI_FACT_LOOKUP",
+      "business_intent": "Identify reservoir and basin attributes",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "917ce3494aea9c300ddcbdc2b5b181e8eeeedaf3828c2be726c01c119312a117"
+    },
+    "V42-QA-009": {
+      "primary_source_families": [
+        "V4_CTTL_2025_77c60f84"
+      ],
+      "entities": [
+        "Quy trình Bắc Nam Hà"
+      ],
+      "geographies": [
+        "Bắc Nam Hà"
+      ],
+      "metric_set": [
+        "văn bản bị thay thế"
+      ],
+      "time_scope": [
+        "từ ngày ký văn bản 2025"
+      ],
+      "underlying_facts": [
+        "EV004"
+      ],
+      "reasoning_operation": "VERSION_RESOLVE",
+      "competency": "VERSION_RESOLUTION",
+      "business_intent": "Resolve current procedure version",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "a56b85fc8357ac7e27aff79c74a7822f84caa773183fc070755e9d7dff92de21"
+    },
+    "V42-QA-010": {
+      "primary_source_families": [
+        "V4_CTTL_2024_dda51c21"
+      ],
+      "entities": [
+        "Hệ thống Cái Lớn–Cái Bé"
+      ],
+      "geographies": [
+        "Kiên Giang; Hậu Giang"
+      ],
+      "metric_set": [
+        "diện tích tự nhiên"
+      ],
+      "time_scope": [
+        "dự thảo 2024"
+      ],
+      "underlying_facts": [
+        "EV010"
+      ],
+      "reasoning_operation": "ABSTAIN",
+      "competency": "INSUFFICIENT_EVIDENCE",
+      "business_intent": "Detect non-applicable draft",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "89105972acbfb617415fdd411d9b7f28383e34bd349950e76ef26a4e64772e12"
+    },
+    "V42-QA-011": {
+      "primary_source_families": [
+        "V4_IWRP_2021_3031564c"
+      ],
+      "entities": [
+        "Vụ Đông Xuân 2021"
+      ],
+      "geographies": [
+        "Bắc Nam Hà"
+      ],
+      "metric_set": [
+        "đợt xả 1",
+        "đợt xả 2",
+        "đợt xả 3"
+      ],
+      "time_scope": [
+        "Đông Xuân 2021"
+      ],
+      "underlying_facts": [
+        "EV005",
+        "EV006",
+        "EV007"
+      ],
+      "reasoning_operation": "MULTI_LOOKUP",
+      "competency": "MULTI_FACT_LOOKUP",
+      "business_intent": "Retrieve forecast with target period",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "63781611e2d34f7d1c82642096eef3f429a40b5df970f5df6c18ee62df74d0c8"
+    },
+    "V42-QA-012": {
+      "primary_source_families": [
+        "V4_IWRP_2021_3031564c"
+      ],
+      "entities": [
+        "Vụ Đông Xuân 2021"
+      ],
+      "geographies": [
+        "Bắc Nam Hà"
+      ],
+      "metric_set": [
+        "đợt xả 1",
+        "đợt xả 2",
+        "đợt xả 3"
+      ],
+      "time_scope": [
+        "Đông Xuân 2021"
+      ],
+      "underlying_facts": [
+        "EV005",
+        "EV006",
+        "EV007"
+      ],
+      "reasoning_operation": "COMPARE",
+      "competency": "QUANTITATIVE_COMPARISON",
+      "business_intent": "Retrieve forecast with target period",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "d7c3f095c3ff1c92b2dc231a83f48527dc18787284c5e3ed4bba37c85e792ff4"
+    },
+    "V42-QA-013": {
+      "primary_source_families": [
+        "V4_IWRP_2021_3031564c"
+      ],
+      "entities": [
+        "Hà Nam",
+        "Nam Định"
+      ],
+      "geographies": [
+        "Hà Nam",
+        "Nam Định"
+      ],
+      "metric_set": [
+        "diện tích nguy cơ thiếu nước"
+      ],
+      "time_scope": [
+        "Đông Xuân 2020–2021"
+      ],
+      "underlying_facts": [
+        "EV008",
+        "EV009"
+      ],
+      "reasoning_operation": "COMPARE",
+      "competency": "QUANTITATIVE_COMPARISON",
+      "business_intent": "Compare shortage exposure",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "aee135b4f5c855ad8a510995a428aaccf8aeb3357034b69b07cde1d6a5b9750d"
+    },
+    "V42-QA-014": {
+      "primary_source_families": [
+        "V4_IWRP_2021_3031564c"
+      ],
+      "entities": [
+        "Hà Nam",
+        "Nam Định"
+      ],
+      "geographies": [
+        "Hà Nam",
+        "Nam Định"
+      ],
+      "metric_set": [
+        "diện tích nguy cơ thiếu nước"
+      ],
+      "time_scope": [
+        "Đông Xuân 2020–2021"
+      ],
+      "underlying_facts": [
+        "EV008",
+        "EV009"
+      ],
+      "reasoning_operation": "ARITHMETIC",
+      "competency": "VERIFIABLE_COMPUTATION",
+      "business_intent": "Compare shortage exposure",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "d775d517c558141f21ef7a1d158360e77cdcb25f43dae038041417c813a34aff"
+    },
+    "V42-QA-015": {
+      "primary_source_families": [
+        "IRR_GOV_2023_29fb8ed6"
+      ],
+      "entities": [
+        "Trạm Kim Long",
+        "Trạm Phú Ốc"
+      ],
+      "geographies": [
+        "Sông Hương"
+      ],
+      "metric_set": [
+        "đỉnh lũ xấp xỉ"
+      ],
+      "time_scope": [
+        "15/11/2023 khoảng 17:00",
+        "15/11/2023 khoảng 19:00"
+      ],
+      "underlying_facts": [
+        "EV027",
+        "EV028"
+      ],
+      "reasoning_operation": "COMPARE",
+      "competency": "QUANTITATIVE_COMPARISON",
+      "business_intent": "Compare observed river peaks",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "e34fffb8317a009d3dbd3716f15bfcfa9b462eb2ab907271e7b6dfaccb5900b3"
+    },
+    "V42-QA-016": {
+      "primary_source_families": [
+        "IRR_GOV_2023_29fb8ed6"
+      ],
+      "entities": [
+        "Trạm Kim Long",
+        "Trạm Phú Ốc"
+      ],
+      "geographies": [
+        "Sông Hương"
+      ],
+      "metric_set": [
+        "đỉnh lũ xấp xỉ"
+      ],
+      "time_scope": [
+        "15/11/2023 khoảng 17:00",
+        "15/11/2023 khoảng 19:00"
+      ],
+      "underlying_facts": [
+        "EV027",
+        "EV028"
+      ],
+      "reasoning_operation": "ARITHMETIC",
+      "competency": "VERIFIABLE_COMPUTATION",
+      "business_intent": "Compare observed river peaks",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "104be95b488640a4a4c693a3a044f77fd253bbfba98fbac35fb6c9c448980023"
+    },
+    "V42-QA-017": {
+      "primary_source_families": [
+        "IRR_CTL_2024_4182a0d7"
+      ],
+      "entities": [
+        "Lịch lấy nước Đông Xuân"
+      ],
+      "geographies": [
+        "Trung du và Đồng bằng Bắc Bộ"
+      ],
+      "metric_set": [
+        "đợt lấy nước 1",
+        "đợt lấy nước 2"
+      ],
+      "time_scope": [
+        "Đông Xuân 2024–2025"
+      ],
+      "underlying_facts": [
+        "EV019",
+        "EV020"
+      ],
+      "reasoning_operation": "MULTI_LOOKUP",
+      "competency": "MULTI_FACT_LOOKUP",
+      "business_intent": "Retrieve irrigation release windows",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "b59981390a3bb95f22d1c29fa2668f1e6d8fddd0a256c4a40255b78b00c32341"
+    },
+    "V42-QA-018": {
+      "primary_source_families": [
+        "IRR_CTL_2024_4182a0d7"
+      ],
+      "entities": [
+        "Lịch lấy nước Đông Xuân"
+      ],
+      "geographies": [
+        "Trung du và Đồng bằng Bắc Bộ"
+      ],
+      "metric_set": [
+        "tổng thời gian lấy nước",
+        "đợt lấy nước 1",
+        "đợt lấy nước 2"
+      ],
+      "time_scope": [
+        "Đông Xuân 2024–2025"
+      ],
+      "underlying_facts": [
+        "EV018",
+        "EV019",
+        "EV020"
+      ],
+      "reasoning_operation": "ARITHMETIC",
+      "competency": "VERIFIABLE_COMPUTATION",
+      "business_intent": "Retrieve irrigation release windows",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "a47fb08cfe0a6ef1e36e392d4f8aba3b3be6fdad08c1abd9f08da91ca223f3ca"
+    },
+    "V42-QA-019": {
+      "primary_source_families": [
+        "IRR_CTL_2024_4182a0d7"
+      ],
+      "entities": [
+        "Lịch lấy nước Đông Xuân"
+      ],
+      "geographies": [
+        "Trung du và Đồng bằng Bắc Bộ"
+      ],
+      "metric_set": [
+        "tổng thời gian lấy nước"
+      ],
+      "time_scope": [
+        "Đông Xuân 2024–2025"
+      ],
+      "underlying_facts": [
+        "EV018"
+      ],
+      "reasoning_operation": "LOOKUP",
+      "competency": "SINGLE_FACT_LOOKUP",
+      "business_intent": "Retrieve irrigation release windows",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "8b05ecacdccccb019a98e319aa1810fb63d26653b05ae7196f98c950e9c9b72e"
+    },
+    "V42-QA-020": {
+      "primary_source_families": [
+        "IRR_CTL_2024_4182a0d7"
+      ],
+      "entities": [
+        "Công trình lấy nước Bắc Hưng Hải"
+      ],
+      "geographies": [
+        "Bắc Hưng Hải"
+      ],
+      "metric_set": [
+        "ngưỡng độ mặn lấy nước"
+      ],
+      "time_scope": [
+        "Đông Xuân 2024–2025"
+      ],
+      "underlying_facts": [
+        "EV023"
+      ],
+      "reasoning_operation": "CONDITION_MATCH",
+      "competency": "CONDITION_EVALUATION",
+      "business_intent": "Interpret operational condition",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "98be4d384012b1cb4dd19a818e754091bdd780d8c6825323a106dbd4bd86b280"
+    },
+    "V42-QA-021": {
+      "primary_source_families": [
+        "IRR_CTL_2025_57989573"
+      ],
+      "entities": [
+        "Bản tin tuần kỳ 9",
+        "Điểm CL1"
+      ],
+      "geographies": [
+        "Cái Lớn–Cái Bé"
+      ],
+      "metric_set": [
+        "WQI",
+        "ngày lấy mẫu",
+        "độ mặn"
+      ],
+      "time_scope": [
+        "28/04/2025"
+      ],
+      "underlying_facts": [
+        "EV045",
+        "EV046",
+        "EV047"
+      ],
+      "reasoning_operation": "SYNTHESIZE_WITHIN_DOCUMENT",
+      "competency": "SINGLE_DOCUMENT_SYNTHESIS",
+      "business_intent": "Retrieve station measurement",
+      "dependency_pattern": "CROSS_PAGE",
+      "sha256": "09b5e3745bf5f96d3051c8ac1ab500d72528a04a218962d5653cdd8056b83fc0"
+    },
+    "V42-QA-022": {
+      "primary_source_families": [
+        "IRR_CTL_2025_57989573"
+      ],
+      "entities": [
+        "Bản tin tuần kỳ 9",
+        "Điểm CL10"
+      ],
+      "geographies": [
+        "Cái Lớn–Cái Bé"
+      ],
+      "metric_set": [
+        "ngày lấy mẫu",
+        "độ mặn"
+      ],
+      "time_scope": [
+        "28/04/2025"
+      ],
+      "underlying_facts": [
+        "EV045",
+        "EV049"
+      ],
+      "reasoning_operation": "LOOKUP",
+      "competency": "SINGLE_FACT_LOOKUP",
+      "business_intent": "Retrieve station measurement",
+      "dependency_pattern": "CROSS_PAGE",
+      "sha256": "331bf0a5728c00fc2325c2086728e9664795daac6cfd904634d358572942c5a6"
+    },
+    "V42-QA-023": {
+      "primary_source_families": [
+        "IRR_CTL_2025_57989573"
+      ],
+      "entities": [
+        "Bản tin tuần kỳ 9",
+        "Điểm CL1"
+      ],
+      "geographies": [
+        "Cái Lớn–Cái Bé"
+      ],
+      "metric_set": [
+        "WQI",
+        "ngày lấy mẫu"
+      ],
+      "time_scope": [
+        "28/04/2025"
+      ],
+      "underlying_facts": [
+        "EV045",
+        "EV047"
+      ],
+      "reasoning_operation": "LOOKUP",
+      "competency": "SINGLE_FACT_LOOKUP",
+      "business_intent": "Retrieve station measurement",
+      "dependency_pattern": "CROSS_PAGE",
+      "sha256": "67e4ec179850cfaa33e57d0e6e488ac609268989a329108855a390605894c8ed"
+    },
+    "V42-QA-024": {
+      "primary_source_families": [
+        "IRR_CTL_2025_c3d033a0"
+      ],
+      "entities": [
+        "Điểm CL1"
+      ],
+      "geographies": [
+        "Cái Lớn–Cái Bé"
+      ],
+      "metric_set": [
+        "độ mặn dự báo lớn nhất",
+        "độ mặn dự báo nhỏ nhất",
+        "độ mặn dự báo trung bình"
+      ],
+      "time_scope": [
+        "04/2025"
+      ],
+      "underlying_facts": [
+        "EV054",
+        "EV055",
+        "EV056"
+      ],
+      "reasoning_operation": "MULTI_LOOKUP",
+      "competency": "MULTI_FACT_LOOKUP",
+      "business_intent": "Retrieve forecast extrema",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "b993d72bfbe52caf5707d2f119fd523c784ef9e5a4d0dc0d0d3fa414560ba506"
+    },
+    "V42-QA-025": {
+      "primary_source_families": [
+        "IRR_CTL_2025_c3d033a0"
+      ],
+      "entities": [
+        "Điểm CL1"
+      ],
+      "geographies": [
+        "Cái Lớn–Cái Bé"
+      ],
+      "metric_set": [
+        "độ mặn dự báo lớn nhất",
+        "độ mặn dự báo nhỏ nhất"
+      ],
+      "time_scope": [
+        "04/2025"
+      ],
+      "underlying_facts": [
+        "EV054",
+        "EV056"
+      ],
+      "reasoning_operation": "ARITHMETIC",
+      "competency": "VERIFIABLE_COMPUTATION",
+      "business_intent": "Retrieve forecast extrema",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "4f16565a1c1013a14ac6da50793233310dd7c92974cbc159cc43b922660938c7"
+    },
+    "V42-QA-026": {
+      "primary_source_families": [
+        "IRR_CTL_2025_c3d033a0"
+      ],
+      "entities": [
+        "15 vị trí dự báo",
+        "Mạng điểm dự báo"
+      ],
+      "geographies": [
+        "Cái Lớn–Cái Bé"
+      ],
+      "metric_set": [
+        "số vị trí",
+        "độ mặn dự báo lớn nhất",
+        "độ mặn dự báo nhỏ nhất"
+      ],
+      "time_scope": [
+        "04/2025"
+      ],
+      "underlying_facts": [
+        "EV053",
+        "EV057",
+        "EV058"
+      ],
+      "reasoning_operation": "SYNTHESIZE_WITHIN_DOCUMENT",
+      "competency": "SINGLE_DOCUMENT_SYNTHESIS",
+      "business_intent": "Retrieve forecast extrema",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "f0ac1a99c5fe73cda6940c0708bc233c466c85d93428c8de63fdfb9981fa348a"
+    },
+    "V42-QA-027": {
+      "primary_source_families": [
+        "IRR_CTL_2025_c3d033a0"
+      ],
+      "entities": [
+        "15 vị trí dự báo",
+        "Mạng điểm dự báo",
+        "Điểm CL11"
+      ],
+      "geographies": [
+        "Cái Lớn–Cái Bé"
+      ],
+      "metric_set": [
+        "số vị trí",
+        "độ mặn dự báo lớn nhất"
+      ],
+      "time_scope": [
+        "04/2025"
+      ],
+      "underlying_facts": [
+        "EV053",
+        "EV057",
+        "EV059"
+      ],
+      "reasoning_operation": "SYNTHESIZE_WITHIN_DOCUMENT",
+      "competency": "SINGLE_DOCUMENT_SYNTHESIS",
+      "business_intent": "Retrieve forecast extrema",
+      "dependency_pattern": "CROSS_PAGE",
+      "sha256": "1372ae62f7b2786fe3c7255197ccf59b49972ca05819d5b9f9250bf7efe497f1"
+    },
+    "V42-QA-028": {
+      "primary_source_families": [
+        "IRR_CTL_2025_57989573"
+      ],
+      "entities": [
+        "Bản tin tuần kỳ 9",
+        "Thang phân loại WQI",
+        "Điểm CL1"
+      ],
+      "geographies": [
+        "Cái Lớn–Cái Bé",
+        "Việt Nam"
+      ],
+      "metric_set": [
+        "WQI",
+        "mức WQI Trung bình",
+        "ngày lấy mẫu"
+      ],
+      "time_scope": [
+        "28/04/2025",
+        "None"
+      ],
+      "underlying_facts": [
+        "EV045",
+        "EV047",
+        "EV048"
+      ],
+      "reasoning_operation": "SYNTHESIZE_WITHIN_DOCUMENT",
+      "competency": "SINGLE_DOCUMENT_SYNTHESIS",
+      "business_intent": "Map index to source class",
+      "dependency_pattern": "CROSS_PAGE",
+      "sha256": "d48dbc98371d57af41a3e2c4883e1a13aa86dffd814e8cb5486ba79994875498"
+    },
+    "V42-QA-029": {
+      "primary_source_families": [
+        "V4_BNNMT_2025_594e7382"
+      ],
+      "entities": [
+        "Thiên tai Việt Nam"
+      ],
+      "geographies": [
+        "Việt Nam"
+      ],
+      "metric_set": [
+        "người chết hoặc mất tích",
+        "thiệt hại kinh tế ước tính"
+      ],
+      "time_scope": [
+        "2024"
+      ],
+      "underlying_facts": [
+        "EV013",
+        "EV014"
+      ],
+      "reasoning_operation": "MULTI_LOOKUP",
+      "competency": "MULTI_FACT_LOOKUP",
+      "business_intent": "Retrieve reported impacts",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "36710de706e9969f18e5a5bf63c68e0136ca6b706d7480eef81f28870d6f48e0"
+    },
+    "V42-QA-030": {
+      "primary_source_families": [
+        "V4_BNNMT_2025_594e7382"
+      ],
+      "entities": [
+        "Thiên tai Việt Nam"
+      ],
+      "geographies": [
+        "Việt Nam"
+      ],
+      "metric_set": [
+        "người chết hoặc mất tích",
+        "thiệt hại kinh tế ước tính"
+      ],
+      "time_scope": [
+        "2024"
+      ],
+      "underlying_facts": [
+        "EV013",
+        "EV014"
+      ],
+      "reasoning_operation": "MULTI_LOOKUP",
+      "competency": "MULTI_FACT_LOOKUP",
+      "business_intent": "Retrieve reported impacts",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "36710de706e9969f18e5a5bf63c68e0136ca6b706d7480eef81f28870d6f48e0"
+    },
+    "V42-QA-031": {
+      "primary_source_families": [
+        "V4_BNNMT_2025_594e7382"
+      ],
+      "entities": [
+        "Cơ quan quản lý công trình"
+      ],
+      "geographies": [
+        "Việt Nam"
+      ],
+      "metric_set": [
+        "nhiệm vụ kiểm tra"
+      ],
+      "time_scope": [
+        "mùa mưa lũ 2025"
+      ],
+      "underlying_facts": [
+        "EV015"
+      ],
+      "reasoning_operation": "RULE_SCOPE",
+      "competency": "RULE_APPLICATION",
+      "business_intent": "Retrieve actor/action",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "c8f5880e3f547042714decca94de221430657f31921f242bdd58f9130d3d97da"
+    },
+    "V42-QA-032": {
+      "primary_source_families": [
+        "V4_BNNMT_2025_594e7382"
+      ],
+      "entities": [
+        "Cơ quan quản lý công trình",
+        "Đơn vị quản lý khai thác"
+      ],
+      "geographies": [
+        "Việt Nam"
+      ],
+      "metric_set": [
+        "nhiệm vụ bảo trì",
+        "nhiệm vụ vận hành"
+      ],
+      "time_scope": [
+        "2025"
+      ],
+      "underlying_facts": [
+        "EV016",
+        "EV017"
+      ],
+      "reasoning_operation": "SYNTHESIZE_WITHIN_DOCUMENT",
+      "competency": "SINGLE_DOCUMENT_SYNTHESIS",
+      "business_intent": "Retrieve actor/action",
+      "dependency_pattern": "CROSS_PAGE",
+      "sha256": "1318799f90c25aa3f217d8f49b332892d42aeb1d8e03600bf45429184c4898ee"
+    },
+    "V42-QA-033": {
+      "primary_source_families": [
+        "V4_BNNMT_2025_594e7382"
+      ],
+      "entities": [
+        "Cơ quan quản lý công trình"
+      ],
+      "geographies": [
+        "Việt Nam"
+      ],
+      "metric_set": [
+        "nhiệm vụ kiểm tra"
+      ],
+      "time_scope": [
+        "mùa mưa lũ 2025"
+      ],
+      "underlying_facts": [
+        "EV015"
+      ],
+      "reasoning_operation": "ABSTAIN",
+      "competency": "INSUFFICIENT_EVIDENCE",
+      "business_intent": "Detect missing inspection evidence",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "7f4dca9fe966095d6aee765f0eeb8b3afd4613c4fe04b1e4beac554c20ca9f19"
+    },
+    "V42-QA-034": {
+      "primary_source_families": [
+        "IRR_GOV_2023_29fb8ed6"
+      ],
+      "entities": [
+        "Hồ Bình Điền"
+      ],
+      "geographies": [
+        "Sông Hương"
+      ],
+      "metric_set": [
+        "lưu lượng xả xấp xỉ",
+        "lưu lượng đến xấp xỉ"
+      ],
+      "time_scope": [
+        "lũ 11/2023"
+      ],
+      "underlying_facts": [
+        "EV029",
+        "EV030"
+      ],
+      "reasoning_operation": "ARITHMETIC",
+      "competency": "VERIFIABLE_COMPUTATION",
+      "business_intent": "Compare reservoir storage/inflow facts",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "aa19d0ddb28b04556cb37db5bd0f6179085fe5864f9d286ebac4661a7338c919"
+    },
+    "V42-QA-035": {
+      "primary_source_families": [
+        "IRR_GOV_2023_29fb8ed6"
+      ],
+      "entities": [
+        "Hồ Bình Điền",
+        "Hồ Hương Điền",
+        "Hồ Tả Trạch"
+      ],
+      "geographies": [
+        "Sông Hương"
+      ],
+      "metric_set": [
+        "lưu lượng xả xấp xỉ",
+        "lưu lượng đến xấp xỉ"
+      ],
+      "time_scope": [
+        "lũ 11/2023"
+      ],
+      "underlying_facts": [
+        "EV029",
+        "EV030",
+        "EV031",
+        "EV032",
+        "EV033",
+        "EV034"
+      ],
+      "reasoning_operation": "COMPARE",
+      "competency": "QUANTITATIVE_COMPARISON",
+      "business_intent": "Compare reservoir storage/inflow facts",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "7ec4ffaf7d1a0141fdef6b814d8e5f6f516ac22cdadf65bd83931fbe54382afe"
+    },
+    "V42-QA-036": {
+      "primary_source_families": [
+        "IRR_GOV_2023_29fb8ed6"
+      ],
+      "entities": [
+        "Hồ Hương Điền"
+      ],
+      "geographies": [
+        "Sông Hương"
+      ],
+      "metric_set": [
+        "lưu lượng xả xấp xỉ",
+        "lưu lượng đến xấp xỉ"
+      ],
+      "time_scope": [
+        "lũ 11/2023"
+      ],
+      "underlying_facts": [
+        "EV033",
+        "EV034"
+      ],
+      "reasoning_operation": "ARITHMETIC",
+      "competency": "VERIFIABLE_COMPUTATION",
+      "business_intent": "Compare reservoir storage/inflow facts",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "ca4061a72a326e263549acd261d157cdfab8140f3835825563a136ba391bd083"
+    },
+    "V42-QA-037": {
+      "primary_source_families": [
+        "IRR_GOV_2023_29fb8ed6"
+      ],
+      "entities": [
+        "Ba hồ lưu vực sông Hương",
+        "Hồ Bình Điền",
+        "Hồ Hương Điền",
+        "Hồ Tả Trạch"
+      ],
+      "geographies": [
+        "Sông Hương"
+      ],
+      "metric_set": [
+        "dung tích cắt lũ xấp xỉ",
+        "tổng dung tích cắt lũ xấp xỉ"
+      ],
+      "time_scope": [
+        "lũ 11/2023"
+      ],
+      "underlying_facts": [
+        "EV035",
+        "EV036",
+        "EV037",
+        "EV038"
+      ],
+      "reasoning_operation": "ARITHMETIC",
+      "competency": "VERIFIABLE_COMPUTATION",
+      "business_intent": "Compare reservoir storage/inflow facts",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "804f711da4f2cbc08a333f830ba30078cea5814c10299e630c3d6766636659e2"
+    },
+    "V42-QA-038": {
+      "primary_source_families": [
+        "IRR_GOV_2023_29fb8ed6"
+      ],
+      "entities": [
+        "Hồ Bình Điền",
+        "Hồ Hương Điền",
+        "Hồ Tả Trạch"
+      ],
+      "geographies": [
+        "Sông Hương"
+      ],
+      "metric_set": [
+        "dung tích cắt lũ xấp xỉ"
+      ],
+      "time_scope": [
+        "lũ 11/2023"
+      ],
+      "underlying_facts": [
+        "EV035",
+        "EV036",
+        "EV037"
+      ],
+      "reasoning_operation": "COMPARE",
+      "competency": "QUANTITATIVE_COMPARISON",
+      "business_intent": "Compare reservoir storage/inflow facts",
+      "dependency_pattern": "SAME_PAGE",
+      "sha256": "4a57a4770baf3ede6ddde319b72898038cb3e06463e5aa21b2e19b1e709f7cbb"
+    }
+  },
+  "clusters": [
+    {
+      "cluster_id": "CL01",
+      "title": "Bắc Nam Hà area decomposition",
+      "classification": "SAME_FACT_DIFFERENT_COMPETENCY",
+      "qa_ids": [
+        "V42-QA-001",
+        "V42-QA-002",
+        "V42-QA-003",
+        "V42-QA-004"
+      ],
+      "size": 4,
+      "shared_facts": [],
+      "reasoning_operations": [
+        "ARITHMETIC",
+        "COMPARE",
+        "LOOKUP",
+        "MULTI_LOOKUP"
+      ],
+      "decisions": {
+        "V42-QA-001": "KEEP",
+        "V42-QA-002": "REJECT",
+        "V42-QA-003": "KEEP",
+        "V42-QA-004": "REVISE"
+      },
+      "new_capability_contribution": {
+        "V42-QA-001": "bounded fact retrieval",
+        "V42-QA-002": "coordinated extraction of distinct answer components",
+        "V42-QA-003": "reproducible arithmetic over source operands",
+        "V42-QA-004": "ordered quantitative decision"
+      },
+      "rationale": "Retain only distinct evaluation behavior; repeated entity-swapped templates are rejected or rewritten."
+    },
+    {
+      "cluster_id": "CL02",
+      "title": "Cái Lớn–Cái Bé draft area",
+      "classification": "SAME_FACT_DIFFERENT_COMPETENCY",
+      "qa_ids": [
+        "V42-QA-005",
+        "V42-QA-006"
+      ],
+      "size": 2,
+      "shared_facts": [],
+      "reasoning_operations": [
+        "ARITHMETIC",
+        "LOOKUP"
+      ],
+      "decisions": {
+        "V42-QA-005": "KEEP",
+        "V42-QA-006": "KEEP"
+      },
+      "new_capability_contribution": {
+        "V42-QA-005": "bounded fact retrieval",
+        "V42-QA-006": "reproducible arithmetic over source operands"
+      },
+      "rationale": "Retain only distinct evaluation behavior; repeated entity-swapped templates are rejected or rewritten."
+    },
+    {
+      "cluster_id": "CL03",
+      "title": "2021 release windows",
+      "classification": "SAME_FACT_DIFFERENT_COMPETENCY",
+      "qa_ids": [
+        "V42-QA-011",
+        "V42-QA-012"
+      ],
+      "size": 2,
+      "shared_facts": [
+        "EV005",
+        "EV006",
+        "EV007"
+      ],
+      "reasoning_operations": [
+        "COMPARE",
+        "MULTI_LOOKUP"
+      ],
+      "decisions": {
+        "V42-QA-011": "KEEP",
+        "V42-QA-012": "REVISE"
+      },
+      "new_capability_contribution": {
+        "V42-QA-011": "coordinated extraction of distinct answer components",
+        "V42-QA-012": "ordered quantitative decision"
+      },
+      "rationale": "Retain only distinct evaluation behavior; repeated entity-swapped templates are rejected or rewritten."
+    },
+    {
+      "cluster_id": "CL04",
+      "title": "drought-exposure operands",
+      "classification": "SAME_FACT_DIFFERENT_COMPETENCY",
+      "qa_ids": [
+        "V42-QA-013",
+        "V42-QA-014"
+      ],
+      "size": 2,
+      "shared_facts": [
+        "EV008",
+        "EV009"
+      ],
+      "reasoning_operations": [
+        "ARITHMETIC",
+        "COMPARE"
+      ],
+      "decisions": {
+        "V42-QA-013": "KEEP",
+        "V42-QA-014": "KEEP"
+      },
+      "new_capability_contribution": {
+        "V42-QA-013": "ordered quantitative decision",
+        "V42-QA-014": "reproducible arithmetic over source operands"
+      },
+      "rationale": "Retain only distinct evaluation behavior; repeated entity-swapped templates are rejected or rewritten."
+    },
+    {
+      "cluster_id": "CL05",
+      "title": "river peak operands",
+      "classification": "SAME_FACT_DIFFERENT_COMPETENCY",
+      "qa_ids": [
+        "V42-QA-015",
+        "V42-QA-016"
+      ],
+      "size": 2,
+      "shared_facts": [
+        "EV027",
+        "EV028"
+      ],
+      "reasoning_operations": [
+        "ARITHMETIC",
+        "COMPARE"
+      ],
+      "decisions": {
+        "V42-QA-015": "REJECT",
+        "V42-QA-016": "KEEP"
+      },
+      "new_capability_contribution": {
+        "V42-QA-015": "ordered quantitative decision",
+        "V42-QA-016": "reproducible arithmetic over source operands"
+      },
+      "rationale": "Retain only distinct evaluation behavior; repeated entity-swapped templates are rejected or rewritten."
+    },
+    {
+      "cluster_id": "CL06",
+      "title": "2024–2025 intake schedule",
+      "classification": "SAME_FACT_DIFFERENT_COMPETENCY",
+      "qa_ids": [
+        "V42-QA-017",
+        "V42-QA-018",
+        "V42-QA-019"
+      ],
+      "size": 3,
+      "shared_facts": [],
+      "reasoning_operations": [
+        "ARITHMETIC",
+        "LOOKUP",
+        "MULTI_LOOKUP"
+      ],
+      "decisions": {
+        "V42-QA-017": "KEEP",
+        "V42-QA-018": "KEEP",
+        "V42-QA-019": "REJECT"
+      },
+      "new_capability_contribution": {
+        "V42-QA-017": "coordinated extraction of distinct answer components",
+        "V42-QA-018": "reproducible arithmetic over source operands",
+        "V42-QA-019": "bounded fact retrieval"
+      },
+      "rationale": "Retain only distinct evaluation behavior; repeated entity-swapped templates are rejected or rewritten."
+    },
+    {
+      "cluster_id": "CL07",
+      "title": "CL1 WQI observation",
+      "classification": "SAME_FACT_DIFFERENT_COMPETENCY",
+      "qa_ids": [
+        "V42-QA-021",
+        "V42-QA-023",
+        "V42-QA-028"
+      ],
+      "size": 3,
+      "shared_facts": [
+        "EV045",
+        "EV047"
+      ],
+      "reasoning_operations": [
+        "LOOKUP",
+        "SYNTHESIZE_WITHIN_DOCUMENT"
+      ],
+      "decisions": {
+        "V42-QA-021": "REVISE",
+        "V42-QA-023": "REJECT",
+        "V42-QA-028": "REVISE"
+      },
+      "new_capability_contribution": {
+        "V42-QA-021": "cross-section synthesis within one canonical PDF",
+        "V42-QA-023": "bounded fact retrieval",
+        "V42-QA-028": "cross-section synthesis within one canonical PDF"
+      },
+      "rationale": "Retain only distinct evaluation behavior; repeated entity-swapped templates are rejected or rewritten."
+    },
+    {
+      "cluster_id": "CL08",
+      "title": "April salinity forecast",
+      "classification": "SAME_SOURCE_FAMILY_RELATED_FACTS",
+      "qa_ids": [
+        "V42-QA-024",
+        "V42-QA-025",
+        "V42-QA-026",
+        "V42-QA-027"
+      ],
+      "size": 4,
+      "shared_facts": [],
+      "reasoning_operations": [
+        "ARITHMETIC",
+        "MULTI_LOOKUP",
+        "SYNTHESIZE_WITHIN_DOCUMENT"
+      ],
+      "decisions": {
+        "V42-QA-024": "KEEP",
+        "V42-QA-025": "REVISE",
+        "V42-QA-026": "REVISE",
+        "V42-QA-027": "KEEP"
+      },
+      "new_capability_contribution": {
+        "V42-QA-024": "coordinated extraction of distinct answer components",
+        "V42-QA-025": "reproducible arithmetic over source operands",
+        "V42-QA-026": "cross-section synthesis within one canonical PDF",
+        "V42-QA-027": "cross-section synthesis within one canonical PDF"
+      },
+      "rationale": "Retain only distinct evaluation behavior; repeated entity-swapped templates are rejected or rewritten."
+    },
+    {
+      "cluster_id": "CL09",
+      "title": "2024 disaster impact figures",
+      "classification": "SAME_FACT_DIFFERENT_COMPETENCY",
+      "qa_ids": [
+        "V42-QA-029",
+        "V42-QA-030"
+      ],
+      "size": 2,
+      "shared_facts": [
+        "EV013",
+        "EV014"
+      ],
+      "reasoning_operations": [
+        "MULTI_LOOKUP"
+      ],
+      "decisions": {
+        "V42-QA-029": "KEEP",
+        "V42-QA-030": "KEEP"
+      },
+      "new_capability_contribution": {
+        "V42-QA-029": "coordinated extraction of distinct answer components",
+        "V42-QA-030": "coordinated extraction of distinct answer components"
+      },
+      "rationale": "Retain only distinct evaluation behavior; repeated entity-swapped templates are rejected or rewritten."
+    },
+    {
+      "cluster_id": "CL10",
+      "title": "safety directive actions and insufficiency",
+      "classification": "SAME_SOURCE_FAMILY_RELATED_FACTS",
+      "qa_ids": [
+        "V42-QA-031",
+        "V42-QA-032",
+        "V42-QA-033"
+      ],
+      "size": 3,
+      "shared_facts": [],
+      "reasoning_operations": [
+        "ABSTAIN",
+        "RULE_SCOPE",
+        "SYNTHESIZE_WITHIN_DOCUMENT"
+      ],
+      "decisions": {
+        "V42-QA-031": "KEEP",
+        "V42-QA-032": "REVISE",
+        "V42-QA-033": "KEEP"
+      },
+      "new_capability_contribution": {
+        "V42-QA-031": "actor-action-scope interpretation",
+        "V42-QA-032": "cross-section synthesis within one canonical PDF",
+        "V42-QA-033": "safe abstention under missing dependencies"
+      },
+      "rationale": "Retain only distinct evaluation behavior; repeated entity-swapped templates are rejected or rewritten."
+    },
+    {
+      "cluster_id": "CL11",
+      "title": "reservoir inflow-release subtraction",
+      "classification": "SAME_TEMPLATE_DIFFERENT_ENTITY",
+      "qa_ids": [
+        "V42-QA-034",
+        "V42-QA-035",
+        "V42-QA-036"
+      ],
+      "size": 3,
+      "shared_facts": [],
+      "reasoning_operations": [
+        "ARITHMETIC",
+        "COMPARE"
+      ],
+      "decisions": {
+        "V42-QA-034": "REJECT",
+        "V42-QA-035": "REVISE",
+        "V42-QA-036": "REVISE"
+      },
+      "new_capability_contribution": {
+        "V42-QA-034": "reproducible arithmetic over source operands",
+        "V42-QA-035": "ordered quantitative decision",
+        "V42-QA-036": "reproducible arithmetic over source operands"
+      },
+      "rationale": "Retain only distinct evaluation behavior; repeated entity-swapped templates are rejected or rewritten."
+    },
+    {
+      "cluster_id": "CL12",
+      "title": "reservoir storage components",
+      "classification": "SAME_FACT_DIFFERENT_COMPETENCY",
+      "qa_ids": [
+        "V42-QA-037",
+        "V42-QA-038"
+      ],
+      "size": 2,
+      "shared_facts": [
+        "EV035",
+        "EV036",
+        "EV037"
+      ],
+      "reasoning_operations": [
+        "ARITHMETIC",
+        "COMPARE"
+      ],
+      "decisions": {
+        "V42-QA-037": "REVISE",
+        "V42-QA-038": "REVISE"
+      },
+      "new_capability_contribution": {
+        "V42-QA-037": "reproducible arithmetic over source operands",
+        "V42-QA-038": "ordered quantitative decision"
+      },
+      "rationale": "Retain only distinct evaluation behavior; repeated entity-swapped templates are rejected or rewritten."
+    }
+  ]
+}

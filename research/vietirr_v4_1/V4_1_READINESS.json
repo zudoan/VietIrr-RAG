@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "technical_acceptance_gate": "PASS_WITH_RELEASE_BLOCKERS",
+  "CORPUS_EXPANSION_READY": true,
+  "QA_PIPELINE_READY": true,
+  "QA_HUMAN_VERIFIED": false,
+  "BENCHMARK_READY": false,
+  "METHOD_EVALUATION_READY": false,
+  "counts": {
+    "legacy_references": 89,
+    "new_sources_screened": 20,
+    "new_sources_accepted": 4,
+    "corpus_manifest_records": 93,
+    "linked_packs": 2,
+    "verified_gold_relations": 0,
+    "ground_up_pilot": 10,
+    "auto_rejected_pilot": 0,
+    "pending_human_review": 10,
+    "human_accepted_qa": 0,
+    "adversarial_tests": 16,
+    "adversarial_caught": 16
+  },
+  "release_blockers": [
+    "No V4.1 QA has human/domain acceptance.",
+    "No cross-document relation is VERIFIED_FOR_GOLD.",
+    "Five high-value QA coverage cells remain empty.",
+    "Four new sources have technical screening but no named human source review."
+  ],
+  "decision": "Do not build or release a large official V4 benchmark yet; conduct source/evidence/relation/QA human review first."
+}

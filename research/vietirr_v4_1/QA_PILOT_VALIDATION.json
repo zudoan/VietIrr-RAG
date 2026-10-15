@@ -1,0 +1,191 @@
+{
+  "records": [
+    {
+      "qa_id": "V41-QA-001",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "semantic_pass": false,
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "No human/domain semantic acceptance",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V41-QA-002",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "semantic_pass": false,
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "No human/domain semantic acceptance",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V41-QA-003",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "semantic_pass": false,
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "No human/domain semantic acceptance",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V41-QA-004",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "semantic_pass": false,
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "No human/domain semantic acceptance",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V41-QA-005",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "semantic_pass": false,
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "No human/domain semantic acceptance",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V41-QA-006",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "semantic_pass": false,
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "No human/domain semantic acceptance",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V41-QA-007",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "semantic_pass": false,
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "No human/domain semantic acceptance",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V41-QA-008",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "REVIEW",
+        "layer3": "REVIEW"
+      },
+      "semantic_pass": false,
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "RELATION_REVIEW_REQUIRED",
+          "message": "Relation is not human verified",
+          "layer": 2,
+          "severity": "REVIEW"
+        },
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "No human/domain semantic acceptance",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V41-QA-009",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "semantic_pass": false,
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "No human/domain semantic acceptance",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V41-QA-010",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "semantic_pass": false,
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "No human/domain semantic acceptance",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    }
+  ],
+  "near_duplicates": []
+}

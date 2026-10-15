@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "decision": "TECHNICALLY_COMPLETE_CONDITIONAL_GO_FOR_NEXT_CONTROLLED_REVIEW_NOT_OFFICIAL_GOLD",
+  "PILOT_38_RETAINED": true,
+  "CORPUS_COVERAGE_AUDITED": true,
+  "LINKED_PACKS_EVIDENCE_SUPPORTED": true,
+  "QA_EXPANSION_PILOT_COMPLETE": true,
+  "HUMAN_REVIEW_PENDING": true,
+  "BENCHMARK_EXPANSION_READY": false,
+  "OFFICIAL_GOLD_READY": false,
+  "counts": {
+    "canonical_pdfs": 93,
+    "hash_matched_pdfs": 93,
+    "typed_evidence_documents": 8,
+    "pilot_qa_retained": 38,
+    "linked_pack_candidates": 4,
+    "selected_packs": 3,
+    "relations": 7,
+    "human_verified_relations": 0,
+    "new_qa_drafts": 10,
+    "new_qa_machine_supported": 7,
+    "new_qa_review_required": 3,
+    "human_verified_qa": 0
+  },
+  "scientific_integrity": {
+    "v3_2_mutated": false,
+    "v4_2_raw_mutated": false,
+    "retrieval_baselines_mutated": false,
+    "candidate_test": "SEALED_NOT_OPENED_NOT_READ_NOT_HASHED_NOT_PACKAGED",
+    "fabricated_human_review": false
+  },
+  "next_high_value_action": "Human-adjudicate the three selected pack relations and 10-QA review queue, prioritizing OCR/legal and time-role limitations.",
+  "blockers": [
+    "Signed authoritative version, amendment chain, exceptions and effective scope",
+    "Actual delivery/operation logs aligned to a plan",
+    "Drainage operation, rainfall/inflow and resulting inundation",
+    "Facility-specific current inspection and remediation status",
+    "Entity/metric/unit/method aligned time series",
+    "Human-verified document relations"
+  ]
+}

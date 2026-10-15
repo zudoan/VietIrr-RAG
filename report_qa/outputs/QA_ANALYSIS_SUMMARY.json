@@ -1,0 +1,129 @@
+{
+  "scope": {
+    "train_dev_content_read": true,
+    "candidate_test_content_read": false,
+    "candidate_test_statistics_source": "pre-existing metadata/splits.json and reports/v3_2_final_semantic/dataset_stats.json",
+    "train_dev_qa": 436,
+    "full_frozen_qa_from_published_stats": 545
+  },
+  "splits_readable": {
+    "train": 343,
+    "dev": 93
+  },
+  "qa_class_readable": {
+    "CHALLENGE": 79,
+    "CORE": 357
+  },
+  "topics_readable": {
+    "RAINFALL": 80,
+    "AREA": 67,
+    "WATER_LEVEL": 58,
+    "STORAGE": 55,
+    "WATER_QUALITY": 51,
+    "WATER_SOURCE": 51,
+    "SALINITY": 19,
+    "WATER_SUPPLY": 14,
+    "DISCHARGE": 11,
+    "DISASTER_PREVENTION": 8,
+    "IRRIGATION_AGRICULTURE": 8,
+    "RESERVOIR_OPERATION": 5,
+    "DROUGHT_SHORTAGE": 4,
+    "DAM_SAFETY": 3,
+    "RELATION_STATE_ACTION": 2
+  },
+  "qa_types_readable": {
+    "TEXT_ONLY": 244,
+    "TABLE_ONLY": 113,
+    "TABLE_TO_TABLE_COMPARISON": 43,
+    "TABLE_TO_TEXT_EXPLANATION": 16,
+    "TABLE_TO_TEXT_FORECAST": 15,
+    "SAME_ENTITY_DIFFERENT_TIME": 3,
+    "STATE_TO_RECOMMENDATION": 2
+  },
+  "modalities_readable": {
+    "TEXT_ONLY": 246,
+    "TABLE_ONLY": 113,
+    "TABLE_TABLE": 46,
+    "TEXT_TABLE": 31
+  },
+  "locations_readable": {
+    "SAME_PAGE": 400,
+    "CROSS_PAGE_SAME_DOCUMENT": 33,
+    "CROSS_DOCUMENT": 3
+  },
+  "linguistic_intents_heuristic": {
+    "DIRECT_FACT_LOOKUP": 119,
+    "QUANTITATIVE_LOOKUP": 111,
+    "RELATIONAL_OR_MULTI_EVIDENCE": 79,
+    "LIST_OR_SELECTION": 66,
+    "DESCRIPTIVE_STATUS": 59,
+    "COMPARISON": 2
+  },
+  "structured_metric_sets": {
+    "NO_STRUCTURED_METRIC": 245,
+    "Area": 67,
+    "Rainfall": 46,
+    "ReservoirStorage": 38,
+    "WaterLevel": 21,
+    "COD": 7,
+    "BOD": 4,
+    "Salinity": 3,
+    "TSS": 2,
+    "Discharge": 2,
+    "PH": 1
+  },
+  "document_distribution": {
+    "accepted_corpus_documents": 89,
+    "documents_with_any_train_dev_qa": 57,
+    "documents_without_train_dev_qa": 32,
+    "coverage_percent": 64.04,
+    "participation_total": 439,
+    "mean_per_all_accepted_documents": 4.9326,
+    "median_per_all_accepted_documents": 2,
+    "mean_per_active_document": 7.7018,
+    "median_per_active_document": 6,
+    "max_per_document": 42,
+    "gini_including_zero_qa_documents": 0.672468,
+    "hhi": 0.036587,
+    "normalized_entropy": 0.808418,
+    "top_1_share": 0.095672,
+    "top_5_share": 0.314351,
+    "top_10_share": 0.489749
+  },
+  "near_duplicates": {
+    "method": "accent-insensitive unique-token Jaccard; high counts can reflect shared templates rather than shared answers",
+    "exact_normalized_duplicate_pairs": 0,
+    "pairs_jaccard_ge_0_80": 551,
+    "pairs_jaccard_ge_0_90": 173,
+    "cross_split_pairs_jaccard_ge_0_80": 12,
+    "cross_split_pairs_jaccard_ge_0_90": 1
+  },
+  "template_concentration": {
+    "unique_heuristic_templates": 282,
+    "top_template_count": 14,
+    "top_10_template_share": 0.231651
+  },
+  "human_validated_train_dev": 0,
+  "candidate_test_aggregate_only": {
+    "challenge": 88,
+    "core": 21,
+    "cross_document": 63,
+    "modalities": {
+      "table_only": 18,
+      "table_table": 63,
+      "text_only": 4,
+      "text_table": 24
+    },
+    "retrieval_multi": 88,
+    "retrieval_three_plus": 9,
+    "same_document_cross_page": 1,
+    "same_page": 45,
+    "total": 109
+  },
+  "candidate_test_family_concentration": {
+    "qa_count": 109,
+    "share": 1.0,
+    "top_family": "IRR_SIWRP_2026_43c7d5c0",
+    "total": 109
+  }
+}

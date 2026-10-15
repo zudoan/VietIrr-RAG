@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vietirr-rag.local/schemas/qa-v4.1.json",
+  "title": "VietIrr-RAG V4.1 ground-up QA record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["qa_id", "origin_type", "lineage", "domain", "use_case", "competency", "question", "answer", "answer_components", "evidence", "required_relations", "allowed_operations", "minimal_sufficient_evidence_sets", "unsupported_conditions", "review"],
+  "properties": {
+    "qa_id": {"type": "string", "pattern": "^V41-QA-[0-9]{3}$"},
+    "origin_type": {"const": "GROUND_UP"},
+    "lineage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["use_case", "information_need", "evidence_contract", "generation_method", "legacy_qa_used"],
+      "properties": {
+        "use_case": {"type": "string"}, "information_need": {"type": "string", "minLength": 15},
+        "evidence_contract": {"type": "string", "minLength": 15},
+        "generation_method": {"const": "USE_CASE_TO_EVIDENCE_TO_QA"}, "legacy_qa_used": {"const": false}
+      }
+    },
+    "domain": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["D01", "D02", "D03", "D04", "D05", "D06", "ANY"]}},
+    "use_case": {"type": "string", "pattern": "^UC(0[1-9]|1[0-4])$"},
+    "competency": {"enum": ["FACTUAL_LOOKUP", "DEFINITION_CONCEPT", "RULE_CONDITION_INTERPRETATION", "QUANTITATIVE_COMPARISON", "TEMPORAL_COMPARISON", "CROSS_SOURCE_SYNTHESIS", "RULE_OBSERVATION_ALIGNMENT", "VERIFIABLE_COMPUTATION", "CONFLICT_VERSION_RESOLUTION", "INSUFFICIENT_EVIDENCE_DETECTION"]},
+    "difficulty": {"enum": ["EASY", "MEDIUM", "HARD"]},
+    "evidence_pattern": {"enum": ["SAME_PAGE", "CROSS_PAGE", "CROSS_DOCUMENT"]},
+    "question": {"type": "string", "minLength": 20},
+    "answer": {"type": "string", "minLength": 1},
+    "answer_components": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false, "required": ["component_id", "kind", "value", "supported_by"],
+        "properties": {
+          "component_id": {"type": "string"}, "kind": {"enum": ["TEXT", "NUMBER", "DATE", "INTERVAL", "DECISION", "ABSTENTION"]},
+          "value": {}, "unit": {"type": ["string", "null"]}, "supported_by": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+        }
+      }
+    },
+    "evidence": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["evidence_id", "doc_id", "locator", "page_sha256", "anchor", "facts", "supports_components"],
+        "properties": {
+          "evidence_id": {"type": "string"}, "doc_id": {"type": "string"},
+          "locator": {"type": "object", "additionalProperties": false, "required": ["page"], "properties": {"page": {"type": "integer", "minimum": 1}, "table": {"type": ["string", "null"]}, "region": {"type": ["string", "null"]}}},
+          "page_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "anchor": {"type": "string", "minLength": 12},
+          "facts": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/fact"}},
+          "supports_components": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "necessity_claim": {"type": "boolean"}
+        }
+      }
+    },
+    "required_relations": {"type": "array", "items": {"type": "object", "required": ["relation", "status", "basis"], "properties": {"relation": {"type": "string"}, "status": {"enum": ["VERIFIED", "MANIFEST_PENDING_HUMAN", "UNKNOWN"]}, "basis": {"type": "string"}}}},
+    "allowed_operations": {"type": "array", "items": {"enum": ["LOOKUP", "SUBTRACT", "ADD", "COMPARE", "FILTER", "TEMPORAL_ORDER", "ABSTAIN", "VERSION_RESOLVE"]}},
+    "operation_trace": {"type": "array", "items": {"type": "object", "required": ["operation", "inputs", "output_component"], "properties": {"operation": {"type": "string"}, "inputs": {"type": "array", "items": {"type": "string"}}, "output_component": {"type": "string"}, "result": {}}}},
+    "minimal_sufficient_evidence_sets": {"type": "array", "minItems": 1, "items": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}}},
+    "alternative_sufficient_evidence_sets": {"type": "array", "items": {"type": "array", "items": {"type": "string"}}},
+    "unsupported_conditions": {"type": "array", "items": {"type": "string"}},
+    "review": {
+      "type": "object", "additionalProperties": false, "required": ["status", "reviewer_id", "business_realism", "evidence_sufficiency", "semantic_correctness"],
+      "properties": {
+        "status": {"enum": ["AUTO_REJECTED", "PENDING_HUMAN_REVIEW", "HUMAN_ACCEPTED", "HUMAN_REJECTED", "BLOCKED_SOURCE"]},
+        "reviewer_id": {"type": ["string", "null"]}, "reviewed_at_utc": {"type": ["string", "null"]},
+        "business_realism": {"enum": ["UNKNOWN", "PASS", "FAIL"]}, "evidence_sufficiency": {"enum": ["UNKNOWN", "PASS", "FAIL"]},
+        "semantic_correctness": {"enum": ["UNKNOWN", "PASS", "FAIL"]}, "notes": {"type": "string"}
+      }
+    }
+  },
+  "$defs": {
+    "fact": {
+      "type": "object", "additionalProperties": false,
+      "required": ["fact_id", "entity", "metric", "value", "unit", "time_role", "time", "source_role"],
+      "properties": {
+        "fact_id": {"type": "string"}, "entity": {"type": "string"}, "metric": {"type": "string"}, "value": {},
+        "unit": {"type": ["string", "null"]}, "time_role": {"enum": ["OBSERVATION", "FORECAST_TARGET", "PUBLICATION", "EFFECTIVE", "SEASON", "NONE"]},
+        "time": {"type": ["string", "null"]}, "source_role": {"enum": ["OBSERVED", "FORECAST", "PLAN", "RULE", "DRAFT_RULE", "REPORT", "METADATA"]}
+      }
+    }
+  }
+}

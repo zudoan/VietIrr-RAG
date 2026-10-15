@@ -1,0 +1,8 @@
+﻿gap_id,domain,missing_knowledge,affected_use_case,missing_evidence_pattern,priority,proposed_action
+G01,D02/D06,Authoritative signed/versioned legal instrument and applicability history,version resolution; rule application,RULE_APPLIES_TO; DOCUMENT_REPLACES,CRITICAL,Acquire authoritative signed copies and legal metadata before gold adjudication; do not create more legal QA first.
+G02,D05,"Human-confirmed table headers, row bindings and all-row aggregation",water-quality extrema and classification,TABLE_ROW; COMPLETE_SET_AGGREGATION,HIGH,Review page images and record row/cell locators for all 15 positions.
+G03,D06,Resolution of internal event-date inconsistency in dam report,flood-operation comparison,TEMPORALLY_COMPARABLE,HIGH,Obtain corrigendum/original-language report or expert adjudication.
+G04,ALL,Human-verified evidence relations,multi-evidence reasoning,VERIFIED_RELATION,CRITICAL,Adjudicate proposed relations; retain separate reviewer verdicts.
+G05,ALL,Validated cross-document QA,cross-source synthesis,CROSS_DOCUMENT,HIGH,Do not force cross-document counts; first validate document linkage and applicability.
+G06,D02/D04,Broader operational and compliance depth,operations; compliance,RULE_PLUS_OBSERVATION; EXCEPTION,MEDIUM,Acquire supporting sources before proposing additional QA.
+G07,ALL,Independent human QA verdicts,official gold release,HUMAN_ADJUDICATION,CRITICAL,Complete risk-prioritized review and record identity/timestamp only through explicit reviewer action.

@@ -1,0 +1,182 @@
+{
+  "checks": [
+    {
+      "check_id": "A01_MANIFEST_COUNT",
+      "detail": "rows=93 unique=93",
+      "status": "PASS"
+    },
+    {
+      "check_id": "A02_PHYSICAL_PDF_HASHES",
+      "detail": "All 93 physical PDFs resolve and match both declared hashes",
+      "status": "PASS"
+    },
+    {
+      "check_id": "A03_CORPUS_AUDIT_ACCOUNTING",
+      "detail": "rows=93",
+      "status": "PASS"
+    },
+    {
+      "check_id": "A04_HONEST_INSPECTION_STATUS",
+      "detail": "Every canonical PDF has an allowed explicit inspection status",
+      "status": "PASS"
+    },
+    {
+      "check_id": "A05_DEEP_EVIDENCE_RESOLVES",
+      "detail": "evidence_records=60",
+      "status": "PASS"
+    },
+    {
+      "check_id": "A06_DEEP_DOCUMENT_COUNT",
+      "detail": "deep_documents=20",
+      "status": "PASS"
+    },
+    {
+      "check_id": "A07_COVERAGE_USECASE_SPECIFIC",
+      "detail": "cells=16",
+      "status": "PASS"
+    },
+    {
+      "check_id": "B01_RELATION_ENDPOINTS",
+      "detail": "relations=9",
+      "status": "PASS"
+    },
+    {
+      "check_id": "B02_RELATION_STATUS_VOCAB",
+      "detail": "All relation statuses use required vocabulary",
+      "status": "PASS"
+    },
+    {
+      "check_id": "B03_NO_FAKE_HUMAN_RELATION",
+      "detail": "No relation claims human verification",
+      "status": "PASS"
+    },
+    {
+      "check_id": "B04_PACK_RELATIONS_RESOLVE",
+      "detail": "packs=3",
+      "status": "PASS"
+    },
+    {
+      "check_id": "B05_PACK_EVIDENCE_RELATIONS_RESOLVE",
+      "detail": "pack_evidence=9",
+      "status": "PASS"
+    },
+    {
+      "check_id": "C00_FROZEN_INPUT_HASHES",
+      "detail": "matched=4/4",
+      "status": "PASS"
+    },
+    {
+      "check_id": "C01_BASELINE_QA_COUNT",
+      "detail": "rows=48 unique=48",
+      "status": "PASS"
+    },
+    {
+      "check_id": "C02_USER_KEEP_38",
+      "detail": "USER_KEEP=38",
+      "status": "PASS"
+    },
+    {
+      "check_id": "C03_QA_REVIEW_ACCOUNTING",
+      "detail": "review_rows=48",
+      "status": "PASS"
+    },
+    {
+      "check_id": "C04_NO_HUMAN_GOLD_PROMOTION",
+      "detail": "All 48 remain non-gold",
+      "status": "PASS"
+    },
+    {
+      "check_id": "C05_QA016_OPEN_BOUND_RISK",
+      "detail": "QA-016 explicitly requires revision",
+      "status": "PASS"
+    },
+    {
+      "check_id": "C06_KNOWN_RISKS_PRESERVED",
+      "detail": "Known extrema/legal/chronology issues are explicit",
+      "status": "PASS"
+    },
+    {
+      "check_id": "D01_NEW_QA_COUNT",
+      "detail": "new_qa=8",
+      "status": "PASS"
+    },
+    {
+      "check_id": "D02_ANSWER_COMPONENT_SUPPORT",
+      "detail": "Every answer component points to a declared evidence ID",
+      "status": "PASS"
+    },
+    {
+      "check_id": "D02B_INLINE_EVIDENCE_RESOLVES",
+      "detail": "declared=8 inline=8",
+      "status": "PASS"
+    },
+    {
+      "check_id": "D03_GENERATION_METHOD_HONEST",
+      "detail": "Manual curation is not disguised as an automatic generator",
+      "status": "PASS"
+    },
+    {
+      "check_id": "D04_NEW_QA_VALIDATION",
+      "detail": "validation_rows=8",
+      "status": "PASS"
+    },
+    {
+      "check_id": "D05_NEW_QA_NOT_GOLD",
+      "detail": "No new QA claims human approval",
+      "status": "PASS"
+    },
+    {
+      "check_id": "D06_COMPETENCY_PATTERN_SANITY",
+      "detail": "No cross-document label is assigned to a single source",
+      "status": "PASS"
+    },
+    {
+      "check_id": "E01_UPSTREAM_INPUTS_PRESENT",
+      "detail": "Required frozen/raw upstream QA inputs resolve",
+      "status": "PASS"
+    },
+    {
+      "check_id": "E02_NO_CANDIDATE_TEST_LEAKAGE",
+      "detail": "output_paths_clean=True; declarations_false=True; all_QA_sources_canonical=True",
+      "status": "PASS"
+    },
+    {
+      "check_id": "E03_DEPENDENCY_REPRODUCIBLE",
+      "detail": "PyMuPDF=1.28.0",
+      "status": "PASS"
+    },
+    {
+      "check_id": "F01_MUTATION_TESTS",
+      "detail": "caught=5/5",
+      "status": "PASS"
+    }
+  ],
+  "checks_failed": 0,
+  "checks_passed": 30,
+  "checks_total": 30,
+  "generated_at": "2026-10-15T09:53:17+00:00",
+  "mutation_tests": [
+    {
+      "caught": true,
+      "mutation": "wrong_answer_empty"
+    },
+    {
+      "caught": true,
+      "mutation": "wrong_page"
+    },
+    {
+      "caught": true,
+      "mutation": "wrong_hash"
+    },
+    {
+      "caught": true,
+      "mutation": "unsupported_cross_document_competency"
+    },
+    {
+      "caught": true,
+      "mutation": "fabricated_human_gold"
+    }
+  ],
+  "semantic_disclaimer": "PASS establishes structural integrity, provenance resolution, and declared controls; it does not establish human semantic correctness or official gold status.",
+  "status": "PASS"
+}

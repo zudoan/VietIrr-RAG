@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "gold_relation_policy": "Only VERIFIED relations may support cross-document QA; current records require human relation review.",
+  "packs": [
+    {
+      "pack_id": "PACK_BAC_NAM_HA",
+      "system": "Hệ thống công trình thủy lợi Bắc Nam Hà",
+      "status": "REVIEW_REQUIRED",
+      "documents": [
+        "V4_CTTL_2025_77c60f84",
+        "V4_IWRP_2021_3031564c"
+      ],
+      "relations": [
+        {
+          "subject": "V4_IWRP_2021_3031564c",
+          "predicate": "historical_operation_context_for",
+          "object": "Hệ thống Bắc Nam Hà",
+          "evidence": "Report names Bắc Nam Hà and cites 5470/QĐ-BNN-TCTL; 1318/QĐ-BNNMT states it replaces 5470.",
+          "status": "MANIFEST_RELATION_PENDING_HUMAN"
+        }
+      ],
+      "coverage": [
+        "facility inventory",
+        "operation procedure",
+        "irrigation demand",
+        "drought/shortage scenario"
+      ]
+    },
+    {
+      "pack_id": "PACK_CAI_LON_CAI_BE",
+      "system": "Hệ thống Cái Lớn–Cái Bé",
+      "status": "REVIEW_REQUIRED",
+      "documents": [
+        "V4_CTTL_2024_dda51c21",
+        "IRR_CTL_2025_c3d033a0",
+        "IRR_CTL_2025_57989573"
+      ],
+      "relations": [
+        {
+          "subject": "V4_CTTL_2024_dda51c21",
+          "predicate": "draft_governance_context_for",
+          "object": "IRR_CTL_2025_c3d033a0",
+          "evidence": "All sources explicitly name HTCTTL Cái Lớn–Cái Bé; draft appendix names environmental control points. Applicability not yet human-reviewed.",
+          "status": "MANIFEST_RELATION_PENDING_HUMAN"
+        }
+      ],
+      "coverage": [
+        "facility inventory",
+        "draft operation",
+        "water-quality forecast",
+        "salinity-control context"
+      ]
+    }
+  ]
+}

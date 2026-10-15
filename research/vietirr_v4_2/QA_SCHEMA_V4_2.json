@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vietirr-rag.local/schemas/qa-v4.2.json",
+  "title": "VietIrr-RAG V4.2 evidence-first QA draft",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["qa_id", "origin_type", "coverage_cell_id", "lineage", "domain", "competency", "difficulty", "evidence_pattern", "question", "answer", "reasoning_plan", "evidence_set_id", "evidence_ids", "answer_components", "operations", "unsupported_conditions", "source_check", "review"],
+  "properties": {
+    "qa_id": {"type": "string", "pattern": "^V42-QA-[0-9]{3}$"},
+    "origin_type": {"const": "GROUND_UP"},
+    "coverage_cell_id": {"type": "string", "pattern": "^C[0-9]{3}$"},
+    "lineage": {"type": "object", "required": ["generation_order", "evidence_set_id", "legacy_qa_used", "candidate_test_accessed"], "properties": {"generation_order": {"const": ["USE_CASE", "EVIDENCE_SET", "REASONING_PLAN", "QA_DRAFT"]}, "evidence_set_id": {"type": "string"}, "legacy_qa_used": {"const": false}, "candidate_test_accessed": {"const": false}}},
+    "domain": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["D01", "D02", "D03", "D04", "D05", "D06"]}},
+    "competency": {"enum": ["FACTUAL_LOOKUP", "DEFINITION_CONCEPT", "RULE_CONDITION_INTERPRETATION", "QUANTITATIVE_COMPARISON", "TEMPORAL_COMPARISON", "CROSS_SOURCE_SYNTHESIS", "RULE_OBSERVATION_ALIGNMENT", "VERIFIABLE_COMPUTATION", "CONFLICT_VERSION_RESOLUTION", "INSUFFICIENT_EVIDENCE_DETECTION"]},
+    "difficulty": {"enum": ["EASY", "MEDIUM", "HARD"]},
+    "evidence_pattern": {"enum": ["SAME_PAGE", "CROSS_PAGE", "CROSS_DOCUMENT"]},
+    "question": {"type": "string", "minLength": 20},
+    "answer": {"type": "string", "minLength": 1},
+    "reasoning_plan": {"type": "array", "minItems": 2, "items": {"type": "string"}},
+    "evidence_set_id": {"type": "string", "pattern": "^ES[0-9]{3}$"},
+    "evidence_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^EV[0-9]{3}$"}},
+    "answer_components": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["component_id", "value", "unit", "supported_by"], "properties": {"component_id": {"type": "string"}, "value": {}, "unit": {"type": ["string", "null"]}, "supported_by": {"type": "array", "minItems": 1, "items": {"type": "string"}}}}},
+    "operations": {"type": "array", "items": {"type": "object", "required": ["operation", "inputs", "result"], "properties": {"operation": {"enum": ["ADD", "SUBTRACT", "COMPARE"]}, "inputs": {"type": "array", "minItems": 2, "items": {"type": "number"}}, "result": {"type": "number"}, "approximate": {"type": "boolean"}}}},
+    "unsupported_conditions": {"type": "array", "items": {"type": "string"}},
+    "source_check": {"const": "SOURCE_CHECKED"},
+    "review": {"type": "object", "required": ["status", "reviewer_id", "semantic_correctness", "business_realism", "notes"], "properties": {"status": {"enum": ["PENDING_DOMAIN_REVIEW", "HUMAN_ACCEPTED", "HUMAN_REJECTED"]}, "reviewer_id": {"type": ["string", "null"]}, "semantic_correctness": {"enum": ["UNKNOWN", "PASS", "FAIL"]}, "business_realism": {"enum": ["UNKNOWN", "PASS", "FAIL"]}, "notes": {"type": "string"}}}
+  }
+}

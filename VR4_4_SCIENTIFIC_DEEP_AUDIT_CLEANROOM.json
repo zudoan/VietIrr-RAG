@@ -1,0 +1,15 @@
+{
+  "all_checksums_pass": true,
+  "archive": "VR4_4_SCIENTIFIC_DEEP_AUDIT_HANDOFF.zip",
+  "archive_sha256": "95c81698650277f53412787b4ee9920a4ebabcf4390ed15cb4930d9711e28978",
+  "archive_size_bytes": 184617221,
+  "candidate_test_included": false,
+  "canonical_pdfs_extracted": 93,
+  "checksum_entries": 147,
+  "generated_at": "2026-10-15T09:53:28+00:00",
+  "human_gold_claimed": false,
+  "independent_audit_returncode": 0,
+  "independent_audit_stderr": "",
+  "independent_audit_stdout": "{\"status\": \"PASS\", \"passed\": 30, \"failed\": 0, \"mutations_caught\": 5}",
+  "status": "PASS"
+}

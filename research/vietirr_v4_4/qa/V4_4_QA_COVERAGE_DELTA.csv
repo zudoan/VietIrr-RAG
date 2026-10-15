@@ -1,0 +1,11 @@
+﻿coverage_cell,domain,use_case,competency,evidence_pattern,pilot_38_count_before,new_draft_count,machine_supported_count,human_gold_count,coverage_gain
+D04_WATER_LEVEL_BY_ABSTRACTION_ROUND,D04,prepare pumping operations for two abstraction rounds,Q05_TEMPORAL_REASONING,SAME_PAGE,0,1,1,0,adds operational target water levels by abstraction round
+D05_FORECAST_PERIOD_AND_COMPLIANCE,D05,identify forecast horizon and BOD5 compliance finding,Q03_CONDITIONS_AND_REGULATIONS,CROSS_PAGE,0,1,1,0,adds forecast-horizon plus all-site BOD5 compliance finding
+D05_BULLETIN_SCOPE,D05,confirm bulletin date and spatial scope,Q01_FACTUAL_LOOKUP,SAME_PAGE,0,1,1,0,adds bulletin issue-date and network-scope verification
+D05_CROSS_SOURCE_TIME_ROLE,D05,report source values without conflating time roles,Q06_CROSS_SOURCE_SYNTHESIS,CROSS_DOCUMENT,0,1,0,0,adds bounded cross-source time-role separation
+D06_STORAGE_RATIO_CHECK,D06,verify a reported approximate ratio,Q08_VERIFIABLE_ARITHMETIC,CROSS_PAGE,0,1,1,0,adds source-reported ratio reproduction across pages
+D06_COUNTERFACTUAL_TIME_SCOPE,D06,distinguish counterfactual estimates by time scope,Q05_TEMPORAL_REASONING,CROSS_PAGE,0,1,1,0,adds counterfactual comparison across explicit time scopes
+D06_PRE_RELEASE_CAPACITY_4D,D06,verify component-to-total flood capacity,Q08_VERIFIABLE_ARITHMETIC,SAME_PAGE,0,1,1,0,adds component-to-total pre-release capacity for four-day window
+D06_PRE_RELEASE_CAPACITY_2D,D06,verify early component-to-total capacity,Q08_VERIFIABLE_ARITHMETIC,SAME_PAGE,0,1,1,0,adds component-to-total early two-day capacity
+D02_CROSS_DOCUMENT_FACILITY_IDENTITY,D01;D02,confirm event-report facilities belong to the named inter-reservoir rule,Q06_CROSS_SOURCE_SYNTHESIS,CROSS_DOCUMENT,0,1,0,0,adds real cross-document facility-set identity
+D02_RULE_EFFECTIVE_AND_REPLACEMENT,D02,identify effective date and replaced act,Q09_CONFLICT_VERSION_REASONING,SAME_PAGE,0,1,0,0,adds signed-rule effective/replacement resolution

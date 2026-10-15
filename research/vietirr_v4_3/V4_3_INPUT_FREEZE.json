@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-10-14T16:44:24.796489+00:00",
+  "purpose": "V4.3 pre-change seal; named inputs only; Candidate Test excluded",
+  "candidate_test_accessed": false,
+  "files": [
+    {
+      "path": "data/documents.jsonl",
+      "size_bytes": 149086,
+      "sha256": "820fe81784b0cf0ab304892b7bfd567aa51d55b2d9d9039c939396fa49ede894"
+    },
+    {
+      "path": "data/raw/core_long/2149_lich_lay_nuoc_2024_2025.pdf",
+      "size_bytes": 1806902,
+      "sha256": "4182a0d7e188012406b4c65ea1ecf8974c3016914b173658c06ad04485081e70"
+    },
+    {
+      "path": "data/raw/temporal/CLCB_BanTin_DuBao_Thang_4_2025.pdf",
+      "size_bytes": 1242005,
+      "sha256": "c3d033a0db2e3fdbb0caae29737895d04679ca31be651083043b1bf331f28273"
+    },
+    {
+      "path": "data/raw/temporal/CLCB_BanTin_Tuan_Ky9.pdf",
+      "size_bytes": 609833,
+      "sha256": "5798957304d155b6ee2156f24ccfef6a2e24d3353987da828862efe863385dd2"
+    },
+    {
+      "path": "data/raw/v3_official/dam_operations_huong_2023.pdf",
+      "size_bytes": 1635018,
+      "sha256": "29fb8ed60058d12e9447754257b9e56435dd4a03d63c24c2403366d03faec270"
+    },
+    {
+      "path": "data/v3_2_final_semantic/dev.jsonl",
+      "size_bytes": 1769430,
+      "sha256": "cc460f860de59c00a961dc00dea56f204c66f270c7a48d2ee840cb73c302d30f"
+    },
+    {
+      "path": "data/v3_2_final_semantic/train.jsonl",
+      "size_bytes": 5938281,
+      "sha256": "f78ebfde31be02642cba6efca8f9f43089033cd25eb1ebb138444f55c87660d6"
+    },
+    {
+      "path": "data/v4_corpus/raw/V4_BNH_QTVH_MAIN_2025.pdf",
+      "size_bytes": 3008874,
+      "sha256": "77c60f84390d0abfaaa2c7c6b2bb2410448a1c10a777efb4ed1e5cb8a676bed3"
+    },
+    {
+      "path": "data/v4_corpus/raw/V4_BNH_WATER_PLAN_2021.pdf",
+      "size_bytes": 1527416,
+      "sha256": "3031564c93059d0da2cd04c41c85d64b769e672f7235504cfcd55da4e601bc25"
+    },
+    {
+      "path": "data/v4_corpus/raw/V4_CLCB_QTVH_DRAFT_2024.pdf",
+      "size_bytes": 5380976,
+      "sha256": "dda51c213d92a9aa11eac8d6c992ffc47247003ec9bda6d99cdee30559aca374"
+    },
+    {
+      "path": "data/v4_corpus/raw/V4_CT02_ATCT_2025.pdf",
+      "size_bytes": 1533452,
+      "sha256": "594e73827fd7610da9468cce9c7009e8dafbd6aaac86f96c5fa93dbe95a25659"
+    },
+    {
+      "path": "reports/TCB_RR_P2_3/P2_3_FROZEN_CONFIG.json",
+      "size_bytes": 6025,
+      "sha256": "b33f199cc8c486a5729c451833d14e22ec3e50b8d4b5fc825892470d5449d896"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_GROUND_UP_PILOT.jsonl",
+      "size_bytes": 24660,
+      "sha256": "9c923f3d615c6afb98b8a54c1c16346cb8a35a16e39644f09a97db70476ca0eb"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_PILOT_AUDIT.csv",
+      "size_bytes": 2356,
+      "sha256": "f97fa365cf925fd67b6db04ef923d4366e706f1cec225cdc1b015952df637ee4"
+    },
+    {
+      "path": "research/vietirr_v4_1/V4_CORPUS_MANIFEST.jsonl",
+      "size_bytes": 71620,
+      "sha256": "9168105f11508fccaf5b1f95f95df83984788e3915c56f2588a9bb1a77bb99ff"
+    },
+    {
+      "path": "research/vietirr_v4_2/EVIDENCE_BANK.jsonl",
+      "size_bytes": 48163,
+      "sha256": "aa18bb7e27a7826234568625ec9f678a0edd1687a5c39a0b854c37dead19fcb2"
+    },
+    {
+      "path": "research/vietirr_v4_2/EVIDENCE_RELATIONS.jsonl",
+      "size_bytes": 4481,
+      "sha256": "3428796a273beab7ddd237a1ccddfbd9c194e2e7f2515ea6b2d191488f513a53"
+    },
+    {
+      "path": "research/vietirr_v4_2/EVIDENCE_SETS.jsonl",
+      "size_bytes": 7739,
+      "sha256": "3c6c40fcbcaad120ce5bbc4185653bc66788daba58776d6871867cafed57f6ff"
+    },
+    {
+      "path": "research/vietirr_v4_2/QA_SCHEMA_V4_2.json",
+      "size_bytes": 3244,
+      "sha256": "91e9a851ea68a8c3f2b003b8488452127f6b4231e28dc056792980695523e6d1"
+    },
+    {
+      "path": "research/vietirr_v4_2/QA_VALIDATOR_V4_2.py",
+      "size_bytes": 8598,
+      "sha256": "6dbfb6cab0c7d6b5ed804d2683fd613532bc5b14a66b7c2b410c52af93ef8d9f"
+    },
+    {
+      "path": "research/vietirr_v4_2/V4_2_INDEPENDENT_AUDIT.json",
+      "size_bytes": 5200,
+      "sha256": "4be284837e4686e8fdd4b083c6c8272718df4ec2e48479d9153bd6b41d769bbd"
+    },
+    {
+      "path": "research/vietirr_v4_2/V4_2_QA_DRAFTS.jsonl",
+      "size_bytes": 49945,
+      "sha256": "abacd5484b2967d0425fd0e2d0545fff21fa76a83d7d65ca4158ab0b69c87e6d"
+    },
+    {
+      "path": "research/vietirr_v4_2_hardening/ALTERNATIVE_GOLD_SETS.jsonl",
+      "size_bytes": 6458,
+      "sha256": "98b88741d2f4626125d4dc357424e64a392fda72332724aaa8f497ce2c26bec0"
+    },
+    {
+      "path": "research/vietirr_v4_2_hardening/HARDENING_INPUT_FREEZE.json",
+      "size_bytes": 18402,
+      "sha256": "b8ff505175e1e691dae8c4c607c7a10a23290755ebcaa5881743a3e30845b689"
+    },
+    {
+      "path": "research/vietirr_v4_2_hardening/QA_38_FULL_AUDIT.csv",
+      "size_bytes": 29348,
+      "sha256": "7765e6255a6e5d17712562b4ac6e4b146213ec7daf66e99f16952dd0616ec39d"
+    },
+    {
+      "path": "research/vietirr_v4_2_hardening/QA_EVIDENCE_REPAIR.jsonl",
+      "size_bytes": 85982,
+      "sha256": "1a068caa46c3bc017713df53edbd1a0909ad93bc80e661d1c5f6ea4b3798dc13"
+    },
+    {
+      "path": "research/vietirr_v4_2_hardening/QA_HUMAN_REVIEW_SHEET.csv",
+      "size_bytes": 19721,
+      "sha256": "a9d8f340110a15c2b2351601b87a4f053f8518ce9723a8d3065748a86ba9062c"
+    },
+    {
+      "path": "research/vietirr_v4_2_hardening/QA_LABEL_AUDIT.csv",
+      "size_bytes": 6700,
+      "sha256": "c2354f19bed1e9db3ec8a7c5e5e445c358c320884ab107c73ed5b11a7d6e9281"
+    },
+    {
+      "path": "research/vietirr_v4_2_hardening/QA_MINIMALITY_AUDIT.csv",
+      "size_bytes": 7721,
+      "sha256": "841b977610afb5117d40d40a6a7398338ecb223554c0e024b2c2b4fe1d72a1d7"
+    }
+  ]
+}
