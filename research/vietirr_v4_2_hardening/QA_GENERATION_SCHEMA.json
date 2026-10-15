@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence-first deterministic generation request",
+  "type": "object",
+  "required": ["request_id", "coverage_cell_id", "competency", "selectors", "operation", "constraints"],
+  "properties": {
+    "request_id": {"type": "string"},
+    "coverage_cell_id": {"type": "string", "pattern": "^C[0-9]{3}$"},
+    "competency": {"enum": ["SINGLE_FACT_LOOKUP", "MULTI_FACT_LOOKUP", "QUANTITATIVE_COMPARISON", "VERIFIABLE_COMPUTATION"]},
+    "selectors": {"type": "array", "minItems": 1, "items": {"type": "object", "properties": {"doc_id": {"type": "string"}, "entity_regex": {"type": "string"}, "metric_regex": {"type": "string"}, "time_role": {"type": "string"}, "unit": {"type": ["string", "null"]}}}},
+    "operation": {"enum": ["LOOKUP", "MULTI_LOOKUP", "ADD", "SUBTRACT", "COMPARE"]},
+    "constraints": {"type": "object", "required": ["min_evidence", "max_evidence"], "properties": {"min_evidence": {"type": "integer", "minimum": 1}, "max_evidence": {"type": "integer", "minimum": 1}, "require_same_unit": {"type": "boolean"}, "require_same_time": {"type": "boolean"}, "aggregation_domain_count": {"type": ["integer", "null"]}, "source_direct_aggregation": {"type": "boolean"}}}
+  }
+}

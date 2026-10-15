@@ -1,0 +1,11 @@
+﻿qa_id,decision,entity_check,metric_check,value_unit_check,time_role_check,locator_hash_check,evidence_sufficiency,relation_check,draft_legal_check,human_accepted,reason
+V41-QA-001,KEEP_AS_DRAFT,PASS,PASS,PASS,PASS,PASS,PASS,NOT_REQUIRED_OR_PASS,PASS,false,Fact/number/unit/page are directly anchored; semantic gold still needs domain review.
+V41-QA-002,KEEP_AS_DRAFT,PASS,PASS,PASS,PASS,PASS,PASS,NOT_REQUIRED_OR_PASS,PASS,false,Three planned intervals are explicit on one page; retain PLAN rather than observation role.
+V41-QA-003,KEEP_AS_DRAFT,PASS,PASS,PASS,PASS,PASS,PASS,NOT_REQUIRED_OR_PASS,PASS,false,Compatible operands and subtraction are reproducible; scenario wording must remain.
+V41-QA-004,KEEP_AS_DRAFT,PASS,PASS,PASS,PASS,PASS,PASS,NOT_REQUIRED_OR_PASS,DRAFT_QUALIFIER_RETAINED,false,Arithmetic is correct and the question says draft; never promote it to an applicable rule.
+V41-QA-005,KEEP_AS_DRAFT,PASS,PASS,PASS,PASS,PASS,PASS,NOT_REQUIRED_OR_PASS,PASS,false,"Both national impact figures share one explicit report context; 89,089 is billion VND, not people."
+V41-QA-006,KEEP_AS_DRAFT,PASS,PASS,PASS,PASS,PASS,PASS,NOT_REQUIRED_OR_PASS,PASS,false,The negative conclusion is bounded to this evidence set; it does not claim global corpus absence.
+V41-QA-007,KEEP_AS_DRAFT,PASS,PASS,PASS,PASS,PASS,PASS,NOT_REQUIRED_OR_PASS,PASS,false,Replacement statement is explicit; effective-date interpretation remains for human legal review.
+V41-QA-008,REVISE,PASS,PASS,PASS,PASS,PASS,REVISE,UNVERIFIED,PASS,false,Cross-document retrospective applicability depends on an unverified version/effectivity relation.
+V41-QA-009,REVISE,PASS,PASS,PASS,REVISE,PASS,REVISE,NOT_REQUIRED_OR_PASS,PASS,false,Measurement date is in the question but its page-1 evidence is missing; add date/header evidence.
+V41-QA-010,KEEP_AS_DRAFT,PASS,PASS,PASS,PASS,PASS,PASS,NOT_REQUIRED_OR_PASS,PASS,false,The bulletin directly states the 30.06‰ maximum; preserve FORECAST_TARGET and 15-position scope.

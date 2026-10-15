@@ -1,0 +1,474 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-10-14T16:12:05.182943+00:00",
+  "purpose": "V4.2 hardening pre-change seal",
+  "readable_inputs": [
+    {
+      "path": "research/vietirr_v4_2/build_coverage.py",
+      "size_bytes": 8405,
+      "sha256": "cfdfccc60824e10b6b470b0576e7578da65149094a8529e233308fb05cd529c6"
+    },
+    {
+      "path": "research/vietirr_v4_2/build_evidence.py",
+      "size_bytes": 20247,
+      "sha256": "f766f43b5575a45330cf180242911ac3fbb57c29129e915247a15c5e8483227f"
+    },
+    {
+      "path": "research/vietirr_v4_2/build_qa.py",
+      "size_bytes": 14593,
+      "sha256": "45198e8a6e0c94b39eca899556aa23ba99722586811d3fd99bcdafadcb0a68c7"
+    },
+    {
+      "path": "research/vietirr_v4_2/build_reports.py",
+      "size_bytes": 15922,
+      "sha256": "3e18b59846274115d5df71932021ddbd340547a1331b982ab45735b9d476e724"
+    },
+    {
+      "path": "research/vietirr_v4_2/build_review_bundle.py",
+      "size_bytes": 3446,
+      "sha256": "9d3b68a4cdbdb42e1cdc379b77f8e3f186cc758fe0b761eeecc4b9e01eef1503"
+    },
+    {
+      "path": "research/vietirr_v4_2/COVERAGE_GAP_REPORT.md",
+      "size_bytes": 741,
+      "sha256": "fee9fe3a48637b36a6435f434370dab3d46cd373e68d7ed6c43ebcd7e1448f42"
+    },
+    {
+      "path": "research/vietirr_v4_2/DOMAIN_USE_CASE_COVERAGE.csv",
+      "size_bytes": 6456,
+      "sha256": "9772e86cddce9402870ba36c5a6a092f08bee8e40388650135855a1688f3fbd9"
+    },
+    {
+      "path": "research/vietirr_v4_2/DUPLICATE_LEAKAGE_AUDIT.json",
+      "size_bytes": 430,
+      "sha256": "fb790c5f2c93d47f98ea8b49a2211b3dab9fd8088d40a97e521a1eeb27c1a512"
+    },
+    {
+      "path": "research/vietirr_v4_2/EVIDENCE_BANK.jsonl",
+      "size_bytes": 48163,
+      "sha256": "aa18bb7e27a7826234568625ec9f678a0edd1687a5c39a0b854c37dead19fcb2"
+    },
+    {
+      "path": "research/vietirr_v4_2/EVIDENCE_BANK_AUDIT.md",
+      "size_bytes": 710,
+      "sha256": "c519ead37d5a468798d2800a65129c6e6d438aa4bf7869d5f5c1abba98efdc23"
+    },
+    {
+      "path": "research/vietirr_v4_2/EVIDENCE_BANK_BUILD_REPORT.json",
+      "size_bytes": 521,
+      "sha256": "9436e50dbec6afd85a2537b78ab5d72b9a5aac5ac17246e8ec23f0bb84d3ce8b"
+    },
+    {
+      "path": "research/vietirr_v4_2/EVIDENCE_RELATIONS.jsonl",
+      "size_bytes": 4481,
+      "sha256": "3428796a273beab7ddd237a1ccddfbd9c194e2e7f2515ea6b2d191488f513a53"
+    },
+    {
+      "path": "research/vietirr_v4_2/EVIDENCE_SET_CANDIDATES.jsonl",
+      "size_bytes": 7739,
+      "sha256": "3c6c40fcbcaad120ce5bbc4185653bc66788daba58776d6871867cafed57f6ff"
+    },
+    {
+      "path": "research/vietirr_v4_2/EVIDENCE_SETS.jsonl",
+      "size_bytes": 7739,
+      "sha256": "3c6c40fcbcaad120ce5bbc4185653bc66788daba58776d6871867cafed57f6ff"
+    },
+    {
+      "path": "research/vietirr_v4_2/freeze_v4_2_inputs.py",
+      "size_bytes": 2218,
+      "sha256": "7558ccc8b1f051d7013fe9196583f5819369aa2422c8dd7c42990303681fc151"
+    },
+    {
+      "path": "research/vietirr_v4_2/INDEPENDENT_REVIEW.md",
+      "size_bytes": 688,
+      "sha256": "a5b3788515d3a641cc3f5f9b3fd0afcedf2bf7414338a8856f3205f04aa8ef01"
+    },
+    {
+      "path": "research/vietirr_v4_2/QA_ADVERSARIAL_TESTS/build_fixture.py",
+      "size_bytes": 1115,
+      "sha256": "5f264d9d1969383c700361ec8a3adb7200092dfa669f7c9ffde6b6405e408da0"
+    },
+    {
+      "path": "research/vietirr_v4_2/QA_ADVERSARIAL_TESTS/fixtures/SOURCE_FIXTURE_FACT_VALUE.json",
+      "size_bytes": 619,
+      "sha256": "40f54ee74b3163f628e78c05a2edf00c281bd9879d99a7064d5fb640bd075af1"
+    },
+    {
+      "path": "research/vietirr_v4_2/QA_ADVERSARIAL_TESTS/run_tests.py",
+      "size_bytes": 4078,
+      "sha256": "c0b3880d2b4142e4d9521230dba97a1c2c3c1c1cf229219c000faed6d2e471c9"
+    },
+    {
+      "path": "research/vietirr_v4_2/QA_ADVERSARIAL_TESTS/TEST_RESULTS.json",
+      "size_bytes": 4748,
+      "sha256": "86658fed0dc9fdf883ea374c8c17de17f4c1c944df4f3a0459534bd41e2443b4"
+    },
+    {
+      "path": "research/vietirr_v4_2/QA_COVERAGE_MATRIX.csv",
+      "size_bytes": 6456,
+      "sha256": "d89a7ff36c49ebd0e4094bbebd1d08370e3ea9d50b8ba39651f859f2e2731a53"
+    },
+    {
+      "path": "research/vietirr_v4_2/QA_DUPLICATE_REPORT.md",
+      "size_bytes": 392,
+      "sha256": "a03404f86e282568659a8af39bffebbdc1bebc188695af0019566f8d463ee1f4"
+    },
+    {
+      "path": "research/vietirr_v4_2/QA_GENERATION_PIPELINE.py",
+      "size_bytes": 212,
+      "sha256": "3bcc198d6ecdfa0a03d7f34473b6a9f438969f5ff9aca903f666b6420811541b"
+    },
+    {
+      "path": "research/vietirr_v4_2/QA_GENERATION_PROTOCOL.md",
+      "size_bytes": 834,
+      "sha256": "34015aa1daa5ff3f9b4d6a4bcd9b5af05fc305df60bc951c6e8f4e36898c3a1c"
+    },
+    {
+      "path": "research/vietirr_v4_2/QA_GROUND_UP_V4_2.jsonl",
+      "size_bytes": 49945,
+      "sha256": "abacd5484b2967d0425fd0e2d0545fff21fa76a83d7d65ca4158ab0b69c87e6d"
+    },
+    {
+      "path": "research/vietirr_v4_2/QA_MUTATION_TEST_REPORT.md",
+      "size_bytes": 582,
+      "sha256": "5008aae598139ca097e4908d682bb38dad2807e895cfe0db45c107f0bee00b22"
+    },
+    {
+      "path": "research/vietirr_v4_2/QA_REPRODUCIBILITY_REPORT.md",
+      "size_bytes": 671,
+      "sha256": "7789eef16e26634ac707d4b94c71c9ff7ed7a124b12ca3147fcad3d016d57ab2"
+    },
+    {
+      "path": "research/vietirr_v4_2/QA_SCHEMA_V4_2.json",
+      "size_bytes": 3244,
+      "sha256": "91e9a851ea68a8c3f2b003b8488452127f6b4231e28dc056792980695523e6d1"
+    },
+    {
+      "path": "research/vietirr_v4_2/QA_VALIDATION_V4_2.json",
+      "size_bytes": 15682,
+      "sha256": "aa2184bba327e55e6c776978ed370375014c0b1848dbd5d4f0852425ce534778"
+    },
+    {
+      "path": "research/vietirr_v4_2/QA_VALIDATOR_PATCH.py",
+      "size_bytes": 116,
+      "sha256": "17da7294723ede35a44220cf1f07c14d5a0f841b8e92e47a2191e60d1bf1887c"
+    },
+    {
+      "path": "research/vietirr_v4_2/QA_VALIDATOR_V4_2.py",
+      "size_bytes": 8598,
+      "sha256": "6dbfb6cab0c7d6b5ed804d2683fd613532bc5b14a66b7c2b410c52af93ef8d9f"
+    },
+    {
+      "path": "research/vietirr_v4_2/README.md",
+      "size_bytes": 653,
+      "sha256": "1e412e797bf2bf67940b5d113646d51546deb4457c039a84786ede1d84d5da9c"
+    },
+    {
+      "path": "research/vietirr_v4_2/SOURCE_DEPENDENCIES.json",
+      "size_bytes": 4679,
+      "sha256": "20d1930cb53aa176a9a86e656ddbbb65a96e2e619dc55e06db8760660ac34218"
+    },
+    {
+      "path": "research/vietirr_v4_2/V4_1_PILOT_REVIEW.csv",
+      "size_bytes": 1999,
+      "sha256": "beddcdce9d076451c9902649aee34bc5346d8d324d63d41561c26837eff32d0b"
+    },
+    {
+      "path": "research/vietirr_v4_2/V4_1_PILOT_REVIEW_REPORT.md",
+      "size_bytes": 620,
+      "sha256": "e055c903059cd0e0012c9c890fec11164561132ce39338ca78d93ee3bd762235"
+    },
+    {
+      "path": "research/vietirr_v4_2/V4_2_BASELINE_RECONCILIATION.md",
+      "size_bytes": 786,
+      "sha256": "a2801544860d66dac7a4f537034a92b1082bd06184b30418662063321b7427c6"
+    },
+    {
+      "path": "research/vietirr_v4_2/V4_2_BENCHMARK_READINESS.json",
+      "size_bytes": 977,
+      "sha256": "8f7932fc32abee85415a6583cafc46d5a857048c1f9c12b534f5f8e5b8b2f941"
+    },
+    {
+      "path": "research/vietirr_v4_2/V4_2_BUNDLE_MANIFEST.json",
+      "size_bytes": 3511,
+      "sha256": "253fbbe53c690b6ce8d89013cc90009048d5c9fa0d7927dd19bc58311c67a74a"
+    },
+    {
+      "path": "research/vietirr_v4_2/V4_2_DATASET_QUALITY_REPORT.md",
+      "size_bytes": 1433,
+      "sha256": "f12605f128bf35b79678defdc158aab8657bf5968c3aaea720bcc72bc6ded447"
+    },
+    {
+      "path": "research/vietirr_v4_2/V4_2_INDEPENDENT_AUDIT.json",
+      "size_bytes": 5200,
+      "sha256": "4be284837e4686e8fdd4b083c6c8272718df4ec2e48479d9153bd6b41d769bbd"
+    },
+    {
+      "path": "research/vietirr_v4_2/V4_2_INDEPENDENT_AUDIT.py",
+      "size_bytes": 5564,
+      "sha256": "d43b745a3a9362a753816815ada41a4b464831dd6621b2faad32158efa2f2dc2"
+    },
+    {
+      "path": "research/vietirr_v4_2/V4_2_INPUT_FREEZE.json",
+      "size_bytes": 12277,
+      "sha256": "a9f92073752c99f0991a2430378434368ef90cd6adb0c4ecc4676679399a1dcd"
+    },
+    {
+      "path": "research/vietirr_v4_2/V4_2_QA_AUDIT.csv",
+      "size_bytes": 5109,
+      "sha256": "af9a34dee43aefa747c0dfd5fadfa3dfd6358790ee462f32f1c010aa91d63524"
+    },
+    {
+      "path": "research/vietirr_v4_2/V4_2_QA_DRAFTS.jsonl",
+      "size_bytes": 49945,
+      "sha256": "abacd5484b2967d0425fd0e2d0545fff21fa76a83d7d65ca4158ab0b69c87e6d"
+    },
+    {
+      "path": "research/vietirr_v4_2/V4_2_REVIEW_BUNDLE.zip",
+      "size_bytes": 56351,
+      "sha256": "4b0f03f95893efe7c4497fed709462b8cbfd7436b5a6937a41b9de90fcceda36"
+    },
+    {
+      "path": "research/vietirr_v4_1/BENCHMARK_SPLIT_PROTOCOL.md",
+      "size_bytes": 2878,
+      "sha256": "21ed4af57e909053fd1b6e10b19e01ead69b68db2a4f3f7ff2e3646dd2ba2548"
+    },
+    {
+      "path": "research/vietirr_v4_1/build_corpus.py",
+      "size_bytes": 17333,
+      "sha256": "897250187b0948e9c30202eea4cdd3fea92b68f5424b80b3c12d1353fc3452d8"
+    },
+    {
+      "path": "research/vietirr_v4_1/build_coverage.py",
+      "size_bytes": 8852,
+      "sha256": "c811419d9666dc278f04c257767b8fa854d9acd12097ee915a46b8790b10893f"
+    },
+    {
+      "path": "research/vietirr_v4_1/build_deliverables.py",
+      "size_bytes": 8125,
+      "sha256": "171d13922b6d063625d04862250c5cf62999b2ee07a7db984fdf95eca80bc616"
+    },
+    {
+      "path": "research/vietirr_v4_1/build_review_bundle.py",
+      "size_bytes": 2015,
+      "sha256": "b9df0daa575eaf68a881c4c2c711cfb4b0d4b1c9c0f0e3108ce06e69a8f02147"
+    },
+    {
+      "path": "research/vietirr_v4_1/CORPUS_GAP_PRIORITY.csv",
+      "size_bytes": 2428,
+      "sha256": "caacdc7bea09c5ada76e090be3029f87880abd1877a87c03c5424badb7eb8a77"
+    },
+    {
+      "path": "research/vietirr_v4_1/DOMAIN_USE_CASE_MATRIX.csv",
+      "size_bytes": 6984,
+      "sha256": "a89d488ee73ef65d90c84a2ee0a9c9a2d826211368a322697c244a9ed5488db4"
+    },
+    {
+      "path": "research/vietirr_v4_1/freeze_inputs.py",
+      "size_bytes": 3413,
+      "sha256": "966eb1466c0831e91694c958c1dba132c094f079df0740eea74eccfdc561072f"
+    },
+    {
+      "path": "research/vietirr_v4_1/LINKED_DOCUMENT_PACKS.json",
+      "size_bytes": 1864,
+      "sha256": "b5ad1ce2318cce7acd220cd254aed019905dd6a79cae31ae7350d9c155df37bc"
+    },
+    {
+      "path": "research/vietirr_v4_1/NEW_SOURCE_CANDIDATES.csv",
+      "size_bytes": 6171,
+      "sha256": "a0a286962a5de9fbe46a95d65ae94eb6cab83fa4f4d39ad1f27a01400bb191f3"
+    },
+    {
+      "path": "research/vietirr_v4_1/NEW_SOURCE_SCREENING.csv",
+      "size_bytes": 9054,
+      "sha256": "dbd6f7c06220a6fb1b31fc26a5726dc54ca5aca21ae57688f79baf78612e21ba"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_ADVERSARIAL_TESTS/fixtures/01_shallow_question.json",
+      "size_bytes": 2302,
+      "sha256": "9cddce89d54797d30fab3327b9247191f56d91775a41f11b45e2b1202a557adb"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_ADVERSARIAL_TESTS/fixtures/02_nonexistent_number.json",
+      "size_bytes": 2413,
+      "sha256": "83a721733959d165d91d48b3677da8340e784a73b5aa0d388cb117fe8d918c5b"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_ADVERSARIAL_TESTS/fixtures/03_wrong_domain.json",
+      "size_bytes": 2413,
+      "sha256": "a0fa4c503a5f675384bdb879bd7a244acf063b64baa64db6ace56d2f6a12c015"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_ADVERSARIAL_TESTS/fixtures/04_fake_comparison.json",
+      "size_bytes": 3138,
+      "sha256": "2b178fad831795cdcc8d9e5dd411b4bc22042577bd4fe10e8ca9a7aea99cca35"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_ADVERSARIAL_TESTS/fixtures/05_fake_multi_evidence.json",
+      "size_bytes": 3657,
+      "sha256": "d471cc57cb033c8b88ed84e4de1f4876fb26444ce4a3b525fc58febca77cca34"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_ADVERSARIAL_TESTS/fixtures/06_self_declared_necessary.json",
+      "size_bytes": 3298,
+      "sha256": "edaa81c0e3bc325caf489ec861dd6ce3d3775e6418d9041f64b4f1913afb392f"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_ADVERSARIAL_TESTS/fixtures/07_wrong_entity.json",
+      "size_bytes": 2419,
+      "sha256": "82c8495743722be34e21977c2ff6d256cf222d5ac69e5aaa97588560d482434a"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_ADVERSARIAL_TESTS/fixtures/08_wrong_time.json",
+      "size_bytes": 3436,
+      "sha256": "57f95e98df6e575db1d35b007c98bdc15753fa098fa64249117c21d9087198f4"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_ADVERSARIAL_TESTS/fixtures/09_wrong_unit.json",
+      "size_bytes": 3456,
+      "sha256": "40ff152967302e1643009d5cad84a12ad2045739f1fc896a1a5daf486f72bb16"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_ADVERSARIAL_TESTS/fixtures/10_wrong_legal_validity.json",
+      "size_bytes": 3828,
+      "sha256": "b7e56392ff369e6f8e3aa84c0368a8aa7d69bca44a7e355f78ed1e15f286ee61"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_ADVERSARIAL_TESTS/fixtures/11_wrong_arithmetic.json",
+      "size_bytes": 3454,
+      "sha256": "d63321c9343004bd2def709f7fadb4035b2af775dc7c04beb815fb7c43aa9b2a"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_ADVERSARIAL_TESTS/fixtures/12_mixed_facilities.json",
+      "size_bytes": 4551,
+      "sha256": "48e4c672fb10725b377a9bcd4d89247b56b8c8edcbb1dfcdd8e0e46d5d087fb9"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_ADVERSARIAL_TESTS/fixtures/13_locator_right_fact_wrong.json",
+      "size_bytes": 2441,
+      "sha256": "17db415d8615b7924e7ed947e5758f1a4bac0fd3f90860e095b9ec9312e6e998"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_ADVERSARIAL_TESTS/fixtures/15_gold_missing_condition.json",
+      "size_bytes": 2525,
+      "sha256": "fc70c1f6cd22d1b1ae9c57a600867eec8925dc202d0c475bcecf458753b880f3"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_ADVERSARIAL_TESTS/fixtures/16_out_of_corpus.json",
+      "size_bytes": 2405,
+      "sha256": "917ff409f61fcfb11e2fd305d58f9e1100499117c5b67aa07d5db16fec3c3adf"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_ADVERSARIAL_TESTS/run_tests.py",
+      "size_bytes": 4738,
+      "sha256": "e62da7a20ee9b3ced84653db5225a05b2378262501416d3bc8f7eff7582b697d"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_ADVERSARIAL_TESTS/TEST_RESULTS.json",
+      "size_bytes": 4797,
+      "sha256": "2d986192ab91bbfd574d6bc6a565e073ecb19d033c6a847ad3c1d17ad23bd5e5"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_COVERAGE_MATRIX.csv",
+      "size_bytes": 1495,
+      "sha256": "2b55ff302071e6fa33efc0b41bf48040a59c3f2f4328ecef75ca42d5cefb6bc7"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_GENERATION_PIPELINE.py",
+      "size_bytes": 15608,
+      "sha256": "07299215f806938fbf80fca35f04260dcaf7fd24dcb154545ba4a693579fb0f1"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_GROUND_UP_PILOT.jsonl",
+      "size_bytes": 24660,
+      "sha256": "9c923f3d615c6afb98b8a54c1c16346cb8a35a16e39644f09a97db70476ca0eb"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_PILOT_AUDIT.csv",
+      "size_bytes": 2356,
+      "sha256": "f97fa365cf925fd67b6db04ef923d4366e706f1cec225cdc1b015952df637ee4"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_PILOT_VALIDATION.json",
+      "size_bytes": 4695,
+      "sha256": "8c9f4b0d455bb6dce86e093fed218f31573b4fc64ce86599b35f313d3cc2685e"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_RULEBOOK_V2.md",
+      "size_bytes": 7878,
+      "sha256": "7de8ea06730d4611c81239addc2c5e699dfe8243cf08ed939d2ea99f83c3f148"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_SCHEMA_V2.json",
+      "size_bytes": 5723,
+      "sha256": "6fa3e7246b7443ac0a72ecaa9bc948cb0951bab9304a0b24041d13b4ca2ea81e"
+    },
+    {
+      "path": "research/vietirr_v4_1/QA_VALIDATOR_V2.py",
+      "size_bytes": 13186,
+      "sha256": "7a5ae2387eae309982f9f261e80a5f4d94a4d2370ec89b3bb02f66a0be1fa33b"
+    },
+    {
+      "path": "research/vietirr_v4_1/README.md",
+      "size_bytes": 876,
+      "sha256": "bb1c5cbf992df55db2ced81d1ddeea9b3033ced3bbfad3a2f34bb9d4eb2c99eb"
+    },
+    {
+      "path": "research/vietirr_v4_1/V4_1_BUNDLE_MANIFEST.json",
+      "size_bytes": 9261,
+      "sha256": "342738f088416641e56603cf41937c8b1ac8f0c80ad5e231a43ef03b7d875e6b"
+    },
+    {
+      "path": "research/vietirr_v4_1/V4_1_EXECUTIVE_REPORT.md",
+      "size_bytes": 5183,
+      "sha256": "d1669c9111addd9be1005f276a2c8da15715b005ad0d66fb2a4c0a772a642c2c"
+    },
+    {
+      "path": "research/vietirr_v4_1/V4_1_INDEPENDENT_AUDIT.json",
+      "size_bytes": 9592,
+      "sha256": "6afd935643bb2ffd950b253850ded2ca8d81be417d21d4b1c1e69b268513e36e"
+    },
+    {
+      "path": "research/vietirr_v4_1/V4_1_INDEPENDENT_AUDIT.py",
+      "size_bytes": 7076,
+      "sha256": "b48b3db83308d5c002879ce46e975306d2aef55218be1626fcd1fc88432b7cbc"
+    },
+    {
+      "path": "research/vietirr_v4_1/V4_1_INPUT_FREEZE.json",
+      "size_bytes": 11092,
+      "sha256": "f497aa4ad8ddd758fc332a574cd227960358db7031c77d1997505d8867604a0b"
+    },
+    {
+      "path": "research/vietirr_v4_1/V4_1_READINESS.json",
+      "size_bytes": 1057,
+      "sha256": "2cbbbde3b98f2dcf7286641be5aae9459dc041722954bfee36ab7e8258b5edbd"
+    },
+    {
+      "path": "research/vietirr_v4_1/V4_1_REVIEW_BUNDLE.zip",
+      "size_bytes": 114257,
+      "sha256": "deb0349efd093de44174768dcba2adc962ecc84b0b99b358314ee408249220c1"
+    },
+    {
+      "path": "research/vietirr_v4_1/V4_CORPUS_INGESTION_REPORT.md",
+      "size_bytes": 2351,
+      "sha256": "961accad7566c04a274a7a19658fbf2ab794f9d7d7398cc7df02668181a9cae9"
+    },
+    {
+      "path": "research/vietirr_v4_1/V4_CORPUS_MANIFEST.jsonl",
+      "size_bytes": 71620,
+      "sha256": "9168105f11508fccaf5b1f95f95df83984788e3915c56f2588a9bb1a77bb99ff"
+    }
+  ],
+  "candidate_test": {
+    "path": "data/v3_2_final_semantic/candidate_test.jsonl",
+    "policy": "SEALED_NOT_OPENED_NOT_HASHED",
+    "size_bytes_from_stat_only": 3311481,
+    "mtime_ns_from_stat_only": 1791624847409109600,
+    "sha256": "INTENTIONALLY_NOT_COMPUTED"
+  },
+  "constraints": {
+    "v4_2_raw_mutated": false,
+    "retrieval_baselines_mutated": false,
+    "candidate_content_accessed": false
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "total": 18,
+  "passed": 18,
+  "failed": 0,
+  "all_pass": true,
+  "results": [
+    {
+      "test": "baseline_valid",
+      "category": "positive",
+      "passed": true,
+      "detail": "Published state satisfies core invariants."
+    },
+    {
+      "test": "fixtures_cover_bank",
+      "category": "positive",
+      "passed": true,
+      "detail": "59 unique evidence fixtures."
+    },
+    {
+      "test": "all_calculations_reproduce",
+      "category": "positive",
+      "passed": true,
+      "detail": "Every declared arithmetic trace reproduces."
+    },
+    {
+      "test": "ledger_starts_empty",
+      "category": "positive",
+      "passed": true,
+      "detail": "No fabricated review rows."
+    },
+    {
+      "test": "review_data_real",
+      "category": "positive",
+      "passed": true,
+      "detail": "UI data contains real 38-QA dossiers."
+    },
+    {
+      "test": "deep_review_18",
+      "category": "positive",
+      "passed": true,
+      "detail": "Exactly 18 risk-selected deep reviews."
+    },
+    {
+      "test": "mutation_missing_dossier_caught",
+      "category": "mutation",
+      "passed": true,
+      "detail": "Removing one dossier is rejected."
+    },
+    {
+      "test": "mutation_invalid_machine_status_caught",
+      "category": "mutation",
+      "passed": true,
+      "detail": "Gold cannot masquerade as a machine status."
+    },
+    {
+      "test": "mutation_fabricated_gold_caught",
+      "category": "mutation",
+      "passed": true,
+      "detail": "Machine pass cannot set gold."
+    },
+    {
+      "test": "mutation_fabricated_human_caught",
+      "category": "mutation",
+      "passed": true,
+      "detail": "Machine output cannot invent a human verdict."
+    },
+    {
+      "test": "mutation_qa026_false_pass_caught",
+      "category": "mutation",
+      "passed": true,
+      "detail": "Extrema do not prove all-row completeness."
+    },
+    {
+      "test": "mutation_qa036_extra_evidence_caught",
+      "category": "mutation",
+      "passed": true,
+      "detail": "Storage evidence cannot re-enter QA-036."
+    },
+    {
+      "test": "mutation_revision_lineage_caught",
+      "category": "mutation",
+      "passed": true,
+      "detail": "Revision without parent ID is rejected."
+    },
+    {
+      "test": "mutation_rejected_audit_row_loss_caught",
+      "category": "mutation",
+      "passed": true,
+      "detail": "Dropping any QA, including rejects, is rejected."
+    },
+    {
+      "test": "mutation_invalid_page_detected",
+      "category": "mutation",
+      "passed": true,
+      "detail": "Page zero is detected."
+    },
+    {
+      "test": "mutation_source_hash_detected",
+      "category": "mutation",
+      "passed": true,
+      "detail": "A changed source hash is detectable."
+    },
+    {
+      "test": "candidate_test_absent",
+      "category": "adversarial",
+      "passed": true,
+      "detail": "No Candidate Test artifact in V4.3."
+    },
+    {
+      "test": "no_reviewed_prefill",
+      "category": "adversarial",
+      "passed": true,
+      "detail": "Dossiers do not prefill human verdicts."
+    }
+  ]
+}

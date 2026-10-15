@@ -1,0 +1,659 @@
+{
+  "records": [
+    {
+      "qa_id": "V42-QA-001",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-002",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-003",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-004",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-005",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-006",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-007",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-008",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-009",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-010",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-011",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-012",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-013",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-014",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-015",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-016",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-017",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-018",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-019",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-020",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-021",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-022",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-023",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-024",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-025",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-026",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-027",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-028",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-029",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-030",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-031",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-032",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-033",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-034",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-035",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-036",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-037",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    },
+    {
+      "qa_id": "V42-QA-038",
+      "layers": {
+        "layer1": "PASS",
+        "layer2": "PASS",
+        "layer3": "REVIEW"
+      },
+      "release_state": "READY_FOR_HUMAN_REVIEW",
+      "issues": [
+        {
+          "code": "HUMAN_REVIEW_PENDING",
+          "message": "domain review not completed",
+          "layer": 3,
+          "severity": "REVIEW"
+        }
+      ]
+    }
+  ],
+  "near_duplicates": [],
+  "summary": {
+    "total": 38,
+    "layer1_fail": 0,
+    "layer2_fail": 0,
+    "pending_human": 38,
+    "human_accepted": 0,
+    "near_duplicates": 0
+  }
+}

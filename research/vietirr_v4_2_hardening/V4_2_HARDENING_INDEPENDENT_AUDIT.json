@@ -1,0 +1,268 @@
+{
+  "total": 52,
+  "passed": 52,
+  "failed": 0,
+  "all_pass": true,
+  "checks": [
+    {
+      "check": "required:V4_2_HARDENING_EXECUTIVE_REPORT.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_38_FULL_AUDIT.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_EVIDENCE_REPAIR.jsonl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_MINIMALITY_AUDIT.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:ALTERNATIVE_GOLD_SETS.jsonl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:EVIDENCE_CHANGELOG.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_LABEL_AUDIT.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_COMPETENCY_MAPPING.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_LABEL_CHANGELOG.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_SEMANTIC_CLUSTERS.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_DIVERSITY_REPORT.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_KEEP_REVISE_REJECT.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_GENERATOR_V3.py",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_GENERATION_SCHEMA.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_GENERATOR_TESTS/run_tests.py",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_GENERALIZATION_DEMO.jsonl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_GENERATOR_CAPABILITY_REPORT.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_HUMAN_REVIEW_SHEET.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:QA_VALIDATION_REPORT.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:V4_2_HARDENING_READINESS.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required:HARDENING_INPUT_FREEZE.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_files_unchanged",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "candidate_sealed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "candidate_not_hashed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "all_38_audited",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "all_have_decision_reason",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "decision_counts",
+      "pass": true,
+      "detail": "{'KEEP': 22, 'REVISE': 11, 'REJECT': 5}"
+    },
+    {
+      "check": "repair_has_38",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "qa036_minimal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "qa036_arithmetic",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "qa021_label_fixed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "qa032_label_fixed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "qa026_domain_evidence",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_cross_document_claims",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_false_human_gold",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "minimality_all_accounted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "clusters_classified",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "cluster_mandatory_ranges",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "valid_single_fact_not_all_rejected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "generator_not_hardcoded_qa_list",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "two_demo_drafts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "demo_uses_unseen_evidence",
+      "pass": true,
+      "detail": "['EV021', 'EV022', 'EV042']"
+    },
+    {
+      "check": "demo_checksums",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "hardening_tests",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "positive_and_negative_tests",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "human_sheet_38",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "review_fields_pending",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "readiness_separated",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "release_not_overclaimed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "bundle_checksums",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "bundle_no_candidate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "bundle_test_dependencies",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

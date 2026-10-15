@@ -1,0 +1,167 @@
+{
+  "total": 25,
+  "passed": 25,
+  "failed": 0,
+  "all_pass": true,
+  "checks": [
+    {
+      "check": "input_freeze_unchanged",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "candidate_test_not_accessed_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "raw_and_repaired_38_same_ids",
+      "passed": true,
+      "detail": 38
+    },
+    {
+      "check": "dossiers_38_unique",
+      "passed": true,
+      "detail": 38
+    },
+    {
+      "check": "machine_checks_38_unique",
+      "passed": true,
+      "detail": 38
+    },
+    {
+      "check": "machine_status_vocabulary",
+      "passed": true,
+      "detail": [
+        "MACHINE_SUPPORTED",
+        "PARTIALLY_SUPPORTED",
+        "REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "check": "machine_not_gold",
+      "passed": true,
+      "detail": "All false"
+    },
+    {
+      "check": "human_status_pending",
+      "passed": true,
+      "detail": "0 fabricated verdicts"
+    },
+    {
+      "check": "human_ledger_empty",
+      "passed": true,
+      "detail": "0 rows"
+    },
+    {
+      "check": "source_locators_valid",
+      "passed": true,
+      "detail": 83
+    },
+    {
+      "check": "evidence_fixtures_59",
+      "passed": true,
+      "detail": 59
+    },
+    {
+      "check": "source_pdf_hashes_and_pages",
+      "passed": true,
+      "detail": "All 59 evidence locators reconcile"
+    },
+    {
+      "check": "calculations_reproduced",
+      "passed": true,
+      "detail": "13/13"
+    },
+    {
+      "check": "qa026_not_false_pass",
+      "passed": true,
+      "detail": "Completeness pending"
+    },
+    {
+      "check": "qa036_minimal",
+      "passed": true,
+      "detail": "EV033;EV034"
+    },
+    {
+      "check": "rejected_qas_retained",
+      "passed": true,
+      "detail": [
+        "V42-QA-002",
+        "V42-QA-015",
+        "V42-QA-019",
+        "V42-QA-023",
+        "V42-QA-034"
+      ]
+    },
+    {
+      "check": "revision_lineage",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "check": "v41_qa008_no_retrospective_claim",
+      "passed": true,
+      "detail": [
+        "No evidence grants retrospective applicability to the 2025 procedure."
+      ]
+    },
+    {
+      "check": "review_tool_real_data",
+      "passed": true,
+      "detail": 38
+    },
+    {
+      "check": "coverage_layers_separated",
+      "passed": true,
+      "detail": {
+        "qa": 38,
+        "source_dossiers": 38,
+        "machine_checks": 38,
+        "priority_deep_review": 18,
+        "human_reviews": 0,
+        "proposed_revisions": 4,
+        "machine_statuses": {
+          "MACHINE_SUPPORTED": 29,
+          "PARTIALLY_SUPPORTED": 8,
+          "REVIEW_REQUIRED": 1
+        },
+        "reproduced_calculations": 13
+      }
+    },
+    {
+      "check": "expansion_no_go",
+      "passed": true,
+      "detail": "TECHNICALLY_COMPLETE_CONDITIONAL_GO_FOR_HUMAN_REVIEW_NO_GO_FOR_BROAD_EXPANSION"
+    },
+    {
+      "check": "adversarial_tests_pass",
+      "passed": true,
+      "detail": "18/18"
+    },
+    {
+      "check": "review_bundle_reproducible_scope",
+      "passed": true,
+      "detail": {
+        "entries": 47,
+        "external_pdf_dependencies": 8
+      }
+    },
+    {
+      "check": "candidate_test_not_packaged",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "frozen_integrity_flags",
+      "passed": true,
+      "detail": {
+        "raw_v4_2_mutated": false,
+        "frozen_v3_2_mutated": false,
+        "retrieval_baselines_mutated": false,
+        "candidate_test": "SEALED_NOT_OPENED_NOT_READ_NOT_HASHED_NOT_PACKAGED",
+        "fabricated_human_reviews": false
+      }
+    }
+  ]
+}

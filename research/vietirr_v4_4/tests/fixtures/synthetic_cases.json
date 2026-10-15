@@ -1,0 +1,7 @@
+{
+  "fixture_status": "SYNTHETIC_TEST_ONLY_NOT_DATASET",
+  "coverage": ["missing_pdf", "hash_mismatch", "duplicate_pdf", "incorrect_domain", "title_only_claim"],
+  "relations": ["entity_collision", "basin_only_applicability", "draft_as_effective", "unsupported_replacement", "time_role_mismatch", "unit_mismatch", "unrelated_evidence"],
+  "qa": ["fake_cross_document", "broken_multihop", "wrong_arithmetic", "incomplete_extrema_scope", "entity_swap_duplicate", "insufficient_scope", "frozen_record_mutation"]
+}
+

@@ -1,0 +1,5 @@
+﻿pack_id,candidate_basis,documents,relevance,source_reliability,selection_status,limitations
+PACK_BAC_NAM_HA,Same named irrigation system and explicit shared 5470/QĐ-BNN-TCTL lineage,V4_CTTL_2025_77c60f84;V4_IWRP_2021_3031564c,HIGH,MEDIUM,SELECTED,2021 context cannot be governed retrospectively by the 2025 procedure
+PACK_CAI_LON_CAI_BE,All sources explicitly identify HTTL Cái Lớn-Cái Bé; observation and forecast roles are distinct,V4_CTTL_2024_dda51c21;IRR_CTL_2025_c3d033a0;IRR_CTL_2025_57989573,HIGH,MEDIUM,SELECTED,Procedure is draft; monthly aggregate and point observation are not accuracy-comparable by default
+PACK_SONG_HUONG,Rule and flood-operation report explicitly name the basin and three shared reservoirs,IRR_CP_2019_89661cdf;IRR_GOV_2023_29fb8ed6,HIGH,MEDIUM_LOW_OCR,SELECTED_REVIEW_REQUIRED,Official rule is scanned/OCR and numeric OCR is not gold-eligible
+PACK_SONG_HONG_VERSION,Existing metadata records a 2019 rule and a 2025 amendment,IRR_CP_2019_ee0bca33;IRR_CP_2025_2d3e4a1e,HIGH,LOW_OCR_UNREVIEWED,PACK_NOT_READY,Amendment clauses and effective scope not page-image adjudicated

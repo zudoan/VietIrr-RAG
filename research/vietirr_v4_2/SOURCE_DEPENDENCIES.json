@@ -1,0 +1,70 @@
+{
+  "redistribution": "SOURCE_PDFS_NOT_INCLUDED",
+  "reason": "Use authoritative URLs/local corpus; verify SHA-256 before full source validation.",
+  "documents": [
+    {
+      "doc_id": "IRR_CTL_2024_4182a0d7",
+      "source_title": "Thông báo lịch lấy nước phục vụ gieo cấy lúa vụ Đông Xuân 2024-2025 khu vực Trung du và Đồng bằng Bắc Bộ",
+      "publisher": "Bộ Nông nghiệp và Phát triển nông thôn",
+      "source_url": "https://www1.cucthuyloi.gov.vn/Portals/0/DocumentFiles/2149_1_Bo%20NN%20va%20PTNT%20thong%20bao%20lich%20lay%20nc%202024-2025.pdf",
+      "local_path": "data/raw/core_long/2149_lich_lay_nuoc_2024_2025.pdf",
+      "sha256": "4182a0d7e188012406b4c65ea1ecf8974c3016914b173658c06ad04485081e70"
+    },
+    {
+      "doc_id": "IRR_CTL_2025_57989573",
+      "source_title": "Bản tin tuần kỳ 9 chất lượng nước hệ thống Cái Lớn - Cái Bé",
+      "publisher": "Cục Thủy lợi / Viện Kỹ thuật Biển",
+      "source_url": "https://chatluongnuoc.cucthuyloi.gov.vn/wp-content/uploads/2025/05/CLCB_BanTin_Tuan_Ky9.pdf",
+      "local_path": "data/raw/temporal/CLCB_BanTin_Tuan_Ky9.pdf",
+      "sha256": "5798957304d155b6ee2156f24ccfef6a2e24d3353987da828862efe863385dd2"
+    },
+    {
+      "doc_id": "IRR_CTL_2025_c3d033a0",
+      "source_title": "Bản tin dự báo diễn biến chất lượng nước tháng 4/2025 hệ thống Cái Lớn - Cái Bé",
+      "publisher": "Cục Thủy lợi / Viện Kỹ thuật Biển",
+      "source_url": "https://chatluongnuoc.cucthuyloi.gov.vn/wp-content/uploads/2025/03/CLCB_BanTin_DuBao_Thang_4_2025-1.pdf",
+      "local_path": "data/raw/temporal/CLCB_BanTin_DuBao_Thang_4_2025.pdf",
+      "sha256": "c3d033a0db2e3fdbb0caae29737895d04679ca31be651083043b1bf331f28273"
+    },
+    {
+      "doc_id": "IRR_GOV_2023_29fb8ed6",
+      "source_title": "dam operations huong 2023",
+      "publisher": "Cục Quản lý đê điều và Phòng, chống thiên tai",
+      "source_url": "https://phongchongthientai.mard.gov.vn/FileUpload/2024-07/NtFBgtdVuEG57-n5240627%20VIET_ST_Report_Dam%20Operations%20in%20the%20November%202023%20Flood%20of%20the%20Huong%20River%20%281%29.pdf",
+      "local_path": "data/raw/v3_official/dam_operations_huong_2023.pdf",
+      "sha256": "29fb8ed60058d12e9447754257b9e56435dd4a03d63c24c2403366d03faec270"
+    },
+    {
+      "doc_id": "V4_BNNMT_2025_594e7382",
+      "source_title": "Chỉ thị 02/CT-BNNMT về tăng cường bảo đảm an toàn công trình đê điều, thủy lợi mùa mưa lũ 2025",
+      "publisher": "Bộ Nông nghiệp và Môi trường",
+      "source_url": "https://phongchongthientai.mard.gov.vn/FileUpload/2025-05/znNKG-sD20SBoGzBChi%20thi%20so%2002%20CT-BNN%20ngay%208.5.2025%20ve%20Tang%20cuong%20dam%20bao%20ATCT%20De%20dieu%2C%20TL%20mua%20mua%20lu%202025.pdf",
+      "local_path": "data/v4_corpus/raw/V4_CT02_ATCT_2025.pdf",
+      "sha256": "594e73827fd7610da9468cce9c7009e8dafbd6aaac86f96c5fa93dbe95a25659"
+    },
+    {
+      "doc_id": "V4_CTTL_2024_dda51c21",
+      "source_title": "Dự thảo Quy trình vận hành hệ thống công trình thủy lợi Cái Lớn–Cái Bé",
+      "publisher": "Cục Thủy lợi",
+      "source_url": "https://www.cucthuyloi.gov.vn/Portals/0/DocumentFiles/2144_1_QTVH%20HTCTTL%20C%C3%A1i%20L%E1%BB%9Bn%20-%20C%C3%A1i%20Be%20%28final%29.pdf",
+      "local_path": "data/v4_corpus/raw/V4_CLCB_QTVH_DRAFT_2024.pdf",
+      "sha256": "dda51c213d92a9aa11eac8d6c992ffc47247003ec9bda6d99cdee30559aca374"
+    },
+    {
+      "doc_id": "V4_CTTL_2025_77c60f84",
+      "source_title": "Quyết định 1318/QĐ-BNNMT và Quy trình vận hành hệ thống công trình thủy lợi Bắc Nam Hà",
+      "publisher": "Bộ Nông nghiệp và Môi trường / Cục Quản lý và Xây dựng công trình thủy lợi",
+      "source_url": "https://www.cucthuyloi.gov.vn/Portals/0/DocumentFiles/2182_1_QTVH%20HTTL%20B%E1%BA%AFc%20Nam%20H%C3%A0.pdf",
+      "local_path": "data/v4_corpus/raw/V4_BNH_QTVH_MAIN_2025.pdf",
+      "sha256": "77c60f84390d0abfaaa2c7c6b2bb2410448a1c10a777efb4ed1e5cb8a676bed3"
+    },
+    {
+      "doc_id": "V4_IWRP_2021_3031564c",
+      "source_title": "Dự báo nguồn nước và kế hoạch sử dụng nước vụ Đông Xuân 2020-2021 lưu vực sông Châu",
+      "publisher": "Viện Quy hoạch Thủy lợi",
+      "source_url": "https://iwrp.gov.vn/upload/medias/SChauDX_2021.pdf",
+      "local_path": "data/v4_corpus/raw/V4_BNH_WATER_PLAN_2021.pdf",
+      "sha256": "3031564c93059d0da2cd04c41c85d64b769e672f7235504cfcd55da4e601bc25"
+    }
+  ]
+}

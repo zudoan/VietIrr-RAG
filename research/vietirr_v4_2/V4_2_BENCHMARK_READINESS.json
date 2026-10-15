@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "COVERAGE_DESIGN_READY": true,
+  "EVIDENCE_BANK_READY": true,
+  "QA_PIPELINE_TECHNICALLY_READY": true,
+  "QA_HUMAN_GOLD_READY": false,
+  "BENCHMARK_RELEASE_READY": false,
+  "counts": {
+    "coverage_cells": 26,
+    "eligible_cells": 18,
+    "evidence_units": 59,
+    "relations_human_verified": 0,
+    "relations_candidates": 21,
+    "new_qa_drafts": 38,
+    "multi_evidence_qa": 30,
+    "human_accepted_qa": 0,
+    "mutation_tests_passed": 16,
+    "mutation_tests_total": 16
+  },
+  "blockers": [
+    "38 drafts require named domain review.",
+    "No evidence relation is human verified.",
+    "No aligned plan-versus-actual or drainage-outcome source pack.",
+    "Primary legal/standard applicability remains unverified.",
+    "Table header/bbox semantics require human review.",
+    "Cross-document QA is blocked until relation review."
+  ],
+  "decision": "READY_FOR_TARGETED_HUMAN_REVIEW_NOT_OFFICIAL_BENCHMARK"
+}

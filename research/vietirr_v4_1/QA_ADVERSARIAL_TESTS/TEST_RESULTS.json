@@ -1,0 +1,187 @@
+{
+  "total": 16,
+  "caught": 16,
+  "non_default": 16,
+  "all_pass": true,
+  "synthetic": 5,
+  "real_pilot_mutations": 11,
+  "results": [
+    {
+      "name": "01_shallow_question",
+      "test_type": "SYNTHETIC",
+      "expected_code": "SHALLOW_QUESTION",
+      "observed_codes": [
+        "SHALLOW_QUESTION"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "02_nonexistent_number",
+      "test_type": "MUTATION",
+      "expected_code": "FACT_VALUE_NOT_FOUND",
+      "observed_codes": [
+        "FACT_VALUE_NOT_FOUND"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "03_wrong_domain",
+      "test_type": "MUTATION",
+      "expected_code": "DOMAIN_SOURCE_MISMATCH",
+      "observed_codes": [
+        "DOMAIN_SOURCE_MISMATCH"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "04_fake_comparison",
+      "test_type": "SYNTHETIC",
+      "expected_code": "FAKE_COMPARISON",
+      "observed_codes": [
+        "COMPONENT_UNKNOWN_FACT",
+        "COMPONENT_UNKNOWN_FACT",
+        "FAKE_COMPARISON",
+        "BAD_OPERATION_INPUT"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "05_fake_multi_evidence",
+      "test_type": "SYNTHETIC",
+      "expected_code": "FAKE_MULTI_EVIDENCE",
+      "observed_codes": [
+        "COMPONENT_UNKNOWN_FACT",
+        "COMPONENT_UNKNOWN_FACT",
+        "MINSET_UNKNOWN_EVIDENCE",
+        "FAKE_MULTI_EVIDENCE",
+        "RELATION_REVIEW_REQUIRED"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "06_self_declared_necessary",
+      "test_type": "SYNTHETIC",
+      "expected_code": "NON_MINIMAL_EVIDENCE_SET",
+      "observed_codes": [
+        "DUPLICATE_FACT_ID",
+        "NON_MINIMAL_EVIDENCE_SET",
+        "NON_MINIMAL_EVIDENCE_SET"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "07_wrong_entity",
+      "test_type": "MUTATION",
+      "expected_code": "FACT_CONTEXT_NOT_FOUND",
+      "observed_codes": [
+        "FACT_CONTEXT_NOT_FOUND"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "08_wrong_time",
+      "test_type": "MUTATION",
+      "expected_code": "FACT_CONTEXT_NOT_FOUND",
+      "observed_codes": [
+        "FACT_CONTEXT_NOT_FOUND"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "09_wrong_unit",
+      "test_type": "MUTATION",
+      "expected_code": "FACT_CONTEXT_NOT_FOUND",
+      "observed_codes": [
+        "FACT_CONTEXT_NOT_FOUND"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "10_wrong_legal_validity",
+      "test_type": "MUTATION",
+      "expected_code": "DRAFT_RULE_NOT_APPLICABLE",
+      "observed_codes": [
+        "DRAFT_RULE_NOT_APPLICABLE",
+        "DRAFT_RULE_NOT_APPLICABLE",
+        "DRAFT_RULE_NOT_APPLICABLE",
+        "GOLD_MISSING_CONDITION"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "11_wrong_arithmetic",
+      "test_type": "MUTATION",
+      "expected_code": "ARITHMETIC_MISMATCH",
+      "observed_codes": [
+        "ARITHMETIC_MISMATCH"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "12_mixed_facilities",
+      "test_type": "MUTATION",
+      "expected_code": "MIXED_FACILITY_EVIDENCE",
+      "observed_codes": [
+        "PAGE_HASH_MISMATCH",
+        "ANCHOR_NOT_FOUND",
+        "FACT_CONTEXT_NOT_FOUND",
+        "FACT_VALUE_NOT_FOUND",
+        "RELATION_REVIEW_REQUIRED",
+        "MIXED_FACILITY_EVIDENCE"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "13_locator_right_fact_wrong",
+      "test_type": "MUTATION",
+      "expected_code": "FACT_VALUE_NOT_FOUND",
+      "observed_codes": [
+        "FACT_VALUE_NOT_FOUND"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "15_gold_missing_condition",
+      "test_type": "MUTATION",
+      "expected_code": "GOLD_MISSING_CONDITION",
+      "observed_codes": [
+        "GOLD_MISSING_CONDITION"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "16_out_of_corpus",
+      "test_type": "SYNTHETIC",
+      "expected_code": "SOURCE_NOT_IN_CORPUS",
+      "observed_codes": [
+        "SOURCE_NOT_IN_CORPUS"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "14_paraphrase_duplicate",
+      "test_type": "MUTATION",
+      "expected_code": "NEAR_DUPLICATE",
+      "observed_codes": [
+        "NEAR_DUPLICATE"
+      ],
+      "caught": true,
+      "non_default": true
+    }
+  ]
+}

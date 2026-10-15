@@ -1,0 +1,38 @@
+{"qa_id": "V42-QA-001", "canonical_evidence_ids": ["EV001"], "alternative_sets": [{"evidence_ids": ["EV002", "EV003"], "status": "CANDIDATE_PENDING_HUMAN", "basis": "sum of exhaustive in-dike and out-of-dike components"}], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-002", "canonical_evidence_ids": ["EV002", "EV003"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-003", "canonical_evidence_ids": ["EV001", "EV002", "EV003"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-004", "canonical_evidence_ids": ["EV002", "EV003"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-005", "canonical_evidence_ids": ["EV010"], "alternative_sets": [{"evidence_ids": ["EV011", "EV012"], "status": "CANDIDATE_PENDING_HUMAN", "basis": "sum of direct-benefit and support components in draft"}], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-006", "canonical_evidence_ids": ["EV011", "EV012"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-007", "canonical_evidence_ids": ["EV024", "EV025"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-008", "canonical_evidence_ids": ["EV026"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-009", "canonical_evidence_ids": ["EV004"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-010", "canonical_evidence_ids": ["EV010"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-011", "canonical_evidence_ids": ["EV005", "EV006", "EV007"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-012", "canonical_evidence_ids": ["EV005", "EV006", "EV007"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-013", "canonical_evidence_ids": ["EV008", "EV009"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-014", "canonical_evidence_ids": ["EV008", "EV009"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-015", "canonical_evidence_ids": ["EV027", "EV028"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-016", "canonical_evidence_ids": ["EV027", "EV028"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-017", "canonical_evidence_ids": ["EV019", "EV020"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-018", "canonical_evidence_ids": ["EV018", "EV019", "EV020"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-019", "canonical_evidence_ids": ["EV018"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-020", "canonical_evidence_ids": ["EV023"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-021", "canonical_evidence_ids": ["EV045", "EV046", "EV047"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-022", "canonical_evidence_ids": ["EV045", "EV049"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-023", "canonical_evidence_ids": ["EV045", "EV047"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-024", "canonical_evidence_ids": ["EV054", "EV055", "EV056"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-025", "canonical_evidence_ids": ["EV054", "EV056"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-026", "canonical_evidence_ids": ["EV053", "EV057", "EV058"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-027", "canonical_evidence_ids": ["EV053", "EV057", "EV059"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-028", "canonical_evidence_ids": ["EV045", "EV047", "EV048"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-029", "canonical_evidence_ids": ["EV013", "EV014"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-030", "canonical_evidence_ids": ["EV013", "EV014"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-031", "canonical_evidence_ids": ["EV015"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-032", "canonical_evidence_ids": ["EV016", "EV017"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-033", "canonical_evidence_ids": ["EV015"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-034", "canonical_evidence_ids": ["EV029", "EV030"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-035", "canonical_evidence_ids": ["EV029", "EV030", "EV031", "EV032", "EV033", "EV034"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-036", "canonical_evidence_ids": ["EV033", "EV034"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-037", "canonical_evidence_ids": ["EV035", "EV036", "EV037", "EV038"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}
+{"qa_id": "V42-QA-038", "canonical_evidence_ids": ["EV035", "EV036", "EV037"], "alternative_sets": [], "verified_alternative_count": 0, "status": "NONE_HUMAN_VERIFIED"}

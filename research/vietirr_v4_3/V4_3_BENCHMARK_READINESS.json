@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "decision": "TECHNICALLY_COMPLETE_CONDITIONAL_GO_FOR_HUMAN_REVIEW_NO_GO_FOR_BROAD_EXPANSION",
+  "source_dossiers_ready": true,
+  "machine_verification_ready": true,
+  "human_review_workflow_ready": true,
+  "human_gold_ready": false,
+  "benchmark_expansion_ready": false,
+  "official_benchmark_ready": false,
+  "counts": {
+    "qa": 38,
+    "source_dossiers": 38,
+    "machine_checks": 38,
+    "priority_deep_review": 18,
+    "human_reviews": 0,
+    "proposed_revisions": 4,
+    "machine_statuses": {
+      "MACHINE_SUPPORTED": 29,
+      "PARTIALLY_SUPPORTED": 8,
+      "REVIEW_REQUIRED": 1
+    },
+    "reproduced_calculations": 13
+  },
+  "scientific_integrity": {
+    "raw_v4_2_mutated": false,
+    "frozen_v3_2_mutated": false,
+    "retrieval_baselines_mutated": false,
+    "candidate_test": "SEALED_NOT_OPENED_NOT_READ_NOT_HASHED_NOT_PACKAGED",
+    "fabricated_human_reviews": false
+  },
+  "blockers": [
+    "Authoritative signed/versioned legal instrument and applicability history",
+    "Human-confirmed table headers, row bindings and all-row aggregation",
+    "Resolution of internal event-date inconsistency in dam report",
+    "Human-verified evidence relations",
+    "Validated cross-document QA",
+    "Independent human QA verdicts"
+  ]
+}

@@ -1,0 +1,623 @@
+{
+  "verification": "VIETIRR_RAG_V4_4_CLEAN_ROOM",
+  "verified_at_utc": "2026-10-15T09:18:07.346134+00:00",
+  "bundle_root": ".",
+  "archive": "VR4_4_COMPLETE_AUDIT_HANDOFF.zip",
+  "overall": "PASS",
+  "final_status": "FULLY_AUDITABLE",
+  "checks_total": 21,
+  "checks_passed": 21,
+  "checks_failed": 0,
+  "checks_blocked": 0,
+  "checks_not_applicable": 0,
+  "candidate_test_accessed": false,
+  "checks": [
+    {
+      "check_id": "ROOT_MANIFESTS",
+      "status": "PASS",
+      "detail": "all required root manifests/reports are present",
+      "metrics": {}
+    },
+    {
+      "check_id": "CHECKSUMS",
+      "status": "PASS",
+      "detail": "all packaged regular files match CHECKSUMS.sha256",
+      "metrics": {
+        "errors": []
+      }
+    },
+    {
+      "check_id": "CORPUS_93",
+      "status": "PASS",
+      "detail": "93/93 canonical PDFs exist and match",
+      "metrics": {
+        "records": 93,
+        "errors": []
+      }
+    },
+    {
+      "check_id": "CORPUS_UNIQUE_IDS",
+      "status": "PASS",
+      "detail": "93 unique canonical document IDs",
+      "metrics": {}
+    },
+    {
+      "check_id": "DEPENDENCY_CLOSURE",
+      "status": "PASS",
+      "detail": "all declared runtime dependencies are present and hash-matched",
+      "metrics": {
+        "dependencies": 284,
+        "errors": []
+      }
+    },
+    {
+      "check_id": "PARSED_JSON_DEPENDENCIES",
+      "status": "PASS",
+      "detail": "all four parsed JSON sources are present",
+      "metrics": {
+        "paths": [
+          "data/v4_corpus/parsed/V4_BNNMT_2025_594e7382.json",
+          "data/v4_corpus/parsed/V4_CTTL_2024_dda51c21.json",
+          "data/v4_corpus/parsed/V4_CTTL_2025_77c60f84.json",
+          "data/v4_corpus/parsed/V4_IWRP_2021_3031564c.json"
+        ]
+      }
+    },
+    {
+      "check_id": "PILOT_38",
+      "status": "PASS",
+      "detail": "38/38 pilot QA and KEEP decisions are preserved",
+      "metrics": {}
+    },
+    {
+      "check_id": "PILOT_WARNINGS",
+      "status": "PASS",
+      "detail": "source/semantic warnings remain traceable",
+      "metrics": {}
+    },
+    {
+      "check_id": "NO_FALSE_HUMAN_GOLD",
+      "status": "PASS",
+      "detail": "no pilot QA is silently promoted to human gold",
+      "metrics": {}
+    },
+    {
+      "check_id": "NEW_QA_10",
+      "status": "PASS",
+      "detail": "all 10 V4.4 drafts are present and non-gold",
+      "metrics": {}
+    },
+    {
+      "check_id": "QA_SOURCE_REFERENCES",
+      "status": "PASS",
+      "detail": "all V4.4 QA source and evidence references resolve",
+      "metrics": {
+        "errors": []
+      }
+    },
+    {
+      "check_id": "PACK_SOURCE_REFERENCES",
+      "status": "PASS",
+      "detail": "all selected pack document references resolve",
+      "metrics": {
+        "errors": []
+      }
+    },
+    {
+      "check_id": "RELATION_PROVENANCE",
+      "status": "PASS",
+      "detail": "all relation sources resolve; one target is explicitly external/not-in-corpus",
+      "metrics": {
+        "external_targets": [
+          "EXTERNAL_ACT_5470_2016_NOT_IN_CORPUS"
+        ]
+      }
+    },
+    {
+      "check_id": "FROZEN_BASELINE_HASHES",
+      "status": "PASS",
+      "detail": "all frozen upstream QA artifacts match recorded hashes",
+      "metrics": {
+        "errors": []
+      }
+    },
+    {
+      "check_id": "CANDIDATE_TEST_EXCLUDED",
+      "status": "PASS",
+      "detail": "sealed Candidate Test is not packaged",
+      "metrics": {
+        "errors": []
+      }
+    },
+    {
+      "check_id": "DECLARED_COMPLETENESS",
+      "status": "PASS",
+      "detail": "manifest completeness/status is appropriate",
+      "metrics": {}
+    },
+    {
+      "check_id": "ARCHIVE_INTEGRITY",
+      "status": "PASS",
+      "detail": "ZIP integrity and member paths are valid",
+      "metrics": {
+        "bad_member": null,
+        "unsafe_paths": [],
+        "members": 168
+      }
+    },
+    {
+      "check_id": "ARTIFACT_CONSISTENCY",
+      "status": "PASS",
+      "detail": "builder reproduces all stable scientific artifacts byte-for-byte",
+      "metrics": {
+        "returncode": 0,
+        "mismatches": [],
+        "stderr": ""
+      }
+    },
+    {
+      "check_id": "V4_4_TESTS",
+      "status": "PASS",
+      "detail": "clean-room V4.4 tests pass 22/22",
+      "metrics": {
+        "result": {
+          "suite": "VIETIRR_RAG_V4_4_MANDATORY_22",
+          "generated_at_utc": "2026-10-15T09:18:07.010897+00:00",
+          "total": 22,
+          "passed": 22,
+          "failed": 0,
+          "all_passed": true,
+          "candidate_test_accessed": false,
+          "results": [
+            {
+              "case_id": "C01",
+              "name": "corpus document missing",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "missing file rejected",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "C02",
+              "name": "canonical hash mismatch",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "wrong digest rejected",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "C03",
+              "name": "duplicate physical PDF",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "same digest under two IDs rejected",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "C04",
+              "name": "incorrect domain assignment",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "out-of-vocabulary assignment rejected",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "C05",
+              "name": "title suggests content but PDF does not",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "title metadata is not accepted as evidence",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "R06",
+              "name": "same facility name, different entities",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "ENTITY_COLLISION detected",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "R07",
+              "name": "same basin does not prove applicability",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "BASIN_ONLY_APPLICABILITY detected",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "R08",
+              "name": "draft treated as effective rule",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "DRAFT_AS_EFFECTIVE detected",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "R09",
+              "name": "invalid replacement relation",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "UNSUPPORTED_REPLACEMENT detected",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "R10",
+              "name": "same metric with incompatible times",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "INCOMPATIBLE_TIME_ROLE detected",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "R11",
+              "name": "same value with different units",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "INCOMPATIBLE_UNIT detected",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "R12",
+              "name": "unrelated evidence in a set",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "off-entity/off-topic member detected",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "Q13",
+              "name": "cross-document label with one source",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "single-source cross-document claim rejected",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "Q14",
+              "name": "multi-hop without dependency",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "broken dependency rejected",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "Q15",
+              "name": "arithmetic uses wrong table result",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "incorrect sum rejected",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "Q16",
+              "name": "extrema lacks complete scope",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "unproven maximum scope rejected",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "Q17",
+              "name": "duplicate question with altered entity",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "entity-swap template inflation detected",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "Q18",
+              "name": "legitimate simple factual QA",
+              "expected": "ACCEPT_VALID",
+              "passed": true,
+              "detail": "actual date/count QA accepted",
+              "fixture_type": "actual_positive"
+            },
+            {
+              "case_id": "Q19",
+              "name": "legitimate single-document comparison",
+              "expected": "ACCEPT_VALID",
+              "passed": true,
+              "detail": "actual time-scope comparison accepted",
+              "fixture_type": "actual_positive"
+            },
+            {
+              "case_id": "Q20",
+              "name": "legitimate real cross-document QA",
+              "expected": "ACCEPT_VALID",
+              "passed": true,
+              "detail": "two real documents plus registered relation accepted",
+              "fixture_type": "actual_positive"
+            },
+            {
+              "case_id": "Q21",
+              "name": "insufficient evidence scope",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "partial scope rejected",
+              "fixture_type": "synthetic_negative"
+            },
+            {
+              "case_id": "Q22",
+              "name": "frozen 38 modified",
+              "expected": "DETECT_INVALID",
+              "passed": true,
+              "detail": "checksum mutation is detected without changing the parent file",
+              "fixture_type": "synthetic_negative"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    },
+    {
+      "check_id": "V4_4_INDEPENDENT_AUDIT",
+      "status": "PASS",
+      "detail": "clean-room independent audit passes 30/30",
+      "metrics": {
+        "review_returncode": 0,
+        "audit_result": {
+          "audit": "VIETIRR_RAG_V4_4_INDEPENDENT_ARTIFACT_AUDIT",
+          "generated_at_utc": "2026-10-15T09:18:07.271402+00:00",
+          "checks_total": 30,
+          "checks_passed": 30,
+          "checks_failed": 0,
+          "all_passed": true,
+          "candidate_test_accessed": false,
+          "human_verified_count": 0,
+          "official_gold_count": 0,
+          "checks": [
+            {
+              "check_id": "FROZEN_V4_2_QA_DRAFTS.jsonl",
+              "passed": true,
+              "detail": "parent artifact exists and matches frozen hash"
+            },
+            {
+              "check_id": "FROZEN_QA_EVIDENCE_REPAIR.jsonl",
+              "passed": true,
+              "detail": "parent artifact exists and matches frozen hash"
+            },
+            {
+              "check_id": "FROZEN_QA_38_FULL_AUDIT.csv",
+              "passed": true,
+              "detail": "parent artifact exists and matches frozen hash"
+            },
+            {
+              "check_id": "FROZEN_QA_SEMANTIC_CLUSTERS.json",
+              "passed": true,
+              "detail": "parent artifact exists and matches frozen hash"
+            },
+            {
+              "check_id": "FROZEN_QA_SOURCE_DOSSIERS.jsonl",
+              "passed": true,
+              "detail": "parent artifact exists and matches frozen hash"
+            },
+            {
+              "check_id": "FROZEN_QA_MACHINE_SOURCE_CHECKS.jsonl",
+              "passed": true,
+              "detail": "parent artifact exists and matches frozen hash"
+            },
+            {
+              "check_id": "FROZEN_QA_REVIEW_PRIORITY.csv",
+              "passed": true,
+              "detail": "parent artifact exists and matches frozen hash"
+            },
+            {
+              "check_id": "PILOT_COUNT",
+              "passed": true,
+              "detail": "38 records retained"
+            },
+            {
+              "check_id": "PILOT_KEEP_SCOPE",
+              "passed": true,
+              "detail": "KEEP means question retention only"
+            },
+            {
+              "check_id": "PILOT_DECISION_PROVENANCE",
+              "passed": true,
+              "detail": "decision provenance and source-status preservation are explicit"
+            },
+            {
+              "check_id": "NO_FAKE_PILOT_HUMAN",
+              "passed": true,
+              "detail": "no pilot promoted to human/gold"
+            },
+            {
+              "check_id": "PILOT_GOLD_POLICY",
+              "passed": true,
+              "detail": "KEEP never implies automatic gold"
+            },
+            {
+              "check_id": "CORPUS_CARDINALITY",
+              "passed": true,
+              "detail": "93 unique canonical documents profiled"
+            },
+            {
+              "check_id": "CORPUS_HASHES",
+              "passed": true,
+              "detail": "all 93 physical PDFs exist and match canonical hashes"
+            },
+            {
+              "check_id": "CORPUS_PROFILE_IDS",
+              "passed": true,
+              "detail": "profile set equals manifest set"
+            },
+            {
+              "check_id": "COVERAGE_LAYERS",
+              "passed": true,
+              "detail": "corpus breadth and typed-evidence depth are separated"
+            },
+            {
+              "check_id": "TYPED_EVIDENCE_DEPTH",
+              "passed": true,
+              "detail": "typed evidence currently covers 8 documents"
+            },
+            {
+              "check_id": "PACK_COUNTS",
+              "passed": true,
+              "detail": "3 selected packs and 7 explicit relations"
+            },
+            {
+              "check_id": "RELATION_STATUS",
+              "passed": true,
+              "detail": "no relation is mislabeled human-verified"
+            },
+            {
+              "check_id": "RELATION_DOCUMENTS",
+              "passed": true,
+              "detail": "relation endpoints are canonical or explicitly external"
+            },
+            {
+              "check_id": "PACK_EVIDENCE_PROVENANCE",
+              "passed": true,
+              "detail": "every pack evidence unit has document hash, page and source span"
+            },
+            {
+              "check_id": "QA_CARDINALITY",
+              "passed": true,
+              "detail": "10 non-quota-driven QA drafts"
+            },
+            {
+              "check_id": "QA_REVIEW_SEPARATION",
+              "passed": true,
+              "detail": "new QA remains pending human and non-gold"
+            },
+            {
+              "check_id": "QA_VALIDATION_STATUS",
+              "passed": true,
+              "detail": "expected 7/3 machine/review split"
+            },
+            {
+              "check_id": "QA_CROSS_DOCUMENT_REAL",
+              "passed": true,
+              "detail": "cross-document QA uses at least two source documents"
+            },
+            {
+              "check_id": "QA_ARITHMETIC",
+              "passed": true,
+              "detail": "all explicit arithmetic traces reproduce"
+            },
+            {
+              "check_id": "MANDATORY_TESTS",
+              "passed": true,
+              "detail": "22/22 mandatory tests pass"
+            },
+            {
+              "check_id": "BUNDLE_SOURCE_FREE",
+              "passed": true,
+              "detail": "review ZIP embeds no source PDF"
+            },
+            {
+              "check_id": "BUNDLE_CANDIDATE_TEST_FREE",
+              "passed": true,
+              "detail": "no Candidate Test path is bundled"
+            },
+            {
+              "check_id": "BUNDLE_HASHES",
+              "passed": true,
+              "detail": "bundled support files match manifest hashes"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    },
+    {
+      "check_id": "HANDOFF_NEGATIVE_TESTS",
+      "status": "PASS",
+      "detail": "all 10 deliberate corruptions are detected",
+      "metrics": {
+        "result": {
+          "suite": "V4_4_HANDOFF_NEGATIVE_10",
+          "total": 10,
+          "passed": 10,
+          "failed": 0,
+          "all_passed": true,
+          "results": [
+            {
+              "case_id": "N01",
+              "name": "missing PDF",
+              "expected": "MISSING_PDF",
+              "detected": true,
+              "passed": true,
+              "fixture": "SYNTHETIC_MUTATION_ONLY"
+            },
+            {
+              "case_id": "N02",
+              "name": "modified PDF bytes",
+              "expected": "PDF_HASH_MISMATCH",
+              "detected": true,
+              "passed": true,
+              "fixture": "SYNTHETIC_MUTATION_ONLY"
+            },
+            {
+              "case_id": "N03",
+              "name": "missing handoff manifest",
+              "expected": "MISSING_MANIFEST",
+              "detected": true,
+              "passed": true,
+              "fixture": "SYNTHETIC_MUTATION_ONLY"
+            },
+            {
+              "case_id": "N04",
+              "name": "missing parsed JSON dependency",
+              "expected": "MISSING_DEPENDENCY",
+              "detected": true,
+              "passed": true,
+              "fixture": "SYNTHETIC_MUTATION_ONLY"
+            },
+            {
+              "case_id": "N05",
+              "name": "wrong checksum",
+              "expected": "CHECKSUM_MISMATCH",
+              "detected": true,
+              "passed": true,
+              "fixture": "SYNTHETIC_MUTATION_ONLY"
+            },
+            {
+              "case_id": "N06",
+              "name": "QA references nonexistent source",
+              "expected": "QA_SOURCE_DOCUMENT_MISSING",
+              "detected": true,
+              "passed": true,
+              "fixture": "SYNTHETIC_MUTATION_ONLY"
+            },
+            {
+              "case_id": "N07",
+              "name": "pack references absent document",
+              "expected": "PACK_SOURCE_DOCUMENT_MISSING",
+              "detected": true,
+              "passed": true,
+              "fixture": "SYNTHETIC_MUTATION_ONLY"
+            },
+            {
+              "case_id": "N08",
+              "name": "duplicate ID with inconsistent hash",
+              "expected": "DUPLICATE_DOCUMENT_ID_INCONSISTENT_HASH",
+              "detected": true,
+              "passed": true,
+              "fixture": "SYNTHETIC_MUTATION_ONLY"
+            },
+            {
+              "case_id": "N09",
+              "name": "missing executable dependency",
+              "expected": "MISSING_EXECUTABLE_DEPENDENCY",
+              "detected": true,
+              "passed": true,
+              "fixture": "SYNTHETIC_MUTATION_ONLY"
+            },
+            {
+              "case_id": "N10",
+              "name": "unsafe archive member path",
+              "expected": "UNSAFE_ARCHIVE_PATH",
+              "detected": true,
+              "passed": true,
+              "fixture": "SYNTHETIC_MUTATION_ONLY"
+            }
+          ]
+        },
+        "stderr": ""
+      }
+    }
+  ]
+}

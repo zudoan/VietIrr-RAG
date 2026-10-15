@@ -1,0 +1,8 @@
+﻿pack_id,qa_type,status,basis,limitation
+PACK_BAC_NAM_HA,single-document factual,SUPPORTED,page-anchored procedure/plan evidence,human review pending
+PACK_BAC_NAM_HA,cross-document version reasoning,SUPPORTED_WITH_LIMIT,shared explicit 5470 lineage,no retrospective applicability
+PACK_CAI_LON_CAI_BE,cross-document observation/forecast reporting,SUPPORTED_WITH_LIMIT,same CL1 and salinity metric,do not infer forecast accuracy
+PACK_CAI_LON_CAI_BE,rule + observation,NOT_SUPPORTED,procedure source is draft,no effective rule relation
+PACK_SONG_HUONG,cross-document facility identity,REVIEW_REQUIRED,three named facilities in rule OCR and report PDF text,page-image confirmation required
+PACK_SONG_HUONG,quantitative synthesis,SUPPORTED_SINGLE_DOCUMENT,"direct report values on pages 8, 9 and 12",not cross-document reasoning
+PACK_SONG_HUONG,rule application to 2023 event,NOT_ESTABLISHED,same basin/facilities only,applicable clause and event condition not adjudicated

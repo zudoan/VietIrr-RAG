@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-10-15T08:33:04.654744+00:00",
+  "qa_count": 38,
+  "all_user_decisions": "KEEP",
+  "decision_scope": "QUESTION_CONTENT_RETENTION",
+  "human_evidence_verified_count": 0,
+  "official_gold_count": 0,
+  "candidate_test": "SEALED_NOT_OPENED_NOT_READ_NOT_HASHED",
+  "files": [
+    {
+      "path": "research/vietirr_v4_2/V4_2_QA_DRAFTS.jsonl",
+      "size_bytes": 49945,
+      "sha256": "abacd5484b2967d0425fd0e2d0545fff21fa76a83d7d65ca4158ab0b69c87e6d"
+    },
+    {
+      "path": "research/vietirr_v4_2_hardening/QA_EVIDENCE_REPAIR.jsonl",
+      "size_bytes": 85982,
+      "sha256": "1a068caa46c3bc017713df53edbd1a0909ad93bc80e661d1c5f6ea4b3798dc13"
+    },
+    {
+      "path": "research/vietirr_v4_2_hardening/QA_38_FULL_AUDIT.csv",
+      "size_bytes": 29348,
+      "sha256": "7765e6255a6e5d17712562b4ac6e4b146213ec7daf66e99f16952dd0616ec39d"
+    },
+    {
+      "path": "research/vietirr_v4_2_hardening/QA_SEMANTIC_CLUSTERS.json",
+      "size_bytes": 40023,
+      "sha256": "05970d45dfe91422d9bdcac7c8ec29ddc2dda540a1f8c224dc6bc26e5bd0973f"
+    },
+    {
+      "path": "research/vietirr_v4_3/QA_SOURCE_DOSSIERS.jsonl",
+      "size_bytes": 141110,
+      "sha256": "da541c1126bfa342ceb862f766add9f669ac2f37ab7a3a96eff592535a342591"
+    },
+    {
+      "path": "research/vietirr_v4_3/QA_MACHINE_SOURCE_CHECKS.jsonl",
+      "size_bytes": 48536,
+      "sha256": "850d356b982497ec89221d2d909c1607423fad12ed281089dae72584515203c3"
+    },
+    {
+      "path": "research/vietirr_v4_3/QA_REVIEW_PRIORITY.csv",
+      "size_bytes": 5326,
+      "sha256": "68fb323ee3c018df8d681d0071b34e3e4a625ca824e645f85bfb9926f4784d8a"
+    }
+  ]
+}

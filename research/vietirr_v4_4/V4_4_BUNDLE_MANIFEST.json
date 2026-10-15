@@ -1,0 +1,243 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-10-15T08:33:12.924032+00:00",
+  "bundle": "V4_4_REVIEW_BUNDLE.zip",
+  "purpose": "review V4.4 corpus audit, evidence packs and controlled QA expansion",
+  "source_pdfs_embedded": 0,
+  "external_canonical_pdf_dependencies": 93,
+  "candidate_test": "SEALED_NOT_OPENED_NOT_READ_NOT_HASHED_NOT_BUNDLED",
+  "human_verified_count": 0,
+  "official_gold_count": 0,
+  "files": [
+    {
+      "path": "research/vietirr_v4_1/V4_CORPUS_MANIFEST.jsonl",
+      "size_bytes": 71620,
+      "sha256": "9168105f11508fccaf5b1f95f95df83984788e3915c56f2588a9bb1a77bb99ff"
+    },
+    {
+      "path": "research/vietirr_v4_2/EVIDENCE_BANK.jsonl",
+      "size_bytes": 48163,
+      "sha256": "aa18bb7e27a7826234568625ec9f678a0edd1687a5c39a0b854c37dead19fcb2"
+    },
+    {
+      "path": "research/vietirr_v4_2/V4_2_QA_DRAFTS.jsonl",
+      "size_bytes": 49945,
+      "sha256": "abacd5484b2967d0425fd0e2d0545fff21fa76a83d7d65ca4158ab0b69c87e6d"
+    },
+    {
+      "path": "research/vietirr_v4_2_hardening/QA_38_FULL_AUDIT.csv",
+      "size_bytes": 29348,
+      "sha256": "7765e6255a6e5d17712562b4ac6e4b146213ec7daf66e99f16952dd0616ec39d"
+    },
+    {
+      "path": "research/vietirr_v4_2_hardening/QA_EVIDENCE_REPAIR.jsonl",
+      "size_bytes": 85982,
+      "sha256": "1a068caa46c3bc017713df53edbd1a0909ad93bc80e661d1c5f6ea4b3798dc13"
+    },
+    {
+      "path": "research/vietirr_v4_3/QA_MACHINE_SOURCE_CHECKS.jsonl",
+      "size_bytes": 48536,
+      "sha256": "850d356b982497ec89221d2d909c1607423fad12ed281089dae72584515203c3"
+    },
+    {
+      "path": "research/vietirr_v4_3/QA_SOURCE_DOSSIERS.jsonl",
+      "size_bytes": 141110,
+      "sha256": "da541c1126bfa342ceb862f766add9f669ac2f37ab7a3a96eff592535a342591"
+    },
+    {
+      "path": "research/vietirr_v4_3/V4_3_BENCHMARK_READINESS.json",
+      "size_bytes": 1319,
+      "sha256": "d4d7814f858c471af66cd6d4ccfecf68885937caabeb941c5c0da029585f2433"
+    },
+    {
+      "path": "research/vietirr_v4_4/README.md",
+      "size_bytes": 688,
+      "sha256": "3042f09cc06800f789e7e43cbd227e9a9fb141eb7ffb27cb2c3edece437b60ba"
+    },
+    {
+      "path": "research/vietirr_v4_4/V4_4_EXECUTIVE_REPORT.md",
+      "size_bytes": 1574,
+      "sha256": "77d6fd2906935e0e64006782f012aa1d11fc344373aa1407746cb0e404eff81a"
+    },
+    {
+      "path": "research/vietirr_v4_4/V4_4_INDEPENDENT_AUDIT.py",
+      "size_bytes": 7931,
+      "sha256": "3d72ba089ad8d38cc19dc0ef8886c9433669d5118ba745af7dd00cea125625e8"
+    },
+    {
+      "path": "research/vietirr_v4_4/V4_4_READINESS.json",
+      "size_bytes": 1580,
+      "sha256": "91f302edc9cc4049493f855e184b387d93786c9798c1e3e7cb6217f54b439486"
+    },
+    {
+      "path": "research/vietirr_v4_4/V4_4_SCIENTIFIC_COMPARISON.md",
+      "size_bytes": 2257,
+      "sha256": "94645f661af5d617236ecbd0110c06a217b410651229efa0ddf9b6f675db907b"
+    },
+    {
+      "path": "research/vietirr_v4_4/baseline/PILOT_38_FROZEN_MANIFEST.json",
+      "size_bytes": 1713,
+      "sha256": "c41414de17da461117203a491723ee2436e99bddfefa9855529b771a57aa7668"
+    },
+    {
+      "path": "research/vietirr_v4_4/baseline/PILOT_38_OPEN_ISSUES.md",
+      "size_bytes": 2839,
+      "sha256": "62711186cf4962a410076fc8066c8b516ff4b038355ae637317a2ded2f418dc6"
+    },
+    {
+      "path": "research/vietirr_v4_4/baseline/PILOT_38_RECONCILIATION.jsonl",
+      "size_bytes": 53374,
+      "sha256": "65eefeb8add52b93db37d058bf58f3a2b0a32b48a6f562e8fd311fd39f8a9550"
+    },
+    {
+      "path": "research/vietirr_v4_4/baseline/PILOT_38_USER_DECISIONS.csv",
+      "size_bytes": 15441,
+      "sha256": "169e2e016deb75a08127dcc60efc0a3be1ed97b215990837a2c8a9f17571b6c5"
+    },
+    {
+      "path": "research/vietirr_v4_4/build_review_bundle.py",
+      "size_bytes": 2594,
+      "sha256": "3fdd2e897da0ef4c3bceff6a1510cec771b2c8d37325ddb211f56aebd607e30e"
+    },
+    {
+      "path": "research/vietirr_v4_4/build_v4_4.py",
+      "size_bytes": 70237,
+      "sha256": "67420a5a9be8289cf5d87f8b9ce5ce5cfca6ff6d3c3a512cad83082c31b2bbce"
+    },
+    {
+      "path": "research/vietirr_v4_4/corpus/CORPUS_93_CANONICAL_AUDIT.csv",
+      "size_bytes": 73868,
+      "sha256": "ea24a7294cb53aa6e6989fefcf663854f99937c274d1ac2935bbdb47ab0cb4c8"
+    },
+    {
+      "path": "research/vietirr_v4_4/corpus/CORPUS_COVERAGE_REPORT.md",
+      "size_bytes": 1589,
+      "sha256": "986d3aa597fc57eb7dfed408b511deb818cfbb803a4512e4e690af6f3bc44280"
+    },
+    {
+      "path": "research/vietirr_v4_4/corpus/CORPUS_DATA_GAPS.csv",
+      "size_bytes": 1928,
+      "sha256": "e879cb3e7e197abc6ebb5a3d362717198426f904c4ce03e60472c549a78c3469"
+    },
+    {
+      "path": "research/vietirr_v4_4/corpus/CORPUS_SOURCE_RELIABILITY_REPORT.md",
+      "size_bytes": 950,
+      "sha256": "4c0c821a7df7b5b9fb027dfb642f2d7c1a830322e8d3b8d3fe683280f4dc54b2"
+    },
+    {
+      "path": "research/vietirr_v4_4/corpus/DOCUMENT_EVIDENCE_PROFILES.jsonl",
+      "size_bytes": 98042,
+      "sha256": "99454ff3d96c53bfbb108f9edcd18631b845e60f493fbfdbb6a4c50ef2c2d48c"
+    },
+    {
+      "path": "research/vietirr_v4_4/corpus/DOMAIN_USECASE_COVERAGE_MATRIX.csv",
+      "size_bytes": 7208,
+      "sha256": "3463ab8ad0be70364dde5bd7b54cb7ccffb4aa0cad9c04b01ae1035730e78337"
+    },
+    {
+      "path": "research/vietirr_v4_4/packs/DOCUMENT_PACK_CANDIDATES.csv",
+      "size_bytes": 1118,
+      "sha256": "d03b2e51ff8b241eb48948fdb7cb8121b2a46dcae53d4e2383680ac17d8e5b53"
+    },
+    {
+      "path": "research/vietirr_v4_4/packs/DOCUMENT_PACK_QUALITY_REPORT.md",
+      "size_bytes": 861,
+      "sha256": "a324c6ed5b9958d66f6f02daedbffeadd4a9f05c7cb203e2efd05b2fee003fa5"
+    },
+    {
+      "path": "research/vietirr_v4_4/packs/LINKED_EVIDENCE_PACKS.jsonl",
+      "size_bytes": 1263,
+      "sha256": "445e04c166840f4a4a9af1aa5168bad6f47ad3b1cb302776ce89246f74bc5085"
+    },
+    {
+      "path": "research/vietirr_v4_4/packs/PACK_EVIDENCE_BANK.jsonl",
+      "size_bytes": 55670,
+      "sha256": "23dbcdff47339c0f3ee95393a92e42904a584331e9b378bad00a7fb56adbdde8"
+    },
+    {
+      "path": "research/vietirr_v4_4/packs/PACK_QA_FEASIBILITY_MATRIX.csv",
+      "size_bytes": 978,
+      "sha256": "301d15d58eef8a6033c2ae2372a8152e994f58aad7ec7f33daecec3d6d68b233"
+    },
+    {
+      "path": "research/vietirr_v4_4/packs/VERIFIED_DOCUMENT_RELATIONS.jsonl",
+      "size_bytes": 4191,
+      "sha256": "529c5496957630bf7167d2cc102992a40df410c0782dda93e90678838b74c3ca"
+    },
+    {
+      "path": "research/vietirr_v4_4/qa/V4_4_QA_COVERAGE_DELTA.csv",
+      "size_bytes": 1985,
+      "sha256": "367b6d84d203c702f30a20ebf84b6d06de1c9814dc3860e58bd059f0d84e9ac2"
+    },
+    {
+      "path": "research/vietirr_v4_4/qa/V4_4_QA_DUPLICATE_AUDIT.csv",
+      "size_bytes": 3827,
+      "sha256": "19575fe952bd1ec583e54f958d2d2bd47514d311c495e849e6ef2d1ae7c25a7f"
+    },
+    {
+      "path": "research/vietirr_v4_4/qa/V4_4_QA_NEW_DRAFTS.jsonl",
+      "size_bytes": 23664,
+      "sha256": "213094d119efd95be3a56c96bd6e210a4090d1900b589c0b174f0938dfd55c3f"
+    },
+    {
+      "path": "research/vietirr_v4_4/qa/V4_4_QA_QUALITY_REPORT.md",
+      "size_bytes": 1102,
+      "sha256": "ab3dbb9a01b047fa144c792d2a8591a94a194889ac0b4f90bc378ed7294b581c"
+    },
+    {
+      "path": "research/vietirr_v4_4/qa/V4_4_QA_REVIEW_QUEUE.csv",
+      "size_bytes": 5063,
+      "sha256": "a58f865c1c205e554230e59d5747356e7765d098b1cc192bd4e274cde6eae9e7"
+    },
+    {
+      "path": "research/vietirr_v4_4/qa/V4_4_QA_VALIDATION_RESULTS.jsonl",
+      "size_bytes": 6652,
+      "sha256": "1ed5a456fc660eab7de91f3431f11fe0c753f78062a7b8ce6ccfb365bb4bb960"
+    },
+    {
+      "path": "research/vietirr_v4_4/tests/V4_4_TEST_REPORT.md",
+      "size_bytes": 1787,
+      "sha256": "e2e20cb5e56a13e5ea07be28a5023309e418cc4fb78c9cb6a3db137612252c3b"
+    },
+    {
+      "path": "research/vietirr_v4_4/tests/V4_4_TEST_RESULTS.json",
+      "size_bytes": 5670,
+      "sha256": "a9fc5364e93f7ae6186ffc273e53fa512f97416709b9eb66f9b9d05a0ad104b4"
+    },
+    {
+      "path": "research/vietirr_v4_4/tests/common.py",
+      "size_bytes": 4819,
+      "sha256": "4921cc7c93f460237bc0a82836d730aec4a4884365bafd98ccb7a866512a0d73"
+    },
+    {
+      "path": "research/vietirr_v4_4/tests/fixtures/README.md",
+      "size_bytes": 279,
+      "sha256": "52ab7942e144db8ecf694c82d99b19c93c66b476406199a28dc788889c8ff44f"
+    },
+    {
+      "path": "research/vietirr_v4_4/tests/fixtures/synthetic_cases.json",
+      "size_bytes": 512,
+      "sha256": "13de702e2113823b84ccae5e6ee86887a1e40b6c1d2410a0c8e6f5844ef559c7"
+    },
+    {
+      "path": "research/vietirr_v4_4/tests/run_all.py",
+      "size_bytes": 1551,
+      "sha256": "ea122aa5f530059ba4f796db7ff4a3c8823d13dcf3ce134298323c93e5fdde2e"
+    },
+    {
+      "path": "research/vietirr_v4_4/tests/test_coverage.py",
+      "size_bytes": 1796,
+      "sha256": "d7b1e3ff670372439b201c04374a0f822030b323a7feaf5d548655c6362d3fcd"
+    },
+    {
+      "path": "research/vietirr_v4_4/tests/test_document_relations.py",
+      "size_bytes": 1827,
+      "sha256": "6018b7cdcdc7982285c75067f159f0f9e123740ab5ea3832939af21480bf16f6"
+    },
+    {
+      "path": "research/vietirr_v4_4/tests/test_qa_quality.py",
+      "size_bytes": 4138,
+      "sha256": "4354f0e4af5a9fb6497e83a648c52bb339a925c0fed7e65b0738ffff92f9bc8e"
+    }
+  ]
+}

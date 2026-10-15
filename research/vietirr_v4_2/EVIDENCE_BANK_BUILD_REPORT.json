@@ -1,0 +1,20 @@
+{
+  "scope": "curated V4.2 subset, not the whole corpus",
+  "documents_processed": [
+    "IRR_CTL_2024_4182a0d7",
+    "IRR_CTL_2025_57989573",
+    "IRR_CTL_2025_c3d033a0",
+    "IRR_GOV_2023_29fb8ed6",
+    "V4_BNNMT_2025_594e7382",
+    "V4_CTTL_2024_dda51c21",
+    "V4_CTTL_2025_77c60f84",
+    "V4_IWRP_2021_3031564c"
+  ],
+  "document_count": 8,
+  "evidence_units": 59,
+  "relations": 21,
+  "evidence_sets": 32,
+  "draft_eligible_sets": 31,
+  "gold_eligible_sets": 0,
+  "human_verified_relations": 0
+}

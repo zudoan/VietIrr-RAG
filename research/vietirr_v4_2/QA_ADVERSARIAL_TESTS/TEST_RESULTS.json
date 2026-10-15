@@ -1,0 +1,187 @@
+{
+  "total": 16,
+  "caught": 16,
+  "non_default": 16,
+  "all_pass": true,
+  "test13_source_unreadable_absent": true,
+  "results": [
+    {
+      "name": "01_shallow_question",
+      "kind": "MUTATION",
+      "expected_code": "SHALLOW_QUESTION",
+      "observed_codes": [
+        "SHALLOW_QUESTION",
+        "HUMAN_REVIEW_PENDING"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "02_unknown_evidence",
+      "kind": "MUTATION",
+      "expected_code": "UNKNOWN_EVIDENCE",
+      "observed_codes": [
+        "UNKNOWN_EVIDENCE",
+        "EVIDENCE_OUTSIDE_SET",
+        "COMPONENT_UNKNOWN_EVIDENCE",
+        "HUMAN_REVIEW_PENDING"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "03_unknown_set",
+      "kind": "MUTATION",
+      "expected_code": "UNKNOWN_EVIDENCE_SET",
+      "observed_codes": [
+        "UNKNOWN_EVIDENCE_SET",
+        "HUMAN_REVIEW_PENDING"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "04_blocked_set",
+      "kind": "MUTATION",
+      "expected_code": "INELIGIBLE_EVIDENCE_SET",
+      "observed_codes": [
+        "INELIGIBLE_EVIDENCE_SET",
+        "EVIDENCE_OUTSIDE_SET",
+        "HUMAN_REVIEW_PENDING"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "05_evidence_outside_set",
+      "kind": "MUTATION",
+      "expected_code": "EVIDENCE_OUTSIDE_SET",
+      "observed_codes": [
+        "EVIDENCE_OUTSIDE_SET",
+        "COMPONENT_UNKNOWN_EVIDENCE",
+        "HUMAN_REVIEW_PENDING"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "06_duplicate_evidence",
+      "kind": "MUTATION",
+      "expected_code": "DUPLICATE_EVIDENCE_ID",
+      "observed_codes": [
+        "DUPLICATE_EVIDENCE_ID",
+        "HUMAN_REVIEW_PENDING"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "07_component_unknown_evidence",
+      "kind": "MUTATION",
+      "expected_code": "COMPONENT_UNKNOWN_EVIDENCE",
+      "observed_codes": [
+        "COMPONENT_UNKNOWN_EVIDENCE",
+        "HUMAN_REVIEW_PENDING"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "08_wrong_arithmetic",
+      "kind": "MUTATION",
+      "expected_code": "ARITHMETIC_MISMATCH",
+      "observed_codes": [
+        "ARITHMETIC_MISMATCH",
+        "HUMAN_REVIEW_PENDING"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "09_fake_comparison",
+      "kind": "MUTATION",
+      "expected_code": "FAKE_COMPARISON",
+      "observed_codes": [
+        "FAKE_COMPARISON",
+        "HUMAN_REVIEW_PENDING"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "10_fake_multi_evidence",
+      "kind": "MUTATION",
+      "expected_code": "FAKE_MULTI_EVIDENCE",
+      "observed_codes": [
+        "FAKE_MULTI_EVIDENCE",
+        "HUMAN_REVIEW_PENDING"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "11_non_ground_up",
+      "kind": "MUTATION",
+      "expected_code": "ORIGIN_NOT_GROUND_UP",
+      "observed_codes": [
+        "ORIGIN_NOT_GROUND_UP",
+        "HUMAN_REVIEW_PENDING"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "12_wrong_generation_order",
+      "kind": "MUTATION",
+      "expected_code": "WRONG_GENERATION_ORDER",
+      "observed_codes": [
+        "WRONG_GENERATION_ORDER",
+        "HUMAN_REVIEW_PENDING"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "13_locator_right_fact_wrong",
+      "kind": "SOURCE_FIXTURE_MUTATION",
+      "expected_code": "FACT_VALUE_NOT_FOUND",
+      "forbidden_code": "SOURCE_UNREADABLE",
+      "observed_codes": [
+        "FACT_VALUE_NOT_FOUND"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "14_paraphrase_duplicate",
+      "kind": "MUTATION",
+      "expected_code": "NEAR_DUPLICATE",
+      "observed_codes": [
+        "NEAR_DUPLICATE"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "15_invalid_human_acceptance",
+      "kind": "MUTATION",
+      "expected_code": "INVALID_HUMAN_ACCEPTANCE",
+      "observed_codes": [
+        "INVALID_HUMAN_ACCEPTANCE"
+      ],
+      "caught": true,
+      "non_default": true
+    },
+    {
+      "name": "16_candidate_leakage",
+      "kind": "MUTATION",
+      "expected_code": "CANDIDATE_LEAKAGE",
+      "observed_codes": [
+        "CANDIDATE_LEAKAGE",
+        "HUMAN_REVIEW_PENDING"
+      ],
+      "caught": true,
+      "non_default": true
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "decision": "TECHNICALLY_READY_FOR_TARGETED_HUMAN_REVIEW_NOT_GOLD",
+  "TECHNICAL_CORRECTNESS": {
+    "status": "READY",
+    "basis": {
+      "audited_qa": 38,
+      "deterministic_repair_errors": 0,
+      "hardening_tests": "24/24",
+      "existing_tests": "16/16;16/16;50/50"
+    }
+  },
+  "SEMANTIC_CORRECTNESS": {
+    "status": "PENDING_HUMAN_REVIEW",
+    "human_verified_qa": 0,
+    "minimality_semantic_verified": 0
+  },
+  "BENCHMARK_QUALITY": {
+    "status": "PARTIAL_HARDENED",
+    "keep": 22,
+    "revise": 11,
+    "reject": 5,
+    "semantic_clusters": 12,
+    "cross_document_qa": 0
+  },
+  "SCIENTIFIC_INTEGRITY": {
+    "candidate_test": "SEALED_NOT_OPENED_NOT_HASHED",
+    "raw_v4_2_mutated": false,
+    "retrieval_baselines_mutated": false,
+    "fabricated_human_approval": false
+  },
+  "GENERATOR": {
+    "generalization_demonstrated": true,
+    "demo_drafts": 2,
+    "supported_competencies": 4,
+    "universal_generator": false
+  },
+  "QA_HUMAN_GOLD_READY": false,
+  "BENCHMARK_RELEASE_READY": false,
+  "blockers": [
+    "0/38 QA human verified",
+    "0 evidence relations human verified",
+    "table extrema/header semantics pending review",
+    "legal/rule applicability pending domain review",
+    "no validated cross-document evidence relation",
+    "domain depth remains limited in D02/D04"
+  ]
+}

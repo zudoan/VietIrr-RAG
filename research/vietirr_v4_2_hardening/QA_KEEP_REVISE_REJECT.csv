@@ -1,0 +1,39 @@
+﻿qa_id,decision,semantic_cluster,sampling_weight,unique_value,reason
+V42-QA-001,KEEP,CL01,0.5,bounded fact retrieval,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-002,REJECT,CL01,0,coordinated extraction of distinct answer components,Dominated by QA-003/004 on the same facts; adds only a lower-value listing task.
+V42-QA-003,KEEP,CL01,0.5,reproducible arithmetic over source operands,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-004,REVISE,CL01,0.5,ordered quantitative decision,Remove EV001; the difference needs only in-dike and out-of-dike operands.
+V42-QA-005,KEEP,CL02,0.5,bounded fact retrieval,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-006,KEEP,CL02,0.5,reproducible arithmetic over source operands,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-007,KEEP,SINGLETON,1.0,coordinated extraction of distinct answer components,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-008,KEEP,SINGLETON,1.0,coordinated extraction of distinct answer components,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-009,KEEP,SINGLETON,1.0,version/effectivity resolution,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-010,KEEP,SINGLETON,1.0,safe abstention under missing dependencies,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-011,KEEP,CL03,0.5,coordinated extraction of distinct answer components,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-012,REVISE,CL03,0.5,ordered quantitative decision,Make all three release intervals explicit required facts for the longest-period comparison.
+V42-QA-013,KEEP,CL04,0.5,ordered quantitative decision,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-014,KEEP,CL04,0.5,reproducible arithmetic over source operands,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-015,REJECT,CL05,0,ordered quantitative decision,Dominated by QA-016 on the same two approximate peak facts.
+V42-QA-016,KEEP,CL05,0.5,reproducible arithmetic over source operands,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-017,KEEP,CL06,0.5,coordinated extraction of distinct answer components,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-018,KEEP,CL06,0.5,reproducible arithmetic over source operands,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-019,REJECT,CL06,0,bounded fact retrieval,"Direct total lookup is dominated by QA-018, which checks the two periods against that total."
+V42-QA-020,KEEP,SINGLETON,1.0,threshold/condition interpretation,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-021,REVISE,CL07,0.5,cross-section synthesis within one canonical PDF,Replace false CROSS_SOURCE_SYNTHESIS with SINGLE_DOCUMENT_SYNTHESIS.
+V42-QA-022,KEEP,SINGLETON,1.0,bounded fact retrieval,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-023,REJECT,CL07,0,bounded fact retrieval,WQI-only lookup is dominated by QA-021 and the classification task QA-028.
+V42-QA-024,KEEP,CL08,0.5,coordinated extraction of distinct answer components,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-025,REVISE,CL08,0.5,reproducible arithmetic over source operands,Remove EV055; the range calculation needs only maximum EV054 and minimum EV056.
+V42-QA-026,REVISE,CL08,0.5,cross-section synthesis within one canonical PDF,Add EV053 to prove the 15-position domain and retain direct extrema statements EV057/EV058.
+V42-QA-027,KEEP,CL08,0.5,cross-section synthesis within one canonical PDF,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-028,REVISE,CL07,0.5,cross-section synthesis within one canonical PDF,Replace false CROSS_SOURCE_SYNTHESIS with SINGLE_DOCUMENT_SYNTHESIS.
+V42-QA-029,KEEP,CL09,0.5,coordinated extraction of distinct answer components,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-030,KEEP,CL09,0.5,coordinated extraction of distinct answer components,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-031,KEEP,CL10,0.5,actor-action-scope interpretation,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-032,REVISE,CL10,0.5,cross-section synthesis within one canonical PDF,Replace false CROSS_SOURCE_SYNTHESIS with SINGLE_DOCUMENT_SYNTHESIS.
+V42-QA-033,KEEP,CL10,0.5,safe abstention under missing dependencies,Evidence and answer behavior are distinct enough to retain; domain review remains required.
+V42-QA-034,REJECT,CL11,0,reproducible arithmetic over source operands,Same subtraction template as QA-036 with only the reservoir changed; QA-036 retained after minimality repair.
+V42-QA-035,REVISE,CL11,0.5,ordered quantitative decision,Replace repeated single-reservoir subtraction with a cross-reservoir comparison using all three pairs.
+V42-QA-036,REVISE,CL11,0.5,reproducible arithmetic over source operands,Remove unrelated storage facts EV035–EV038; retain only Hương Điền inflow and release.
+V42-QA-037,REVISE,CL12,0.5,reproducible arithmetic over source operands,Remove unrelated flow facts EV033/EV034; retain three storage components and reported total.
+V42-QA-038,REVISE,CL12,0.5,ordered quantitative decision,Remove flow facts and total EV038; retain the three storage operands needed to identify the largest.

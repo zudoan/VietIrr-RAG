@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VietIrr-RAG V4.3 Source Review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">VIETIRR-RAG · V4.3</p>
+      <h1>Source-grounded QA review</h1>
+      <p id="counter" class="muted">Đang tải…</p>
+    </div>
+    <div class="toolbar">
+      <button id="prev">← Trước</button><button id="next">Sau →</button>
+      <select id="filter"><option value="ALL">Tất cả</option><option value="DEEP">Top 18 rủi ro</option><option value="MACHINE_SUPPORTED">Machine supported</option><option value="PARTIALLY_SUPPORTED">Partially supported</option><option value="REVIEW_REQUIRED">Review required</option></select>
+      <button id="export">Export ledger JSONL</button>
+      <label class="import">Import ledger<input id="import" type="file" accept=".jsonl,.json"></label>
+    </div>
+  </header>
+  <div class="notice">Machine finding chỉ là trợ giúp. Reviewer phải tự mở đúng PDF/trang và không được suy diễn thành gold.</div>
+  <main>
+    <section class="panel qa-panel">
+      <div class="title-row"><h2 id="qa-id"></h2><span id="machine-status" class="badge"></span></div>
+      <dl id="meta"></dl>
+      <h3>Câu hỏi hiện tại</h3><p id="question" class="focus"></p>
+      <h3>Đáp án hiện tại</h3><p id="answer" class="answer"></p>
+      <h3>Machine findings</h3><ul id="findings"></ul>
+      <h3>Evidence cần kiểm tra</h3><div id="evidence"></div>
+      <h3>Reasoning / phép tính</h3><pre id="reasoning"></pre>
+    </section>
+    <section class="panel source-panel">
+      <div class="source-head"><div><h2>Nguồn PDF</h2><p id="source-label" class="muted"></p></div><div id="source-tabs"></div></div>
+      <iframe id="pdf" title="PDF source"></iframe>
+      <p class="muted small">Nếu trình duyệt không nhúng PDF, dùng nút “Mở PDF đúng trang”. Với bảng, ảnh trang là tầng xác minh ưu tiên.</p>
+    </section>
+    <section class="panel form-panel">
+      <div class="title-row"><h2>Human review</h2><button id="new-review" class="secondary">Review độc lập mới</button></div>
+      <label>Reviewer ID<input id="reviewer" autocomplete="off" placeholder="Bắt buộc khi chốt review"></label>
+      <div id="criteria"></div>
+      <label>Workflow status<select id="workflow"><option>PENDING_REVIEW</option><option>REVIEW_IN_PROGRESS</option><option>REVIEWED_ACCEPT</option><option>REVIEWED_REVISE</option><option>REVIEWED_REJECT</option><option>REQUIRES_ADJUDICATION</option></select></label>
+      <label>Final decision<select id="final"><option value=""></option><option>PASS</option><option>FAIL</option><option>UNCERTAIN</option><option>NOT_APPLICABLE</option></select></label>
+      <label>Error codes<input id="errors" placeholder="WRONG_UNIT; WRONG_TIME; ..."></label>
+      <label>Review notes<textarea id="notes" rows="5"></textarea></label>
+      <label class="confirm"><input id="confirm" type="checkbox"> Tôi xác nhận đã trực tiếp đọc nguồn PDF/trang liên quan; đây là thao tác của reviewer thật.</label>
+      <div class="form-actions"><button id="save">Lưu review trong trình duyệt</button><span id="saved" class="muted"></span></div>
+      <h3>Review đã lưu cho QA này</h3><div id="saved-list"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
