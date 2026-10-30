@@ -15,5 +15,6 @@ export default defineConfig(({ mode }) => {
       },
     },
     preview: { port: 4173 },
+    build: { chunkSizeWarningLimit: 900 },
   }
 })

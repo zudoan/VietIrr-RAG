@@ -1,0 +1,486 @@
+@prefix vhr: <http://vietirr-rag.org/ontology/hydraulic#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+# =============================================================================
+# ONTOLOGY DECLARATION & METADATA
+# =============================================================================
+
+<http://vietirr-rag.org/ontology/hydraulic> a owl:Ontology ;
+    owl:versionIRI <http://vietirr-rag.org/ontology/hydraulic/0.1.0> ;
+    owl:versionInfo "0.1.0" ;
+    rdfs:label "VietIRR Hydraulic Domain Ontology MVP"@en ,
+               "Bản thể học Miền Thủy lợi Việt Nam (Phiên bản MVP 0.1.0)"@vi ;
+    rdfs:comment """Bản thể học biểu diễn cấu trúc miền công trình thủy lợi, thông số kỹ thuật,
+điều kiện vận hành, nguồn gốc văn bản tiêu chuẩn và bằng chứng kiểm chứng nhận định kỹ thuật
+trong dự án nghiên cứu VietIRR-RAG."""@vi ;
+    dc:creator "VietIRR-RAG Research Team" ;
+    dc:date "2026-10-19"^^xsd:date .
+
+# =============================================================================
+# 1. CORE DOMAIN CLASSES (6 PRIMARY CLASSES)
+# =============================================================================
+
+### 1.1 HydraulicStructure (Công trình thủy lợi)
+vhr:HydraulicStructure a owl:Class ;
+    rdfs:label "Hydraulic Structure"@en , "Công trình thủy lợi"@vi ;
+    rdfs:comment "Đại diện cho các thực thể công trình kỹ thuật thủy lợi, hồ đập hoặc trạm quan trắc."@vi .
+
+vhr:Reservoir a owl:Class ;
+    rdfs:subClassOf vhr:HydraulicStructure ;
+    rdfs:label "Reservoir"@en , "Hồ chứa nước"@vi ;
+    rdfs:comment "Hồ chứa nước phục vụ cắt giảm lũ, cấp nước, phát điện hoặc điều hòa nguồn nước."@vi .
+
+vhr:Dam a owl:Class ;
+    rdfs:subClassOf vhr:HydraulicStructure ;
+    rdfs:label "Dam"@en , "Đập dâng / Đập ngăn nước"@vi ;
+    rdfs:comment "Đập dâng nước hoặc đập tạo hồ chứa."@vi .
+
+vhr:MonitoringStation a owl:Class ;
+    rdfs:subClassOf vhr:HydraulicStructure ;
+    rdfs:label "Monitoring Station"@en , "Trạm quan trắc thủy văn / mực nước"@vi ;
+    rdfs:comment "Trạm đo đạc mực nước, lưu lượng hoặc chất lượng nước ven sông/hồ chứa."@vi .
+
+vhr:SluiceGate a owl:Class ;
+    rdfs:subClassOf vhr:HydraulicStructure ;
+    rdfs:label "Sluice Gate"@en , "Cống điều tiết / Cống lấy nước"@vi ;
+    rdfs:comment "Cống điều tiết lưu lượng hoặc ngăn mặn, cấp thoát nước."@vi .
+
+### 1.2 TechnicalParameter (Thông số kỹ thuật thủy lợi)
+vhr:TechnicalParameter a owl:Class ;
+    rdfs:label "Technical Parameter"@en , "Thông số kỹ thuật thủy lợi"@vi ;
+    rdfs:comment "Các đại lượng vật lý, thủy văn, dung tích hoặc chất lượng nước trong quản lý công trình."@vi .
+
+vhr:WaterLevel a owl:Class, vhr:TechnicalParameter ;
+    rdfs:subClassOf vhr:TechnicalParameter ;
+    rdfs:label "Water Level"@en , "Mực nước"@vi ;
+    rdfs:comment "Cao trình mặt nước so với mực nước biển (cao độ m)."@vi .
+
+vhr:NormalPoolWaterLevel a owl:Class, vhr:TechnicalParameter ;
+    rdfs:subClassOf vhr:WaterLevel ;
+    rdfs:label "Normal Pool Water Level"@en , "Mực nước dâng bình thường (MNDBT)"@vi ;
+    skos:altLabel "MNDBT" , "NormalPoolLevel" ;
+    vhr:canonicalName "MNDBT" ;
+    rdfs:comment "Cao trình mặt nước cao nhất cho phép trong điều kiện vận hành bình thường."@vi .
+
+vhr:DeadWaterLevel a owl:Class, vhr:TechnicalParameter ;
+    rdfs:subClassOf vhr:WaterLevel ;
+    rdfs:label "Dead Water Level"@en , "Mực nước chết (MNC)"@vi ;
+    skos:altLabel "MNC" ;
+    vhr:canonicalName "MNC" ;
+    rdfs:comment "Cao trình mặt nước thấp nhất cho phép khai thác trong điều kiện vận hành bình thường."@vi .
+
+vhr:FloodControlWaterLevel a owl:Class, vhr:TechnicalParameter ;
+    rdfs:subClassOf vhr:WaterLevel ;
+    rdfs:label "Flood Control Water Level"@en , "Mực nước đón lũ / trước lũ"@vi ;
+    skos:altLabel "MN đón lũ" , "FloodControlLevel" ;
+    vhr:canonicalName "FloodControlLevel" ;
+    rdfs:comment "Cao trình mực nước cao nhất của hồ chứa phải duy trì trước khi đón lũ."@vi .
+
+vhr:DesignFloodWaterLevel a owl:Class, vhr:TechnicalParameter ;
+    rdfs:subClassOf vhr:WaterLevel ;
+    rdfs:label "Design Flood Water Level"@en , "Mực nước lũ thiết kế (MNLTK)"@vi ;
+    skos:altLabel "MNLTK" , "DesignFloodLevel" ;
+    vhr:canonicalName "DesignFloodLevel" ;
+    rdfs:comment "Cao trình mực nước cao nhất xuất hiện khi xảy ra lũ thiết kế."@vi .
+
+vhr:CheckFloodWaterLevel a owl:Class, vhr:TechnicalParameter ;
+    rdfs:subClassOf vhr:WaterLevel ;
+    rdfs:label "Check Flood Water Level"@en , "Mực nước lũ kiểm tra (MNLKT)"@vi ;
+    skos:altLabel "MNLKT" , "CheckFloodLevel" ;
+    vhr:canonicalName "CheckFloodLevel" ;
+    rdfs:comment "Cao trình mực nước cao nhất xuất hiện khi xảy ra lũ kiểm tra."@vi .
+
+vhr:StorageCapacity a owl:Class ;
+    rdfs:subClassOf vhr:TechnicalParameter ;
+    rdfs:label "Storage Capacity"@en , "Dung tích hồ chứa"@vi ;
+    rdfs:comment "Thể tích trữ nước của hồ chứa (dung tích toàn bộ, dung tích hữu ích, dung tích chết...)."@vi .
+
+vhr:Discharge a owl:Class ;
+    rdfs:subClassOf vhr:TechnicalParameter ;
+    rdfs:label "Discharge / Flow Rate"@en , "Lưu lượng dòng chảy / Lưu lượng xả"@vi ;
+    rdfs:comment "Lưu lượng nước qua công trình hoặc dòng chảy sông (m3/s)."@vi .
+
+vhr:WaterQualityParameter a owl:Class ;
+    rdfs:subClassOf vhr:TechnicalParameter ;
+    rdfs:label "Water Quality Parameter"@en , "Thông số chất lượng nước"@vi ;
+    rdfs:comment "Chỉ số hóa lý môi trường nước như DO, BOD5, COD, độ mặn, TSS."@vi .
+
+### 1.3 DesignCondition (Điều kiện thiết kế / vận hành)
+vhr:DesignCondition a owl:Class ;
+    rdfs:label "Design Condition"@en , "Điều kiện thiết kế / vận hành"@vi ;
+    rdfs:comment "Ngữ cảnh hoặc điều kiện giới hạn kỹ thuật mà theo đó một thông số hoặc quy tắc có hiệu lực."@vi .
+
+vhr:FloodSeasonCondition a owl:Class ;
+    rdfs:subClassOf vhr:DesignCondition ;
+    rdfs:label "Flood Season Condition"@en , "Điều kiện mùa lũ"@vi ;
+    rdfs:comment "Thời kỳ vận hành trong mùa lũ theo quy trình vận hành liên hồ chứa."@vi .
+
+vhr:DrySeasonCondition a owl:Class ;
+    rdfs:subClassOf vhr:DesignCondition ;
+    rdfs:label "Dry Season Condition"@en , "Điều kiện mùa kiệt / cạn"@vi ;
+    rdfs:comment "Thời kỳ cấp nước hạ du trong mùa kiệt."@vi .
+
+vhr:DesignFloodFrequency a owl:Class ;
+    rdfs:subClassOf vhr:DesignCondition ;
+    rdfs:label "Design Flood Frequency"@en , "Tần suất lũ thiết kế (P%)"@vi ;
+    rdfs:comment "Tần suất lũ kiểm tra hoặc thiết kế của công trình (P = 0.01%, 0.1%, 1%...)."@vi .
+
+### 1.4 StandardDocument (Văn bản tiêu chuẩn / quy trình pháp lý)
+vhr:StandardDocument a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:label "Standard Document"@en , "Văn bản tiêu chuẩn / quy phạm kỹ thuật"@vi ;
+    rdfs:comment "Văn bản quy phạm pháp luật, quy chuẩn quốc gia (QCVN), tiêu chuẩn (TCVN) hoặc quy trình vận hành."@vi .
+
+vhr:OperatingProcedure a owl:Class ;
+    rdfs:subClassOf vhr:StandardDocument ;
+    rdfs:label "Operating Procedure"@en , "Quy trình vận hành liên hồ chứa"@vi ;
+    rdfs:comment "Quy trình vận hành hồ chứa ban hành theo quyết định của Thủ tướng Chính phủ hoặc Bộ trưởng."@vi .
+
+vhr:TechnicalStandard a owl:Class ;
+    rdfs:subClassOf vhr:StandardDocument ;
+    rdfs:label "Technical Standard"@en , "Quy chuẩn / Tiêu chuẩn kỹ thuật"@vi ;
+    rdfs:comment "Quy chuẩn kỹ thuật quốc gia (QCVN) hoặc Tiêu chuẩn quốc gia (TCVN)."@vi .
+
+vhr:LegalDecree a owl:Class ;
+    rdfs:subClassOf vhr:StandardDocument ;
+    rdfs:label "Legal Decree / Decision"@en , "Nghị định / Quyết định pháp lý"@vi ;
+    rdfs:comment "Quyết định, Nghị định của cơ quan nhà nước có thẩm quyền."@vi .
+
+### 1.5 EvidenceRegion (Vùng bằng chứng PDF)
+vhr:EvidenceRegion a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:label "Evidence Region"@en , "Vùng bằng chứng trong tài liệu"@vi ;
+    rdfs:comment "Vùng đoạn văn bản, bảng biểu, điều khoản có tọa độ bbox và trang trong tài liệu PDF."@vi .
+
+### 1.6 TechnicalClaim (Nhận định kỹ thuật)
+vhr:TechnicalClaim a owl:Class ;
+    rdfs:label "Technical Claim"@en , "Nhận định kỹ thuật"@vi ;
+    rdfs:comment "Khẳng định kỹ thuật cần được kiểm chứng đối soát với bằng chứng và bản thể học."@vi .
+
+# =============================================================================
+# 2. SUPPORTING CLASSES (N-ARY FACT REIFICATION & CONSTRAINTS)
+# =============================================================================
+
+### 2.1 MeasurementAssertion (Biểu diễn n-ary fact có ngữ cảnh trọn vẹn)
+vhr:MeasurementAssertion a owl:Class ;
+    rdfs:label "Measurement Assertion"@en , "Khẳng định đo lường / thông số có ngữ cảnh"@vi ;
+    rdfs:comment """Biểu diễn liên kết n-ary giữa (Công trình, Thông số, Giá trị, Đơn vị, Thời gian, Điều kiện, Nguồn gốc).
+Giải quyết hạn chế chỉ có quan hệ nhị phân (binary triples) của RDF để giữ trọn vẹn ngữ cảnh đo lường."""@vi .
+
+### 2.2 Unit (Đơn vị đo lường)
+vhr:Unit a owl:Class ;
+    rdfs:label "Unit of Measurement"@en , "Đơn vị đo lường"@vi ;
+    rdfs:comment "Đơn vị đo lường vật lý tương thích với từng loại thông số kỹ thuật."@vi .
+
+### 2.3 Jurisdiction (Thẩm quyền hành chính / Phạm vi địa bàn)
+vhr:Jurisdiction a owl:Class ;
+    rdfs:label "Jurisdiction"@en , "Thẩm quyền hành chính / Địa bàn"@vi ;
+    rdfs:comment "Cơ quan có thẩm quyền ra quyết định hoặc địa bàn hành chính (tỉnh/thành phố)."@vi .
+
+### 2.4 VerificationConstraint (Ràng buộc kiểm chứng kỹ thuật)
+vhr:VerificationConstraint a owl:Class ;
+    rdfs:label "Verification Constraint"@en , "Ràng buộc kiểm chứng kỹ thuật"@vi ;
+    rdfs:comment "Ràng buộc kiểm chứng có nguồn gốc văn bản rõ ràng và trạng thái xác thực."@vi .
+
+# =============================================================================
+# 3. OBJECT PROPERTIES (QUAN HỆ GIỮA CÁC THỰC THỂ)
+# =============================================================================
+
+vhr:hasParameter a owl:ObjectProperty ;
+    rdfs:range vhr:TechnicalParameter ;
+    rdfs:label "has parameter"@en , "có thông số kỹ thuật"@vi ;
+    rdfs:comment "Thuộc tính chung liên kết công trình hoặc khẳng định đo lường với thông số kỹ thuật."@vi .
+
+vhr:assertsParameter a owl:ObjectProperty ;
+    rdfs:subPropertyOf vhr:hasParameter ;
+    rdfs:domain vhr:MeasurementAssertion ;
+    rdfs:range vhr:TechnicalParameter ;
+    rdfs:label "asserts parameter"@en , "khẳng định thông số kỹ thuật"@vi ;
+    rdfs:comment "Thuộc tính cụ thể liên kết MeasurementAssertion với TechnicalParameter, đảm bảo khẳng định đo lường không bị suy diễn sai thành công trình thủy lợi."@vi .
+
+vhr:monitorsParameter a owl:ObjectProperty ;
+    rdfs:subPropertyOf vhr:hasParameter ;
+    rdfs:domain vhr:HydraulicStructure ;
+    rdfs:range vhr:TechnicalParameter ;
+    rdfs:label "monitors parameter"@en , "quan trắc / kiểm soát thông số"@vi ;
+    rdfs:comment "Thuộc tính cụ thể liên kết công trình thủy lợi với thông số kỹ thuật áp dụng."@vi .
+
+vhr:hasUnit a owl:ObjectProperty ;
+    rdfs:range vhr:Unit ;
+    rdfs:label "has unit"@en , "có đơn vị đo"@vi ;
+    rdfs:comment "Liên kết thông số kỹ thuật hoặc khẳng định đo lường với đơn vị đo lường chuẩn."@vi .
+
+vhr:hasStructure a owl:ObjectProperty ;
+    rdfs:domain vhr:MeasurementAssertion ;
+    rdfs:range vhr:HydraulicStructure ;
+    rdfs:label "has structure"@en , "thuộc công trình"@vi ;
+    rdfs:comment "Liên kết một MeasurementAssertion với công trình thủy lợi chủ thể."@vi .
+
+vhr:appliesUnderCondition a owl:ObjectProperty ;
+    rdfs:range vhr:DesignCondition ;
+    rdfs:label "applies under condition"@en , "áp dụng trong điều kiện"@vi ;
+    rdfs:comment "Chỉ định điều kiện giới hạn kỹ thuật (mùa lũ, tần suất lũ, mực nước kích hoạt) để thông số/quy tắc có hiệu lực."@vi .
+
+vhr:definedInStandard a owl:ObjectProperty ;
+    rdfs:range vhr:StandardDocument ;
+    rdfs:label "defined in standard"@en , "được quy định trong văn bản"@vi ;
+    rdfs:comment "Truy vết văn bản pháp lý / quy chuẩn kỹ thuật là nguồn gốc của thông số hoặc ràng buộc."@vi .
+
+vhr:supportedByEvidence a owl:ObjectProperty ;
+    rdfs:range vhr:EvidenceRegion ;
+    rdfs:label "supported by evidence"@en , "được chứng minh bởi bằng chứng"@vi ;
+    rdfs:comment "Liên kết một nhận định kỹ thuật hoặc khẳng định đo lường với vùng bằng chứng cụ thể trong tài liệu PDF."@vi .
+
+vhr:requiresCondition a owl:ObjectProperty ;
+    rdfs:domain vhr:TechnicalClaim ;
+    rdfs:range vhr:DesignCondition ;
+    rdfs:label "requires condition"@en , "yêu cầu điều kiện kèm theo"@vi ;
+    rdfs:comment "Chỉ định điều kiện bắt buộc mà nhận định phải có để bảo đảm tính đúng đắn kỹ thuật."@vi .
+
+vhr:referencesTable a owl:ObjectProperty ;
+    rdfs:domain vhr:EvidenceRegion ;
+    rdfs:range vhr:EvidenceRegion ;
+    rdfs:label "references table"@en , "dẫn chiếu bảng số liệu"@vi ;
+    rdfs:comment "Liên kết một điều khoản hoặc đoạn văn bản dẫn chiếu tới bảng số liệu tương ứng."@vi .
+
+vhr:supersedesVersion a owl:ObjectProperty ;
+    rdfs:domain vhr:StandardDocument ;
+    rdfs:range vhr:StandardDocument ;
+    rdfs:label "supersedes version"@en , "thay thế phiên bản"@vi ;
+    rdfs:comment "Quan hệ giữa văn bản mới thay thế một phần hoặc toàn bộ văn bản cũ (ví dụ QĐ 740/QĐ-TTg thay thế QĐ 1622/QĐ-TTg)."@vi .
+
+vhr:amendsStandard a owl:ObjectProperty ;
+    rdfs:domain vhr:StandardDocument ;
+    rdfs:range vhr:StandardDocument ;
+    rdfs:label "amends standard"@en , "sửa đổi, bổ sung quy trình / tiêu chuẩn"@vi ;
+    rdfs:comment "Quan hệ sửa đổi, bổ sung một số điều khoản của văn bản quy phạm kỹ thuật (không thay thế toàn văn văn bản gốc)."@vi .
+
+vhr:hasJurisdiction a owl:ObjectProperty ;
+    rdfs:range vhr:Jurisdiction ;
+    rdfs:label "has jurisdiction"@en , "thuộc thẩm quyền / địa bàn"@vi ;
+    rdfs:comment "Chỉ định thẩm quyền ra quyết định hoặc địa bàn áp dụng đầy đủ chuỗi tên (bảo toàn multi-word jurisdiction)."@vi .
+
+# =============================================================================
+# 4. DATATYPE PROPERTIES (THUỘC TÍNH DỮ LIỆU)
+# =============================================================================
+
+vhr:canonicalName a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "canonical name"@en , "tên chuẩn hóa"@vi .
+
+vhr:hasValue a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "has raw value"@en , "giá trị dạng chuỗi thô"@vi .
+
+vhr:hasNumericValue a owl:DatatypeProperty ;
+    rdfs:range xsd:double ;
+    rdfs:label "has numeric value"@en , "giá trị số học"@vi .
+
+vhr:hasTemporalScope a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "has temporal scope"@en , "phạm vi thời gian áp dụng"@vi .
+
+vhr:hasAction a owl:DatatypeProperty ;
+    rdfs:domain vhr:TechnicalClaim ;
+    rdfs:range xsd:string ;
+    rdfs:label "has action"@en , "hành động pháp lý / kỹ thuật"@vi .
+
+vhr:hasPolarity a owl:DatatypeProperty ;
+    rdfs:domain vhr:TechnicalClaim ;
+    rdfs:range xsd:string ;
+    rdfs:label "has polarity"@en , "cực tính khẳng định (AFFIRMED | NEGATED | UNCERTAIN | UNKNOWN)"@vi .
+
+vhr:documentNumber a owl:DatatypeProperty ;
+    rdfs:domain vhr:StandardDocument ;
+    rdfs:range xsd:string ;
+    rdfs:label "document number"@en , "số hiệu văn bản"@vi .
+
+vhr:documentVersion a owl:DatatypeProperty ;
+    rdfs:domain vhr:StandardDocument ;
+    rdfs:range xsd:string ;
+    rdfs:label "document version"@en , "phiên bản văn bản"@vi .
+
+vhr:documentId a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "document identifier in corpus"@en , "mã định danh tài liệu trong kho ngữ liệu"@vi .
+
+vhr:publicationDate a owl:DatatypeProperty ;
+    rdfs:domain vhr:StandardDocument ;
+    rdfs:range xsd:date ;
+    rdfs:label "publication date"@en , "ngày ban hành"@vi .
+
+vhr:pageNumber a owl:DatatypeProperty ;
+    rdfs:domain vhr:EvidenceRegion ;
+    rdfs:range xsd:integer ;
+    rdfs:label "page number"@en , "số trang PDF"@vi .
+
+vhr:regionId a owl:DatatypeProperty ;
+    rdfs:domain vhr:EvidenceRegion ;
+    rdfs:range xsd:string ;
+    rdfs:label "region identifier"@en , "mã vùng bằng chứng"@vi .
+
+vhr:bboxCoordinates a owl:DatatypeProperty ;
+    rdfs:domain vhr:EvidenceRegion ;
+    rdfs:range xsd:string ;
+    rdfs:label "bounding box coordinates"@en , "tọa độ hộp bao [x0, y0, x1, y1]"@vi .
+
+# =============================================================================
+# 5. DOMAIN INSTANCES & PROVENANCE GROUNDING (CORPUS SOURCE-BACKED)
+# =============================================================================
+
+### 5.1 Standard Units
+vhr:Unit_Metre a vhr:Unit ;
+    rdfs:label "Metre"@en , "Mét"@vi ;
+    skos:altLabel "m" ;
+    vhr:canonicalName "m" .
+
+vhr:Unit_CubicMetrePerSecond a vhr:Unit ;
+    rdfs:label "Cubic Metres per Second"@en , "Mét khối trên giây"@vi ;
+    skos:altLabel "m3/s" , "m³/s" ;
+    vhr:canonicalName "m3/s" .
+
+vhr:Unit_MillionCubicMetres a vhr:Unit ;
+    rdfs:label "Million Cubic Metres"@en , "Triệu mét khối"@vi ;
+    skos:altLabel "triệu m3" , "10^6 m3" , "trieu m3" ;
+    vhr:canonicalName "million_m3" .
+
+vhr:Unit_MilligramPerLitre a vhr:Unit ;
+    rdfs:label "Milligrams per Litre"@en , "Miligam trên lít"@vi ;
+    skos:altLabel "mg/l" , "mg/L" ;
+    vhr:canonicalName "mg/l" .
+
+vhr:Unit_Percent a vhr:Unit ;
+    rdfs:label "Percent"@en , "Phần trăm"@vi ;
+    skos:altLabel "%" ;
+    vhr:canonicalName "%" .
+
+### 5.2 Key Hydraulic Structures from Corpus
+vhr:HoaBinhReservoir a vhr:Reservoir ;
+    rdfs:label "Hồ chứa nước Hòa Bình"@vi , "Hoa Binh Reservoir"@en ;
+    vhr:canonicalName "Hồ Hòa Bình" ;
+    skos:altLabel "Hồ thủy điện Hòa Bình" ;
+    vhr:hasParameter vhr:WaterLevel , vhr:StorageCapacity , vhr:Discharge .
+
+vhr:SonLaReservoir a vhr:Reservoir ;
+    rdfs:label "Hồ chứa nước Sơn La"@vi , "Son La Reservoir"@en ;
+    vhr:canonicalName "Hồ Sơn La" ;
+    skos:altLabel "Hồ thủy điện Sơn La" ;
+    vhr:hasParameter vhr:WaterLevel , vhr:StorageCapacity , vhr:Discharge .
+
+vhr:TriAnReservoir a vhr:Reservoir ;
+    rdfs:label "Hồ chứa nước Trị An"@vi , "Tri An Reservoir"@en ;
+    vhr:canonicalName "Hồ Trị An" ;
+    vhr:hasParameter vhr:WaterLevel , vhr:StorageCapacity , vhr:Discharge .
+
+vhr:HaNoiStation a vhr:MonitoringStation ;
+    rdfs:label "Trạm Thủy văn Hà Nội"@vi , "Hanoi Hydrological Station"@en ;
+    vhr:canonicalName "Trạm Hà Nội" ;
+    vhr:hasParameter vhr:WaterLevel .
+
+### 5.3 Verified Standard Documents in Corpus
+vhr:Doc_QD_1622_TTg_2015 a vhr:OperatingProcedure ;
+    rdfs:label "Quy trình vận hành liên hồ chứa trên lưu vực sông Hồng năm 2015 (QĐ 1622/QĐ-TTg)"@vi ;
+    vhr:documentNumber "1622/QĐ-TTg" ;
+    vhr:publicationDate "2015-09-17"^^xsd:date ;
+    vhr:canonicalName "Quyết định 1622/QĐ-TTg ngày 17/09/2015 của Thủ tướng Chính phủ" .
+
+vhr:Doc_QD_740_TTg_2019 a vhr:OperatingProcedure ;
+    rdfs:label "Quy trình vận hành liên hồ chứa trên lưu vực sông Hồng (QĐ 740/QĐ-TTg)"@vi ;
+    vhr:documentNumber "740/QĐ-TTg" ;
+    vhr:documentId "IRR_CP_2019_ee0bca33" ;
+    vhr:publicationDate "2019-06-17"^^xsd:date ;
+    vhr:supersedesVersion vhr:Doc_QD_1622_TTg_2015 ;
+    vhr:canonicalName "Quyết định 740/QĐ-TTg ngày 17/06/2019 của Thủ tướng Chính phủ" .
+
+vhr:Doc_QD_922_TTg_2025 a vhr:OperatingProcedure ;
+    rdfs:label "Quyết định sửa đổi Quy trình vận hành liên hồ chứa sông Hồng (QĐ 922/QĐ-TTg)"@vi ;
+    vhr:documentNumber "922/QĐ-TTg" ;
+    vhr:documentId "IRR_CP_2025_2d3e4a1e" ;
+    vhr:publicationDate "2025-05-14"^^xsd:date ;
+    vhr:amendsStandard vhr:Doc_QD_740_TTg_2019 ;
+    vhr:canonicalName "Quyết định 922/QĐ-TTg ngày 14/05/2025 của Thủ tướng Chính phủ" ;
+    rdfs:comment "Sửa đổi, bổ sung một số điều của Quy trình ban hành kèm Quyết định 740/QĐ-TTg (không thay thế toàn văn)."@vi .
+
+vhr:Doc_QD_RedRiver_2026_Unresolved a vhr:OperatingProcedure ;
+    rdfs:label "Văn bản vận hành liên hồ chứa sông Hồng năm 2026 (Chưa đối soát bản ký: QĐ 1936/QĐ-TTg ngày 06/10/2026 vs QĐ 1928/QĐ-TTg ngày 05/10/2026)"@vi ;
+    vhr:documentNumber "UNKNOWN (1936/QĐ-TTg hoặc 1928/QĐ-TTg)" ;
+    vhr:documentVersion "UNKNOWN" ;
+    vhr:canonicalName "Văn bản quy trình sông Hồng năm 2026 (Chưa thẩm định bản ký)" ;
+    rdfs:comment "Cơ sở dữ liệu Cổng TTĐT Chính phủ ghi QĐ 1936/QĐ-TTg ngày 06/10/2026, trong khi bài báo đưa tin ban đầu ghi QĐ 1928/QĐ-TTg ngày 05/10/2026. Do kho ngữ liệu chưa có bản PDF ký đóng dấu để xác thực số hiệu và hiệu lực thay thế, hệ thống bảo lưu trạng thái UNKNOWN và phân loại DRAFT_UNVERIFIED theo nguyên tắc liêm chính khoa học."@vi .
+
+vhr:Doc_QCVN_04_05_2012 a vhr:TechnicalStandard ;
+    rdfs:label "Quy chuẩn kỹ thuật quốc gia về Công trình thủy lợi - Quy định chủ yếu về thiết kế (QCVN 04-05:2012/BNNPTNT)"@vi ;
+    vhr:documentNumber "QCVN 04-05:2012/BNNPTNT" ;
+    vhr:canonicalName "QCVN 04-05:2012/BNNPTNT" .
+
+### 5.4 Verified Evidence Regions in Corpus
+vhr:Evidence_HB_MNDBT a vhr:EvidenceRegion ;
+    rdfs:label "Vùng bằng chứng Mực nước dâng bình thường hồ Hòa Bình (Điều 5.2 QĐ 740)"@vi ;
+    vhr:documentId "IRR_CP_2019_ee0bca33" ;
+    vhr:pageNumber 4 ;
+    vhr:regionId "REG_IRR_CP_2019_ee0bca33_P0004_B025" .
+
+vhr:Evidence_HB_MNC a vhr:EvidenceRegion ;
+    rdfs:label "Vùng bằng chứng Mực nước chết hồ Hòa Bình (Điều 5.2 QĐ 740)"@vi ;
+    vhr:documentId "IRR_CP_2019_ee0bca33" ;
+    vhr:pageNumber 4 ;
+    vhr:regionId "REG_IRR_CP_2019_ee0bca33_P0004_B027" .
+
+vhr:Evidence_SL_MNDBT a vhr:EvidenceRegion ;
+    rdfs:label "Vùng bằng chứng Mực nước dâng bình thường hồ Sơn La (Điều 5.1 QĐ 740)"@vi ;
+    vhr:documentId "IRR_CP_2019_ee0bca33" ;
+    vhr:pageNumber 4 ;
+    vhr:regionId "REG_IRR_CP_2019_ee0bca33_P0004_B012" .
+
+vhr:Evidence_SL_MNC a vhr:EvidenceRegion ;
+    rdfs:label "Vùng bằng chứng Mực nước chết hồ Sơn La (Điều 5.1 QĐ 740)"@vi ;
+    vhr:documentId "IRR_CP_2019_ee0bca33" ;
+    vhr:pageNumber 4 ;
+    vhr:regionId "REG_IRR_CP_2019_ee0bca33_P0004_B014" .
+
+### 5.5 Verified Measurement Assertions (N-ary Facts Grounded in QĐ 740)
+vhr:HoaBinh_MNDBT_Assertion a vhr:MeasurementAssertion ;
+    rdfs:label "Mực nước dâng bình thường hồ Hòa Bình: 117.0 m (Điều 5 QĐ 740)"@vi ;
+    vhr:hasStructure vhr:HoaBinhReservoir ;
+    vhr:hasParameter vhr:NormalPoolWaterLevel ;
+    vhr:hasNumericValue "117.0"^^xsd:double ;
+    vhr:hasUnit vhr:Unit_Metre ;
+    vhr:definedInStandard vhr:Doc_QD_740_TTg_2019 ;
+    vhr:supportedByEvidence vhr:Evidence_HB_MNDBT ;
+    rdfs:comment "Cao trình mực nước dâng bình thường của hồ Hòa Bình là +117.0 m theo Điều 5 Khoản 2 QĐ 740/QĐ-TTg."@vi .
+
+vhr:HoaBinh_MNC_Assertion a vhr:MeasurementAssertion ;
+    rdfs:label "Mực nước chết hồ Hòa Bình: 80.0 m (Điều 5 QĐ 740)"@vi ;
+    vhr:hasStructure vhr:HoaBinhReservoir ;
+    vhr:hasParameter vhr:DeadWaterLevel ;
+    vhr:hasNumericValue "80.0"^^xsd:double ;
+    vhr:hasUnit vhr:Unit_Metre ;
+    vhr:definedInStandard vhr:Doc_QD_740_TTg_2019 ;
+    vhr:supportedByEvidence vhr:Evidence_HB_MNC ;
+    rdfs:comment "Cao trình mực nước chết của hồ Hòa Bình là +80.0 m theo Điều 5 Khoản 2 QĐ 740/QĐ-TTg."@vi .
+
+vhr:SonLa_MNDBT_Assertion a vhr:MeasurementAssertion ;
+    rdfs:label "Mực nước dâng bình thường hồ Sơn La: 215.0 m (Điều 5 QĐ 740)"@vi ;
+    vhr:hasStructure vhr:SonLaReservoir ;
+    vhr:hasParameter vhr:NormalPoolWaterLevel ;
+    vhr:hasNumericValue "215.0"^^xsd:double ;
+    vhr:hasUnit vhr:Unit_Metre ;
+    vhr:definedInStandard vhr:Doc_QD_740_TTg_2019 ;
+    vhr:supportedByEvidence vhr:Evidence_SL_MNDBT ;
+    rdfs:comment "Cao trình mực nước dâng bình thường của hồ Sơn La là +215.0 m theo Điều 5 Khoản 1 QĐ 740/QĐ-TTg."@vi .
+
+vhr:SonLa_MNC_Assertion a vhr:MeasurementAssertion ;
+    rdfs:label "Mực nước chết hồ Sơn La: 175.0 m (Điều 5 QĐ 740)"@vi ;
+    vhr:hasStructure vhr:SonLaReservoir ;
+    vhr:hasParameter vhr:DeadWaterLevel ;
+    vhr:hasNumericValue "175.0"^^xsd:double ;
+    vhr:hasUnit vhr:Unit_Metre ;
+    vhr:definedInStandard vhr:Doc_QD_740_TTg_2019 ;
+    vhr:supportedByEvidence vhr:Evidence_SL_MNC ;
+    rdfs:comment "Cao trình mực nước chết của hồ Sơn La là +175.0 m theo Điều 5 Khoản 1 QĐ 740/QĐ-TTg."@vi .

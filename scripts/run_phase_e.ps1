@@ -5,9 +5,9 @@ param(
 
 $ErrorActionPreference = "Stop"
 $ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
-$PythonPath = Join-Path $ProjectRoot ".venv_b2\Scripts\python.exe"
+$PythonPath = Join-Path $ProjectRoot ".venv_web\Scripts\python.exe"
 if (-not (Test-Path -LiteralPath $PythonPath)) {
-    $PythonPath = (Get-Command python -ErrorAction Stop).Source
+    throw "Missing .venv_web. Run: python -m venv .venv_web; .\.venv_web\Scripts\python.exe -m pip install -e '.[dev]'"
 }
 
 $LogDirectory = Join-Path $ProjectRoot "logs"
@@ -16,6 +16,11 @@ $ApiOutLog = Join-Path $LogDirectory "phase_e_api.out.log"
 $ApiErrorLog = Join-Path $LogDirectory "phase_e_api.error.log"
 $env:VIETIRR_API_PORT = "$ApiPort"
 $env:VIETIRR_API_PROXY = "http://127.0.0.1:$ApiPort"
+$env:VIETIRR_ENV = "development"
+if (-not $env:DATABASE_URL) {
+    $DatabasePath = (Join-Path $ProjectRoot ".tmp\vietirr-local.db").Replace("\", "/")
+    $env:DATABASE_URL = "sqlite+pysqlite:///$DatabasePath"
+}
 
 $ApiProcess = Start-Process -FilePath $PythonPath `
     -ArgumentList @((Join-Path $ProjectRoot "scripts\run_phase_e_api.py")) `

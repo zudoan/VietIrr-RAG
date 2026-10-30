@@ -7,10 +7,18 @@ name = "viirr-retrieval"
 version = "0.2.0"
 description = "Leakage-safe retrieval baselines for VietIrrDocBench"
 requires-python = ">=3.10"
-dependencies = ["numpy", "rank-bm25"]
+dependencies = [
+  "alembic>=1.14,<2",
+  "fastapi>=0.115,<1",
+  "numpy",
+  "psycopg[binary]>=3.2,<4",
+  "rank-bm25",
+  "sqlalchemy>=2.0,<3",
+  "uvicorn[standard]>=0.34,<1",
+]
 
 [project.optional-dependencies]
-dev = ["pytest>=8"]
+dev = ["httpx>=0.28", "pytest>=8"]
 corpus = ["beautifulsoup4", "PyMuPDF", "pypdf", "requests"]
 research = [
   "pytest>=8",
@@ -29,3 +37,6 @@ where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
+
+[project.scripts]
+vietirr-api = "viirr_api.app:main"

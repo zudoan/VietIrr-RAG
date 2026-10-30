@@ -13,7 +13,7 @@ export function EvidenceCard({ evidence, selected, citation, onSelect }: Props) 
         <span className="evidence-score">{Math.round(evidence.relevance * 100)}%</span>
       </button>
       <h3>{evidence.title}</h3>
-      <p>{evidence.text}</p>
+      <p>{evidence.text || evidence.access_notice || 'Excerpt không được công bố; vẫn giữ metadata và locator.'}</p>
       <footer><span>{evidence.source_agency}</span><ArrowUpRight size={15} /></footer>
     </article>
   )

@@ -1,0 +1,34 @@
+{
+  "experiment": "VIETIRR_V4_4_PROVISIONAL_RETRIEVAL",
+  "seed": 20261017,
+  "corpus_manifest": "research/vietirr_v4_1/V4_CORPUS_MANIFEST.jsonl",
+  "base_evidence_units": "data/processed/evidence_units.jsonl",
+  "base_pages": "data/processed/pages.jsonl",
+  "v4_parsed_directory": "data/v4_corpus/parsed",
+  "output_directory": "outputs/V4_EXPERIMENT",
+  "report_directory": "reports/V4_EXPERIMENT",
+  "model_id": "intfloat/multilingual-e5-large",
+  "max_length": 512,
+  "batch_size": 16,
+  "bm25": {
+    "k1": 1.5,
+    "b": 0.75,
+    "tokenizer": "unicode_nfc_casefold_word_v1"
+  },
+  "hybrid": {
+    "fusion": "RRF",
+    "rrf_k": 60
+  },
+  "page_region": {
+    "page_top_p": 10,
+    "pruning": "hard"
+  },
+  "top_k": 200,
+  "metric_k": [5, 10, 20],
+  "dev_fraction": 0.2,
+  "hard_negatives_per_query": 5,
+  "label_policy": "MACHINE_SUPPORTED_AND_LOCATOR_ANCHORED_PROVISIONAL_ONLY",
+  "human_gold_required_for_benchmark_claim": true,
+  "candidate_test_policy": "SEALED_NOT_READ",
+  "fine_tuning_policy": "DO_NOT_TRAIN_UNTIL_HUMAN_CONFIRMED_V4_DEV_EXISTS"
+}

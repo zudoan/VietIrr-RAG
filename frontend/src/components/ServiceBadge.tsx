@@ -14,7 +14,7 @@ export function ServiceBadge({ showMethod = false }: { showMethod?: boolean }) {
     <div className={`service-badge ${status ? 'is-online' : ''} ${failed ? 'is-offline' : ''}`}
       title={status?.retrieval_method || 'Đang kiểm tra dịch vụ'}>
       <span className="status-dot" />
-      <span>{status ? (showMethod ? 'BM25 · corpus thật' : 'API sẵn sàng') : failed ? 'API ngoại tuyến' : 'Đang kết nối'}</span>
+      <span>{status ? (status.database === 'ready' ? (showMethod ? 'BM25 · PostgreSQL sẵn sàng' : 'API sẵn sàng') : 'API sẵn sàng · DB gián đoạn') : failed ? 'API ngoại tuyến' : 'Đang kết nối'}</span>
     </div>
   )
 }

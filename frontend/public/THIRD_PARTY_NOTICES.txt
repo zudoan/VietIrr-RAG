@@ -1,0 +1,6 @@
+VietIrr-RAG uses third-party software under MIT, ISC, Apache-2.0, BSD-3-Clause, LGPL-3.0-only, and bundled component licenses.
+
+Direct frontend dependencies and licenses:
+@designcodeio/threeui (MIT); @react-three/drei (MIT); @react-three/fiber (MIT); lucide-react (ISC); motion (MIT); react (MIT); react-dom (MIT); react-router-dom (MIT); three (MIT); @types/react (MIT); @types/react-dom (MIT); @types/three (MIT); @vitejs/plugin-react (MIT); typescript (Apache-2.0); vite (MIT).
+
+See THIRD_PARTY_NOTICES.md in the private deployment repository and package-manager metadata for the complete dependency inventory and license texts.

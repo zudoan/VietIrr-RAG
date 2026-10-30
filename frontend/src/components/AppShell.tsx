@@ -1,28 +1,27 @@
-import { BookOpenText, PanelLeftClose, Search, Waves } from 'lucide-react'
-import { NavLink, Outlet } from 'react-router-dom'
+import { BookOpenText, ExternalLink, Search } from 'lucide-react'
+import { Link, NavLink, Outlet } from 'react-router-dom'
 import { Brand } from './Brand'
 import { ServiceBadge } from './ServiceBadge'
 
 export function AppShell() {
   return (
     <div className="app-shell">
-      <aside className="app-sidebar">
-        <div className="sidebar-top">
-          <Brand />
-          <button className="icon-button sidebar-collapse" aria-label="Thu gọn thanh điều hướng">
-            <PanelLeftClose size={18} />
-          </button>
-        </div>
-        <nav className="side-nav" aria-label="Điều hướng ứng dụng">
-          <NavLink to="/workspace"><Search size={18} /><span>Evidence Search</span></NavLink>
-          <NavLink to="/documents"><BookOpenText size={18} /><span>Kho tài liệu</span></NavLink>
+      <header className="app-header">
+        <Brand />
+        <nav className="primary-nav" aria-label="Điều hướng chính">
+          <NavLink to="/" end>Dự án</NavLink>
+          <NavLink to="/report">Báo cáo nghiên cứu</NavLink>
         </nav>
-        <div className="sidebar-note">
-          <Waves size={18} />
-          <p><strong>Không sinh câu trả lời</strong><br />Kết quả là bằng chứng được truy xuất trực tiếp từ corpus.</p>
-        </div>
+        <nav className="utility-nav" aria-label="Công cụ nghiên cứu">
+          <NavLink to="/demo"><Search size={15} /> Evidence Search</NavLink>
+          <NavLink to="/documents"><BookOpenText size={15} /> Tài liệu</NavLink>
+        </nav>
+      </header>
+      <div className="app-context">
         <ServiceBadge showMethod />
-      </aside>
+        <p>Chỉ truy xuất bằng chứng; không sinh câu trả lời.</p>
+        <Link to="/report#limitations">Phạm vi công bố <ExternalLink size={13} /></Link>
+      </div>
       <main className="app-main"><Outlet /></main>
     </div>
   )

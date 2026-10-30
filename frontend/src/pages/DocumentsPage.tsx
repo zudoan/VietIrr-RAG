@@ -67,11 +67,11 @@ export function DocumentsPage() {
             <div className="panel-title"><span>Indexable regions</span><span>{selected.evidence_count} units</span></div>
             {selected.regions.map((region) => <article key={region.evidence_id}>
               <span>{region.unit_type === 'TABLE_REGION' ? 'Bảng' : 'Văn bản'} · trang {region.page_number}</span>
-              <p>{region.text}</p>
+              <p>{region.text || selected.access_notice || 'Nội dung vùng bằng chứng không được công bố trong chế độ public.'}</p>
             </article>)}
           </section>}
           {selected.pdf_available && selected.pdf_url ? <a className="drawer-primary" href={api.absoluteUrl(selected.pdf_url)} target="_blank" rel="noreferrer">Mở PDF <ExternalLink size={15} /></a>
-            : <p className="drawer-unavailable">PDF không khả dụng trong workspace; metadata và liên kết nguồn vẫn được giữ nguyên.</p>}
+            : <p className="drawer-unavailable">{selected.access_notice || 'PDF không khả dụng trong workspace; metadata và liên kết nguồn vẫn được giữ nguyên.'}</p>}
           {selected.source_url && <a className="drawer-secondary" href={selected.source_url} target="_blank" rel="noreferrer">Mở nguồn chính thức <ExternalLink size={14} /></a>}
         </aside>
       </div>}

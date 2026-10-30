@@ -101,7 +101,7 @@ export function WorkspacePage() {
                 <span>{selected.unit_type === 'TABLE_REGION' ? 'Table region' : 'Text region'}</span>
                 <strong>{Math.round(selected.relevance * 100)}% liên quan</strong>
               </div>
-              <blockquote>{selected.text}</blockquote>
+              {selected.text ? <blockquote>{selected.text}</blockquote> : <div className="excerpt-restricted">{selected.access_notice || 'Excerpt chưa được phê duyệt để công bố. Metadata và locator vẫn khả dụng.'}</div>}
               <dl>
                 <div><dt>Tài liệu</dt><dd>{selected.title}</dd></div>
                 <div><dt>Cơ quan</dt><dd>{selected.source_agency}</dd></div>

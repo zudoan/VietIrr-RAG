@@ -1,0 +1,101 @@
+@prefix vhr: <http://vietirr-rag.org/ontology/hydraulic#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# =============================================================================
+# SHACL CONSTRAINTS FOR VIETIRR HYDRAULIC DOMAIN (v0.1)
+# Closed-world data structure validation shapes
+# =============================================================================
+
+vhr:TechnicalClaimShape a sh:NodeShape ;
+    sh:targetClass vhr:TechnicalClaim ;
+    rdfs:label "Technical Claim Shape"@en , "Ràng buộc cấu trúc Nhận định Kỹ thuật"@vi ;
+    sh:property [
+        sh:path vhr:hasPolarity ;
+        sh:in ( "AFFIRMED" "NEGATED" "UNCERTAIN" "UNKNOWN" ) ;
+        sh:message "Claim polarity must be one of: AFFIRMED, NEGATED, UNCERTAIN, UNKNOWN." ;
+    ] .
+
+vhr:MeasurementAssertionShape a sh:NodeShape ;
+    sh:targetClass vhr:MeasurementAssertion ;
+    rdfs:label "Measurement Assertion Shape"@en , "Ràng buộc cấu trúc Khẳng định Đo lường N-ary"@vi ;
+    sh:property [
+        sh:path vhr:hasStructure ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class vhr:HydraulicStructure ;
+        sh:message "MeasurementAssertion must reference exactly one HydraulicStructure." ;
+    ] ;
+    sh:property [
+        sh:path vhr:hasParameter ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class vhr:TechnicalParameter ;
+        sh:message "MeasurementAssertion must reference exactly one TechnicalParameter." ;
+    ] ;
+    sh:property [
+        sh:path vhr:hasUnit ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class vhr:Unit ;
+        sh:message "MeasurementAssertion must specify exactly one Unit." ;
+    ] ;
+    sh:property [
+        sh:path vhr:hasNumericValue ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:or (
+            [ sh:datatype xsd:double ]
+            [ sh:datatype xsd:decimal ]
+            [ sh:datatype xsd:float ]
+        ) ;
+        sh:message "MeasurementAssertion must specify a numeric value of type double, decimal, or float." ;
+    ] ;
+    sh:property [
+        sh:path vhr:definedInStandard ;
+        sh:minCount 1 ;
+        sh:class vhr:StandardDocument ;
+        sh:message "MeasurementAssertion must trace to at least one StandardDocument." ;
+    ] ;
+    sh:property [
+        sh:path vhr:supportedByEvidence ;
+        sh:minCount 1 ;
+        sh:class vhr:EvidenceRegion ;
+        sh:message "MeasurementAssertion must link to at least one verified EvidenceRegion." ;
+    ] .
+
+vhr:StandardDocumentShape a sh:NodeShape ;
+    sh:targetClass vhr:StandardDocument ;
+    rdfs:label "Standard Document Shape"@en , "Ràng buộc cấu trúc Văn bản Tiêu chuẩn"@vi ;
+    sh:property [
+        sh:path vhr:documentNumber ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:message "StandardDocument must have a document number (e.g. 740/QĐ-TTg)." ;
+    ] .
+
+vhr:EvidenceRegionShape a sh:NodeShape ;
+    sh:targetClass vhr:EvidenceRegion ;
+    rdfs:label "Evidence Region Shape"@en , "Ràng buộc cấu trúc Vùng Bằng chứng"@vi ;
+    sh:property [
+        sh:path vhr:pageNumber ;
+        sh:minCount 1 ;
+        sh:minInclusive 1 ;
+        sh:datatype xsd:integer ;
+        sh:message "EvidenceRegion must have a pageNumber >= 1." ;
+    ] ;
+    sh:property [
+        sh:path vhr:documentId ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:message "EvidenceRegion must identify the source document ID." ;
+    ] ;
+    sh:property [
+        sh:path vhr:regionId ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:message "EvidenceRegion must identify the region ID." ;
+    ] .
