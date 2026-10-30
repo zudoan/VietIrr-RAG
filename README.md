@@ -1,185 +1,185 @@
 # VietIrr-RAG
 
-### Evidence-Grounded Question Answering over Vietnamese Irrigation Documents
+### Hệ thống Hỏi đáp và Truy xuất Định vị Bằng chứng cho Tài liệu Thủy lợi Tiếng Việt
 
-VietIrr-RAG is a research software system for evidence-grounded retrieval-augmented generation (RAG) over Vietnamese hydraulic engineering, dam safety, and water resource documentation. The platform couples hierarchical sparse-dense retrieval (BM25 + BGE-M3 + RRF + Cross-Encoder reranking), layout-aware Page-to-Region evidence localization, local generative language modeling (Qwen 2.5:7B), strict citation guarding, and asynchronous domain ontology verification.
+VietIrr-RAG là hệ thống phần mềm nghiên cứu phục vụ hỏi đáp có căn cứ (Retrieval-Augmented Generation - RAG) chuyên biệt cho hồ sơ kỹ thuật công trình thủy lợi, quy trình vận hành hồ chứa và an toàn đập tại Việt Nam. Nền tảng kết hợp truy xuất hỗn hợp phân cấp (BM25 + BGE-M3 + RRF + Cross-Encoder reranking), định vị bằng chứng theo cấu trúc bố cục từ Trang đến Vùng (Hierarchical Page-to-Region), mô hình ngôn ngữ sinh cục bộ (Qwen 2.5:7B), cơ chế kiểm soát trích dẫn nghiêm ngặt (Citation Guard) và giám sát bản thể học miền thủy lực ở chế độ chạy ngầm (Ontology Shadow Mode).
 
-[Tiếng Việt](docs/README.vi.md) | [Architecture Specification](docs/ARCHITECTURE.md) | [Retrieval Pipeline](docs/RETRIEVAL_PIPELINE.md) | [Evaluation Protocol](docs/EVALUATION.md) | [Ontology Verification](docs/ONTOLOGY_VERIFICATION.md) | [Setup Guide](docs/SETUP.md) | [Data Governance](docs/DATA_AVAILABILITY.md)
-
----
-
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [System Architecture](#system-architecture)
-- [Key Technical Components](#key-technical-components)
-- [Corpus and Benchmarks](#corpus-and-benchmarks)
-- [Retrieval Evaluation](#retrieval-evaluation)
-- [Ontology-Constrained Verification](#ontology-constrained-verification)
-- [Web Application and Evidence Workspace](#web-application-and-evidence-workspace)
-- [Quick Start](#quick-start)
-- [Repository Structure](#repository-structure)
-- [Testing and Reproducibility](#testing-and-reproducibility)
-- [Research History](#research-history)
-- [Known Limitations](#known-limitations)
-- [Data Availability and Governance](#data-availability-and-governance)
-- [Citation](#citation)
+[English Version](docs/README.en.md) | [Đặc tả Kiến trúc](docs/ARCHITECTURE.md) | [Quy trình Truy xuất R6](docs/RETRIEVAL_PIPELINE.md) | [Nghi thức Đánh giá](docs/EVALUATION.md) | [Giám sát Bản thể học](docs/ONTOLOGY_VERIFICATION.md) | [Hướng dẫn Khởi chạy](docs/SETUP.md) | [Quản trị Dữ liệu](docs/DATA_AVAILABILITY.md)
 
 ---
 
-## Project Overview
+## Mục lục
 
-### The Engineering Challenge
-Hydraulic infrastructure reports, dam safety assessments, and reservoir operation procedures in Vietnam present distinctive obstacles for standard retrieval-augmented generation:
-- **Long-Form Multi-Page Structure**: Engineering dossiers span dozens or hundreds of pages comprising legal mandates, technical drawings, cross-sectional profiles, and hydrological records.
-- **Dense Quantitative Telemetry**: Critical engineering decisions depend on fine-grained numerical parameters—such as dead water elevation (Mực nước chết - MNC), normal water elevation (Mực nước dâng bình thường - MNDBT), design flood elevation (Mực nước lũ kiểm tra - MNLKT), spillway discharge capacity, and active reservoir storage.
-- **Complex Tabular Data**: Crucial operating rules reside within multi-column, multi-page matrices detailing elevation-capacity relationships, stage-discharge curves, and gate opening schedules. Flattening these tables into unstructured text strips necessary coordinate relations.
-- **Mandatory Provenance**: In civil engineering decision-making, ungrounded generative assertions present severe operational risks. Every generated claim must be bound to verifiable, immutable source coordinates (document ID, page number, and bounding box region).
-
-### The VietIrr-RAG Approach
-VietIrr-RAG addresses these challenges through a principled, evidence-first design:
-1. **Hierarchical Page-to-Region Localization**: Rather than treating documents as flat bags of chunks, the retrieval engine first identifies document candidates, prunes non-relevant pages, and then extracts targeted text blocks and table cells.
-2. **Table-Aware Context Construction**: Structured table parsers preserve row-column bindings and numerical precision.
-3. **Local Generative Grounding**: A locally deployed LLM (Qwen 2.5:7B) generates concise factual answers restricted strictly to provided evidence blocks.
-4. **Citation Guard**: A post-generation verification filter validates that every statement is supported by a valid canonical evidence identifier (`REG_...` or `TAB_...`), triggering controlled abstention if evidence is absent.
-5. **Ontology Monitoring in Shadow Mode**: An asynchronous domain verification module extracts structured technical claims and checks them against 45 formal hydraulic rules to log compliance telemetry without obstructing real-time response latency.
+- [Tổng quan Dự án và Thách thức Kỹ thuật](#tổng-quan-dự-án-và-thách-thức-kỹ-thuật)
+- [Kiến trúc Hệ thống](#kiến-trúc-hệ-thống)
+- [Các Thành phần Kỹ thuật Cốt lõi](#các-thành-phần-kỹ-thuật-cốt-lõi)
+- [Tập Dữ liệu và Tiêu chuẩn Đánh giá](#tập-dữ-liệu-và-tiêu-chuẩn-đánh-giá)
+- [Kết quả Đánh giá Thực nghiệm](#kết-quả-đánh-giá-thực-nghiệm)
+- [Xác thực Ràng buộc Bản thể học](#xác-thực-ràng-buộc-bản-thể-học)
+- [Ứng dụng Web và Không gian Làm việc Bằng chứng](#ứng-dụng-web-và-không-gian-làm-việc-bằng-chứng)
+- [Hướng dẫn Khởi chạy Nhanh](#hướng-dẫn-khởi-chạy-nhanh)
+- [Cấu trúc Kho Lưu trữ](#cấu-trúc-kho-lưu-trữ)
+- [Kiểm thử và Tính Tái lập](#kiểm-thử-và-tính-tái-lập)
+- [Tiến trình Lịch sử Nghiên cứu](#tiến-trình-lịch-sử-nghiên-cứu)
+- [Hạn chế Khoa học Đã Biết](#hạn-chế-khoa-học-đã-biết)
+- [Chính sách Dữ liệu và Bản quyền](#chính-sách-dữ-liệu-và-bản-quyền)
+- [Trích dẫn Khoa học](#trích-dẫn-khoa-học)
 
 ---
 
-## System Architecture
+## Tổng quan Dự án và Thách thức Kỹ thuật
 
-The following diagram illustrates the decoupled pipeline separating offline document ingestion from online hybrid retrieval, answer generation, and background ontology verification.
+### Thách thức Kỹ thuật trong Thủy lợi
+Hồ sơ kỹ thuật công trình thủy lợi, báo cáo kiểm định an toàn đập và quy trình vận hành liên hồ chứa tại Việt Nam mang các đặc trưng phức tạp gây cản trở lớn đối với các kiến trúc RAG thông thường:
+- **Cấu trúc Tài liệu Dài và Đa trang**: Các hồ sơ kỹ thuật thường kéo dài từ hàng chục đến hàng trăm trang, tích hợp văn bản pháp quy, thuyết minh tính toán, bản vẽ thiết kế và phụ lục số liệu thủy văn.
+- **Dữ liệu Số liệu Thủy lực Mật độ Cao**: Quyết định điều hành đòi hỏi sự chuẩn xác tuyệt đối trên các tham số định lượng quan trọng—như cao trình mực nước chết (MNC), mực nước dâng bình thường (MNDBT), mực nước lũ kiểm tra (MNLKT), lưu lượng xả tràn thiết kế, dung tích hữu ích và diện tích tưới phụ trách.
+- **Bảng Biểu Kỹ thuật Phức tạp**: Rất nhiều quy tắc vận hành và tương quan cao trình - dung tích - diện tích ngập nằm trong các bảng ma trận nhiều cột, nhiều tầng tiêu đề hoặc kéo dài qua nhiều trang. Việc làm phẳng (flatten) bảng biểu thành văn bản thuần làm phá vỡ tọa độ hàng - cột và mất quan hệ ngữ cảnh số liệu.
+- **Yêu cầu Bắt buộc về Căn cứ Pháp lý và Tọa độ Bằng chứng**: Trong công trình thủy lợi, một câu trả lời suy diễn sai lệch hoặc không có căn cứ có thể dẫn đến rủi ro nghiêm trọng về an toàn đập. Mọi khẳng định đưa ra bắt buộc phải được gắn chặt với tọa độ gốc xác thực (mã tài liệu, số trang và vùng tọa độ bounding box).
+
+### Giải pháp Kỹ thuật của VietIrr-RAG
+VietIrr-RAG giải quyết các thách thức trên thông qua thiết kế lấy bằng chứng làm trung tâm (Evidence-First):
+1. **Định vị Bằng chứng Phân cấp (Hierarchical Page-to-Region)**: Thay vì chia cắt tài liệu thành các đoạn rời rạc (chunks), bộ truy xuất định vị theo hai bước: chọn lọc tài liệu ứng viên, lọc các trang có mật độ bằng chứng cao nhất, sau đó cô lập chính xác từng khối văn bản hoặc ô bảng dữ liệu.
+2. **Tái tạo Ngữ cảnh Nhận biết Cấu trúc Bảng (Table-Aware)**: Bộ bóc tách bảo toàn ma trận hàng - cột, tiêu đề cột và đơn vị đo, cho phép mô hình ngôn ngữ tra cứu chính xác số liệu đối chiếu.
+3. **Sinh Câu trả lời Cục bộ Ràng buộc Bằng chứng**: Sử dụng mô hình ngôn ngữ lớn chạy cục bộ (Qwen 2.5:7B) với prompt ép buộc chỉ sử dụng dữ kiện có trong ngữ cảnh được cung cấp.
+4. **Bộ Lọc Trích dẫn (Citation Guard)**: Kiểm tra hậu xử lý câu trả lời sinh ra, đối soát mọi khẳng định với mã định danh bằng chứng hợp lệ (`REG_...` hoặc `TAB_...`), tự động từ chối trả lời nếu ngữ cảnh không đủ căn cứ.
+5. **Giám sát Bản thể học Chạy ngầm (Ontology Shadow Mode)**: Module kiểm tra độc lập trích xuất các khẳng định kỹ thuật nguyên tử và đối soát với 45 ràng buộc thủy lực chính thức để ghi nhận dữ liệu đo kiểm mà không gây trễ hoặc chặn phản hồi của người dùng.
+
+---
+
+## Kiến trúc Hệ thống
+
+Sơ đồ dưới đây thể hiện quy trình xử lý tách bạch giữa giai đoạn nạp và lập chỉ mục ngoại tuyến với luồng truy xuất, sinh câu trả lời và giám sát bản thể học trực tuyến.
 
 ```mermaid
 flowchart TD
-    subgraph Ingestion["Offline Ingestion and Indexing"]
-        PDF["PDF Engineering Documents"] --> OCR["Layout Analysis and OCR"]
-        OCR --> Chunks["Text Regions and Table Extraction"]
-        Chunks --> BM25Idx["Lexical Index (BM25)"]
-        Chunks --> DenseIdx["Dense Semantic Embeddings (BGE-M3)"]
-        Chunks --> MetaDB["Relational Metadata and Provenance Store"]
+    subgraph Ingestion["Tiền xử lý và Lập Chỉ mục Ngoại tuyến"]
+        PDF["Tài liệu Hồ sơ Kỹ thuật Thủy lợi (PDF)"] --> OCR["Phân tích Bố cục và OCR"]
+        OCR --> Chunks["Tách Khối Văn bản và Ma trận Bảng"]
+        Chunks --> BM25Idx["Chỉ mục Từ vựng (BM25 Thủy lợi)"]
+        Chunks --> DenseIdx["Chỉ mục Ngữ nghĩa Mật độ cao (BGE-M3)"]
+        Chunks --> MetaDB["Cơ sở Dữ liệu Quan hệ và Tọa độ Bằng chứng"]
     end
 
-    subgraph OnlineRetrieval["Online Retrieval Engine (R6)"]
-        Query["User Query"] --> BM25Search["BM25 Lexical Search"]
-        Query --> DenseSearch["BGE-M3 Semantic Search"]
-        BM25Search --> Fusion["Reciprocal Rank Fusion (RRF, k=60)"]
+    subgraph OnlineRetrieval["Động cơ Truy xuất Trực tuyến (Pipeline R6)"]
+        Query["Truy vấn Người dùng"] --> BM25Search["Tìm kiếm Từ vựng BM25"]
+        Query --> DenseSearch["Tìm kiếm Ngữ nghĩa BGE-M3"]
+        BM25Search --> Fusion["Hợp nhất Thứ hạng Nghịch đảo (RRF, k=60)"]
         DenseSearch --> Fusion
-        Fusion --> Rerank["BGE-Reranker-0.6B Cross-Encoder"]
-        Rerank --> P2R["Hierarchical Page-to-Region Pruning"]
-        P2R --> TableParse["Table-Aware Context Assembly"]
+        Fusion --> Rerank["Tái xếp hạng Cross-Encoder (BGE-Reranker-0.6B)"]
+        Rerank --> P2R["Định vị Phân cấp Trang đến Vùng (Page-to-Region)"]
+        P2R --> TableParse["Tái tạo Ngữ cảnh Bảng Biểu (Table-Aware)"]
     end
 
-    subgraph Generation["Generation and Grounding"]
-        TableParse --> ContextPrompt["Grounded Context Budget Allocator"]
-        ContextPrompt --> LLM["Local Qwen 2.5:7B LLM"]
-        LLM --> Guard["Citation Guard and Abstention Filter"]
-        Guard --> ClientOutput["Verified Answer with Canonical Citations"]
+    subgraph Generation["Sinh Phản hồi và Kiểm soát Trích dẫn"]
+        TableParse --> ContextPrompt["Bộ Phân bổ Ngân sách Ngữ cảnh"]
+        ContextPrompt --> LLM["Mô hình Ngôn ngữ Cục bộ (Qwen 2.5:7B)"]
+        LLM --> Guard["Bộ Lọc Trích dẫn và Từ chối Trả lời (Citation Guard)"]
+        Guard --> ClientOutput["Câu trả lời Kèm Chip Trích dẫn Nguồn Xác thực"]
     end
 
-    subgraph Verification["Verification Subsystem (Shadow Mode)"]
-        Guard -.->|"Async Background Stream"| ClaimExt["Atomic Technical Claim Extractor"]
-        ClaimExt --> ConstraintCheck["45 Hydraulic Domain Rules Engine"]
-        ConstraintCheck --> Telemetry["Diagnostic Metrics and Compliance Logs"]
+    subgraph Verification["Hệ thống Giám sát Bản thể học (Shadow Mode)"]
+        Guard -.->|"Luồng Dữ liệu Bất đồng bộ"| ClaimExt["Bộ Trích xuất Khẳng định Kỹ thuật Nguyên tử"]
+        ClaimExt --> ConstraintCheck["Động cơ Kiểm tra 45 Ràng buộc Miền Thủy lực"]
+        ConstraintCheck --> Telemetry["Ghi nhận Đo kiểm và Mức độ Tuân thủ"]
     end
 
-    Ingestion -.->|"Index Artifacts"| OnlineRetrieval
+    Ingestion -.->|"Artifacts Chỉ mục"| OnlineRetrieval
 ```
 
 ---
 
-## Key Technical Components
+## Các Thành phần Kỹ thuật Cốt lõi
 
-### 1. Document Understanding and Indexing
-PDF dossiers are processed into structured units preserving document geometry. Text blocks are indexed alongside bounding-box coordinates, while tabular regions retain cell matrices, column headers, and elevation keys.
+### 1. Hiểu Tài liệu và Lập Chỉ mục Bố cục
+Các hồ sơ PDF kỹ thuật được phân tách thành các đơn vị bằng chứng giữ nguyên hình học không gian. Khối văn bản được gắn tọa độ bounding box trên từng trang, trong khi các bảng biểu giữ nguyên cấu trúc ma trận, tiêu đề cột và các khóa cao trình.
 
-### 2. Hybrid Sparse-Dense Retrieval
-- **Lexical Search (BM25)**: Tuned for Vietnamese hydraulic terminology, reservoir nomenclature, and legal decree identifiers (e.g., `Quyết định 1201/QĐ-TTg`).
-- **Dense Semantic Search (BGE-M3)**: Encodes text and table descriptions into 1024-dimensional normalized vectors to capture semantic intent and query paraphrases.
+### 2. Truy xuất Hỗn hợp Từ vựng - Ngữ nghĩa
+- **Truy xuất Từ vựng (BM25)**: Tối ưu hóa bộ tách từ cho thuật ngữ kỹ thuật thủy lợi Việt Nam, tên hồ đập đặc thù và số hiệu văn bản quy phạm (ví dụ: `Quyết định 1201/QĐ-TTg`).
+- **Truy xuất Ngữ nghĩa (BGE-M3)**: Mã hóa văn bản và mô tả bảng thành vector chuẩn hóa 1024 chiều, xử lý các câu hỏi mang tính khái niệm hoặc diễn giải ngữ nghĩa.
 
-### 3. Reciprocal Rank Fusion and Cross-Encoder Reranking
-Candidates from BM25 and BGE-M3 are merged via Reciprocal Rank Fusion ($k=60$). The top 50 candidates are scored using `BAAI/bge-reranker-large` / `bge-reranker-v2-m3` to model deep token interactions between questions and document context.
+### 3. Hợp nhất RRF và Tái xếp hạng Cross-Encoder
+Danh sách ứng viên từ BM25 và BGE-M3 được kết hợp thông qua thuật toán Reciprocal Rank Fusion ($k=60$). Top 50 ứng viên được đưa qua mô hình `BAAI/bge-reranker-large` / `bge-reranker-v2-m3` để tính toán tương quan chú ý sâu (cross-attention) giữa câu hỏi và văn bản ứng viên.
 
-### 4. Hierarchical Page-to-Region Localization
-Rather than returning arbitrary passages, the R6 retriever executes two-stage localization:
-1. **Document and Page Pruning**: Identifies the primary document sources and isolates high-density evidence pages.
-2. **Region Isolation**: Extracts exact bounding boxes (`TEXT_REGION` or `TABLE_REGION`), preventing extraneous text from diluting context attention.
+### 4. Định vị Phân cấp Trang đến Vùng (Hierarchical Page-to-Region)
+Khác với cách tiếp cận chia đoạn phẳng, động cơ R6 áp dụng quy trình lọc hai cấp:
+1. **Lọc Tài liệu và Trang**: Xác định tài liệu nguồn chính và định vị các trang có mật độ thông tin tập trung nhất.
+2. **Cô lập Vùng**: Trích xuất chính xác bounding box (`TEXT_REGION` hoặc `TABLE_REGION`), loại bỏ các nội dung ngoại lai không liên quan gây nhiễu ngữ cảnh.
 
-### 5. Table-Aware Evidence Assembly
-Tabular evidence units are serialized preserving structural headers, row identifiers, and numerical units, allowing the generative model to resolve multi-column lookups (e.g., matching a given reservoir water level to its corresponding spillway discharge volume).
+### 5. Tái tạo Bằng chứng Bảng biểu (Table-Aware Context)
+Các vùng bảng kỹ thuật được chuẩn hóa cấu trúc thành chuỗi dữ liệu có cấu trúc bao gồm tiêu đề, tên cột và đơn vị đo, cho phép mô hình ngôn ngữ tra cứu số liệu đa chiều (ví dụ: đối chiếu cao trình mực nước hồ với lưu lượng xả đáy tương ứng).
 
-### 6. Local LLM Answer Generation
-Local inference via `Qwen2.5:7B` (executed via Ollama or vLLM) guarantees data privacy and predictable operational costs. Generation prompts enforce factual grounding and prohibit speculative extrapolation.
+### 6. Mô hình Ngôn ngữ Sinh Cục bộ
+VietIrr-RAG sử dụng mô hình `Qwen2.5:7B` chạy trên hạ tầng cục bộ (thông qua Ollama hoặc vLLM), đảm bảo tính bảo mật của dữ liệu kỹ thuật và chi phí vận hành độc lập. Prompt sinh câu trả lời áp đặt kỷ luật dữ kiện nghiêm ngặt, ngăn chặn suy diễn vô căn cứ.
 
-### 7. Citation Guard and Controlled Abstention
-The citation guard inspects the output of the model:
-- Asserts that every key claim references a canonical evidence token (`[REG_...]` or `[TAB_...]`).
-- Validates that cited IDs correspond to evidence blocks actually present in the prompt context.
-- Triggers controlled abstention (`"Không có đủ căn cứ trong tài liệu..."`) when supporting evidence is insufficient or unverified.
+### 7. Bộ Lọc Trích dẫn (Citation Guard) và Từ chối Trả lời
+Sau khi mô hình sinh câu trả lời, bộ lọc Citation Guard thực hiện:
+- Bắt buộc mọi luận điểm phải kèm mã định danh bằng chứng hợp lệ (`[REG_...]` hoặc `[TAB_...]`).
+- Kiểm tra tính hợp lệ của mã trích dẫn đối với các khối ngữ cảnh thực sự được cung cấp cho LLM.
+- Kích hoạt cơ chế từ chối trả lời an toàn (`"Không có đủ căn cứ trong tài liệu..."`) khi bằng chứng không đủ độ tin cậy.
 
-### 8. Ontology-Constrained Verification (Shadow Mode)
-An asynchronous verification pipeline checks generated assertions against 45 formal civil engineering constraints. The system operates in non-blocking Shadow Mode to provide observational telemetry without introducing false rejections during live inference.
+### 8. Giám sát Ràng buộc Bản thể học (Shadow Mode)
+Quy trình xác thực bất đồng bộ trích xuất các bộ khẳng định nguyên tử và đối soát với 45 ràng buộc thủy lực. Module chạy ở chế độ Shadow Mode (không can thiệp luồng phản hồi trực tiếp) để cung cấp dữ liệu đo kiểm và cảnh báo vi phạm số liệu.
 
 ---
 
-## Corpus and Benchmarks
+## Tập Dữ liệu và Tiêu chuẩn Đánh giá
 
-### Corpus Specifications
+### Thống kê Tập Dữ liệu Hoạt động
 
-| Metric / Attribute | Active Operational Corpus (`V4_R6_FROZEN`) | Historical Baseline (`V3.2_FINAL_SEMANTIC`) |
+| Chỉ số / Thuộc tính | Tập Hoạt động Hiện tại (`V4_R6_FROZEN`) | Tập Baseline Lịch sử (`V3.2_FINAL_SEMANTIC`) |
 | :--- | :---: | :---: |
-| **Document Count** | **93** verified dossiers | 89 dossiers |
-| **Total Pages** | **2,578** pages | 2,479 pages |
-| **Total Evidence Units** | **27,144** units | 27,045 units |
-| **Text Regions** | 27,053 regions | 26,639 regions |
-| **Structured Table Regions** | 91 table matrices | 406 unflattened fragments |
-| **Language** | Vietnamese (`vi`) | Vietnamese (`vi`) |
-| **Domain** | Hydraulic engineering, dam safety, hydrology | Hydraulic engineering, hydrology |
-| **Primary Manifest** | `data/v4_corpus/metadata/v4_corpus_manifest.jsonl` | `data/corpus/metadata/v3_2_manifest.jsonl` |
+| **Số lượng Tài liệu** | **93** hồ sơ kỹ thuật | 89 hồ sơ |
+| **Tổng số Trang** | **2.578** trang | 2.479 trang |
+| **Tổng số Đơn vị Bằng chứng** | **27.144** đơn vị | 27.045 đơn vị |
+| **Vùng Văn bản (Text Regions)** | 27.053 vùng | 26.639 vùng |
+| **Vùng Bảng biểu Cấu trúc** | 91 ma trận bảng | 406 mảnh cắt thô |
+| **Ngôn ngữ** | Tiếng Việt (`vi`) | Tiếng Việt (`vi`) |
+| **Lĩnh vực Chuyên ngành** | Kỹ thuật công trình thủy lợi, an toàn hồ đập, thủy văn | Kỹ thuật thủy lợi, thủy văn |
+| **Tập tin Manifest Chính** | `data/v4_corpus/metadata/v4_corpus_manifest.jsonl` | `data/corpus/metadata/v3_2_manifest.jsonl` |
 
-The complete research dataset and evaluation resources are hosted in a dedicated public repository:
-- **Dataset Repository**: [https://github.com/zudoan/vietirr-rag-dataset](https://github.com/zudoan/vietirr-rag-dataset)
+Tập dữ liệu nghiên cứu và tài nguyên benchmark độc lập được lưu trữ tại repository công khai riêng:
+- **Repository Dữ liệu**: [https://github.com/zudoan/vietirr-rag-dataset](https://github.com/zudoan/vietirr-rag-dataset)
 
-### Evaluation Benchmark Splits
+### Bộ Tiêu chuẩn Đánh giá Benchmark
 
-- **DEV-93** (`data/benchmark/dev.jsonl`): 93 frozen questions evaluating complex multi-hop retrieval and table lookups across multi-page engineering reports.
-- **ALL-QA-545** (`data/benchmark/all_qa.jsonl`): 545 verified question-evidence pairs spanning the broader curriculum of Vietnamese hydraulic engineering.
+- **DEV-93** (`data/benchmark/dev.jsonl`): 93 câu hỏi đánh giá khả năng truy xuất đa bước và tra cứu bảng biểu qua nhiều trang hồ sơ kỹ thuật.
+- **ALL-QA-545** (`data/benchmark/all_qa.jsonl`): 545 cặp câu hỏi - bằng chứng chuẩn hóa bao phủ toàn diện các tình huống nghiệp vụ thủy lợi.
 
 ---
 
-## Retrieval Evaluation
+## Kết quả Đánh giá Thực nghiệm
 
-The table below presents the verified retrieval and localization performance on the frozen **DEV-93** benchmark. Metrics are reproduced directly from the frozen artifact `reports/EXPERIMENTS/R6_RETRIEVAL_DEV93_METRICS.json`.
+Bảng số liệu dưới đây trình bày kết quả đánh giá khả năng truy xuất và định vị bằng chứng trên bộ tiêu chuẩn **DEV-93**. Các số liệu được đối chiếu trực tiếp từ artifact đóng băng `reports/EXPERIMENTS/R6_RETRIEVAL_DEV93_METRICS.json`:
 
-| Evaluation Metric | Baseline R5 | Active Pipeline R6 | Absolute Delta |
+| Chỉ số Đánh giá | Baseline R5 | Pipeline R6 Hiện tại | Chênh lệch Tuyệt đối |
 | :--- | :---: | :---: | :---: |
-| **Candidate Hit@100** | 76.34% (71/93) | **91.40% (85/93)** | +15.06% |
-| **Page Hit@5** | 63.44% (59/93) | **67.74% (63/93)** | +4.30% |
-| **Evidence Page Hit@5** | 58.06% (54/93) | **61.29% (57/93)** | +3.23% |
-| **MRR@5** | 0.4579 | **0.4511** | -0.0068 |
-| **nDCG@5** | 0.4894 | **0.5077** | +0.0183 |
-| **Table Region Recovery** | 0.00% (0/93) | **17.20% (16/93)** | +17.20% |
-| **Median Latency (p50)** | 4,505 ms | **4,401 ms** | -104 ms |
-| **95th Percentile Latency (p95)** | 5,963 ms | **5,564 ms** | -399 ms |
+| **Candidate Hit@100** | 76,34% (71/93) | **91,40% (85/93)** | +15,06% |
+| **Page Hit@5** | 63,44% (59/93) | **67,74% (63/93)** | +4,30% |
+| **Evidence Page Hit@5** | 58,06% (54/93) | **61,29% (57/93)** | +3,23% |
+| **MRR@5** | 0,4579 | **0,4511** | -0,0068 |
+| **nDCG@5** | 0,4894 | **0,5077** | +0,0183 |
+| **Khôi phục Vùng Bảng Biểu** | 0,00% (0/93) | **17,20% (16/93)** | +17,20% |
+| **Độ trễ Trung vị (p50)** | 4.505 ms | **4.401 ms** | -104 ms |
+| **Độ trễ Phân vị 95 (p95)** | 5.963 ms | **5.564 ms** | -399 ms |
 
-### Paired Comparison on Page Hit@5:
-- **R6 Wins**: 10 questions
-- **R6 Losses**: 6 questions
-- **Ties**: 77 questions
+### Kết quả So sánh Cặp (Paired Comparison trên Page Hit@5):
+- **Số câu R6 tốt hơn R5**: 10 câu
+- **Số câu R6 kém hơn R5**: 6 câu
+- **Số câu tương đương**: 77 câu
 
-> **Scientific Metric Distinction:**
-> Hit@K and MRR@K quantify the retrieval system's capability to localize evidence-bearing pages within candidate pools. They do **not** represent end-to-end factual answer accuracy. End-to-end answer correctness has not yet been established by a comprehensive independent evaluation.
+> **Lưu ý Khoa học về Định nghĩa Chỉ số:**
+> Hit@K và MRR@K là các chỉ số định lượng năng lực định vị trang tài liệu chứa bằng chứng nguồn trong tập ứng viên. Các chỉ số này **không phản ánh độ chính xác nội dung câu trả lời cuối cùng** (End-to-End Answer Correctness). Độ chính xác trả lời thực tế cần được kiểm chứng độc lập trên một benchmark đánh giá chuyên sâu riêng.
 
-For complete evaluation protocols, see [docs/EVALUATION.md](docs/EVALUATION.md).
+Chi tiết về nghi thức đánh giá, xem tại [docs/EVALUATION.md](docs/EVALUATION.md).
 
 ---
 
-## Ontology-Constrained Verification
+## Xác thực Ràng buộc Bản thể học
 
-In safety-critical hydraulic systems, factual discrepancies regarding dam heights, spillway capacities, or reservoir volumes carry serious engineering implications. The ontology subsystem formalizes domain knowledge to audit generated statements:
+Trong các hệ thống công trình hạ tầng trọng yếu, sai sót số liệu liên quan đến chiều cao đập, dung tích trữ hay ngưỡng xả tràn có thể ảnh hưởng đến an toàn vận hành. Phân hệ bản thể học cung cấp nền tảng tri thức hình thức để đối soát các khẳng định:
 
-### 1. Atomic Claim Representation
-Generated texts are parsed into structured claims:
+### 1. Cấu trúc Khẳng định Kỹ thuật Nguyên tử
+Câu trả lời sinh ra được bóc tách thành bộ dữ liệu có cấu trúc:
 ```text
 TechnicalClaim {
     entity:           "Hồ Thác La",
@@ -191,186 +191,186 @@ TechnicalClaim {
 }
 ```
 
-### 2. Formal Domain Constraints
-The system incorporates 45 hydraulic domain rules (`ontology/constraints_v0_1.ttl`), including:
-- **Water Elevation Hierarchy**: $MNC \le MNDBT \le MNLKT \le CaoTrinhDinhDam$
-- **Physical Feasibility Bounds**: Discharge thresholds, reservoir capacity ceilings, and unit consistency.
+### 2. Các Ràng buộc Miền Thủy lực Chính thức
+Hệ thống tích hợp 45 quy tắc nghiệp vụ trong OWL/TTL (`ontology/constraints_v0_1.ttl`), bao gồm:
+- **Phân cấp Cao trình Thủy lực**: $MNC \le MNDBT \le MNLKT \le CaoTrinhDinhDam$
+- **Giới hạn Vật lý Khả thi**: Ngưỡng lưu lượng xả, trần dung tích hồ chứa và tính nhất quán đơn vị đo.
 
-### 3. Shadow Mode Architecture
-Controlled ablation experiments (A0 through A3) demonstrated that hard blocking on automated claim verification introduced an 8.3% false rejection rate due to natural language variability. As a result, the operational system implements ontology verification in **Shadow Mode**: verification executes asynchronously, emitting diagnostic signals and metrics without disrupting end-user interaction.
+### 3. Cơ chế Hoạt động Shadow Mode
+Các thực nghiệm kiểm thử triệt tiêu (Ablation Studies A0 đến A3) chỉ ra rằng việc áp dụng cơ chế chặn cứng (hard rejection) khi kiểm tra bản thể học tự động dẫn đến tỷ lệ từ chối sai (false rejection) 8,3% do sự biến hóa ngữ nghĩa trong ngôn ngữ tự nhiên. Do đó, hệ thống vận hành bản thể học ở **Shadow Mode**: chạy ngầm thu thập dữ liệu đo kiểm chẩn đoán mà không làm gián đoạn trải nghiệm của người dùng.
 
-For full technical specifications, see [docs/ONTOLOGY_VERIFICATION.md](docs/ONTOLOGY_VERIFICATION.md).
-
----
-
-## Web Application and Evidence Workspace
-
-The repository includes a modern, high-density web application built with React, TypeScript, and Tailwind/Vanilla CSS, backed by a FastAPI service.
-
-### Search and Retrieval Workspace
-The primary workspace provides multi-modal query execution, candidate filtering, and granular evidence inspectability.
-
-![VietIrr-RAG Search Workspace](docs/assets/screenshots/workspace_search.png)
-*Figure 1: VietIrr-RAG search interface displaying query input, stage telemetry, and multi-candidate retrieval ranking.*
-
-### Grounded Answer Generation with Citation Cards
-Answers generated by the local Qwen model include explicit citation anchors mapped to extracted evidence cards.
-
-![Grounded QA with Citation Cards](docs/assets/screenshots/grounded_answer_citation.png)
-*Figure 2: Factual answer generation with interactive citation chips linking directly to localized document provenance.*
-
-### Inline Document Evidence Viewer
-Users can inspect original PDF documents with bounding box overlays highlighting the precise location of retrieved evidence.
-
-![Inline PDF Evidence Viewer](docs/assets/screenshots/inline_pdf_viewer.png)
-*Figure 3: Built-in PDF.js evidence viewer rendering original document pages with highlighted evidence regions.*
+Đặc tả kỹ thuật đầy đủ tại [docs/ONTOLOGY_VERIFICATION.md](docs/ONTOLOGY_VERIFICATION.md).
 
 ---
 
-## Quick Start
+## Ứng dụng Web và Không gian Làm việc Bằng chứng
 
-### System Requirements
-- Python 3.10 or 3.11
-- Node.js 20.x or higher
-- Ollama with `qwen2.5:7b` model loaded
-- 16 GB RAM minimum (32 GB recommended)
+Repository đi kèm một ứng dụng web hoàn chỉnh xây dựng trên nền tảng React 18, TypeScript, Tailwind/Vanilla CSS và API dịch vụ FastAPI.
 
-### 1. Model Serving Setup
-Ensure Ollama is running and pull the model:
+### Không gian Làm việc Tìm kiếm và Truy xuất
+Giao diện làm việc trung tâm hỗ trợ truy vấn đa phương thức, bộ lọc ứng viên và khả năng kiểm tra sâu từng khối bằng chứng.
+
+![Giao diện Không gian Tìm kiếm VietIrr-RAG](docs/assets/screenshots/workspace_search.png)
+*Hình 1: Không gian tìm kiếm hiển thị ô nhập truy vấn, các chỉ số vi dịch vụ và bảng xếp hạng ứng viên bằng chứng.*
+
+### Sinh Câu trả lời Kèm Thẻ Trích dẫn Nguồn
+Câu trả lời được sinh từ mô hình ngôn ngữ đi kèm các chip trích dẫn liên kết trực tiếp đến tọa độ bằng chứng gốc.
+
+![Sinh Câu trả lời Grounded kèm Chip Trích dẫn](docs/assets/screenshots/grounded_answer_citation.png)
+*Hình 2: Câu trả lời thực tế với các chip trích dẫn cho phép đối soát nguồn gốc tài liệu ngay lập tức.*
+
+### Trình xem Bằng chứng PDF Trực tiếp
+Người dùng có thể mở trực tiếp tài liệu PDF gốc với khung viền bounding box tô sáng chính xác vị trí bằng chứng được tìm thấy.
+
+![Trình xem Bằng chứng PDF Tích hợp](docs/assets/screenshots/inline_pdf_viewer.png)
+*Hình 3: Trình xem tài liệu PDF.js tích hợp hiển thị trang gốc với vùng bằng chứng được tô sáng.*
+
+---
+
+## Hướng dẫn Khởi chạy Nhanh
+
+### Yêu cầu Tiên quyết
+- Python 3.10 hoặc 3.11
+- Node.js 20.x trở lên
+- Ollama với mô hình `qwen2.5:7b`
+- RAM tối thiểu 16 GB (khuyến nghị 32 GB cho mô hình nhúng và vector)
+
+### 1. Khởi chạy Mô hình Ngôn ngữ Cục bộ
 ```bash
 ollama run qwen2.5:7b
 ```
 
-### 2. Backend Service Setup
+### 2. Thiết lập Dịch vụ Backend FastAPI
 ```bash
-# Clone the repository
+# Clone repository
 git clone https://github.com/zudoan/VietIrr-RAG.git
 cd VietIrr-RAG
 
-# Create and activate virtual environment
+# Tạo và kích hoạt môi trường ảo
 python -m venv .venv
-# On Windows PowerShell:
+# Trên Windows PowerShell:
 .venv\Scripts\Activate.ps1
-# On Linux / macOS:
+# Trên Linux / macOS:
 source .venv/bin/activate
 
-# Install dependencies in editable mode
+# Cài đặt gói phụ thuộc ở chế độ editable
 pip install -e .
 
-# Launch FastAPI backend
+# Khởi chạy dịch vụ FastAPI
 uvicorn viirr_api.app:app --host 127.0.0.1 --port 8000 --reload
 ```
 
-The API service will start on `http://127.0.0.1:8000`. API documentation is available at `http://127.0.0.1:8000/docs`.
+Dịch vụ API sẽ hoạt động tại `http://127.0.0.1:8000`. Tài liệu API Swagger có thể truy cập tại `http://127.0.0.1:8000/docs`.
 
-### 3. Frontend Web Application Setup
-In a new terminal window:
+### 3. Thiết lập Ứng dụng Web Frontend
+Trong một cửa sổ terminal mới:
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
 
-Open `http://127.0.0.1:5173` in your browser to access the evidence workspace.
+Truy cập `http://127.0.0.1:5173` trên trình duyệt để sử dụng không gian làm việc.
 
-For complete deployment options, production settings, and environment variables, refer to [docs/SETUP.md](docs/SETUP.md).
+Chi tiết cấu hình môi trường sản xuất, xem tại [docs/SETUP.md](docs/SETUP.md).
 
 ---
 
-## Repository Structure
+## Cấu trúc Kho Lưu trữ
 
 ```text
 VietIrr-RAG/
-├── configs/                  # Pipeline, retrieval, and model configuration files
+├── configs/                  # File cấu hình pipeline, truy xuất và mô hình
 ├── data/
-│   ├── benchmark/            # Frozen evaluation sets (DEV-93, ALL-QA-545)
-│   └── v4_corpus/            # V4 corpus metadata, manifests, and index artifacts
-├── docs/                     # Comprehensive technical documentation
-│   ├── assets/screenshots/   # System interface figures and screenshots
-│   ├── ARCHITECTURE.md       # Full tier and dataflow architecture specification
-│   ├── DATA_AVAILABILITY.md  # Data governance, redistribution, and repository links
-│   ├── EVALUATION.md         # Benchmark definitions and experimental evaluation protocol
-│   ├── ONTOLOGY_VERIFICATION.md # Ontology claim schema, constraints, and Shadow Mode
-│   ├── README.vi.md          # Scientific Vietnamese translation
-│   ├── RESEARCH_HISTORY.md   # Historical evolution from V3.2 / B2 to R6
-│   ├── RETRIEVAL_PIPELINE.md # Detailed specification of R6 hybrid retrieval stages
-│   └── SETUP.md              # Local installation and deployment guide
-├── frontend/                 # React / Vite TypeScript web application
-│   ├── src/components/       # Evidence cards, PDF viewer, shell components
-│   └── src/pages/            # Workspace, documents, and presentation views
-├── ontology/                 # OWL/TTL formal schemas and 45 hydraulic domain rules
-├── reports/EXPERIMENTS/      # Frozen experimental metrics, baseline traces, and evaluations
-├── scripts/                  # Benchmarking, diagnostic, and evaluation CLI scripts
+│   ├── benchmark/            # Dữ liệu đánh giá đóng băng (DEV-93, ALL-QA-545)
+│   └── v4_corpus/            # Metadata, manifests và artifacts chỉ mục V4
+├── docs/                     # Hệ thống tài liệu kỹ thuật chuyên sâu
+│   ├── assets/screenshots/   # Ảnh chụp giao diện thực tế của hệ thống
+│   ├── ARCHITECTURE.md       # Đặc tả kiến trúc toàn diện và luồng dữ liệu
+│   ├── DATA_AVAILABILITY.md  # Quy định quản trị dữ liệu và link repo dataset
+│   ├── EVALUATION.md         # Nghi thức và số liệu benchmark DEV-93
+│   ├── ONTOLOGY_VERIFICATION.md # Lược đồ TechnicalClaim, ràng buộc và Shadow Mode
+│   ├── README.en.md          # Tài liệu tiếng Anh chuẩn mực
+│   ├── README.vi.md          # Bản giới thiệu tiếng Việt
+│   ├── RESEARCH_HISTORY.md   # Tiến trình lịch sử nghiên cứu từ V3.2 đến R6
+│   ├── RETRIEVAL_PIPELINE.md # Quy trình kỹ thuật chi tiết của R6 Hybrid
+│   └── SETUP.md              # Hướng dẫn cài đặt và khởi chạy cục bộ
+├── frontend/                 # Ứng dụng web React 18 / TypeScript / Vite
+│   ├── src/components/       # Thẻ bằng chứng, trình xem PDF, bố cục trang
+│   └── src/pages/            # Workspace, tài liệu và giao diện báo cáo
+├── ontology/                 # Lược đồ hình thức OWL/TTL và 45 ràng buộc miền
+├── reports/EXPERIMENTS/      # Số liệu đóng băng thực nghiệm và traces đánh giá
+├── scripts/                  # Scripts chạy benchmark, kiểm định và đánh giá
 ├── src/
-│   ├── viirr_api/            # FastAPI REST backend, database models, schemas, and routes
-│   ├── viirr_ontology/       # Atomic claim extraction and shadow verification engine
-│   ├── viirr_rag/            # Prompt construction, context allocator, and Citation Guard
-│   └── viirr_retrieval/      # BM25, BGE-M3, RRF fusion, reranker, and Page-to-Region
-└── tests/                    # Comprehensive test suite (585 regression and unit tests)
+│   ├── viirr_api/            # REST backend FastAPI, database models, schemas, routes
+│   ├── viirr_ontology/       # Trích xuất khẳng định nguyên tử và động cơ shadow
+│   ├── viirr_rag/            # Tạo prompt, phân bổ ngữ cảnh và Citation Guard
+│   └── viirr_retrieval/      # BM25, BGE-M3, RRF fusion, reranker, Page-to-Region
+└── tests/                    # Bộ kiểm thử hồi quy toàn diện (585 tests)
 ```
 
-For an exhaustive audit of workspace files, consult [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md).
+Kiểm kê chi tiết toàn bộ file trong workspace có thể xem tại [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md).
 
 ---
 
-## Testing and Reproducibility
+## Kiểm thử và Tính Tái lập
 
-VietIrr-RAG enforces comprehensive unit, integration, and security test coverage:
+VietIrr-RAG duy trì phạm vi kiểm thử tự động toàn diện:
 
 ```bash
-# Execute backend test suite (585 tests)
+# Thực thi toàn bộ bộ kiểm thử backend (585 tests)
 pytest tests/ -q
 
-# Execute frontend build verification
+# Thực thi kiểm tra build của frontend
 cd frontend
 npm run build
 ```
 
-Test coverage includes:
-- **Retrieval Contract**: Verifies absence of test set leakage and checks candidate provenance integrity.
-- **Citation Guard**: Validates citation parsing, ID binding, and controlled abstention paths.
-- **Ontology Verification**: Tests claim extraction tuples against hydraulic constraint invariants.
-- **API Endpoints**: Validates request rate limiting, payload sanitization, and health check routes.
+Các bộ kiểm thử bao gồm:
+- **Hợp đồng Truy xuất và Chống Rò rỉ**: Đảm bảo không rò rỉ dữ liệu tập test và kiểm tra tính toàn vẹn nguồn gốc ứng viên.
+- **Citation Guard**: Xác thực bóc tách trích dẫn, gán mã định danh và đường dẫn từ chối trả lời khi thiếu căn cứ.
+- **Bản thể học**: Kiểm tra tính bất biến của bộ dữ liệu khẳng định nguyên tử đối với các quy tắc thủy lực.
+- **Endpoints API**: Kiểm tra giới hạn tần suất yêu cầu (rate-limiting), làm sạch dữ liệu đầu vào và các tuyến kiểm tra trạng thái sức khỏe hệ thống.
 
 ---
 
-## Research History
+## Tiến trình Lịch sử Nghiên cứu
 
-The system reflects progressive experimental iterations:
-- **Baseline V3.2 / Milestone B2**: Semantic search prototype over 89 PDFs using `multilingual-e5-large`; evaluated flat evidence search without LLM answer generation.
-- **Milestone C1 / R1**: Sparse-dense comparison identifying BM25 advantages for technical vocabulary and legal identifiers.
-- **Milestone R5**: First integration of Reciprocal Rank Fusion with BGE-M3 and cross-encoder reranking.
-- **Milestone R6 (Active Baseline)**: Introduction of hierarchical Page-to-Region localization and structured table extraction, achieving 91.40% Candidate Hit@100 on DEV-93.
-- **Phase E & Full-Stack Deployment**: Implementation of local Qwen 2.5:7B generation, Citation Guard enforcement, interactive PDF evidence viewing, and asynchronous Ontology Shadow Mode.
+Hệ thống được phát triển qua nhiều thế hệ thực nghiệm kế thừa:
+- **Baseline V3.2 / Milestone B2**: Nguyên mẫu tìm kiếm ngữ nghĩa trên 89 tài liệu PDF sử dụng `multilingual-e5-large`; tìm kiếm bằng chứng phẳng không kèm sinh câu trả lời LLM.
+- **Milestone C1 / R1**: Đánh giá đối sánh từ vựng - ngữ nghĩa, xác nhận ưu thế của BM25 đối với thuật ngữ chuyên môn và số hiệu văn bản pháp lý.
+- **Milestone R5**: Tích hợp đầu tiên thuật toán Reciprocal Rank Fusion kết hợp BGE-M3 và cross-encoder reranker.
+- **Milestone R6 (Baseline Hoạt động)**: Bổ sung cơ chế định vị phân cấp Page-to-Region và bóc tách bảng kỹ thuật cấu trúc, nâng Candidate Hit@100 lên 91,40% trên tập DEV-93.
+- **Phase E & Triển khai Full-Stack**: Hoàn thiện sinh câu trả lời cục bộ với Qwen 2.5:7B, cơ chế Citation Guard, trình xem PDF.js nhúng và chế độ Ontology Shadow Mode.
 
-For detailed milestone progression, see [docs/RESEARCH_HISTORY.md](docs/RESEARCH_HISTORY.md).
-
----
-
-## Known Limitations
-
-- **Complex Engineering Drawings**: Scanned blueprints, dam cross-section diagrams, and handwritten operational logs cannot be reliably interpreted by standard OCR engines.
-- **Multi-Page Table Stitching**: Tables split across page boundaries without repeating headers occasionally suffer from column misalignments during parsing.
-- **Generative Abstention Sensitivity**: The Citation Guard enforces strict evidence binding; occasionally, answers that paraphrase valid facts without explicitly appending canonical IDs are conservatively rejected.
-- **Ontology Extraction Coverage**: Highly nuanced natural language assertions can fail automatic tuple extraction, which motivated the use of non-blocking Shadow Mode over hard rejection.
-- **Evaluation Scope**: Retrieval metrics (Hit@K, MRR@K) evaluate evidence localization. End-to-end factual correctness requires further independent manual annotation.
+Chi tiết tiến trình lịch sử, xem tại [docs/RESEARCH_HISTORY.md](docs/RESEARCH_HISTORY.md).
 
 ---
 
-## Data Availability and Governance
+## Hạn chế Khoa học Đã Biết
 
-The primary dataset is maintained in a dedicated public repository:
+- **Bản vẽ Kỹ thuật và Sơ đồ Phức tạp**: Các bản vẽ mặt cắt đập quét mờ, bản đồ lưu vực hoặc nhật ký vận hành viết tay chưa thể xử lý tin cậy bằng OCR thông thường.
+- **Bảng Biểu Trải Dài Đa Trang**: Các bảng số liệu kéo dài qua nhiều trang không lặp lại tiêu đề đôi khi gặp lỗi lệch cột trong quá trình bóc tách ma trận.
+- **Độ Nhạy của Cơ chế Từ chối Trả lời**: Do Citation Guard áp đặt kỷ luật trích dẫn khắt khe, một số câu trả lời diễn giải đúng dữ kiện nhưng thiếu mã bằng chứng canonical có thể bị từ chối thận trọng.
+- **Độ Bao phủ của Trích xuất Bản thể học**: Các khẳng định diễn đạt phức tạp trong ngôn ngữ tự nhiên có thể không được trích xuất trọn vẹn thành bộ tuple, đây là lý do hệ thống lựa chọn Shadow Mode thay vì cơ chế chặn cứng.
+- **Phạm vi Đo kiểm**: Các chỉ số truy xuất (Hit@K, MRR@K) đo lường năng lực định vị bằng chứng; tính chính xác thực tế của câu trả lời sinh ra cần thêm các đợt đánh giá thủ công độc lập.
+
+---
+
+## Chính sách Dữ liệu và Bản quyền
+
+Tập dữ liệu nghiên cứu chính được lưu trữ tại repository công khai độc lập:
 - [https://github.com/zudoan/vietirr-rag-dataset](https://github.com/zudoan/vietirr-rag-dataset)
 
-Raw engineering documents are subject to organizational distribution policies. Derived structured representations (bounding boxes, layout coordinates, anonymous text tokens, and metadata manifests) are made available for research reproducibility.
+Các tài liệu hồ sơ gốc tuân thủ chính sách phân phối của cơ quan ban hành. Các dữ liệu cấu trúc phái sinh (tọa độ bounding box, văn bản đã ẩn danh, ma trận bảng biểu và manifest) được cung cấp công khai phục vụ mục đích tái lập nghiên cứu khoa học.
 
-For data governance terms, see [docs/DATA_AVAILABILITY.md](docs/DATA_AVAILABILITY.md).
+Xem chi tiết chính sách dữ liệu tại [docs/DATA_AVAILABILITY.md](docs/DATA_AVAILABILITY.md).
 
 ---
 
-## Citation
+## Trích dẫn Khoa học
 
-If you utilize VietIrr-RAG or its associated benchmark datasets in your research, please cite the project as follows:
+Nếu bạn sử dụng mã nguồn hoặc bộ dữ liệu của VietIrr-RAG cho các công trình nghiên cứu, vui lòng trích dẫn theo định dạng:
 
 ```bibtex
 @software{vietirr_rag_2026,
@@ -385,6 +385,6 @@ If you utilize VietIrr-RAG or its associated benchmark datasets in your research
 
 ---
 
-## Acknowledgements
+## Lời cảm ơn
 
-VietIrr-RAG was developed as part of advanced deep learning and information retrieval research in the Department of Water Resources and Civil Engineering. We express our appreciation to the open-source community for providing foundational models including BAAI BGE-M3 and the Qwen series.
+Dự án VietIrr-RAG được thực hiện trong khuôn khổ nghiên cứu học sâu và truy xuất thông tin nâng cao thuộc khối ngành Thủy lợi và Tài nguyên Nước. Chúng tôi trân trọng cảm ơn cộng đồng nghiên cứu nguồn mở đã cung cấp các mô hình nền tảng bao gồm BAAI BGE-M3 và chuỗi mô hình Qwen.
