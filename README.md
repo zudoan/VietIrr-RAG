@@ -1,217 +1,390 @@
 # VietIrr-RAG
 
-> Evidence-first retrieval for long, structured Vietnamese irrigation and water-resource documents.
+### Evidence-Grounded Question Answering over Vietnamese Irrigation Documents
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
-![React](https://img.shields.io/badge/React-TypeScript-149ECA?logo=react&logoColor=white)
-![Dataset](https://img.shields.io/badge/Dataset-V3.2%20Semantic%20Freeze-18A77B)
-![Tests](https://img.shields.io/badge/tests-109%20passed-2EA44F)
-![Human validation](https://img.shields.io/badge/human_validation-pending-E0A458)
+VietIrr-RAG is a research software system for evidence-grounded retrieval-augmented generation (RAG) over Vietnamese hydraulic engineering, dam safety, and water resource documentation. The platform couples hierarchical sparse-dense retrieval (BM25 + BGE-M3 + RRF + Cross-Encoder reranking), layout-aware Page-to-Region evidence localization, local generative language modeling (Qwen 2.5:7B), strict citation guarding, and asynchronous domain ontology verification.
 
-**VietIrr-RAG** là workspace nghiên cứu truy xuất bằng chứng từ PDF thủy lợi tiếng Việt dài, có bảng biểu, OCR và câu hỏi cần nhiều bằng chứng. Dự án ưu tiên tính kiểm chứng: mỗi kết quả được gắn với tài liệu, trang và evidence ID; không dùng answer hoặc gold annotation trong quá trình inference.
+[Tiếng Việt](docs/README.vi.md) | [Architecture Specification](docs/ARCHITECTURE.md) | [Retrieval Pipeline](docs/RETRIEVAL_PIPELINE.md) | [Evaluation Protocol](docs/EVALUATION.md) | [Ontology Verification](docs/ONTOLOGY_VERIFICATION.md) | [Setup Guide](docs/SETUP.md) | [Data Governance](docs/DATA_AVAILABILITY.md)
 
-Repository chứa source code, cấu hình thí nghiệm, test, báo cáo đã kiểm chứng và giao diện **Evidence Search**. Raw PDF, embedding cache và model artifact không được đưa lên Git vì dung lượng và trạng thái bản quyền phân phối.
+---
 
-## Trạng thái khoa học
+## Table of Contents
 
-| Hạng mục | Trạng thái |
-|---|---|
-| Dataset | `V3.2_FINAL_SEMANTIC`, frozen |
-| Accepted QA | 545: 378 core + 167 challenge |
-| Retrieval DEV | 93 QA, gồm 25 retrieval-multi |
-| Document/family leakage | 0 |
-| Candidate Test | Sealed; chưa parse/evaluate trong các thí nghiệm |
-| Human validation | Chưa hoàn thành (`HUMAN_VALIDATED=false`) |
-| Best observed DEV point estimate | All R@20 = 0.6559 |
-| Statistical superiority | Chưa được xác nhận |
-| Paper ready | Không |
+- [Project Overview](#project-overview)
+- [System Architecture](#system-architecture)
+- [Key Technical Components](#key-technical-components)
+- [Corpus and Benchmarks](#corpus-and-benchmarks)
+- [Retrieval Evaluation](#retrieval-evaluation)
+- [Ontology-Constrained Verification](#ontology-constrained-verification)
+- [Web Application and Evidence Workspace](#web-application-and-evidence-workspace)
+- [Quick Start](#quick-start)
+- [Repository Structure](#repository-structure)
+- [Testing and Reproducibility](#testing-and-reproducibility)
+- [Research History](#research-history)
+- [Known Limitations](#known-limitations)
+- [Data Availability and Governance](#data-availability-and-governance)
+- [Citation](#citation)
 
-> **Diễn giải đúng:** 0.6559 là point estimate quan sát được ở E4/R2 trên DEV, không phải tuyên bố SOTA. Các khoảng tin cậy theo QA/gold-signature vẫn chạm hoặc chứa 0.
+---
 
-## Bài toán
+## Project Overview
 
-Cho truy vấn tiếng Việt `q` và tập evidence units `D`, hệ thống trả về Top-K bằng chứng có provenance. Với gold set `Gq`, metric chính là complete-evidence recall:
+### The Engineering Challenge
+Hydraulic infrastructure reports, dam safety assessments, and reservoir operation procedures in Vietnam present distinctive obstacles for standard retrieval-augmented generation:
+- **Long-Form Multi-Page Structure**: Engineering dossiers span dozens or hundreds of pages comprising legal mandates, technical drawings, cross-sectional profiles, and hydrological records.
+- **Dense Quantitative Telemetry**: Critical engineering decisions depend on fine-grained numerical parameters—such as dead water elevation (Mực nước chết - MNC), normal water elevation (Mực nước dâng bình thường - MNDBT), design flood elevation (Mực nước lũ kiểm tra - MNLKT), spillway discharge capacity, and active reservoir storage.
+- **Complex Tabular Data**: Crucial operating rules reside within multi-column, multi-page matrices detailing elevation-capacity relationships, stage-discharge curves, and gate opening schedules. Flattening these tables into unstructured text strips necessary coordinate relations.
+- **Mandatory Provenance**: In civil engineering decision-making, ungrounded generative assertions present severe operational risks. Every generated claim must be bound to verifiable, immutable source coordinates (document ID, page number, and bounding box region).
 
-```text
-AllRecall@K = mean_q [ Gq ⊆ TopK(q) ]
-```
+### The VietIrr-RAG Approach
+VietIrr-RAG addresses these challenges through a principled, evidence-first design:
+1. **Hierarchical Page-to-Region Localization**: Rather than treating documents as flat bags of chunks, the retrieval engine first identifies document candidates, prunes non-relevant pages, and then extracts targeted text blocks and table cells.
+2. **Table-Aware Context Construction**: Structured table parsers preserve row-column bindings and numerical precision.
+3. **Local Generative Grounding**: A locally deployed LLM (Qwen 2.5:7B) generates concise factual answers restricted strictly to provided evidence blocks.
+4. **Citation Guard**: A post-generation verification filter validates that every statement is supported by a valid canonical evidence identifier (`REG_...` or `TAB_...`), triggering controlled abstention if evidence is absent.
+5. **Ontology Monitoring in Shadow Mode**: An asynchronous domain verification module extracts structured technical claims and checks them against 45 formal hydraulic rules to log compliance telemetry without obstructing real-time response latency.
 
-Khác với single-passage retrieval, một QA có thể cần bằng chứng ở nhiều trang hoặc nhiều tài liệu. Vì vậy dự án tách rõ:
+---
 
-- candidate coverage;
-- page localization/pruning;
-- region ranking;
-- complete-evidence set selection;
-- provenance consistency.
+## System Architecture
 
-## Dataset V3.2
-
-| Thành phần | Số lượng |
-|---|---:|
-| Tài liệu | 89 |
-| Trang | 2.479 |
-| Regions | 30.382 |
-| Bảng | 406 |
-| Evidence units dùng cho retrieval | 27.045 |
-| Accepted QA | 545 |
-| Source-grounded negatives | 704 |
-
-Phân bố QA: 250 text-only, 131 table-only, 55 text+table và 109 table+table. Có 445 same-page, 34 cross-page cùng tài liệu và 66 cross-document QA.
-
-Raw PDF không được commit. Xem [data/README.md](data/README.md) để biết cấu trúc artifact cần thiết và chính sách dữ liệu.
-
-## Pipeline
+The following diagram illustrates the decoupled pipeline separating offline document ingestion from online hybrid retrieval, answer generation, and background ontology verification.
 
 ```mermaid
-flowchart LR
-    A[Official PDF] --> B[Text extraction / OCR]
-    B --> C[Page, region, table parsing]
-    C --> D[27,045 evidence units]
-    D --> E[384-token windows, overlap 128]
-    E --> F1[BM25]
-    E --> F2[multilingual-E5-large]
-    F1 --> G[RRF / candidate construction]
-    F2 --> G
-    G --> H[Page-to-region / reranking]
-    H --> I[Citation and provenance]
-    I --> J[Evidence Search UI]
+flowchart TD
+    subgraph Ingestion["Offline Ingestion and Indexing"]
+        PDF["PDF Engineering Documents"] --> OCR["Layout Analysis and OCR"]
+        OCR --> Chunks["Text Regions and Table Extraction"]
+        Chunks --> BM25Idx["Lexical Index (BM25)"]
+        Chunks --> DenseIdx["Dense Semantic Embeddings (BGE-M3)"]
+        Chunks --> MetaDB["Relational Metadata and Provenance Store"]
+    end
+
+    subgraph OnlineRetrieval["Online Retrieval Engine (R6)"]
+        Query["User Query"] --> BM25Search["BM25 Lexical Search"]
+        Query --> DenseSearch["BGE-M3 Semantic Search"]
+        BM25Search --> Fusion["Reciprocal Rank Fusion (RRF, k=60)"]
+        DenseSearch --> Fusion
+        Fusion --> Rerank["BGE-Reranker-0.6B Cross-Encoder"]
+        Rerank --> P2R["Hierarchical Page-to-Region Pruning"]
+        P2R --> TableParse["Table-Aware Context Assembly"]
+    end
+
+    subgraph Generation["Generation and Grounding"]
+        TableParse --> ContextPrompt["Grounded Context Budget Allocator"]
+        ContextPrompt --> LLM["Local Qwen 2.5:7B LLM"]
+        LLM --> Guard["Citation Guard and Abstention Filter"]
+        Guard --> ClientOutput["Verified Answer with Canonical Citations"]
+    end
+
+    subgraph Verification["Verification Subsystem (Shadow Mode)"]
+        Guard -.->|"Async Background Stream"| ClaimExt["Atomic Technical Claim Extractor"]
+        ClaimExt --> ConstraintCheck["45 Hydraulic Domain Rules Engine"]
+        ConstraintCheck --> Telemetry["Diagnostic Metrics and Compliance Logs"]
+    end
+
+    Ingestion -.->|"Index Artifacts"| OnlineRetrieval
 ```
 
-### Chunking và embedding
+---
 
-- Evidence unit: text region hoặc table region đủ quality gate.
-- Sliding window: 384 content tokens, overlap 128.
-- Window aggregation: max pooling về evidence ID gốc.
-- Encoder limit: 512 tokens; post-window truncation bằng 0%.
-- Dense encoder: `intfloat/multilingual-e5-large`, revision được pin trong config.
-- Prefix: `query:` / `passage:`; L2-normalized embedding.
-- BM25: `k1=1.5`, `b=0.75`, Unicode NFC/casefold tokenizer.
-- Fusion: Reciprocal Rank Fusion với `k=60`.
+## Key Technical Components
 
-## Kết quả chính trên DEV
+### 1. Document Understanding and Indexing
+PDF dossiers are processed into structured units preserving document geometry. Text blocks are indexed alongside bounding-box coordinates, while tabular regions retain cell matrices, column headers, and elevation keys.
 
-### Baseline B2
+### 2. Hybrid Sparse-Dense Retrieval
+- **Lexical Search (BM25)**: Tuned for Vietnamese hydraulic terminology, reservoir nomenclature, and legal decree identifiers (e.g., `Quyết định 1201/QĐ-TTg`).
+- **Dense Semantic Search (BGE-M3)**: Encodes text and table descriptions into 1024-dimensional normalized vectors to capture semantic intent and query paraphrases.
 
-| Method | Any R@10 | All R@20 | MRR | nDCG@10 |
-|---|---:|---:|---:|---:|
-| BM25 | 0.2688 | 0.2796 | 0.0950 | 0.1128 |
-| E5 | 0.5161 | 0.5484 | 0.2736 | 0.2937 |
-| Hybrid RRF | 0.4839 | 0.4946 | 0.2627 | 0.2767 |
-| Page→Region | **0.6452** | **0.5914** | **0.2997** | **0.3412** |
+### 3. Reciprocal Rank Fusion and Cross-Encoder Reranking
+Candidates from BM25 and BGE-M3 are merged via Reciprocal Rank Fusion ($k=60$). The top 50 candidates are scored using `BAAI/bge-reranker-large` / `bge-reranker-v2-m3` to model deep token interactions between questions and document context.
 
-### Các nghiên cứu tiếp theo
+### 4. Hierarchical Page-to-Region Localization
+Rather than returning arbitrary passages, the R6 retriever executes two-stage localization:
+1. **Document and Page Pruning**: Identifies the primary document sources and isolates high-density evidence pages.
+2. **Region Isolation**: Extracts exact bounding boxes (`TEXT_REGION` or `TABLE_REGION`), preventing extraneous text from diluting context attention.
 
-| Study | Điều kiện nổi bật | Coverage@100 | All R@20 | Kết luận |
-|---|---|---:|---:|---|
-| B2.3 | Zero-shot cross-encoder | 0.7742 | 0.6452 | Point gain; CI còn chứa 0 |
-| C1.1 | Set-Aware V2 / E4 | 0.7742 | **0.6559** | Multi recall không tăng; chưa support superiority |
-| R1 | Table-aware R2, full retrieval | 0.7849 | **0.6559** | Không có reliable contextualization gain |
-| MASH-ER | A3 multi-view + soft hierarchy | **0.8602** | 0.4731 | Coverage tăng, rank displacement tăng |
-| MAR-ER | M4 adaptive + recovery + stability | 0.8280 | 0.5914 | `STOP_MAR_ER_BRANCH` |
+### 5. Table-Aware Evidence Assembly
+Tabular evidence units are serialized preserving structural headers, row identifiers, and numerical units, allowing the generative model to resolve multi-column lookups (e.g., matching a given reservoir water level to its corresponding spillway discharge volume).
 
-Kết quả nhất quán quan trọng nhất: **candidate coverage tăng không tự động chuyển thành complete-evidence recall**. Candidate mới có thể đẩy gold evidence khỏi Top-20; bottleneck chuyển từ page localization sang region ranking/rank displacement.
+### 6. Local LLM Answer Generation
+Local inference via `Qwen2.5:7B` (executed via Ollama or vLLM) guarantees data privacy and predictable operational costs. Generation prompts enforce factual grounding and prohibit speculative extrapolation.
 
-## Phase E — Evidence Search
+### 7. Citation Guard and Controlled Abstention
+The citation guard inspects the output of the model:
+- Asserts that every key claim references a canonical evidence token (`[REG_...]` or `[TAB_...]`).
+- Validates that cited IDs correspond to evidence blocks actually present in the prompt context.
+- Triggers controlled abstention (`"Không có đủ căn cứ trong tài liệu..."`) when supporting evidence is insufficient or unverified.
 
-Frontend React/TypeScript cung cấp:
+### 8. Ontology-Constrained Verification (Shadow Mode)
+An asynchronous verification pipeline checks generated assertions against 45 formal civil engineering constraints. The system operates in non-blocking Shadow Mode to provide observational telemetry without introducing false rejections during live inference.
 
-- landing page 3D có WebGL/reduced-motion fallback;
-- search workspace với trạng thái backend thật;
-- citation, document/page provenance và PDF byte-range;
-- document explorer với metadata, filter và indexable regions;
-- responsive layout và lazy-loaded Three.js.
+---
 
-Workspace không có LLM serving nên giao diện chủ động ghi **Evidence Search** và không tạo answer giả.
+## Corpus and Benchmarks
 
-### Chạy local trên Windows
+### Corpus Specifications
 
-Yêu cầu: Python 3.10+, Node.js 20+ và các artifact mô tả trong [data/README.md](data/README.md).
+| Metric / Attribute | Active Operational Corpus (`V4_R6_FROZEN`) | Historical Baseline (`V3.2_FINAL_SEMANTIC`) |
+| :--- | :---: | :---: |
+| **Document Count** | **93** verified dossiers | 89 dossiers |
+| **Total Pages** | **2,578** pages | 2,479 pages |
+| **Total Evidence Units** | **27,144** units | 27,045 units |
+| **Text Regions** | 27,053 regions | 26,639 regions |
+| **Structured Table Regions** | 91 table matrices | 406 unflattened fragments |
+| **Language** | Vietnamese (`vi`) | Vietnamese (`vi`) |
+| **Domain** | Hydraulic engineering, dam safety, hydrology | Hydraulic engineering, hydrology |
+| **Primary Manifest** | `data/v4_corpus/metadata/v4_corpus_manifest.jsonl` | `data/corpus/metadata/v3_2_manifest.jsonl` |
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -e ".[dev]"
-cd frontend
-npm.cmd ci
-cd ..
-.\start_phase_e.cmd
-```
+The complete research dataset and evaluation resources are hosted in a dedicated public repository:
+- **Dataset Repository**: [https://github.com/zudoan/vietirr-rag-dataset](https://github.com/zudoan/vietirr-rag-dataset)
 
-Mở `http://127.0.0.1:5173`.
+### Evaluation Benchmark Splits
 
-Để chạy pipeline corpus hoặc các thí nghiệm dense/GPU, cài thêm extras tương ứng:
+- **DEV-93** (`data/benchmark/dev.jsonl`): 93 frozen questions evaluating complex multi-hop retrieval and table lookups across multi-page engineering reports.
+- **ALL-QA-545** (`data/benchmark/all_qa.jsonl`): 545 verified question-evidence pairs spanning the broader curriculum of Vietnamese hydraulic engineering.
 
-```powershell
-.\.venv\Scripts\python.exe -m pip install -e ".[corpus,research]"
-```
+---
 
-Chi tiết: [docs/PHASE_E_FRONTEND.md](docs/PHASE_E_FRONTEND.md).
+## Retrieval Evaluation
 
-## Cấu trúc repository
+The table below presents the verified retrieval and localization performance on the frozen **DEV-93** benchmark. Metrics are reproduced directly from the frozen artifact `reports/EXPERIMENTS/R6_RETRIEVAL_DEV93_METRICS.json`.
 
+| Evaluation Metric | Baseline R5 | Active Pipeline R6 | Absolute Delta |
+| :--- | :---: | :---: | :---: |
+| **Candidate Hit@100** | 76.34% (71/93) | **91.40% (85/93)** | +15.06% |
+| **Page Hit@5** | 63.44% (59/93) | **67.74% (63/93)** | +4.30% |
+| **Evidence Page Hit@5** | 58.06% (54/93) | **61.29% (57/93)** | +3.23% |
+| **MRR@5** | 0.4579 | **0.4511** | -0.0068 |
+| **nDCG@5** | 0.4894 | **0.5077** | +0.0183 |
+| **Table Region Recovery** | 0.00% (0/93) | **17.20% (16/93)** | +17.20% |
+| **Median Latency (p50)** | 4,505 ms | **4,401 ms** | -104 ms |
+| **95th Percentile Latency (p95)** | 5,963 ms | **5,564 ms** | -399 ms |
+
+### Paired Comparison on Page Hit@5:
+- **R6 Wins**: 10 questions
+- **R6 Losses**: 6 questions
+- **Ties**: 77 questions
+
+> **Scientific Metric Distinction:**
+> Hit@K and MRR@K quantify the retrieval system's capability to localize evidence-bearing pages within candidate pools. They do **not** represent end-to-end factual answer accuracy. End-to-end answer correctness has not yet been established by a comprehensive independent evaluation.
+
+For complete evaluation protocols, see [docs/EVALUATION.md](docs/EVALUATION.md).
+
+---
+
+## Ontology-Constrained Verification
+
+In safety-critical hydraulic systems, factual discrepancies regarding dam heights, spillway capacities, or reservoir volumes carry serious engineering implications. The ontology subsystem formalizes domain knowledge to audit generated statements:
+
+### 1. Atomic Claim Representation
+Generated texts are parsed into structured claims:
 ```text
-configs/       Cấu hình frozen cho B2, C1, R1, MASH-ER, MAR-ER
-docs/          Tài liệu frontend và slide báo cáo giữa kỳ
-frontend/      React + Vite + TypeScript UI
-reports/       Báo cáo/metric chọn lọc; không chứa model cache
-scripts/       Build, audit, reproduce và packaging scripts
-src/           Retrieval library và read-only Evidence API
-tests/         Unit/integration tests
-data/README.md Chính sách dữ liệu và layout artifact cục bộ
-```
-
-## Kiểm thử
-
-```powershell
-.\.venv\Scripts\python.exe -m pytest -q
-cd frontend
-npm.cmd run typecheck
-npm.cmd run build
-```
-
-Trạng thái workspace tại lần release này:
-
-- Python: **109 passed**;
-- Phase E HTTP/API integration: **4 passed**;
-- TypeScript và production build: **PASS**.
-
-## Tái lập và research artifacts
-
-- [B2 baseline](reports/B2/B2_BASELINE_REPORT.md)
-- [B2.2 candidate coverage](reports/B2_2/B2_2_REPORT.md)
-- [B2.3 reranking](reports/B2_3/B2_3_REPORT.md)
-- [C1 evidence selection](reports/C1/C1_REPORT.md)
-- [R1 representation](reports/R1/R1_REPORT.md)
-- [MASH-ER](reports/MASH_ER/MASH_ER_REPORT.md)
-- [MAR-ER one-shot](reports/MAR_ER_EXPERIMENT/MAR_ER_REPORT.md)
-- [Báo cáo trình chiếu](docs/VIETIRR_RAG_MIDTERM_PRESENTATION.md)
-
-Các thí nghiệm giữ Candidate Test sealed và lưu checksum/config để audit. Model weights, `.npy`, `.pkl`, raw PDFs và generated rankings lớn được tái tạo hoặc phân phối ngoài Git.
-
-## Hạn chế
-
-- Dataset chưa được human validated.
-- 25 multi-evidence DEV QA chỉ tương ứng 8 unique multi gold sets.
-- Dev đã được sử dụng nhiều lần cho diagnosis; kết quả là exploratory.
-- Candidate Test chưa được đánh giá và có family concentration cao.
-- OCR/table extraction và metadata thời gian còn hạn chế.
-- Chưa có external benchmark, user study hoặc answer-generation evaluation.
-
-## Data, license và citation
-
-Source PDFs đến từ các nguồn chính thống nhưng `redistribution_status` có thể là `UNCLEAR`; repository không tái phân phối các PDF đó. Người dùng phải tuân thủ điều khoản của từng nguồn gốc.
-
-Repository hiện **không tuyên bố một giấy phép mặc định** cho code hoặc annotations. Vui lòng liên hệ chủ repository trước khi tái sử dụng hoặc phân phối lại.
-
-Khi trích dẫn, vui lòng dùng tên dự án và URL:
-
-```bibtex
-@software{vietirr_rag_2026,
-  title  = {VietIrr-RAG: Evidence-first Retrieval for Vietnamese Irrigation Documents},
-  year   = {2026},
-  url    = {https://github.com/zudoan/VietIrr-RAG}
+TechnicalClaim {
+    entity:           "Hồ Thác La",
+    parameter:        "diện tích đáp ứng",
+    value:            342.0,
+    unit:             "ha",
+    temporal_context: "tháng 06/2019",
+    evidence_id:      "TAB_IRR_CTL_2019_1fc21515_P0003_02_R002_C003"
 }
 ```
 
-## Scientific integrity
+### 2. Formal Domain Constraints
+The system incorporates 45 hydraulic domain rules (`ontology/constraints_v0_1.ttl`), including:
+- **Water Elevation Hierarchy**: $MNC \le MNDBT \le MNLKT \le CaoTrinhDinhDam$
+- **Physical Feasibility Bounds**: Discharge thresholds, reservoir capacity ceilings, and unit consistency.
 
-Không claim SOTA, không claim paper-ready và không xem point estimate trên Dev là bằng chứng superiority. Negative results của MASH-ER/MAR-ER được giữ nguyên để bảo toàn tính tái lập và giá trị chẩn đoán.
+### 3. Shadow Mode Architecture
+Controlled ablation experiments (A0 through A3) demonstrated that hard blocking on automated claim verification introduced an 8.3% false rejection rate due to natural language variability. As a result, the operational system implements ontology verification in **Shadow Mode**: verification executes asynchronously, emitting diagnostic signals and metrics without disrupting end-user interaction.
+
+For full technical specifications, see [docs/ONTOLOGY_VERIFICATION.md](docs/ONTOLOGY_VERIFICATION.md).
+
+---
+
+## Web Application and Evidence Workspace
+
+The repository includes a modern, high-density web application built with React, TypeScript, and Tailwind/Vanilla CSS, backed by a FastAPI service.
+
+### Search and Retrieval Workspace
+The primary workspace provides multi-modal query execution, candidate filtering, and granular evidence inspectability.
+
+![VietIrr-RAG Search Workspace](docs/assets/screenshots/workspace_search.png)
+*Figure 1: VietIrr-RAG search interface displaying query input, stage telemetry, and multi-candidate retrieval ranking.*
+
+### Grounded Answer Generation with Citation Cards
+Answers generated by the local Qwen model include explicit citation anchors mapped to extracted evidence cards.
+
+![Grounded QA with Citation Cards](docs/assets/screenshots/grounded_answer_citation.png)
+*Figure 2: Factual answer generation with interactive citation chips linking directly to localized document provenance.*
+
+### Inline Document Evidence Viewer
+Users can inspect original PDF documents with bounding box overlays highlighting the precise location of retrieved evidence.
+
+![Inline PDF Evidence Viewer](docs/assets/screenshots/inline_pdf_viewer.png)
+*Figure 3: Built-in PDF.js evidence viewer rendering original document pages with highlighted evidence regions.*
+
+---
+
+## Quick Start
+
+### System Requirements
+- Python 3.10 or 3.11
+- Node.js 20.x or higher
+- Ollama with `qwen2.5:7b` model loaded
+- 16 GB RAM minimum (32 GB recommended)
+
+### 1. Model Serving Setup
+Ensure Ollama is running and pull the model:
+```bash
+ollama run qwen2.5:7b
+```
+
+### 2. Backend Service Setup
+```bash
+# Clone the repository
+git clone https://github.com/zudoan/VietIrr-RAG.git
+cd VietIrr-RAG
+
+# Create and activate virtual environment
+python -m venv .venv
+# On Windows PowerShell:
+.venv\Scripts\Activate.ps1
+# On Linux / macOS:
+source .venv/bin/activate
+
+# Install dependencies in editable mode
+pip install -e .
+
+# Launch FastAPI backend
+uvicorn viirr_api.app:app --host 127.0.0.1 --port 8000 --reload
+```
+
+The API service will start on `http://127.0.0.1:8000`. API documentation is available at `http://127.0.0.1:8000/docs`.
+
+### 3. Frontend Web Application Setup
+In a new terminal window:
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open `http://127.0.0.1:5173` in your browser to access the evidence workspace.
+
+For complete deployment options, production settings, and environment variables, refer to [docs/SETUP.md](docs/SETUP.md).
+
+---
+
+## Repository Structure
+
+```text
+VietIrr-RAG/
+├── configs/                  # Pipeline, retrieval, and model configuration files
+├── data/
+│   ├── benchmark/            # Frozen evaluation sets (DEV-93, ALL-QA-545)
+│   └── v4_corpus/            # V4 corpus metadata, manifests, and index artifacts
+├── docs/                     # Comprehensive technical documentation
+│   ├── assets/screenshots/   # System interface figures and screenshots
+│   ├── ARCHITECTURE.md       # Full tier and dataflow architecture specification
+│   ├── DATA_AVAILABILITY.md  # Data governance, redistribution, and repository links
+│   ├── EVALUATION.md         # Benchmark definitions and experimental evaluation protocol
+│   ├── ONTOLOGY_VERIFICATION.md # Ontology claim schema, constraints, and Shadow Mode
+│   ├── README.vi.md          # Scientific Vietnamese translation
+│   ├── RESEARCH_HISTORY.md   # Historical evolution from V3.2 / B2 to R6
+│   ├── RETRIEVAL_PIPELINE.md # Detailed specification of R6 hybrid retrieval stages
+│   └── SETUP.md              # Local installation and deployment guide
+├── frontend/                 # React / Vite TypeScript web application
+│   ├── src/components/       # Evidence cards, PDF viewer, shell components
+│   └── src/pages/            # Workspace, documents, and presentation views
+├── ontology/                 # OWL/TTL formal schemas and 45 hydraulic domain rules
+├── reports/EXPERIMENTS/      # Frozen experimental metrics, baseline traces, and evaluations
+├── scripts/                  # Benchmarking, diagnostic, and evaluation CLI scripts
+├── src/
+│   ├── viirr_api/            # FastAPI REST backend, database models, schemas, and routes
+│   ├── viirr_ontology/       # Atomic claim extraction and shadow verification engine
+│   ├── viirr_rag/            # Prompt construction, context allocator, and Citation Guard
+│   └── viirr_retrieval/      # BM25, BGE-M3, RRF fusion, reranker, and Page-to-Region
+└── tests/                    # Comprehensive test suite (585 regression and unit tests)
+```
+
+For an exhaustive audit of workspace files, consult [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md).
+
+---
+
+## Testing and Reproducibility
+
+VietIrr-RAG enforces comprehensive unit, integration, and security test coverage:
+
+```bash
+# Execute backend test suite (585 tests)
+pytest tests/ -q
+
+# Execute frontend build verification
+cd frontend
+npm run build
+```
+
+Test coverage includes:
+- **Retrieval Contract**: Verifies absence of test set leakage and checks candidate provenance integrity.
+- **Citation Guard**: Validates citation parsing, ID binding, and controlled abstention paths.
+- **Ontology Verification**: Tests claim extraction tuples against hydraulic constraint invariants.
+- **API Endpoints**: Validates request rate limiting, payload sanitization, and health check routes.
+
+---
+
+## Research History
+
+The system reflects progressive experimental iterations:
+- **Baseline V3.2 / Milestone B2**: Semantic search prototype over 89 PDFs using `multilingual-e5-large`; evaluated flat evidence search without LLM answer generation.
+- **Milestone C1 / R1**: Sparse-dense comparison identifying BM25 advantages for technical vocabulary and legal identifiers.
+- **Milestone R5**: First integration of Reciprocal Rank Fusion with BGE-M3 and cross-encoder reranking.
+- **Milestone R6 (Active Baseline)**: Introduction of hierarchical Page-to-Region localization and structured table extraction, achieving 91.40% Candidate Hit@100 on DEV-93.
+- **Phase E & Full-Stack Deployment**: Implementation of local Qwen 2.5:7B generation, Citation Guard enforcement, interactive PDF evidence viewing, and asynchronous Ontology Shadow Mode.
+
+For detailed milestone progression, see [docs/RESEARCH_HISTORY.md](docs/RESEARCH_HISTORY.md).
+
+---
+
+## Known Limitations
+
+- **Complex Engineering Drawings**: Scanned blueprints, dam cross-section diagrams, and handwritten operational logs cannot be reliably interpreted by standard OCR engines.
+- **Multi-Page Table Stitching**: Tables split across page boundaries without repeating headers occasionally suffer from column misalignments during parsing.
+- **Generative Abstention Sensitivity**: The Citation Guard enforces strict evidence binding; occasionally, answers that paraphrase valid facts without explicitly appending canonical IDs are conservatively rejected.
+- **Ontology Extraction Coverage**: Highly nuanced natural language assertions can fail automatic tuple extraction, which motivated the use of non-blocking Shadow Mode over hard rejection.
+- **Evaluation Scope**: Retrieval metrics (Hit@K, MRR@K) evaluate evidence localization. End-to-end factual correctness requires further independent manual annotation.
+
+---
+
+## Data Availability and Governance
+
+The primary dataset is maintained in a dedicated public repository:
+- [https://github.com/zudoan/vietirr-rag-dataset](https://github.com/zudoan/vietirr-rag-dataset)
+
+Raw engineering documents are subject to organizational distribution policies. Derived structured representations (bounding boxes, layout coordinates, anonymous text tokens, and metadata manifests) are made available for research reproducibility.
+
+For data governance terms, see [docs/DATA_AVAILABILITY.md](docs/DATA_AVAILABILITY.md).
+
+---
+
+## Citation
+
+If you utilize VietIrr-RAG or its associated benchmark datasets in your research, please cite the project as follows:
+
+```bibtex
+@software{vietirr_rag_2026,
+  author       = {Doan, Tu and contributors},
+  title        = {VietIrr-RAG: Evidence-Grounded Question Answering over Vietnamese Irrigation Documents},
+  year         = {2026},
+  publisher    = {GitHub},
+  journal      = {GitHub repository},
+  howpublished = {\url{https://github.com/zudoan/VietIrr-RAG}}
+}
+```
+
+---
+
+## Acknowledgements
+
+VietIrr-RAG was developed as part of advanced deep learning and information retrieval research in the Department of Water Resources and Civil Engineering. We express our appreciation to the open-source community for providing foundational models including BAAI BGE-M3 and the Qwen series.

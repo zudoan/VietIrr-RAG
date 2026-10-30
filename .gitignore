@@ -36,6 +36,15 @@ Thumbs.db
 /.vendor/
 /VietIrrDocBench_v1_candidate/
 
+# Private release inputs and review material
+/READINESS_COUNTS.json
+/READINESS_DATA_SNAPSHOT.md
+/DEMO_READINESS_*.md
+/V4_EXPERIMENT_STATUS_*.md
+/VIETIRR_NEW_QA_BATCH_*.jsonl
+/report_qa/outputs/QA_ANALYSIS_RECORDS.csv
+/report_qa/outputs/QA_NEAR_DUPLICATES.csv
+
 # Local review/package bundles
 /b2.3/
 /r1/
@@ -65,6 +74,7 @@ Thumbs.db
 
 # Publish only verified research report groups
 /reports/*
+/p4/
 !/reports/B2/
 !/reports/B2/**
 !/reports/B2_1/
@@ -89,6 +99,8 @@ Thumbs.db
 !/reports/MAR_ER_EXPERIMENT/**
 !/reports/v3_2_final_semantic/
 !/reports/v3_2_final_semantic/**
+!/reports/EXPERIMENTS/
+!/reports/EXPERIMENTS/**
 
 # Binary/model/cache formats must stay outside Git
 *.pdf
@@ -104,3 +116,15 @@ Thumbs.db
 *.zip
 *.7z
 *.rar
+*.db
+*.sqlite
+*.sqlite3
+vietirr.db
+
+# Local archives, scratchpad, deliverables, and model cache
+/archive/
+/scratch/
+/deliverables/
+/.model_cache/
+/.ai/
+
